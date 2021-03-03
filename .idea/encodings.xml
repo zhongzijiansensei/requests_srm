@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/api/api_jiajiemi.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api/api_sign.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/case/api_sign/test_sign.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/jiajiemi.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/logger.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/sign.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config.ini" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/regiter_one.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/update_info.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/requirements.txt" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

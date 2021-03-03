@@ -1,0 +1,9 @@
+test_login_data:
+  -  ["admin","yoyo123456","1","/xadmin/", '主页面 | 后台页面']
+  -  [" ","yoyo123456","1","/xadmin/", '请登录']
+  -  ["admin","","1","/xadmin/", '请登录']
+  -  ["admi","yoyo123456","1","/xadmin/", '请登录']
+  -  ["admin","yoyo12345","1","/xadmin/", '请登录']
+  -  ["admin","yoyo123456","0","/xadmin/", '请登录']
+  -  ["admin","yoyo123456","1","xadmin/", '404']
+  -  ["admin","yoyo123456","1"," ", '404']

@@ -1,0 +1,13 @@
+test_regiter_data:
+  - ["zhongzijian","aragakkiyui.3","hanxi@163.com", {'msg': '注册成功!', 'code': 0}]
+  - ["秋水","123456","hanxi@163.com", {'msg': '注册成功!', 'code': 0}]
+  - ["qiu秋","123456","hanxi@163.com", {'msg': '注册成功!', 'code': 0}]
+  - ["qiushui_@","123456","hanxi@163.com", {'msg': '注册成功!', 'code': 0}]
+  - ["qiushui123","123456","hanxi@163.com", {'msg': '注册成功!', 'code': 0}]
+  - ["qiushui@123","123456","hanxi@163.com", {'msg': '注册成功!', 'code': 0}]
+  - ["秋qiu@123","123456","hanxi@163.com", {'msg': '注册成功!', 'code': 0}]
+  - ["qiu shui","123456","hanxi@163.com", {'msg': '注册成功!', 'code': 0}]
+  - ["qiu shuiq神神道道所多多","123456","hanxi@163.com", {'msg': '注册成功!', 'code': 0}]
+
+test_regiter_repeat:
+  - ["秋水君","123456","hanxi@163.com", {'msg': '秋水君用户已被注册', 'code': 0}]
