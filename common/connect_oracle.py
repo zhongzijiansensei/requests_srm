@@ -88,4 +88,3 @@ class OracleOperation(object):
 if __name__ == '__main__':
     sql = 'select * from SYS_USER WHERE PHONE = 15555555551'
     delete = OracleOperation().execute_sql(sql)
-    print(pt)
