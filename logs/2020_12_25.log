@@ -1,0 +1,366 @@
+2020-12-25 10:43:49,425 - root - INFO - ------用户登录接口-----
+2020-12-25 10:43:49,699 - root - INFO - 获取请求结果：{'access_token': '66b7bfa7-ec16-4481-a28d-ffa8515622fb', 'token_type': 'bearer', 'refresh_token': '421d5c49-a5c6-4780-bc2f-db0c903d97ff', 'expires_in': 38284, 'scope': 'server', 'license': 'made by qup'}
+2020-12-25 10:43:52,414 - root - INFO - ------用户登录接口-----
+2020-12-25 10:43:52,522 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 10:43:52,570 - root - INFO - ------用户登录接口-----
+2020-12-25 10:43:52,758 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 10:43:52,811 - root - INFO - ------用户登录接口-----
+2020-12-25 10:43:52,859 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 10:43:52', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 10:43:52,915 - root - INFO - ------用户登录接口-----
+2020-12-25 10:43:52,971 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 10:43:52', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 10:43:53,027 - root - INFO - ------用户登录接口-----
+2020-12-25 10:43:53,084 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 10:43:53', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 10:43:53,139 - root - INFO - ------用户登录接口-----
+2020-12-25 10:43:53,203 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 10:43:53', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 10:43:53,256 - root - INFO - ------用户登录接口-----
+2020-12-25 10:43:53,308 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 10:43:53', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 10:43:53,368 - root - INFO - ------用户登录接口-----
+2020-12-25 10:43:53,422 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 10:43:53', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 10:43:53,490 - root - INFO - ------用户登录接口-----
+2020-12-25 10:43:53,549 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 10:43:53', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 10:43:53,600 - root - INFO - ------用户登录接口-----
+2020-12-25 10:43:53,650 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 10:43:53', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 10:45:17,151 - root - INFO - ------用户登录接口-----
+2020-12-25 10:45:17,343 - root - INFO - 获取请求结果：{'access_token': '66b7bfa7-ec16-4481-a28d-ffa8515622fb', 'token_type': 'bearer', 'refresh_token': '421d5c49-a5c6-4780-bc2f-db0c903d97ff', 'expires_in': 38196, 'scope': 'server', 'license': 'made by qup'}
+2020-12-25 10:45:20,167 - root - INFO - ------用户登录接口-----
+2020-12-25 10:45:20,299 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 10:45:20,340 - root - INFO - ------用户登录接口-----
+2020-12-25 10:45:20,529 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 10:45:20,568 - root - INFO - ------用户登录接口-----
+2020-12-25 10:45:20,699 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 10:45:20', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 10:45:20,767 - root - INFO - ------用户登录接口-----
+2020-12-25 10:45:20,812 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 10:45:20', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 10:45:20,865 - root - INFO - ------用户登录接口-----
+2020-12-25 10:45:20,910 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 10:45:20', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 10:45:20,959 - root - INFO - ------用户登录接口-----
+2020-12-25 10:45:21,005 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 10:45:21', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 10:45:21,061 - root - INFO - ------用户登录接口-----
+2020-12-25 10:45:21,106 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 10:45:21', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 10:45:21,169 - root - INFO - ------用户登录接口-----
+2020-12-25 10:45:21,231 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 10:45:21', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 10:45:21,309 - root - INFO - ------用户登录接口-----
+2020-12-25 10:45:21,358 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 10:45:21', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 10:45:21,418 - root - INFO - ------用户登录接口-----
+2020-12-25 10:45:21,466 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 10:45:21', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 13:55:25,714 - root - INFO - ------用户登录接口-----
+2020-12-25 13:55:25,922 - root - INFO - 获取请求结果：{'access_token': '66b7bfa7-ec16-4481-a28d-ffa8515622fb', 'token_type': 'bearer', 'refresh_token': '421d5c49-a5c6-4780-bc2f-db0c903d97ff', 'expires_in': 26787, 'scope': 'server', 'license': 'made by qup'}
+2020-12-25 13:55:25,935 - root - INFO - ------用户登录接口-----
+2020-12-25 13:55:26,073 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 13:55:29,215 - root - INFO - ------用户登录接口-----
+2020-12-25 13:55:29,386 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 13:55:29,439 - root - INFO - ------用户登录接口-----
+2020-12-25 13:55:29,494 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 13:55:29', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 13:55:29,545 - root - INFO - ------用户登录接口-----
+2020-12-25 13:55:29,592 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 13:55:29', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 13:55:29,649 - root - INFO - ------用户登录接口-----
+2020-12-25 13:55:29,700 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 13:55:29', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 13:55:29,783 - root - INFO - ------用户登录接口-----
+2020-12-25 13:55:29,830 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 13:55:29', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 13:55:29,888 - root - INFO - ------用户登录接口-----
+2020-12-25 13:55:29,939 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 13:55:29', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 13:55:29,996 - root - INFO - ------用户登录接口-----
+2020-12-25 13:55:30,042 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 13:55:30', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 13:55:30,098 - root - INFO - ------用户登录接口-----
+2020-12-25 13:55:30,143 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 13:55:30', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 13:55:30,200 - root - INFO - ------用户登录接口-----
+2020-12-25 13:55:30,249 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 13:55:30', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 13:59:16,695 - root - INFO - ------用户登录接口-----
+2020-12-25 13:59:16,886 - root - INFO - 获取请求结果：{'access_token': '66b7bfa7-ec16-4481-a28d-ffa8515622fb', 'token_type': 'bearer', 'refresh_token': '421d5c49-a5c6-4780-bc2f-db0c903d97ff', 'expires_in': 26556, 'scope': 'server', 'license': 'made by qup'}
+2020-12-25 13:59:20,566 - root - INFO - ------用户登录接口-----
+2020-12-25 13:59:20,682 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 13:59:20,791 - root - INFO - ------用户登录接口-----
+2020-12-25 13:59:20,965 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 13:59:21,035 - root - INFO - ------用户登录接口-----
+2020-12-25 13:59:21,095 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 13:59:21', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 13:59:21,162 - root - INFO - ------用户登录接口-----
+2020-12-25 13:59:21,221 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 13:59:21', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 13:59:21,279 - root - INFO - ------用户登录接口-----
+2020-12-25 13:59:21,330 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 13:59:21', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 13:59:21,401 - root - INFO - ------用户登录接口-----
+2020-12-25 13:59:21,448 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 13:59:21', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 13:59:21,506 - root - INFO - ------用户登录接口-----
+2020-12-25 13:59:21,554 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 13:59:21', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 13:59:21,617 - root - INFO - ------用户登录接口-----
+2020-12-25 13:59:21,679 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 13:59:21', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 13:59:21,740 - root - INFO - ------用户登录接口-----
+2020-12-25 13:59:21,794 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 13:59:21', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 13:59:21,853 - root - INFO - ------用户登录接口-----
+2020-12-25 13:59:21,904 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 13:59:21', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 13:59:49,199 - root - INFO - ------用户登录接口-----
+2020-12-25 13:59:49,370 - root - INFO - 获取请求结果：{'access_token': '66b7bfa7-ec16-4481-a28d-ffa8515622fb', 'token_type': 'bearer', 'refresh_token': '421d5c49-a5c6-4780-bc2f-db0c903d97ff', 'expires_in': 26524, 'scope': 'server', 'license': 'made by qup'}
+2020-12-25 13:59:52,215 - root - INFO - ------用户登录接口-----
+2020-12-25 13:59:52,346 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 13:59:52,389 - root - INFO - ------用户登录接口-----
+2020-12-25 13:59:52,585 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 13:59:52,628 - root - INFO - ------用户登录接口-----
+2020-12-25 13:59:52,685 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 13:59:52', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 13:59:52,728 - root - INFO - ------用户登录接口-----
+2020-12-25 13:59:52,778 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 13:59:52', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 13:59:52,817 - root - INFO - ------用户登录接口-----
+2020-12-25 13:59:52,868 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 13:59:52', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 13:59:52,917 - root - INFO - ------用户登录接口-----
+2020-12-25 13:59:52,973 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 13:59:52', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 13:59:53,012 - root - INFO - ------用户登录接口-----
+2020-12-25 13:59:53,059 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 13:59:53', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 13:59:53,105 - root - INFO - ------用户登录接口-----
+2020-12-25 13:59:53,151 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 13:59:53', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 13:59:53,195 - root - INFO - ------用户登录接口-----
+2020-12-25 13:59:53,260 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 13:59:53', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 13:59:53,297 - root - INFO - ------用户登录接口-----
+2020-12-25 13:59:53,343 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 13:59:53', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 14:05:32,794 - root - INFO - ------用户登录接口-----
+2020-12-25 14:05:32,982 - root - INFO - 获取请求结果：{'access_token': '66b7bfa7-ec16-4481-a28d-ffa8515622fb', 'token_type': 'bearer', 'refresh_token': '421d5c49-a5c6-4780-bc2f-db0c903d97ff', 'expires_in': 26180, 'scope': 'server', 'license': 'made by qup'}
+2020-12-25 14:05:32,995 - root - INFO - ------用户登录接口-----
+2020-12-25 14:05:33,132 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 14:05:33,147 - root - INFO - ------用户登录接口-----
+2020-12-25 14:05:33,348 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 14:05:37,270 - root - INFO - ------用户登录接口-----
+2020-12-25 14:05:37,363 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 14:05:37', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 14:05:37,422 - root - INFO - ------用户登录接口-----
+2020-12-25 14:05:37,485 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 14:05:37', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 14:05:37,529 - root - INFO - ------用户登录接口-----
+2020-12-25 14:05:37,578 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 14:05:37', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 14:05:37,626 - root - INFO - ------用户登录接口-----
+2020-12-25 14:05:37,682 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 14:05:37', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 14:05:37,761 - root - INFO - ------用户登录接口-----
+2020-12-25 14:05:37,826 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 14:05:37', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 14:05:37,895 - root - INFO - ------用户登录接口-----
+2020-12-25 14:05:37,961 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 14:05:37', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 14:05:38,014 - root - INFO - ------用户登录接口-----
+2020-12-25 14:05:38,076 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 14:05:38', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 14:05:38,183 - root - INFO - ------用户登录接口-----
+2020-12-25 14:05:38,251 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 14:05:38', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 15:15:22,365 - root - INFO - ------用户登录接口-----
+2020-12-25 15:15:22,555 - root - INFO - 获取请求结果：{'access_token': '6e5eff8e-b7f7-4b1a-8d2b-a93f36fbbb07', 'token_type': 'bearer', 'refresh_token': '6bf9a96e-8d2c-47f3-be19-391eaa73f8c9', 'expires_in': 43194, 'scope': 'server', 'license': 'made by qup'}
+2020-12-25 15:15:22,566 - root - INFO - ------用户登录接口-----
+2020-12-25 15:15:22,711 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 15:15:22,723 - root - INFO - ------用户登录接口-----
+2020-12-25 15:15:22,894 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:15:22,905 - root - INFO - ------用户登录接口-----
+2020-12-25 15:15:23,074 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:15:23,088 - root - INFO - ------用户登录接口-----
+2020-12-25 15:15:23,156 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户帐号已被锁定', 'data': '无效的例外'}
+2020-12-25 15:15:26,503 - root - INFO - ------用户登录接口-----
+2020-12-25 15:15:26,690 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:15:26,703 - root - INFO - ------用户登录接口-----
+2020-12-25 15:15:26,762 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户帐号已被锁定', 'data': '无效的例外'}
+2020-12-25 15:15:26,807 - root - INFO - ------用户登录接口-----
+2020-12-25 15:15:26,984 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:15:26,994 - root - INFO - ------用户登录接口-----
+2020-12-25 15:15:27,046 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 15:15:27', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': None}
+2020-12-25 15:17:20,024 - root - INFO - ------用户登录接口-----
+2020-12-25 15:17:20,232 - root - INFO - 获取请求结果：{'access_token': 'fe873c32-23b8-4c2d-be72-b5dc5323dcf2', 'token_type': 'bearer', 'refresh_token': 'd19028bb-b460-4d35-a52c-52789640a2cf', 'expires_in': 43199, 'scope': 'server', 'license': 'made by qup'}
+2020-12-25 15:17:20,243 - root - INFO - ------用户登录接口-----
+2020-12-25 15:17:20,365 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 15:17:20,377 - root - INFO - ------用户登录接口-----
+2020-12-25 15:17:20,565 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:17:20,578 - root - INFO - ------用户登录接口-----
+2020-12-25 15:17:20,758 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:17:20,770 - root - INFO - ------用户登录接口-----
+2020-12-25 15:17:20,936 - root - INFO - 获取请求结果：{'access_token': 'fe873c32-23b8-4c2d-be72-b5dc5323dcf2', 'token_type': 'bearer', 'refresh_token': 'd19028bb-b460-4d35-a52c-52789640a2cf', 'expires_in': 43199, 'scope': 'server', 'license': 'made by qup'}
+2020-12-25 15:17:24,043 - root - INFO - ------用户登录接口-----
+2020-12-25 15:17:24,228 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:17:24,236 - root - INFO - ------用户登录接口-----
+2020-12-25 15:17:24,365 - root - INFO - 获取请求结果：{'access_token': 'fe873c32-23b8-4c2d-be72-b5dc5323dcf2', 'token_type': 'bearer', 'refresh_token': 'd19028bb-b460-4d35-a52c-52789640a2cf', 'expires_in': 43195, 'scope': 'server', 'license': 'made by qup'}
+2020-12-25 15:17:24,401 - root - INFO - ------用户登录接口-----
+2020-12-25 15:17:24,590 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:17:24,602 - root - INFO - ------用户登录接口-----
+2020-12-25 15:17:24,656 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 15:17:24', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': None}
+2020-12-25 15:18:32,512 - root - INFO - ------用户登录接口-----
+2020-12-25 15:18:32,706 - root - INFO - 获取请求结果：{'access_token': 'fe873c32-23b8-4c2d-be72-b5dc5323dcf2', 'token_type': 'bearer', 'refresh_token': 'd19028bb-b460-4d35-a52c-52789640a2cf', 'expires_in': 43127, 'scope': 'server', 'license': 'made by qup'}
+2020-12-25 15:18:32,717 - root - INFO - ------用户登录接口-----
+2020-12-25 15:18:32,840 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 15:18:32,854 - root - INFO - ------用户登录接口-----
+2020-12-25 15:18:33,045 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:18:33,058 - root - INFO - ------用户登录接口-----
+2020-12-25 15:18:33,232 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:18:33,243 - root - INFO - ------用户登录接口-----
+2020-12-25 15:18:33,380 - root - INFO - 获取请求结果：{'access_token': 'fe873c32-23b8-4c2d-be72-b5dc5323dcf2', 'token_type': 'bearer', 'refresh_token': 'd19028bb-b460-4d35-a52c-52789640a2cf', 'expires_in': 43126, 'scope': 'server', 'license': 'made by qup'}
+2020-12-25 15:18:36,540 - root - INFO - ------用户登录接口-----
+2020-12-25 15:18:36,763 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:18:36,775 - root - INFO - ------用户登录接口-----
+2020-12-25 15:18:36,919 - root - INFO - 获取请求结果：{'access_token': 'fe873c32-23b8-4c2d-be72-b5dc5323dcf2', 'token_type': 'bearer', 'refresh_token': 'd19028bb-b460-4d35-a52c-52789640a2cf', 'expires_in': 43123, 'scope': 'server', 'license': 'made by qup'}
+2020-12-25 15:18:36,989 - root - INFO - ------用户登录接口-----
+2020-12-25 15:18:37,189 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:18:37,202 - root - INFO - ------用户登录接口-----
+2020-12-25 15:18:37,374 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 15:19:40,889 - root - INFO - ------用户登录接口-----
+2020-12-25 15:19:41,055 - root - INFO - 获取请求结果：{'access_token': 'fe873c32-23b8-4c2d-be72-b5dc5323dcf2', 'token_type': 'bearer', 'refresh_token': 'd19028bb-b460-4d35-a52c-52789640a2cf', 'expires_in': 43059, 'scope': 'server', 'license': 'made by qup'}
+2020-12-25 15:19:41,066 - root - INFO - ------用户登录接口-----
+2020-12-25 15:19:41,199 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 15:19:41,209 - root - INFO - ------用户登录接口-----
+2020-12-25 15:19:41,409 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:19:41,419 - root - INFO - ------用户登录接口-----
+2020-12-25 15:19:41,601 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:19:41,615 - root - INFO - ------用户登录接口-----
+2020-12-25 15:19:41,677 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 15:19:41', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 15:19:45,388 - root - INFO - ------用户登录接口-----
+2020-12-25 15:19:45,573 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:19:45,587 - root - INFO - ------用户登录接口-----
+2020-12-25 15:19:45,733 - root - INFO - 获取请求结果：{'access_token': 'fe873c32-23b8-4c2d-be72-b5dc5323dcf2', 'token_type': 'bearer', 'refresh_token': 'd19028bb-b460-4d35-a52c-52789640a2cf', 'expires_in': 43054, 'scope': 'server', 'license': 'made by qup'}
+2020-12-25 15:19:45,784 - root - INFO - ------用户登录接口-----
+2020-12-25 15:19:45,975 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:19:45,989 - root - INFO - ------用户登录接口-----
+2020-12-25 15:19:46,151 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 15:37:35,896 - root - INFO - ------用户登录接口-----
+2020-12-25 15:37:36,073 - root - INFO - 获取请求结果：{'access_token': 'fe873c32-23b8-4c2d-be72-b5dc5323dcf2', 'token_type': 'bearer', 'refresh_token': 'd19028bb-b460-4d35-a52c-52789640a2cf', 'expires_in': 41984, 'scope': 'server', 'license': 'made by qup'}
+2020-12-25 15:37:36,086 - root - INFO - ------用户登录接口-----
+2020-12-25 15:37:36,199 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 15:37:36,210 - root - INFO - ------用户登录接口-----
+2020-12-25 15:37:36,382 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:37:36,396 - root - INFO - ------用户登录接口-----
+2020-12-25 15:37:36,586 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:37:36,597 - root - INFO - ------用户登录接口-----
+2020-12-25 15:37:36,648 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 15:37:36', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 15:37:39,783 - root - INFO - ------用户登录接口-----
+2020-12-25 15:37:39,967 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:37:39,979 - root - INFO - ------用户登录接口-----
+2020-12-25 15:37:40,123 - root - INFO - 获取请求结果：{'access_token': 'fe873c32-23b8-4c2d-be72-b5dc5323dcf2', 'token_type': 'bearer', 'refresh_token': 'd19028bb-b460-4d35-a52c-52789640a2cf', 'expires_in': 41980, 'scope': 'server', 'license': 'made by qup'}
+2020-12-25 15:37:40,169 - root - INFO - ------用户登录接口-----
+2020-12-25 15:37:40,346 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:37:40,357 - root - INFO - ------用户登录接口-----
+2020-12-25 15:37:40,514 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 15:38:57,875 - root - INFO - ------用户登录接口-----
+2020-12-25 15:38:58,047 - root - INFO - 获取请求结果：{'access_token': 'fe873c32-23b8-4c2d-be72-b5dc5323dcf2', 'token_type': 'bearer', 'refresh_token': 'd19028bb-b460-4d35-a52c-52789640a2cf', 'expires_in': 41902, 'scope': 'server', 'license': 'made by qup'}
+2020-12-25 15:38:58,056 - root - INFO - ------用户登录接口-----
+2020-12-25 15:38:58,179 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 15:38:58,189 - root - INFO - ------用户登录接口-----
+2020-12-25 15:38:58,381 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:38:58,390 - root - INFO - ------用户登录接口-----
+2020-12-25 15:38:58,590 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:38:58,600 - root - INFO - ------用户登录接口-----
+2020-12-25 15:38:58,728 - root - INFO - 获取请求结果：{'access_token': 'fe873c32-23b8-4c2d-be72-b5dc5323dcf2', 'token_type': 'bearer', 'refresh_token': 'd19028bb-b460-4d35-a52c-52789640a2cf', 'expires_in': 41901, 'scope': 'server', 'license': 'made by qup'}
+2020-12-25 15:39:01,614 - root - INFO - ------用户登录接口-----
+2020-12-25 15:39:01,790 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:39:01,800 - root - INFO - ------用户登录接口-----
+2020-12-25 15:39:01,946 - root - INFO - 获取请求结果：{'access_token': 'fe873c32-23b8-4c2d-be72-b5dc5323dcf2', 'token_type': 'bearer', 'refresh_token': 'd19028bb-b460-4d35-a52c-52789640a2cf', 'expires_in': 41898, 'scope': 'server', 'license': 'made by qup'}
+2020-12-25 15:39:01,979 - root - INFO - ------用户登录接口-----
+2020-12-25 15:39:02,150 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:39:02,160 - root - INFO - ------用户登录接口-----
+2020-12-25 15:39:02,324 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 15:39:24,944 - root - INFO - ------用户登录接口-----
+2020-12-25 15:39:25,122 - root - INFO - 获取请求结果：{'access_token': 'fe873c32-23b8-4c2d-be72-b5dc5323dcf2', 'token_type': 'bearer', 'refresh_token': 'd19028bb-b460-4d35-a52c-52789640a2cf', 'expires_in': 41875, 'scope': 'server', 'license': 'made by qup'}
+2020-12-25 15:39:25,135 - root - INFO - ------用户登录接口-----
+2020-12-25 15:39:25,264 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 15:39:25,274 - root - INFO - ------用户登录接口-----
+2020-12-25 15:39:25,459 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:39:25,469 - root - INFO - ------用户登录接口-----
+2020-12-25 15:39:25,660 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:39:25,672 - root - INFO - ------用户登录接口-----
+2020-12-25 15:39:25,821 - root - INFO - 获取请求结果：{'access_token': 'fe873c32-23b8-4c2d-be72-b5dc5323dcf2', 'token_type': 'bearer', 'refresh_token': 'd19028bb-b460-4d35-a52c-52789640a2cf', 'expires_in': 41874, 'scope': 'server', 'license': 'made by qup'}
+2020-12-25 15:39:28,898 - root - INFO - ------用户登录接口-----
+2020-12-25 15:39:29,098 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:39:29,108 - root - INFO - ------用户登录接口-----
+2020-12-25 15:39:29,240 - root - INFO - 获取请求结果：{'access_token': 'fe873c32-23b8-4c2d-be72-b5dc5323dcf2', 'token_type': 'bearer', 'refresh_token': 'd19028bb-b460-4d35-a52c-52789640a2cf', 'expires_in': 41870, 'scope': 'server', 'license': 'made by qup'}
+2020-12-25 15:39:29,277 - root - INFO - ------用户登录接口-----
+2020-12-25 15:39:29,459 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:39:29,469 - root - INFO - ------用户登录接口-----
+2020-12-25 15:39:29,647 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 15:41:50,401 - root - INFO - ------用户登录接口-----
+2020-12-25 15:41:50,591 - root - INFO - 获取请求结果：{'access_token': 'fe873c32-23b8-4c2d-be72-b5dc5323dcf2', 'token_type': 'bearer', 'refresh_token': 'd19028bb-b460-4d35-a52c-52789640a2cf', 'expires_in': 41729, 'scope': 'server', 'license': 'made by qup'}
+2020-12-25 15:41:50,604 - root - INFO - ------用户登录接口-----
+2020-12-25 15:41:50,730 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 15:41:50,739 - root - INFO - ------用户登录接口-----
+2020-12-25 15:41:50,976 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:41:50,986 - root - INFO - ------用户登录接口-----
+2020-12-25 15:41:51,164 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:41:51,172 - root - INFO - ------用户登录接口-----
+2020-12-25 15:41:51,228 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 15:41:51', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 15:41:54,262 - root - INFO - ------用户登录接口-----
+2020-12-25 15:41:54,455 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:41:54,465 - root - INFO - ------用户登录接口-----
+2020-12-25 15:41:54,536 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户帐号已被锁定', 'data': '无效的例外'}
+2020-12-25 15:41:54,579 - root - INFO - ------用户登录接口-----
+2020-12-25 15:41:54,768 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:41:54,778 - root - INFO - ------用户登录接口-----
+2020-12-25 15:41:54,943 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 15:43:00,083 - root - INFO - ------用户登录接口-----
+2020-12-25 15:43:00,253 - root - INFO - 获取请求结果：{'access_token': 'fe873c32-23b8-4c2d-be72-b5dc5323dcf2', 'token_type': 'bearer', 'refresh_token': 'd19028bb-b460-4d35-a52c-52789640a2cf', 'expires_in': 41659, 'scope': 'server', 'license': 'made by qup'}
+2020-12-25 15:43:00,268 - root - INFO - ------用户登录接口-----
+2020-12-25 15:43:00,404 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 15:43:00,413 - root - INFO - ------用户登录接口-----
+2020-12-25 15:43:00,588 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:43:00,597 - root - INFO - ------用户登录接口-----
+2020-12-25 15:43:00,786 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:43:00,796 - root - INFO - ------用户登录接口-----
+2020-12-25 15:43:00,912 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 15:43:00,922 - root - INFO - ------用户登录接口-----
+2020-12-25 15:43:01,108 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:43:01,118 - root - INFO - ------用户登录接口-----
+2020-12-25 15:43:01,261 - root - INFO - 获取请求结果：{'access_token': 'fe873c32-23b8-4c2d-be72-b5dc5323dcf2', 'token_type': 'bearer', 'refresh_token': 'd19028bb-b460-4d35-a52c-52789640a2cf', 'expires_in': 41658, 'scope': 'server', 'license': 'made by qup'}
+2020-12-25 15:43:04,543 - root - INFO - ------用户登录接口-----
+2020-12-25 15:43:04,738 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:43:04,749 - root - INFO - ------用户登录接口-----
+2020-12-25 15:43:04,917 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 15:46:48,977 - root - INFO - ------用户登录接口-----
+2020-12-25 15:46:49,168 - root - INFO - 获取请求结果：{'access_token': '17627ade-dccd-4585-a537-aab7886adc35', 'token_type': 'bearer', 'refresh_token': 'a340ed23-72c0-4cf2-93bd-db44453aad75', 'expires_in': 43199, 'scope': 'server', 'license': 'made by qup'}
+2020-12-25 15:46:49,183 - root - INFO - ------用户登录接口-----
+2020-12-25 15:46:49,335 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 15:46:49,345 - root - INFO - ------用户登录接口-----
+2020-12-25 15:46:49,532 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:46:49,543 - root - INFO - ------用户登录接口-----
+2020-12-25 15:46:49,728 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:46:49,745 - root - INFO - ------用户登录接口-----
+2020-12-25 15:46:49,828 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户帐号已被锁定', 'data': '无效的例外'}
+2020-12-25 15:46:53,022 - root - INFO - ------用户登录接口-----
+2020-12-25 15:46:53,233 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:46:53,245 - root - INFO - ------用户登录接口-----
+2020-12-25 15:46:53,308 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户帐号已被锁定', 'data': '无效的例外'}
+2020-12-25 15:46:53,353 - root - INFO - ------用户登录接口-----
+2020-12-25 15:46:53,532 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:46:53,543 - root - INFO - ------用户登录接口-----
+2020-12-25 15:46:53,717 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 15:50:01,310 - root - INFO - ------用户登录接口-----
+2020-12-25 15:50:01,505 - root - INFO - 获取请求结果：{'access_token': '17627ade-dccd-4585-a537-aab7886adc35', 'token_type': 'bearer', 'refresh_token': 'a340ed23-72c0-4cf2-93bd-db44453aad75', 'expires_in': 43007, 'scope': 'server', 'license': 'made by qup'}
+2020-12-25 15:50:01,514 - root - INFO - ------用户登录接口-----
+2020-12-25 15:50:01,628 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 15:50:01,639 - root - INFO - ------用户登录接口-----
+2020-12-25 15:50:01,808 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:50:01,819 - root - INFO - ------用户登录接口-----
+2020-12-25 15:50:02,074 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:50:02,083 - root - INFO - ------用户登录接口-----
+2020-12-25 15:50:02,206 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 15:50:02,216 - root - INFO - ------用户登录接口-----
+2020-12-25 15:50:02,403 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:50:02,412 - root - INFO - ------用户登录接口-----
+2020-12-25 15:50:02,562 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 15:50:02,572 - root - INFO - ------用户登录接口-----
+2020-12-25 15:50:02,862 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:50:02,871 - root - INFO - ------用户登录接口-----
+2020-12-25 15:50:03,040 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 15:51:12,599 - root - INFO - ------用户登录接口-----
+2020-12-25 15:51:12,780 - root - INFO - 获取请求结果：{'access_token': '17627ade-dccd-4585-a537-aab7886adc35', 'token_type': 'bearer', 'refresh_token': 'a340ed23-72c0-4cf2-93bd-db44453aad75', 'expires_in': 42936, 'scope': 'server', 'license': 'made by qup'}
+2020-12-25 15:51:12,790 - root - INFO - ------用户登录接口-----
+2020-12-25 15:51:12,903 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 15:51:12,915 - root - INFO - ------用户登录接口-----
+2020-12-25 15:51:13,087 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:51:13,099 - root - INFO - ------用户登录接口-----
+2020-12-25 15:51:13,286 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:51:13,299 - root - INFO - ------用户登录接口-----
+2020-12-25 15:51:13,442 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 15:51:13,452 - root - INFO - ------用户登录接口-----
+2020-12-25 15:51:13,672 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 15:51:13,684 - root - INFO - ------用户登录接口-----
+2020-12-25 15:51:13,757 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户帐号已被锁定', 'data': '无效的例外'}
+2020-12-25 15:51:17,095 - root - INFO - ------用户登录接口-----
+2020-12-25 15:51:17,171 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 15:51:17', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 15:51:17,233 - root - INFO - ------用户登录接口-----
+2020-12-25 15:51:17,298 - root - INFO - 获取请求结果：{'timestamp': '2020-12-25 15:51:17', 'path': '/auth/oauth/token', 'status': 500, 'error': 'Internal Server Error', 'message': 'IllegalBlockSizeException: Input length not multiple of 16 bytes'}
+2020-12-25 16:06:49,194 - root - INFO - ------用户登录接口-----
+2020-12-25 16:06:49,378 - root - INFO - 获取请求结果：{'access_token': '17627ade-dccd-4585-a537-aab7886adc35', 'token_type': 'bearer', 'refresh_token': 'a340ed23-72c0-4cf2-93bd-db44453aad75', 'expires_in': 41999, 'scope': 'server', 'license': 'made by qup'}
+2020-12-25 16:06:49,396 - root - INFO - ------用户登录接口-----
+2020-12-25 16:06:49,581 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 16:06:49,605 - root - INFO - ------用户登录接口-----
+2020-12-25 16:06:49,831 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 16:06:49,842 - root - INFO - ------用户登录接口-----
+2020-12-25 16:06:50,019 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 16:06:50,034 - root - INFO - ------用户登录接口-----
+2020-12-25 16:06:50,180 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 16:06:50,197 - root - INFO - ------用户登录接口-----
+2020-12-25 16:06:50,449 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 16:06:50,463 - root - INFO - ------用户登录接口-----
+2020-12-25 16:06:50,598 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2020-12-25 16:06:50,616 - root - INFO - ------用户登录接口-----
+2020-12-25 16:06:50,834 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2020-12-25 16:06:50,845 - root - INFO - ------用户登录接口-----
+2020-12-25 16:06:51,017 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
