@@ -15,5 +15,5 @@ class ReadYaml():
 
 
 if __name__ == '__main__':
-    data = ReadYaml("regiter_data.yml").get_yaml_data()
+    data = ReadYaml("case_data.yml").get_yaml_data()
     print(data)
