@@ -1,6 +1,7 @@
 import configparser
 import os
 
+
 class ReadConfig:
     """定义一个读取配置文件的类"""
 
@@ -12,14 +13,19 @@ class ReadConfig:
             configpath = os.path.join(root_dir, "config.ini")
         self.cf = configparser.ConfigParser()
         self.cf.read(configpath)
+
     '''读取mysql'''
+
     def get_db(self, param):
         value = self.cf.get("mysql", param)
         return value
+
     '''读取oracle'''
+
     def get_cx(self, param):
         value = self.cf.get("oracle", param)
         return value
+
 
 if __name__ == '__main__':
     test = ReadConfig()

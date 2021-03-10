@@ -53,6 +53,7 @@ from common.readconfig import ReadConfig
 #     sql = 'select * from SYS_USER WHERE PHONE = 15555555551'
 #     delete = select_sql(sql)
 #     print(delete)
+
 class OracleOperation(object):
 
     # 执行下面的execute_sql方法时会自动执行该初始化方法进行连接数据库

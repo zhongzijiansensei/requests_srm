@@ -1,11 +1,6 @@
-"""
-Code description：登录方法
-Create time：
-Developer：
-"""
 import os
 import requests
-
+from requests_toolbelt import MultipartEncoder
 
 class SRMBase(object):
     def __init__(self, s: requests.session):
@@ -30,3 +25,21 @@ class SRMBase(object):
                 }
 
         return self.s.post(url, json=data)
+
+    def sysUser_page(self, key,value):    # 用户管理查询
+        url = os.environ["host"] + "/srm/api/v1/sysUser/page"
+        webforms = MultipartEncoder(fields=[
+            ("page",'1',),
+            ("rows",'10',),
+            ("order", 'desc',),
+            ("pageFlag",'true',),
+            ("onlyCountFlag",'false',),
+            ("filtersRaw", '[{"id":"","value": "%s", "property": "%s", "operator": "like"}]'%(value,key)),
+        ]
+        )
+
+        headers = {
+            'Content-Type': webforms.content_type ,
+        }
+        return self.s.post( url, headers=headers, data=webforms)
+

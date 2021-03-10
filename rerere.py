@@ -1,13 +1,26 @@
 import requests
+from requests_toolbelt import MultipartEncoder
 
-url = "https://qupuat.quanyou.com.cn/srm/api/v1/sysUser"
-data = {"userName":"Requests","phone":"15555555551", "isPan": 0,
-        "roleIds": ["a1a226e1-5715-4c1d-a226-e157150c1dac"],
-        "vendorCode": "700615", "vendorId": "c2598e4a-9184-4c8c-998e-4a9184bc8c91",
-        "vendorName": "太君里面请"
-                }
-header = {"Authorization": "Bearer 84067e0d-c7f3-4b26-bb87-280e56f65c4e",
-          "Content-Type": "application/json;charset=UTF-8",
-          }
-r = requests.post(url, json=data, headers=header)
-print(r.text)
+url = "https://qupuat.quanyou.com.cn/srm/api/v1/sysUser/page"
+
+body = MultipartEncoder(fields=[
+    ("page", '1',),
+    ("rows", '10',),
+    ("order", 'desc',),
+    ("pageFlag", 'true',),
+    ("onlyCountFlag", 'false',),
+    ("filtersRaw", '[{"id": "", "value": %s, "property": "phone", "operator": "like"}]'%15555555551),
+]
+)
+
+headers = {
+    'Authorization': 'Bearer bd76b77f-0507-4d53-9c61-98d19b39206e',
+    'Content-Type': body.content_type,
+
+}
+
+response = requests.request("POST", url, headers=headers, data=body)
+
+print(response.json())
+
+

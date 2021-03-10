@@ -1,8 +1,6 @@
 import json
 import os
-
 import cx_Oracle
-
 from common.json_rewrite import DateEncoder
 from common.readconfig import ReadConfig
 
@@ -12,12 +10,12 @@ os.environ['NLS_LANG'] = 'SIMPLIFIED CHINESE_CHINA.UTF8'
 
 class TestOracle(object):
     def __init__(self):
-        user = ReadConfig.get_cx('user')
-        pwd = ReadConfig.get_cx('password')
-        ip = ReadConfig.get_cx('ip')
-        port = ReadConfig.get_cx('port')
-        sid = ReadConfig.get_cx('sid')
-        self.connect = cx_Oracle.connect(user + "/" + pwd + "@" + ip + ":" + port + "/" + sid)
+        user = ReadConfig().get_cx('user')
+        pwd = ReadConfig().get_cx('pwd')
+        ip = ReadConfig().get_cx('ip')
+        host = ReadConfig().get_cx('host')
+        sid = ReadConfig().get_cx('sid')
+        self.connect = cx_Oracle.connect(user + "/" + pwd + "@" + ip + ":" + host + "/" + sid)
         self.cursor = self.connect.cursor()
 
     def select(self, sql):
@@ -78,5 +76,7 @@ if __name__ == "__main__":
     # test_oracle1 = TestOracle('SCOTT', 'pipeline', '127.0.0.1', '1521', 'orcl')
     # test_oracle1.delete("delete from bonus where ENAME='ss1' or ENAME='ww1'")
     # test_oracle3 = TestOracle('srmuat', 'Qy_srmuat', '172.30.3.232', '1521', 'srmtest')
-    js = select("select * from SYS_USER WHERE PHONE like '155%'")
+    sql = "DELETE FROM SYS_USER WHERE PHONE = '15555555551'"
+    js = TestOracle().delete(sql)
+    # js = TestOracle().select("select * from SYS_USER WHERE PHONE like '155%'")
     print(js)
