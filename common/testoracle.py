@@ -76,5 +76,7 @@ if __name__ == "__main__":
     # test_oracle1 = TestOracle('SCOTT', 'pipeline', '127.0.0.1', '1521', 'orcl')
     # test_oracle1.delete("delete from bonus where ENAME='ss1' or ENAME='ww1'")
     # test_oracle3 = TestOracle('srmuat', 'Qy_srmuat', '172.30.3.232', '1521', 'srmtest')
-    js = TestOracle().select("select * from SYS_USER WHERE PHONE like '155%'")
+    sql = "DELETE FROM SYS_USER WHERE PHONE = '15555555551'"
+    js = TestOracle().delete(sql)
+    # js = TestOracle().select("select * from SYS_USER WHERE PHONE like '155%'")
     print(js)
