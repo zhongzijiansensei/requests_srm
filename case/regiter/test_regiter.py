@@ -5,6 +5,7 @@ from common.logger import Log
 from api.regiter_method import Regiter
 from common.connect_mysql import execute_sql
 from common.read_yaml import ReadYaml
+
 testdata = ReadYaml("regiter_data.yml").get_yaml_data()#读取测试数据
 
 @pytest.fixture(scope="function")#设置前置清除操作

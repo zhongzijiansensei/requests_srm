@@ -5,8 +5,8 @@ from requests_toolbelt import MultipartEncoder
 class SRMBase(object):
     def __init__(self, s: requests.session):
         self.s = s
-
-    def login(self, username, pwd):  # 登录方法
+    '''登录方法'''
+    def login(self, username, pwd):
         url = os.environ["host"] + "/auth/oauth/token"
         data = {"username": username,
                 "password": pwd,
@@ -15,7 +15,7 @@ class SRMBase(object):
                 }
         header = {"Authorization": "Basic cXVwOnF1cA=="}
         return self.s.post(url, params=data, headers=header)
-
+    '''用户新增'''
     def sysuser(self, username, phone):
         url = os.environ["host"] + "/srm/api/v1/sysUser"
         data = {"userName":username,"phone":phone, "isPan": 0,
@@ -25,8 +25,8 @@ class SRMBase(object):
                 }
 
         return self.s.post(url, json=data)
-
-    def sysUser_page(self, key,value):    # 用户管理查询
+    '''用户查询'''
+    def sysUser_page(self, key,value):
         url = os.environ["host"] + "/srm/api/v1/sysUser/page"
         webforms = MultipartEncoder(fields=[
             ("page",'1',),
@@ -42,4 +42,22 @@ class SRMBase(object):
             'Content-Type': webforms.content_type ,
         }
         return self.s.post( url, headers=headers, data=webforms)
+
+    '''用户编辑'''
+    def SysUser_put(self, username, phone, role):
+        url = os.environ["host"] +"/srm/api/v1/sysUser"
+        data = {
+            "userId": "f7e5ba4f-4e62-480f-a5ba-4f4e62280fed",
+            "vendorAccount": "70061501",
+            "userName": username,
+            "phone": phone,
+            "isPan": 0,
+            "roleIds": [role],
+            "vendorCode": "700615",
+            "vendorId": "c2598e4a-9184-4c8c-998e-4a9184bc8c91",
+            "vendorName": "太君里面请",
+            "qq": "",
+            "email": ""
+        }
+        return self.s.put(url, json=data)
 
