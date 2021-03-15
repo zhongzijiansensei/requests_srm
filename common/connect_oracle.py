@@ -1,91 +1,82 @@
+import json
+import os
 import cx_Oracle
+from common.json_rewrite import DateEncoder
 from common.readconfig import ReadConfig
-#
-#
-#
-#
-#
-# class DbConnect():
-#     def __init__(self):
-#         # 打开数据库
-#         self.db = cx_Oracle.connect(user, password, host)
-#         # 使用cursor()方式获取操作游标
-#         self.cursor = self.db.cursor()
-#
-#     def select(self, sql):
-#         # sql查询
-#         self.cursor.execute(sql)  # 执行sql
-#         results = self.cursor.fetchall()
-#         return results
-#
-#     def execute(self, sql):
-#         # sql 删除 提示 修改
-#         try:
-#             self.cursor.execute(sql)  # 执行sql
-#             self.db.commit()  # 提交修改
-#         except:
-#             # 发生错误时回滚
-#             self.db.rollback()
-#
-#     def close(self):
-#         self.db.close()  # 关闭连接
-#
-#
-# def select_sql(select_sql):
-#     '''查询数据库'''
-#     db = DbConnect(user1, password1, host1)
-#     result = db.select(select_sql)
-#     db.close()
-#     return result
-#
-#
-# def execute_sql(sql):
-#     '''执行SQL'''
-#     db = DbConnect(user, password, host)
-#     db.execute(sql)
-#     db.close()
-#
-#
-# if __name__ == '__main__':
-#     user1 = ReadConfig().get_cx('user')
-#     password1 = ReadConfig().get_cx('password')
-#     host = ReadConfig().get_cx('host')
-#     sql = 'select * from SYS_USER WHERE PHONE = 15555555551'
-#     delete = select_sql(sql)
-#     print(delete)
 
-class OracleOperation(object):
+os.environ['NLS_LANG'] = 'SIMPLIFIED CHINESE_CHINA.UTF8'
+"""python version 3.7"""
 
-    # 执行下面的execute_sql方法时会自动执行该初始化方法进行连接数据库
+
+class Db_Oracle(object):
     def __init__(self):
-        # 建立连接
-        self.conn = cx_Oracle.connect("srmuat", "Qy_srmuat" , "172.30.3.232:1521/srmtest")
-        # 创建游标
-        self.cursor = self.conn.cursor()
+        user = ReadConfig().get_cx('user')
+        pwd = ReadConfig().get_cx('pwd')
+        ip = ReadConfig().get_cx('ip')
+        host = ReadConfig().get_cx('host')
+        sid = ReadConfig().get_cx('sid')
+        self.connect = cx_Oracle.connect(user + "/" + pwd + "@" + ip + ":" + host + "/" + sid)
+        self.cursor = self.connect.cursor()
 
-    def execute_sql(self, sql):
-        """
-        执行sql语句，并commit提交
-        :param sql:需要执行的sql语句
-        :return:
-        """
+    def select(self, sql):
+        li = []
         self.cursor.execute(sql)
-        self.conn.commit()
-
-    def get_data(self):
-        """
-        获得查询数据
-        :return: 返回查到的数据
-        """
-        data = self.cursor.fetchall()
+        result = self.cursor.fetchall()  # 返回元组
+        col_name = self.cursor.description
+        for row in result:
+            di = {}
+            for col in range(len(col_name)):
+                key = col_name[col][0]
+                value = row[col]
+                di[key] = value
+            li.append(di)
+        data = json.dumps(li, cls=DateEncoder, ensure_ascii=False, indent=2, separators=(',', ':'))
         return data
 
-    def close_oracle(self):
-        # 关闭游标
+    def disconnect(self):
         self.cursor.close()
-        # 关闭数据库连接
-        self.conn.close()
+        self.connect.close()
 
-if __name__ == '__main__':
-    sql = 'select * from SYS_USER WHERE PHONE = 15555555551'
-    delete = OracleOperation().execute_sql(sql)
+    def insert(self, sql, list_param):
+        try:
+            self.cursor.executemany(sql, list_param)
+            self.connect.commit()
+            print("插入ok")
+        except Exception as e:
+            print(e)
+        finally:
+            self.disconnect()
+
+    def update(self, sql):
+        try:
+            self.cursor.execute(sql)
+            self.connect.commit()
+
+        except Exception as e:
+            print(e)
+        finally:
+            self.disconnect()
+
+    def delete(self, sql):
+        try:
+            self.cursor.execute(sql)
+            self.connect.commit()
+            print("delete ok")
+        except Exception as e:
+            print(e)
+        finally:
+            self.disconnect()
+
+
+if __name__ == "__main__":
+    # test_oracle = TestOracle('srmuat', 'Qy_srmuat', '172.30.3.232', '1521', 'srmtest')
+    # param = [('ww1', 'job003', 1333, 2), ('ss1', 'job004', 1444, 2)]
+    # test_oracle.insert("insert into bonus(ENAME,JOB,SAL,COMM)values(:1,:2,:3,:4)",param)#也可以下面这样解决orc-1036非法变量问题
+    # test_oracle.insert("insert into bonus(ENAME,JOB,SAL,COMM)values (:ENAME,:JOB,:SAL,:COMM)", param)
+    # test_oracle1 = TestOracle('SCOTT', 'pipeline', '127.0.0.1', '1521', 'orcl')
+    # test_oracle1.delete("delete from bonus where ENAME='ss1' or ENAME='ww1'")
+    # test_oracle3 = TestOracle('srmuat', 'Qy_srmuat', '172.30.3.232', '1521', 'srmtest')
+    sql = "select * FROM SYS_USER WHERE PHONE = '15555555551'"
+    js = Db_Oracle().select(sql)
+    # js = TestOracle().select("select * from SYS_USER WHERE PHONE like '155%'")
+    print(js)

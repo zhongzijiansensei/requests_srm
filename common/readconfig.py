@@ -9,8 +9,10 @@ class ReadConfig:
         if filepath:
             configpath = filepath
         else:
-            root_dir = os.path.dirname(os.path.abspath(r'..'))
-            configpath = os.path.join(root_dir, "config.ini")
+            # root_dir = os.path.dirname(os.path.abspath(r'..'))
+            # configpath =  os.path.join(root_dir, "config.ini")
+            configpath =r"Z:\pytest_project\config.ini"
+
         self.cf = configparser.ConfigParser()
         self.cf.read(configpath)
 
