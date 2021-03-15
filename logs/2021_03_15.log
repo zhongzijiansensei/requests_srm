@@ -1,0 +1,271 @@
+2021-03-15 08:48:15,964 - root - INFO - ------用户登录接口-----
+2021-03-15 08:48:16,215 - root - INFO - 获取请求结果：{'access_token': 'eb7bcb4f-569f-461f-ba5a-8fbf26e967d8', 'token_type': 'bearer', 'refresh_token': '19397620-1f25-4668-9e33-7aa3dd7d6c57', 'expires_in': 5141, 'scope': 'server', 'license': 'made by qup'}
+2021-03-15 08:48:16,224 - root - INFO - ------用户登录接口-----
+2021-03-15 08:48:16,405 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 08:48:16,413 - root - INFO - ------用户登录接口-----
+2021-03-15 08:48:16,590 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 08:48:16,597 - root - INFO - ------用户登录接口-----
+2021-03-15 08:48:16,755 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 08:48:16,762 - root - INFO - ------用户登录接口-----
+2021-03-15 08:48:16,955 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 08:48:18,450 - root - INFO - -----用户新增接口-----
+2021-03-15 08:48:18,712 - root - INFO - 获取请求结果：{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 08:48:18,797 - root - INFO - -----用户新增接口-----
+2021-03-15 08:48:19,007 - root - INFO - 获取请求结果：{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 08:48:19,013 - root - INFO - -----用户查询接口-----
+2021-03-15 08:48:19,071 - root - INFO - 获取请求结果：{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009741', 'createBy': 'zhongzijian', 'createTime': '2021-03-15 08:48:18', 'email': '', 'isPan': 0, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'password': '', 'phone': '15555555551', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '供应商默认角色', 'state': 1, 'token': '', 'userId': 'fb3e62fb-0c9b-4b44-be62-fb0c9b4b4453', 'userName': 'sco', 'vendorAccount': 'null02', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 08:48:19,079 - root - INFO - -----用户编辑接口-----
+2021-03-15 08:48:19,148 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 08:48:19,195 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 08:48:19', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 08:48:19,204 - root - INFO - -----用户编辑接口-----
+2021-03-15 08:48:19,249 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '手机号重复!', 'success': 0}
+2021-03-15 08:48:19,307 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 08:48:19', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 08:48:19,314 - root - INFO - -----用户编辑接口-----
+2021-03-15 08:48:19,391 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 08:48:19,436 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 08:48:19', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '供应商默认角色', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试2', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 08:49:15,279 - root - INFO - ------用户登录接口-----
+2021-03-15 08:49:15,436 - root - INFO - 获取请求结果：{'access_token': 'eb7bcb4f-569f-461f-ba5a-8fbf26e967d8', 'token_type': 'bearer', 'refresh_token': '19397620-1f25-4668-9e33-7aa3dd7d6c57', 'expires_in': 5082, 'scope': 'server', 'license': 'made by qup'}
+2021-03-15 08:49:15,444 - root - INFO - ------用户登录接口-----
+2021-03-15 08:49:15,635 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 08:49:15,642 - root - INFO - ------用户登录接口-----
+2021-03-15 08:49:15,823 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 08:49:15,830 - root - INFO - ------用户登录接口-----
+2021-03-15 08:49:16,002 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 08:49:16,009 - root - INFO - ------用户登录接口-----
+2021-03-15 08:49:16,194 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 08:49:17,401 - root - INFO - -----用户新增接口-----
+2021-03-15 08:49:17,635 - root - INFO - 获取请求结果：{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 08:49:17,734 - root - INFO - -----用户新增接口-----
+2021-03-15 08:49:17,924 - root - INFO - 获取请求结果：{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 08:49:17,929 - root - INFO - -----用户查询接口-----
+2021-03-15 08:49:17,982 - root - INFO - 获取请求结果：{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009743', 'createBy': 'zhongzijian', 'createTime': '2021-03-15 08:49:17', 'email': '', 'isPan': 0, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'password': '', 'phone': '15555555551', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '供应商默认角色', 'state': 1, 'token': '', 'userId': 'c374321d-d0be-4afd-b432-1dd0beaafd4f', 'userName': 'sco', 'vendorAccount': 'null02', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 08:49:17,990 - root - INFO - -----用户编辑接口-----
+2021-03-15 08:49:18,064 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 08:49:18,113 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 08:49:18', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 08:49:18,119 - root - INFO - -----用户编辑接口-----
+2021-03-15 08:49:18,157 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '手机号重复!', 'success': 0}
+2021-03-15 08:49:18,199 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 08:49:18', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 08:49:18,206 - root - INFO - -----用户编辑接口-----
+2021-03-15 08:49:18,283 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 08:49:18,336 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 08:49:18', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '供应商默认角色', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试2', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 10:11:39,697 - root - INFO - ------用户登录接口-----
+2021-03-15 10:11:39,858 - root - INFO - 获取请求结果：{'access_token': '5f91ff55-37ce-4864-87a3-0902fdea0ae4', 'token_type': 'bearer', 'refresh_token': '7fdb6b4a-edb2-47cb-9127-95dfb3f353d1', 'expires_in': 42353, 'scope': 'server', 'license': 'made by qup'}
+2021-03-15 10:11:39,867 - root - INFO - ------用户登录接口-----
+2021-03-15 10:11:40,049 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 10:11:40,059 - root - INFO - ------用户登录接口-----
+2021-03-15 10:11:40,238 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 10:11:40,247 - root - INFO - ------用户登录接口-----
+2021-03-15 10:11:40,419 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 10:11:40,429 - root - INFO - ------用户登录接口-----
+2021-03-15 10:11:40,600 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 10:11:42,029 - root - INFO - -----用户新增接口-----
+2021-03-15 10:11:42,298 - root - INFO - 获取请求结果：{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 10:11:42,370 - root - INFO - -----用户新增接口-----
+2021-03-15 10:11:42,557 - root - INFO - 获取请求结果：{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 10:11:42,564 - root - INFO - -----用户查询接口-----
+2021-03-15 10:11:42,618 - root - INFO - 获取请求结果：{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009745', 'createBy': 'zhongzijian', 'createTime': '2021-03-15 10:11:42', 'email': '', 'isPan': 0, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'password': '', 'phone': '15555555551', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '供应商默认角色', 'state': 1, 'token': '', 'userId': '2752f5a6-994e-472b-92f5-a6994eb72bbe', 'userName': 'sco', 'vendorAccount': 'null02', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 10:11:42,628 - root - INFO - -----用户编辑接口-----
+2021-03-15 10:11:42,715 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 10:11:42,772 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 10:11:42', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 10:11:42,780 - root - INFO - -----用户编辑接口-----
+2021-03-15 10:11:42,828 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '手机号重复!', 'success': 0}
+2021-03-15 10:11:42,869 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 10:11:42', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 10:11:42,877 - root - INFO - -----用户编辑接口-----
+2021-03-15 10:11:42,950 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 10:11:42,993 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 10:11:42', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '供应商默认角色', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试2', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 11:31:43,132 - root - INFO - ------用户登录接口-----
+2021-03-15 11:31:43,421 - root - INFO - 获取请求结果：{'access_token': '5f91ff55-37ce-4864-87a3-0902fdea0ae4', 'token_type': 'bearer', 'refresh_token': '7fdb6b4a-edb2-47cb-9127-95dfb3f353d1', 'expires_in': 37549, 'scope': 'server', 'license': 'made by qup'}
+2021-03-15 11:31:43,430 - root - INFO - ------用户登录接口-----
+2021-03-15 11:31:43,600 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 11:31:43,607 - root - INFO - ------用户登录接口-----
+2021-03-15 11:31:43,779 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 11:31:43,787 - root - INFO - ------用户登录接口-----
+2021-03-15 11:31:43,972 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 11:31:43,978 - root - INFO - ------用户登录接口-----
+2021-03-15 11:31:44,136 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 11:31:45,709 - root - INFO - -----用户新增接口-----
+2021-03-15 11:31:45,939 - root - INFO - 获取请求结果：{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 11:31:46,037 - root - INFO - -----用户新增接口-----
+2021-03-15 11:31:46,228 - root - INFO - 获取请求结果：{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 11:31:46,235 - root - INFO - -----用户查询接口-----
+2021-03-15 11:31:46,287 - root - INFO - 获取请求结果：{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009747', 'createBy': 'zhongzijian', 'createTime': '2021-03-15 11:31:46', 'email': '', 'isPan': 0, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'password': '', 'phone': '15555555551', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '供应商默认角色', 'state': 1, 'token': '', 'userId': 'ba2612b0-7ac0-4e4f-a612-b07ac04e4fb1', 'userName': 'sco', 'vendorAccount': 'null02', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 11:31:46,295 - root - INFO - -----用户编辑接口-----
+2021-03-15 11:31:46,376 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 11:31:46,422 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 11:31:46', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 11:31:46,428 - root - INFO - -----用户编辑接口-----
+2021-03-15 11:31:46,469 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '手机号重复!', 'success': 0}
+2021-03-15 11:31:46,518 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 11:31:46', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 11:31:46,525 - root - INFO - -----用户编辑接口-----
+2021-03-15 11:31:46,604 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 11:31:46,649 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 11:31:46', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '供应商默认角色', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试2', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 11:44:49,715 - root - INFO - ------用户登录接口-----
+2021-03-15 11:44:49,856 - root - INFO - 获取请求结果：{'access_token': '5f91ff55-37ce-4864-87a3-0902fdea0ae4', 'token_type': 'bearer', 'refresh_token': '7fdb6b4a-edb2-47cb-9127-95dfb3f353d1', 'expires_in': 36763, 'scope': 'server', 'license': 'made by qup'}
+2021-03-15 11:44:49,863 - root - INFO - ------用户登录接口-----
+2021-03-15 11:44:50,030 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 11:44:50,037 - root - INFO - ------用户登录接口-----
+2021-03-15 11:44:50,243 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 11:44:50,252 - root - INFO - ------用户登录接口-----
+2021-03-15 11:44:50,435 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 11:44:50,442 - root - INFO - ------用户登录接口-----
+2021-03-15 11:44:50,603 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 11:44:52,114 - root - INFO - -----用户新增接口-----
+2021-03-15 11:44:52,296 - root - INFO - 获取请求结果：{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 11:44:52,373 - root - INFO - -----用户新增接口-----
+2021-03-15 11:44:52,557 - root - INFO - 获取请求结果：{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 11:44:52,562 - root - INFO - -----用户查询接口-----
+2021-03-15 11:44:52,613 - root - INFO - 获取请求结果：{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009749', 'createBy': 'zhongzijian', 'createTime': '2021-03-15 11:44:52', 'email': '', 'isPan': 0, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'password': '', 'phone': '15555555551', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '供应商默认角色', 'state': 1, 'token': '', 'userId': 'f5651c19-d2c9-40c3-a51c-19d2c940c36c', 'userName': 'sco', 'vendorAccount': 'null02', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 11:44:52,620 - root - INFO - -----用户编辑接口-----
+2021-03-15 11:44:52,698 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 11:44:52,739 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 11:44:52', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 11:44:52,745 - root - INFO - -----用户编辑接口-----
+2021-03-15 11:44:52,783 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '手机号重复!', 'success': 0}
+2021-03-15 11:44:52,839 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 11:44:52', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 11:44:52,845 - root - INFO - -----用户编辑接口-----
+2021-03-15 11:44:52,931 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 11:44:52,991 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 11:44:52', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '供应商默认角色', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试2', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 14:23:12,073 - root - INFO - ------用户登录接口-----
+2021-03-15 14:23:12,254 - root - INFO - 获取请求结果：{'access_token': '5f91ff55-37ce-4864-87a3-0902fdea0ae4', 'token_type': 'bearer', 'refresh_token': '7fdb6b4a-edb2-47cb-9127-95dfb3f353d1', 'expires_in': 27260, 'scope': 'server', 'license': 'made by qup'}
+2021-03-15 14:23:12,263 - root - INFO - ------用户登录接口-----
+2021-03-15 14:23:12,435 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 14:23:12,442 - root - INFO - ------用户登录接口-----
+2021-03-15 14:23:12,611 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 14:23:12,623 - root - INFO - ------用户登录接口-----
+2021-03-15 14:23:12,796 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 14:23:12,804 - root - INFO - ------用户登录接口-----
+2021-03-15 14:23:12,973 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 14:23:14,546 - root - INFO - -----用户新增接口-----
+2021-03-15 14:23:14,764 - root - INFO - 获取请求结果：{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 14:23:14,844 - root - INFO - -----用户新增接口-----
+2021-03-15 14:23:15,298 - root - INFO - 获取请求结果：{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 14:23:15,305 - root - INFO - -----用户查询接口-----
+2021-03-15 14:23:15,348 - root - INFO - 获取请求结果：{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009751', 'createBy': 'zhongzijian', 'createTime': '2021-03-15 14:23:14', 'email': '', 'isPan': 0, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'password': '', 'phone': '15555555551', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '供应商默认角色', 'state': 1, 'token': '', 'userId': '73a40c57-e8b5-4bc8-a40c-57e8b5abc811', 'userName': 'sco', 'vendorAccount': 'null02', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 14:23:15,356 - root - INFO - -----用户编辑接口-----
+2021-03-15 14:23:15,425 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 14:23:15,466 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 14:23:15', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 14:23:15,476 - root - INFO - -----用户编辑接口-----
+2021-03-15 14:23:15,522 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '手机号重复!', 'success': 0}
+2021-03-15 14:23:15,579 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 14:23:15', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 14:23:15,588 - root - INFO - -----用户编辑接口-----
+2021-03-15 14:23:15,661 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 14:23:15,715 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 14:23:15', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '供应商默认角色', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试2', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 14:23:23,967 - root - INFO - ------用户登录接口-----
+2021-03-15 14:23:24,129 - root - INFO - 获取请求结果：{'access_token': '5f91ff55-37ce-4864-87a3-0902fdea0ae4', 'token_type': 'bearer', 'refresh_token': '7fdb6b4a-edb2-47cb-9127-95dfb3f353d1', 'expires_in': 27249, 'scope': 'server', 'license': 'made by qup'}
+2021-03-15 14:23:24,139 - root - INFO - ------用户登录接口-----
+2021-03-15 14:23:24,320 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 14:23:24,329 - root - INFO - ------用户登录接口-----
+2021-03-15 14:23:24,510 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 14:23:24,519 - root - INFO - ------用户登录接口-----
+2021-03-15 14:23:24,691 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 14:23:24,702 - root - INFO - ------用户登录接口-----
+2021-03-15 14:23:24,890 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 14:23:26,449 - root - INFO - -----用户新增接口-----
+2021-03-15 14:23:26,631 - root - INFO - 获取请求结果：{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 14:23:26,730 - root - INFO - -----用户新增接口-----
+2021-03-15 14:23:26,912 - root - INFO - 获取请求结果：{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 14:23:26,919 - root - INFO - -----用户查询接口-----
+2021-03-15 14:23:26,969 - root - INFO - 获取请求结果：{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009753', 'createBy': 'zhongzijian', 'createTime': '2021-03-15 14:23:26', 'email': '', 'isPan': 0, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'password': '', 'phone': '15555555551', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '供应商默认角色', 'state': 1, 'token': '', 'userId': 'b49469b3-67eb-4480-9469-b367ebb480d5', 'userName': 'sco', 'vendorAccount': 'null02', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 14:23:26,978 - root - INFO - -----用户编辑接口-----
+2021-03-15 14:23:27,079 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 14:23:27,142 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 14:23:27', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 14:23:27,151 - root - INFO - -----用户编辑接口-----
+2021-03-15 14:23:27,207 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '手机号重复!', 'success': 0}
+2021-03-15 14:23:27,263 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 14:23:27', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 14:23:27,273 - root - INFO - -----用户编辑接口-----
+2021-03-15 14:23:27,414 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 14:23:27,464 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 14:23:27', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '供应商默认角色', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试2', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 14:25:03,126 - root - INFO - ------用户登录接口-----
+2021-03-15 14:25:03,271 - root - INFO - 获取请求结果：{'access_token': '5f91ff55-37ce-4864-87a3-0902fdea0ae4', 'token_type': 'bearer', 'refresh_token': '7fdb6b4a-edb2-47cb-9127-95dfb3f353d1', 'expires_in': 27149, 'scope': 'server', 'license': 'made by qup'}
+2021-03-15 14:25:03,281 - root - INFO - ------用户登录接口-----
+2021-03-15 14:25:03,444 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 14:25:03,452 - root - INFO - ------用户登录接口-----
+2021-03-15 14:25:03,624 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 14:25:03,631 - root - INFO - ------用户登录接口-----
+2021-03-15 14:25:03,816 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 14:25:03,826 - root - INFO - ------用户登录接口-----
+2021-03-15 14:25:04,027 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 14:25:05,700 - root - INFO - -----用户新增接口-----
+2021-03-15 14:25:05,902 - root - INFO - 获取请求结果：{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 14:25:05,985 - root - INFO - -----用户新增接口-----
+2021-03-15 14:25:06,202 - root - INFO - 获取请求结果：{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 14:25:06,208 - root - INFO - -----用户查询接口-----
+2021-03-15 14:25:06,257 - root - INFO - 获取请求结果：{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009755', 'createBy': 'zhongzijian', 'createTime': '2021-03-15 14:25:06', 'email': '', 'isPan': 0, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'password': '', 'phone': '15555555551', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '供应商默认角色', 'state': 1, 'token': '', 'userId': 'daeb2c20-3fbb-445d-ab2c-203fbbd45dc9', 'userName': 'sco', 'vendorAccount': 'null02', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 14:25:06,265 - root - INFO - -----用户编辑接口-----
+2021-03-15 14:25:06,346 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 14:25:06,392 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 14:25:06', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 14:25:06,400 - root - INFO - -----用户编辑接口-----
+2021-03-15 14:25:06,443 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '手机号重复!', 'success': 0}
+2021-03-15 14:25:06,490 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 14:25:06', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 14:25:06,497 - root - INFO - -----用户编辑接口-----
+2021-03-15 14:25:06,572 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 14:25:06,615 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 14:25:06', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '供应商默认角色', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试2', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 14:44:33,066 - root - INFO - ------用户登录接口-----
+2021-03-15 14:44:33,230 - root - INFO - 获取请求结果：{'access_token': '5f91ff55-37ce-4864-87a3-0902fdea0ae4', 'token_type': 'bearer', 'refresh_token': '7fdb6b4a-edb2-47cb-9127-95dfb3f353d1', 'expires_in': 25979, 'scope': 'server', 'license': 'made by qup'}
+2021-03-15 14:44:33,238 - root - INFO - ------用户登录接口-----
+2021-03-15 14:44:33,417 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 14:44:33,425 - root - INFO - ------用户登录接口-----
+2021-03-15 14:44:33,612 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 14:44:33,621 - root - INFO - ------用户登录接口-----
+2021-03-15 14:44:33,810 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 14:44:33,818 - root - INFO - ------用户登录接口-----
+2021-03-15 14:44:33,996 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 14:44:36,084 - root - INFO - -----用户新增接口-----
+2021-03-15 14:44:36,358 - root - INFO - 获取请求结果：{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 14:44:36,463 - root - INFO - -----用户新增接口-----
+2021-03-15 14:44:36,706 - root - INFO - 获取请求结果：{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 14:44:36,712 - root - INFO - -----用户查询接口-----
+2021-03-15 14:44:36,772 - root - INFO - 获取请求结果：{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009757', 'createBy': 'zhongzijian', 'createTime': '2021-03-15 14:44:36', 'email': '', 'isPan': 0, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'password': '', 'phone': '15555555551', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '供应商默认角色', 'state': 1, 'token': '', 'userId': '3fc8572c-c16d-4fc0-8857-2cc16d1fc054', 'userName': 'sco', 'vendorAccount': 'null02', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 14:44:36,782 - root - INFO - -----用户编辑接口-----
+2021-03-15 14:44:36,858 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 14:44:36,920 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 14:44:36', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 14:44:36,930 - root - INFO - -----用户编辑接口-----
+2021-03-15 14:44:36,978 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '手机号重复!', 'success': 0}
+2021-03-15 14:44:37,026 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 14:44:36', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 14:44:37,034 - root - INFO - -----用户编辑接口-----
+2021-03-15 14:44:37,114 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 14:44:37,175 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 14:44:37', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '供应商默认角色', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试2', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 14:52:06,814 - root - INFO - ------用户登录接口-----
+2021-03-15 14:52:07,032 - root - INFO - 获取请求结果：{'access_token': '5f91ff55-37ce-4864-87a3-0902fdea0ae4', 'token_type': 'bearer', 'refresh_token': '7fdb6b4a-edb2-47cb-9127-95dfb3f353d1', 'expires_in': 25526, 'scope': 'server', 'license': 'made by qup'}
+2021-03-15 14:52:07,039 - root - INFO - ------用户登录接口-----
+2021-03-15 14:52:07,204 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 14:52:07,212 - root - INFO - ------用户登录接口-----
+2021-03-15 14:52:07,372 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 14:52:07,380 - root - INFO - ------用户登录接口-----
+2021-03-15 14:52:07,561 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 14:52:07,570 - root - INFO - ------用户登录接口-----
+2021-03-15 14:52:07,734 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 14:52:09,096 - root - INFO - -----用户查询接口-----
+2021-03-15 14:52:09,151 - root - INFO - 获取请求结果：{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009757', 'createBy': 'zhongzijian', 'createTime': '2021-03-15 14:44:36', 'email': '', 'isPan': 0, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'password': '', 'phone': '15555555551', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '供应商默认角色', 'state': 1, 'token': '', 'userId': '3fc8572c-c16d-4fc0-8857-2cc16d1fc054', 'userName': 'sco', 'vendorAccount': 'null02', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 14:52:09,158 - root - INFO - -----用户编辑接口-----
+2021-03-15 14:52:09,500 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 14:52:09,550 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 14:52:09', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 14:52:09,559 - root - INFO - -----用户编辑接口-----
+2021-03-15 14:52:09,602 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '手机号重复!', 'success': 0}
+2021-03-15 14:52:09,658 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 14:52:09', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 14:52:09,665 - root - INFO - -----用户编辑接口-----
+2021-03-15 14:52:09,736 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 14:52:09,773 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 14:52:09', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '供应商默认角色', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试2', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 14:52:57,210 - root - INFO - ------用户登录接口-----
+2021-03-15 14:52:57,368 - root - INFO - 获取请求结果：{'access_token': '5f91ff55-37ce-4864-87a3-0902fdea0ae4', 'token_type': 'bearer', 'refresh_token': '7fdb6b4a-edb2-47cb-9127-95dfb3f353d1', 'expires_in': 25475, 'scope': 'server', 'license': 'made by qup'}
+2021-03-15 14:52:57,375 - root - INFO - ------用户登录接口-----
+2021-03-15 14:52:57,545 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 14:52:57,552 - root - INFO - ------用户登录接口-----
+2021-03-15 14:52:57,734 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 14:52:57,742 - root - INFO - ------用户登录接口-----
+2021-03-15 14:52:57,913 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 14:52:57,921 - root - INFO - ------用户登录接口-----
+2021-03-15 14:52:58,105 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-15 14:52:59,973 - root - INFO - -----用户新增接口-----
+2021-03-15 14:53:00,205 - root - INFO - 获取请求结果：{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 14:53:00,297 - root - INFO - -----用户新增接口-----
+2021-03-15 14:53:00,497 - root - INFO - 获取请求结果：{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 14:53:00,505 - root - INFO - -----用户查询接口-----
+2021-03-15 14:53:00,549 - root - INFO - 获取请求结果：{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009759', 'createBy': 'zhongzijian', 'createTime': '2021-03-15 14:53:00', 'email': '', 'isPan': 0, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'password': '', 'phone': '15555555551', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '供应商默认角色', 'state': 1, 'token': '', 'userId': 'e240314a-7b75-454d-8031-4a7b75254d9d', 'userName': 'sco', 'vendorAccount': 'null02', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 14:53:00,559 - root - INFO - -----用户编辑接口-----
+2021-03-15 14:53:00,624 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 14:53:00,668 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 14:53:00', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 14:53:00,676 - root - INFO - -----用户编辑接口-----
+2021-03-15 14:53:00,710 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '手机号重复!', 'success': 0}
+2021-03-15 14:53:00,762 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 14:53:00', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-03-15 14:53:00,770 - root - INFO - -----用户编辑接口-----
+2021-03-15 14:53:00,839 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-03-15 14:53:00,897 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-03-15 14:53:00', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '供应商默认角色', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试2', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '太君里面请', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}

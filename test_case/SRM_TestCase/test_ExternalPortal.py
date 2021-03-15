@@ -6,7 +6,8 @@ from common.read_yaml import ReadYaml
 from api.SRM_Base import SRMBase
 import json
 import jsonpath
-from common.testoracle import TestOracle
+from common.connect_oracle import Db_Oracle
+import os
 
 
 
@@ -14,7 +15,7 @@ from common.testoracle import TestOracle
 @pytest.fixture(scope="function")
 def sysUser_sql():
     sql = "DELETE FROM SYS_USER WHERE PHONE = '15555555551'"
-    TestOracle().delete(sql)
+    Db_Oracle().delete(sql)
     yield
 class TestSRM:
     """测试登录接口"""
@@ -100,3 +101,20 @@ class TestSRM:
         assert result == expect
         assert result1 == expect1
         assert  result2 == expect2
+
+    '''用户启停接口'''
+    @pytest.mark.parametrize("state,expect", testdata["sysuser_state_data"],
+                             ids=["停用用户",
+                                  "启用用户"
+                                  ])
+    @allure.feature('登录测试用例接口')  # 测试报告显示测试功能
+    @allure.step('账号，密码登录')
+    def test_SysUser_state(self, gettokenfixture, state, expect):
+        s = gettokenfixture
+        url = os.environ["host"] + "/srm/api/v1/sysUser/state"
+        data = {"account":70061501,
+                "state":state}
+        msg = s.put(url, data=data)
+        sta = SRMBase(s).sysUser_page("vendorAccount", "70061501")
+        sta.msg =jsonpath.jsonpath(sta.json(),'$..state')[0]
+        assert sta.msg == expect
