@@ -9,27 +9,28 @@ class ReadConfig:
         if filepath:
             configpath = filepath
         else:
-            # root_dir = os.path.dirname(os.path.abspath(r'..'))
-            # configpath =  os.path.join(root_dir, "config.ini")
-            configpath =r"C:\Users\51398\PycharmProjects\requests_srm\config.ini"
+            root_dir = os.path.dirname(os.path.realpath(__file__))
+            configpath = os.path.join(root_dir, "config.ini")
+            # configpath =r"C:\Users\51398\PycharmProjects\requests_srm\config.ini"
+            print(root_dir)
 
         self.cf = configparser.ConfigParser()
         self.cf.read(configpath)
 
-    '''读取mysql'''
-
-    def get_db(self, param):
-        value = self.cf.get("mysql", param)
-        return value
-
-    '''读取oracle'''
-
-    def get_cx(self, param):
-        value = self.cf.get("oracle", param)
-        return value
-
-
-if __name__ == '__main__':
-    test = ReadConfig()
-    t = test.get_cx("user")
-    print(t)
+#     '''读取mysql'''
+#
+#     def get_db(self, param):
+#         value = self.cf.get("mysql", param)
+#         return value
+#
+#     '''读取oracle'''
+#
+#     def get_cx(self, param):
+#         value = self.cf.get("oracle", param)
+#         return value
+#
+#
+# if __name__ == '__main__':
+#     test = ReadConfig()
+#     t = test.get_cx("user")
+#     print(t)

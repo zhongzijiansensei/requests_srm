@@ -7,7 +7,6 @@
     <list default="true" id="2ca16193-d1f6-4e90-b09f-eaf2af98cbf0" name="Default Changelist" comment="Default Changelist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/readconfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/readconfig.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/SRM_TestCase/test_ExternalPortal.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/SRM_TestCase/test_ExternalPortal.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +117,28 @@
       <recent name="F:\python_test\pytest_project" />
     </key>
   </component>
-  <component name="RunManager" selected="Python 测试.test_ExternalPortal.TestSRM.test_SysUser_state 的 pytest">
+  <component name="RunManager" selected="Python.readconfig">
+    <configuration name="readconfig" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pytest_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/readconfig.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="rerere" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pytest_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -188,36 +208,20 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="test_case.SRM_TestCase.test_ExternalPortal.TestSRM.test_SysUser_state 的 pytest" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="pytest_project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/SRM_TestCase" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_case.SRM_TestCase.test_ExternalPortal.TestSRM.test_SysUser_state&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.rerere" />
       <item itemvalue="Python 测试.test_ExternalPortal.TestSRM 的 pytest" />
       <item itemvalue="Python 测试.test_ExternalPortal.TestSRM.test_SysUser_state 的 pytest" />
       <item itemvalue="Python 测试.test_case.SRM_TestCase.test_ExternalPortal.TestSRM 的 pytest" />
-      <item itemvalue="Python 测试.test_case.SRM_TestCase.test_ExternalPortal.TestSRM.test_SysUser_state 的 pytest" />
+      <item itemvalue="Python.readconfig" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.readconfig" />
         <item itemvalue="Python 测试.test_ExternalPortal.TestSRM.test_SysUser_state 的 pytest" />
         <item itemvalue="Python 测试.test_ExternalPortal.TestSRM 的 pytest" />
         <item itemvalue="Python.rerere" />
         <item itemvalue="Python 测试.test_case.SRM_TestCase.test_ExternalPortal.TestSRM 的 pytest" />
-        <item itemvalue="Python 测试.test_case.SRM_TestCase.test_ExternalPortal.TestSRM.test_SysUser_state 的 pytest" />
       </list>
     </recent_temporary>
   </component>
@@ -420,7 +424,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615385552770</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Default Changelist">
+      <created>1615827994390</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1615827994390</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TestHistory">
