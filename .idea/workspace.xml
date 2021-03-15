@@ -5,27 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ca16193-d1f6-4e90-b09f-eaf2af98cbf0" name="Default Changelist" comment="Default Changelist">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/SRM_TestCase/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/SRM_TestCase/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/SRM_TestCase/test_ExternalPortal.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/SRM_TestCase/test_ExternalPortal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/SRM_TestCase/test_login_xadmin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/add_teacher/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/add_teacher/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/add_teacher/test_add_teacher.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/add_teacher/add_teacher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/api_sign/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/api_sign/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/api_sign/test_sign.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/api_sign/sign.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/regiter/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/regiter/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/regiter/test_regiter.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/regiter/regiter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/updateinfo/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/updateinfo/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/updateinfo/test_updateinfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/updateinfo/updateinfo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/upload_picturefile/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/upload_picturefile/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/upload_picturefile/test_upload.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/upload_picturefile/upload.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/connect_oracle.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/connect_oracle.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/readconfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/readconfig.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/testoracle.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/case_data.yml" beforeDir="false" afterPath="$PROJECT_DIR$/data/case_data.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rerere.py" beforeDir="false" afterPath="$PROJECT_DIR$/rerere.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/pyvenv.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pyvenv.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/SRM_TestCase/test_ExternalPortal.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/SRM_TestCase/test_ExternalPortal.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,8 +80,9 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/test_case/SRM_TestCase/test_ExternalPortal.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/PyCharmCE2020.3/python_stubs/-1122517093/cx_Oracle/__init__.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/api/SRM_Base.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/test_case/SRM_TestCase/test_ExternalPortal.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1hB75k9LBTC8uaHV5zyX5JVuDaN" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -114,7 +97,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../jiekou-pytest-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -135,7 +118,7 @@
       <recent name="F:\python_test\pytest_project" />
     </key>
   </component>
-  <component name="RunManager" selected="Python 测试.test_ExternalPortal.TestSRM 的 pytest">
+  <component name="RunManager" selected="Python 测试.test_ExternalPortal.TestSRM.test_SysUser_state 的 pytest">
     <configuration name="rerere" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pytest_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -230,8 +213,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python 测试.test_ExternalPortal.TestSRM 的 pytest" />
         <item itemvalue="Python 测试.test_ExternalPortal.TestSRM.test_SysUser_state 的 pytest" />
+        <item itemvalue="Python 测试.test_ExternalPortal.TestSRM 的 pytest" />
         <item itemvalue="Python.rerere" />
         <item itemvalue="Python 测试.test_case.SRM_TestCase.test_ExternalPortal.TestSRM 的 pytest" />
         <item itemvalue="Python 测试.test_case.SRM_TestCase.test_ExternalPortal.TestSRM.test_SysUser_state 的 pytest" />

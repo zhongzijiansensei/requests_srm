@@ -11,7 +11,7 @@ class ReadConfig:
         else:
             # root_dir = os.path.dirname(os.path.abspath(r'..'))
             # configpath =  os.path.join(root_dir, "config.ini")
-            configpath =r"Z:\pytest_project\config.ini"
+            configpath =r"C:\Users\51398\PycharmProjects\requests_srm\config.ini"
 
         self.cf = configparser.ConfigParser()
         self.cf.read(configpath)
