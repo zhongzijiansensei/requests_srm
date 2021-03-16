@@ -49,7 +49,7 @@ class TestSRM:
             assert msg.json()["msg"] == expect['msg']
 
     '''用户新增接口'''
-    @pytest.mark.skip(reason="环境无法连接数据库")
+    # @pytest.mark.skip(reason="环境无法连接数据库")allure generate report/ -o allure-reports/
     @pytest.mark.parametrize("username,phone,expect", testdata["sysuser_data"],
                              ids=["正常新增用户",
                                   "正常新增用户二"

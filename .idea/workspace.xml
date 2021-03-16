@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ca16193-d1f6-4e90-b09f-eaf2af98cbf0" name="Default Changelist" comment="Default Changelist">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pytest_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pytest_project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/connect_oracle.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/connect_oracle.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/readconfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/readconfig.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/SRM_TestCase/test_ExternalPortal.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/SRM_TestCase/test_ExternalPortal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip3.8.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/pytest.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/pytest.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,9 +85,8 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/PyCharmCE2020.3/python_stubs/-1122517093/cx_Oracle/__init__.py" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/api/SRM_Base.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/test_case/SRM_TestCase/test_ExternalPortal.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/api/SRM_Base.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1hB75k9LBTC8uaHV5zyX5JVuDaN" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -92,8 +97,15 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jiekou-pytest-master" />
+    <property name="last_opened_file_path" value="Z:/pytest_project" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -112,13 +124,14 @@
       <recent name="F:\python_test\pytest_project\data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\requests_srm" />
       <recent name="Z:\pytest_project\common" />
       <recent name="Z:\pytest_project\api" />
       <recent name="F:\python_test\pytest_project" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.readconfig">
-    <configuration name="readconfig" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.connect_oracle">
+    <configuration name="connect_oracle" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pytest_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -130,7 +143,8 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/readconfig.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/connect_oracle.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -139,7 +153,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="rerere" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="read_yaml" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pytest_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/read_yaml.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="readconfig (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pytest_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -151,7 +187,8 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rerere.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/readconfig.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -160,23 +197,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_ExternalPortal.TestSRM 的 pytest" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="readconfig (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pytest_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/SRM_TestCase" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_ExternalPortal.TestSRM&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/readconfig.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_ExternalPortal.TestSRM.test_SysUser_state 的 pytest" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="test_ExternalPortal.TestSRM.test_sysuser 的 pytest" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="pytest_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -185,43 +228,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_ExternalPortal.TestSRM.test_SysUser_state&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_case.SRM_TestCase.test_ExternalPortal.TestSRM 的 pytest" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="pytest_project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/SRM_TestCase" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_case.SRM_TestCase.test_ExternalPortal.TestSRM&quot;" />
+      <option name="_new_target" value="&quot;test_ExternalPortal.TestSRM.test_sysuser&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.rerere" />
-      <item itemvalue="Python 测试.test_ExternalPortal.TestSRM 的 pytest" />
-      <item itemvalue="Python 测试.test_ExternalPortal.TestSRM.test_SysUser_state 的 pytest" />
-      <item itemvalue="Python 测试.test_case.SRM_TestCase.test_ExternalPortal.TestSRM 的 pytest" />
-      <item itemvalue="Python.readconfig" />
+      <item itemvalue="Python.readconfig (1)" />
+      <item itemvalue="Python.readconfig (2)" />
+      <item itemvalue="Python.read_yaml" />
+      <item itemvalue="Python.connect_oracle" />
+      <item itemvalue="Python 测试.test_ExternalPortal.TestSRM.test_sysuser 的 pytest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.readconfig" />
-        <item itemvalue="Python 测试.test_ExternalPortal.TestSRM.test_SysUser_state 的 pytest" />
-        <item itemvalue="Python 测试.test_ExternalPortal.TestSRM 的 pytest" />
-        <item itemvalue="Python.rerere" />
-        <item itemvalue="Python 测试.test_case.SRM_TestCase.test_ExternalPortal.TestSRM 的 pytest" />
+        <item itemvalue="Python.connect_oracle" />
+        <item itemvalue="Python 测试.test_ExternalPortal.TestSRM.test_sysuser 的 pytest" />
+        <item itemvalue="Python.readconfig (2)" />
+        <item itemvalue="Python.read_yaml" />
+        <item itemvalue="Python.readconfig (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -262,6 +290,21 @@
       <workItem from="1591926665664" duration="35000" />
       <workItem from="1591953564274" duration="2135000" />
       <workItem from="1592184565978" duration="15791000" />
+      <workItem from="1615859826835" duration="2201000" />
+      <workItem from="1615862074578" duration="262000" />
+      <workItem from="1615862355685" duration="182000" />
+      <workItem from="1615862558794" duration="165000" />
+      <workItem from="1615862744067" duration="1547000" />
+      <workItem from="1615873703545" duration="616000" />
+      <workItem from="1615874469416" duration="2109000" />
+      <workItem from="1615880305777" duration="3707000" />
+      <workItem from="1615884414666" duration="4548000" />
+      <workItem from="1615898705113" duration="142000" />
+      <workItem from="1615898867597" duration="4191000" />
+      <workItem from="1615903112358" duration="166000" />
+      <workItem from="1615903301960" duration="1029000" />
+      <workItem from="1615904421022" duration="1571000" />
+      <workItem from="1615906305688" duration="643000" />
     </task>
     <task id="LOCAL-00001" summary="pytest_Practice">
       <created>1587894928150</created>
@@ -479,7 +522,7 @@
     </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
@@ -503,5 +546,16 @@
     <MESSAGE value="代码维护" />
     <MESSAGE value="Default Changelist" />
     <option name="LAST_COMMIT_MESSAGE" value="Default Changelist" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/requests_srm$readconfig__2_.coverage" NAME="readconfig (2) 覆盖结果" MODIFIED="1615885501589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
+    <SUITE FILE_PATH="coverage/requests_srm$test_ExternalPortal_TestSRM_test_sysuser__pytest.coverage" NAME="test_ExternalPortal.TestSRM.test_sysuser 的 pytest 覆盖结果" MODIFIED="1615888302762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/SRM_TestCase" />
+    <SUITE FILE_PATH="coverage/requests_srm$readconfig__1_.coverage" NAME="readconfig (1) 覆盖结果" MODIFIED="1615881530731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/requests_srm$connect_oracle.coverage" NAME="connect_oracle 覆盖结果" MODIFIED="1615899035835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
+    <SUITE FILE_PATH="coverage/requests_srm$read_yaml.coverage" NAME="read_yaml 覆盖结果" MODIFIED="1615885250291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
+    <SUITE FILE_PATH="coverage/requests_srm$test_ExternalPortal_TestSRM_test_login__pytest.coverage" NAME="test_ExternalPortal.TestSRM.test_login 的 pytest 覆盖结果" MODIFIED="1615881256130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/SRM_TestCase" />
+    <SUITE FILE_PATH="coverage/requests_srm$test_ExternalPortal_TestSRM__pytest.coverage" NAME="test_ExternalPortal.TestSRM 的 pytest 覆盖结果" MODIFIED="1615864139930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/SRM_TestCase" />
+    <SUITE FILE_PATH="coverage/requests_srm$test_ExternalPortal_TestSRM_test_SysUser_state__pytest.coverage" NAME="test_ExternalPortal.TestSRM.test_SysUser_state 的 pytest 覆盖结果" MODIFIED="1615862095898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/SRM_TestCase" />
+    <SUITE FILE_PATH="coverage/requests_srm$readconfig.coverage" NAME="readconfig 覆盖结果" MODIFIED="1615881002711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
   </component>
 </project>

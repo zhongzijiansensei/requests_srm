@@ -3,9 +3,9 @@ import os
 import cx_Oracle
 from common.json_rewrite import DateEncoder
 from common.readconfig import ReadConfig
-
+#
 os.environ['NLS_LANG'] = 'SIMPLIFIED CHINESE_CHINA.UTF8'
-"""python version 3.7"""
+
 
 
 class Db_Oracle(object):
