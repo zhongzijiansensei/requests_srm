@@ -50,19 +50,19 @@ class TestSRM:
 
     '''用户新增接口'''
     # @pytest.mark.skip(reason="环境无法连接数据库")allure generate report/ -o allure-reports/
-    @pytest.mark.parametrize("username,phone,expect", testdata["sysuser_data"],
-                             ids=["正常新增用户",
-                                  "正常新增用户二"
-                                  ])
-    @allure.feature('登录测试用例接口')  # 测试报告显示测试功能
-    @allure.step('账号，密码登录')
-    def test_sysuser(self, sysUser_sql,gettokenfixture, username, phone, expect):  # 用户新增接口测试
-        s = gettokenfixture
-        self.log.info('-----用户新增接口-----')
-        shili = SRMBase(s)
-        msg = shili.sysuser(username, phone)
-        self.log.info('获取请求结果：%s' %msg.json())
-        assert  msg.json()["success"] == expect["success"]
+    # @pytest.mark.parametrize("username,phone,expect", testdata["sysuser_data"],
+    #                          ids=["正常新增用户",
+    #                               "正常新增用户二"
+    #                               ])
+    # @allure.feature('登录测试用例接口')  # 测试报告显示测试功能
+    # @allure.step('账号，密码登录')
+    # def test_sysuser(self, sysUser_sql,gettokenfixture, username, phone, expect):  # 用户新增接口测试
+    #     s = gettokenfixture
+    #     self.log.info('-----用户新增接口-----')
+    #     shili = SRMBase(s)
+    #     msg = shili.sysuser(username, phone)
+    #     self.log.info('获取请求结果：%s' %msg.json())
+    #     assert  msg.json()["success"] == expect["success"]
 
     '''用户查询接口'''
     @pytest.mark.parametrize("key,value,expect", testdata["sysUser_page_data"],

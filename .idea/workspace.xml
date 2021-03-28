@@ -5,37 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ca16193-d1f6-4e90-b09f-eaf2af98cbf0" name="Default Changelist" comment="Default Changelist">
-      <change afterPath="$PROJECT_DIR$/logs/2021_03_20.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2021_03_22.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2021_03_24.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2021_03_25.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2021_03_26.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/SRM_Base.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/SRM_Base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/add_teacher.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/api_sign.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/regiter_method.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/update_info_method.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/connect_mysql.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/connect_mysql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/connect_oracle.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/connect_oracle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/add_teacher_info.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/case_data.yml" beforeDir="false" afterPath="$PROJECT_DIR$/data/case_data.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/login_xadmin.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/regiter_data.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/update_info.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/测试.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_case/SRM_TestCase/test_ExternalPortal.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/SRM_TestCase/test_ExternalPortal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/add_teacher/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/SRM_TestCase/test_cp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/add_teacher/add_teacher.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/api_sign/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/api_sign/sign.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/regiter/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/regiter/regiter.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/updateinfo/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/updateinfo/updateinfo.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -327,7 +298,7 @@
       <workItem from="1616123584468" duration="16262000" />
       <workItem from="1616377376751" duration="15055000" />
       <workItem from="1616666356345" duration="289000" />
-      <workItem from="1616724693074" duration="10189000" />
+      <workItem from="1616724693074" duration="11046000" />
     </task>
     <task id="LOCAL-00001" summary="pytest_Practice">
       <created>1587894928150</created>
@@ -504,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615907054768</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Default Changelist">
+      <created>1616915338140</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1616915338140</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
