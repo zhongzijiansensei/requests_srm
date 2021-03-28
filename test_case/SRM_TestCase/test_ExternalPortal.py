@@ -119,3 +119,5 @@ class TestSRM:
         sta = SRMBase(s).sysUser_page("vendorAccount", "70061501")
         sta.msg =jsonpath.jsonpath(sta.json(),'$..state')[0]
         assert sta.msg == expect
+
+

@@ -61,3 +61,48 @@ class SRMBase(object):
         }
         return self.s.put(url, json=data)
 
+    '''采购申请查询'''
+    def cpLackMaterialSub_page(self, key, value):
+        url = os.environ["host"] +"/srm/api/v1/cpPurchaseRequest/page"
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '10',),
+            ("order", 'desc',),
+            ("pageFlag", 'true',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw", '[{"id":"","value":"%s","property":"%s","operator":"like"},'
+                           '{"id":"syncStatus100","property":"syncStatus","operator":"in",'
+                           '"value":"[100,200,300,400,500]"},{"id":"status200","property":"status",'
+                           '"operator":"in","value":"[200]"}]' %(value, key)),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms )
+
+    '''采购申请保存'''
+    def cpLackMaterialSub_save(self, caigouyuan, remark):
+        url = os.environ["host"]+"/srm/api/v1/cpPurchaseRequestDtlTemp/savePurchaseRequest"
+        data = {"buyerAccount":caigouyuan,
+                "buyerName":"钟子鉴",
+                "companyCode":"6100",
+                "companyId":"34f63026-8f2d-4f49-b630-268f2d6f4001",
+                "companyName":"板式家具公司",
+                "createBy":"zhongzijian",
+                "createTime":"2021-03-20 17:01:06",
+                "lastUpdateBy":"zhongzijian",
+                "lastUpdateTime":"2021-03-20 17:03:35",
+                "objectVersionNumber":"",
+                "purchaseOrgCode":"1000",
+                "purchaseOrgName":"采购供应部",
+                "purchaseRequestId":"11fb833b-6a32-4bfc-bb83-3b6a327bfca6",
+                "purchaseRequestNo":"PR2021032000011",
+                "reason":"",
+                "remark":remark,
+                "submitFlag":"false",
+                "tempId":"11fb833b-6a32-4bfc-bb83-3b6a327bfca6",
+                "purchaseOrgText":"[1000]采购供应部",
+                "buyerText":"[zhongzijian]钟子鉴"
+                }
+        return self.s.post(url, json=data)

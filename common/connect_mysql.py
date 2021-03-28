@@ -9,7 +9,7 @@ from common.readconfig import ReadConfig
 # }
 
 dbinfo = eval(ReadConfig().get_db("dbinfo"))
-
+# pymysql.connect('172.30.3.232','srmuat','Qy_srmuat', 1521)
 class DbConnect():
     def __init__(self, db_conf, database=""):
         self.db_conf = db_conf
@@ -25,7 +25,7 @@ class DbConnect():
         self.cursor.execute(sql)  # 执行sql
         results = self.cursor.fetchall()
         return results
-
+#
     def execute(self, sql):
         # sql 删除 提示 修改
         try:
@@ -38,7 +38,7 @@ class DbConnect():
     def close(self):
         self.db.close()  # 关闭连接
 
-
+#
 def select_sql(select_sql):
     '''查询数据库'''
     db = DbConnect(dbinfo, database='srmtest')
