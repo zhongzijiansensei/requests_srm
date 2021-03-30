@@ -32,5 +32,5 @@ cpLackMaterialSub_page_data:  #采购申请查询
   - ["remark","1","1"]
 
 cpLackMaterialSub_save_data: #采购申请保存
-#  - ["yangbo","自动备注","yangbo"]
-#  - ["zhongzijia","回归备注","zhongzijian"]
+  - ["yangbo","自动备注","yangbo"]
+  - ["zhongzijia","回归备注","zhongzijian"]
