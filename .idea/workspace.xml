@@ -5,8 +5,95 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ca16193-d1f6-4e90-b09f-eaf2af98cbf0" name="Default Changelist" comment="Default Changelist">
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/053b946d-a636-43db-9b1a-e49571c40069-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/0744bc8c-ed61-489e-8560-b6fa28c8411a-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/07e58757-d8dd-463a-8c20-829f3eb64690-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/0ec7d7ef-3c7f-44b3-bdb1-c91edc1aa8ca-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/0f055f5d-f724-4f98-b04a-2a62e886579f-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/113dbf1c-0262-45ef-b7f7-321c26880342-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/1340155d-94e6-4826-8671-774643e73448-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/1d03f61e-b72c-4b5a-abd2-f8dab0c0fa01-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/1e15c336-da7b-4248-b28e-63ba45d8521a-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/1e2a8c6e-ed5f-4cc2-a30b-d3601adab747-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/1ed53ca0-ca94-4318-8e33-3a0455eb7273-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/24aa2d00-f6c0-4b59-aef4-4becf78db810-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/252654ea-64ff-45e9-925e-0010928dc7e0-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/275b0667-581e-4e93-a692-acd2c82ee1ca-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/2af7df79-73ae-450d-8a70-adb4783ad0ed-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/2b5924ba-2a45-40c9-a2da-4576ad8a26c8-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/2c2843c0-0bbe-4f91-bd4d-0e21f7ff96f7-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/2c3b5edb-31ea-4319-91ec-f8070d0f189d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/2e376ec4-f6ae-4812-a5ed-8b7df2c42a05-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/3463171d-33dc-463d-a0a1-a079de4f3b92-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/3cacb652-8b15-4fd2-8a39-8c4a8ca43cc6-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/3db7ad37-32db-41be-823b-11799afa545d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/3e268018-79b2-4d5b-b986-46dda0ee6898-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/3fca317c-1a0b-4a3f-911e-93e884936b20-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/40231c0f-0683-4898-a3e1-d8104f6cc722-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/43e8e4b9-620f-4830-938b-e23729213f1c-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/44833d3a-4d3f-47bc-8a16-fe7beb516529-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/4605ec17-25a6-4661-bde8-5800ca1280fb-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/46e599c9-22c5-4569-8ff6-8f5c347f3d77-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/46edeb62-d545-46af-84e4-ec39f985d665-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/4e45d7a1-b522-47d7-837d-6781600e017d-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/526d9ceb-cf87-40c9-ad42-90547f20c501-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/531ffe7d-70bd-4a33-829e-4b2cf8a48972-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/55d692c2-79a4-4a1a-8ac7-ff861bbb9bdc-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/584b457a-3927-48bb-bf82-6e8de725e47d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/5bb62204-c290-4155-b989-2c23cd29b989-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/5eb6c7ea-cff8-48a0-996a-265fed231f57-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/6010155e-22ef-4538-a80d-89ea914d36bf-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/63081fcf-e9ca-40f7-bfcf-d522f17ae960-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/634aa381-61d6-48a6-972f-12af55853eaf-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/665f3deb-8ecd-4c25-9438-e60bf1d7b142-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/66e8c5b6-a284-4c59-bbed-6458c2ce415b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/6bb89550-9702-486e-9b36-57448b6eb8de-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/6d98a675-7991-4e7c-9769-7f9d6db7de5e-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/6eb3d467-e404-4762-90e2-96ca62f9934d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/6fe3621e-5acf-4e3a-8395-6a2a08fb37f9-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/7a9f2f33-3af6-4e56-9045-4083323ba857-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/80d4111c-7c43-4f2e-ab4c-92d34aff6b20-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/857db04f-7267-4134-a0cc-622fa7b98614-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/8652e61e-18d6-4abd-876b-2c5c358559dc-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/8a0d1040-e157-48b0-b0dd-557d76ff0e1d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/8b93c989-245d-4c5c-9dd9-69b62266e317-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/8caab79a-f0a3-4009-8082-f63790d1d7d3-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/8e5ad964-9b34-4011-a26f-47c35efffd39-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/93b20a8f-9637-494e-a758-6a7cc49d4077-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/93e85710-ac2e-48fb-ba96-1e43aac7854b-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/97449e10-4990-4018-8112-cbdf71dde2d0-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/9a39ffd0-592c-4a07-9f52-e82625b8c749-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/9e1e0acb-128c-4926-ab5b-57d14e83eb6c-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/9fa2c6c6-1529-4934-b941-1c55175806e5-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/aa40a769-e591-4ed6-a002-835b295f4d33-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/b28640b4-8bcf-4e44-8d76-8e0a418e3d5a-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/b7dbeb1a-5107-4ea5-a487-fd7ad28ef4e5-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/bb892d54-5bc8-4030-aa77-62aa0fa48fe2-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/bccc6cb6-4b67-44b8-8f37-78756f1d148e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/bdca148d-68a8-4b59-add1-a7a48e152030-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/c441b3ca-9f13-4842-873f-b35d17f36384-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/c5a56052-5ce0-4e37-b9b7-d77137d1ad89-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/c5f4be7d-56e0-4d82-8af9-d99bc1d6c647-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/c6c0ac34-64c1-418d-a356-43250dcd0cc5-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/c853dac5-934a-4319-9712-de4570a1b628-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/c9e0d036-b4a1-47f0-b8cd-b349b6ecb80a-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/ca30402f-f0f5-4a87-a27f-a51e7feb8683-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/cc518601-912f-45e4-b301-7d79aaccfb0f-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/cdb68275-a3b7-4a64-b1a1-b95b9a2036e8-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/d1588eac-64e0-49b9-8f28-8acfbb0f6ba6-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/d31e5eab-1681-41fb-8b1a-98d55ee8b9fe-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/d3b62145-4356-43b8-8fbf-f823a67c1852-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/d7a51f68-751f-4e6e-9a3f-936004e36943-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/dc04b3f8-1685-43da-a475-fa462e988b7d-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/ec9e71c0-948f-4a31-ae4b-6899e6d0b634-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/f1ec1cf7-5f74-468a-9a22-9514ba4d800c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/f40d2ca6-adab-4dda-bd4a-e2a3c6ba25fd-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${WORKSPACE}/allure-results/f59d381d-630c-4d06-b97f-92558df62a4d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021_03_29.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021_03_30.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/SRM_TestCase/test_ExternalPortal.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/SRM_TestCase/test_ExternalPortal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/SRM_TestCase/test_cp.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/SRM_TestCase/test_cp.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +213,7 @@
       <recent name="F:\python_test\pytest_project" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.connect_mysql">
+  <component name="RunManager" selected="Python 测试.test_cp.TestSrmCp.test_cpLackMaterialSub_save 的 pytest">
     <configuration name="connect_mysql" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pytest_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -188,7 +275,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="test_ExternalPortal.TestSRM.test_sysuser 的 pytest" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="test_ExternalPortal.TestSRM.test_sysUser_page 的 pytest" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="pytest_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -201,7 +288,7 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_ExternalPortal.TestSRM.test_sysuser&quot;" />
+      <option name="_new_target" value="&quot;test_ExternalPortal.TestSRM.test_sysUser_page&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -223,19 +310,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python 测试.test_ExternalPortal.TestSRM.test_login 的 pytest" />
-      <item itemvalue="Python 测试.test_ExternalPortal.TestSRM.test_sysuser 的 pytest" />
-      <item itemvalue="Python 测试.test_cp.TestSrmCp.test_cpLackMaterialSub_save 的 pytest" />
       <item itemvalue="Python.connect_oracle" />
       <item itemvalue="Python.connect_mysql" />
+      <item itemvalue="Python 测试.test_ExternalPortal.TestSRM.test_login 的 pytest" />
+      <item itemvalue="Python 测试.test_cp.TestSrmCp.test_cpLackMaterialSub_save 的 pytest" />
+      <item itemvalue="Python 测试.test_ExternalPortal.TestSRM.test_sysUser_page 的 pytest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python 测试.test_cp.TestSrmCp.test_cpLackMaterialSub_save 的 pytest" />
+        <item itemvalue="Python 测试.test_ExternalPortal.TestSRM.test_sysUser_page 的 pytest" />
         <item itemvalue="Python.connect_mysql" />
         <item itemvalue="Python.connect_oracle" />
         <item itemvalue="Python 测试.test_ExternalPortal.TestSRM.test_login 的 pytest" />
-        <item itemvalue="Python 测试.test_cp.TestSrmCp.test_cpLackMaterialSub_save 的 pytest" />
-        <item itemvalue="Python 测试.test_ExternalPortal.TestSRM.test_sysuser 的 pytest" />
       </list>
     </recent_temporary>
   </component>
@@ -298,7 +385,8 @@
       <workItem from="1616123584468" duration="16262000" />
       <workItem from="1616377376751" duration="15055000" />
       <workItem from="1616666356345" duration="289000" />
-      <workItem from="1616724693074" duration="11046000" />
+      <workItem from="1616724693074" duration="12698000" />
+      <workItem from="1617003224728" duration="3919000" />
     </task>
     <task id="LOCAL-00001" summary="pytest_Practice">
       <created>1587894928150</created>
@@ -482,7 +570,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616915338140</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Default Changelist">
+      <created>1616916147667</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1616916147667</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -567,8 +662,8 @@
     <SUITE FILE_PATH="coverage/requests_srm$test_cp_TestSrmCp_test_cpLackMaterialSub_page__pytest.coverage" NAME="test_cp.TestSrmCp.test_cpLackMaterialSub_page 的 pytest 覆盖结果" MODIFIED="1616229905280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/SRM_TestCase" />
     <SUITE FILE_PATH="coverage/requests_srm$connect_oracle.coverage" NAME="connect_oracle 覆盖结果" MODIFIED="1616752861062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
     <SUITE FILE_PATH="coverage/requests_srm$test_ExternalPortal_TestSRM_test_login__pytest.coverage" NAME="test_ExternalPortal.TestSRM.test_login 的 pytest 覆盖结果" MODIFIED="1616573956184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/SRM_TestCase" />
-    <SUITE FILE_PATH="coverage/requests_srm$test_ExternalPortal_TestSRM_test_sysUser_page__pytest.coverage" NAME="test_ExternalPortal.TestSRM.test_sysUser_page 的 pytest 覆盖结果" MODIFIED="1616225569858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/SRM_TestCase" />
-    <SUITE FILE_PATH="coverage/requests_srm$test_cp_TestSrmCp_test_cpLackMaterialSub_save__pytest.coverage" NAME="test_cp.TestSrmCp.test_cpLackMaterialSub_save 的 pytest 覆盖结果" MODIFIED="1616405063795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/SRM_TestCase" />
+    <SUITE FILE_PATH="coverage/requests_srm$test_ExternalPortal_TestSRM_test_sysUser_page__pytest.coverage" NAME="test_ExternalPortal.TestSRM.test_sysUser_page 的 pytest 覆盖结果" MODIFIED="1617008934260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/SRM_TestCase" />
+    <SUITE FILE_PATH="coverage/requests_srm$test_cp_TestSrmCp_test_cpLackMaterialSub_save__pytest.coverage" NAME="test_cp.TestSrmCp.test_cpLackMaterialSub_save 的 pytest 覆盖结果" MODIFIED="1617083905725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/SRM_TestCase" />
     <SUITE FILE_PATH="coverage/requests_srm$readconfig.coverage" NAME="readconfig 覆盖结果" MODIFIED="1615881002711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
   </component>
 </project>
