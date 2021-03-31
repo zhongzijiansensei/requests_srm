@@ -33,11 +33,19 @@ class TestSrmCp:
         else:
             result = jsonpath.jsonpath(msg.json(), '$..remark')[0]
             assert expect in result
-    @pytest.mark.parametrize("caigouyuan,remark,expect",testdata["cpLackMaterialSub_save_data"])
-    def test_cpLackMaterialSub_save(self, gettokenfixture, caigouyuan, remark, expect):
+    @pytest.mark.parametrize("caigouyuan,expect",testdata["cpLackMaterialSub_save_data"])
+    def test_cpLackMaterialSub_save(self, gettokenfixture, caigouyuan, expect):
         s = gettokenfixture
         self.log.info("-----采购申请保存接口-----")
         r = SRMBase(s)
-        msg = r.cpLackMaterialSub_save(caigouyuan, remark)
-        self.log.info("获取请求结果:%s"%msg.json())
+        msg = r.cpLackMaterialSub_save(caigouyuan)
+        self.log.info("获取请求结果:%s" % msg.json())
+        rem = r.cpLackMaterialSub_page("purchaseRequestNo", "PR2021032000011")
+        rem.cgy = jsonpath.jsonpath(rem.json(), '$..buyerAccount')[0]
+        rem.rem = jsonpath.jsonpath(rem.json(), '$..remark')[0]
+        # dp = remark
+        print(dp)
+        # print(rem.rem)
         assert msg.json()["success"] == 1
+        assert rem.cgy == expect
+        # assert rem.rem == msg.rem

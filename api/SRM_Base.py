@@ -1,7 +1,8 @@
 import os
 import requests
 from requests_toolbelt import MultipartEncoder
-
+import uuid
+remark = uuid.uuid4()
 class SRMBase(object):
     def __init__(self, s: requests.session):
         self.s = s
@@ -72,8 +73,8 @@ class SRMBase(object):
             ("onlyCountFlag", 'false',),
             ("filtersRaw", '[{"id":"","value":"%s","property":"%s","operator":"like"},'
                            '{"id":"syncStatus100","property":"syncStatus","operator":"in",'
-                           '"value":"[100,200,300,400,500]"},{"id":"status200","property":"status",'
-                           '"operator":"in","value":"[200]"}]' %(value, key)),
+                           '"value":"[100,200,300,400,500]"},{"id":"status100","property":"status",'
+                           '"operator":"in","value":"[100,200,300,400]"}]' %(value, key)),
         ]
         )
         headers = {
@@ -82,7 +83,8 @@ class SRMBase(object):
         return self.s.post(url, headers=headers, data=webforms )
 
     '''采购申请保存'''
-    def cpLackMaterialSub_save(self, caigouyuan, remark):
+    def cpLackMaterialSub_save(self, caigouyuan):
+
         url = os.environ["host"]+"/srm/api/v1/cpPurchaseRequestDtlTemp/savePurchaseRequest"
         data = {"buyerAccount":caigouyuan,
                 "buyerName":"钟子鉴",
@@ -99,7 +101,7 @@ class SRMBase(object):
                 "purchaseRequestId":"11fb833b-6a32-4bfc-bb83-3b6a327bfca6",
                 "purchaseRequestNo":"PR2021032000011",
                 "reason":"",
-                "remark":remark,
+                "remark":"{}".format(remark),
                 "submitFlag":"false",
                 "tempId":"11fb833b-6a32-4bfc-bb83-3b6a327bfca6",
                 "purchaseOrgText":"[1000]采购供应部",

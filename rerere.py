@@ -1,3 +1,3 @@
-import sys
-r = sys.executable
-print(r)
+import uuid
+remark = uuid.uuid4()
+print(remark)

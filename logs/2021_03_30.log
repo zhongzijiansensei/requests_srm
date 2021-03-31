@@ -89,3 +89,61 @@
 2021-03-30 13:59:37,866 - root - INFO - 获取请求结果: {'code': '', 'data': {'page': 1, 'records': [{'buyerAccount': 'zhou', 'buyerName': '钟子鉴', 'companyCode': '6100', 'companyName': '板式家具公司', 'createBy': 'zhongzijian', 'createTime': '2021-03-19 16:08:00', 'dataSource': 1, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'purchaseOrgCode': '1000', 'purchaseOrgName': '采购供应部', 'purchaseRequestDtlList': [], 'purchaseRequestId': '2d4ec627-9f04-45d1-8ec6-279f04a5d1db', 'purchaseRequestNo': 'PR2021031900001', 'reason': '', 'remark': '', 'state': 1, 'status': 200, 'syncMessage': '', 'syncStatus': 500}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
 2021-03-30 13:59:37,870 - root - INFO - ----采购申请查询接口口----
 2021-03-30 13:59:37,993 - root - INFO - 获取请求结果: {'code': '', 'data': {'page': 1, 'records': [{'buyerAccount': 'liuliang', 'buyerName': '刘亮', 'companyCode': '6100', 'companyName': '板式家具公司', 'createBy': 'liuliang', 'createTime': '2021-03-10 10:46:03', 'dataSource': 1, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'purchaseOrgCode': '1000', 'purchaseOrgName': '采购供应部', 'purchaseRequestDtlList': [], 'purchaseRequestId': '5bd151b4-689b-4ef9-9151-b4689b0ef9be', 'purchaseRequestNo': 'PR2021031000002', 'reason': '', 'remark': '2123', 'state': 1, 'status': 200, 'syncMessage': '', 'syncStatus': 500}, {'buyerAccount': 'xushuxian', 'buyerName': '许淑贤', 'companyCode': '6100', 'companyName': '板式家具公司', 'createBy': 'xushuxian', 'createTime': '2021-03-04 17:14:37', 'dataSource': 1, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'purchaseOrgCode': '1000', 'purchaseOrgName': '采购供应部', 'purchaseRequestDtlList': [], 'purchaseRequestId': '10103614-b075-427f-9036-14b075527fe8', 'purchaseRequestNo': 'PR2021030400004', 'reason': '', 'remark': '1234567', 'state': 1, 'status': 200, 'syncMessage': '', 'syncStatus': 500}, {'buyerAccount': 'xushuxian', 'buyerName': '许淑贤', 'companyCode': '6100', 'companyName': '板式家具公司', 'createBy': 'xushuxian', 'createTime': '2021-03-04 17:11:55', 'dataSource': 1, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'purchaseOrgCode': '1000', 'purchaseOrgName': '采购供应部', 'purchaseRequestDtlList': [], 'purchaseRequestId': '0ae98c24-fc8f-4587-a98c-24fc8fa587af', 'purchaseRequestNo': 'PR2021030400003', 'reason': '', 'remark': '1231313', 'state': 1, 'status': 200, 'syncMessage': '', 'syncStatus': 500}, {'buyerAccount': 'wuxi', 'buyerName': '吴茜', 'companyCode': '6100', 'companyName': '板式家具公司', 'createBy': 'wuxi', 'createTime': '2020-09-08 08:31:54', 'dataSource': 1, 'lastUpdateBy': 'wuxi', 'lastUpdateTime': '2020-09-08 10:45:43', 'objectVersionNumber': None, 'purchaseOrgCode': '1000', 'purchaseOrgName': '采购供应部', 'purchaseRequestDtlList': [], 'purchaseRequestId': '5b770b55-2437-4671-b70b-5524374671f5', 'purchaseRequestNo': 'PR2020090800001', 'reason': '', 'remark': '11', 'state': 1, 'status': 200, 'syncMessage': '', 'syncStatus': 500}, {'buyerAccount': 'wuxi', 'buyerName': '吴茜', 'companyCode': '6800', 'companyName': '销售公司', 'createBy': 'wuxi', 'createTime': '2020-08-10 17:34:00', 'dataSource': 1, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'purchaseOrgCode': '2000', 'purchaseOrgName': '销售公司', 'purchaseRequestDtlList': [], 'purchaseRequestId': 'af614af4-2cfd-4e7d-a14a-f42cfdbe7d8d', 'purchaseRequestNo': 'PR2020081000003', 'reason': '', 'remark': '测试6813工厂采购采购', 'state': 1, 'status': 200, 'syncMessage': '', 'syncStatus': 500}, {'buyerAccount': 'wuxi', 'buyerName': '吴茜', 'companyCode': '6100', 'companyName': '板式家具公司', 'createBy': 'wuxi', 'createTime': '2020-07-20 17:58:26', 'dataSource': 1, 'lastUpdateBy': 'wuxi', 'lastUpdateTime': '2020-07-20 18:00:04', 'objectVersionNumber': None, 'purchaseOrgCode': '1000', 'purchaseOrgName': '采购供应部', 'purchaseRequestDtlList': [], 'purchaseRequestId': 'bc6372ae-e15c-42fb-a372-aee15ce2fb37', 'purchaseRequestNo': 'PR2020072000006', 'reason': '', 'remark': '1234567890', 'state': 1, 'status': 200, 'syncMessage': '', 'syncStatus': 500}], 'rows': 10, 'total': 6}, 'msg': '', 'success': 1}
+2021-03-30 16:52:40,992 - root - INFO - ------用户登录接口-----
+2021-03-30 16:52:41,213 - root - INFO - 获取请求结果：{'timestamp': '2021-03-30 16:52:18', 'path': '//auth/oauth/token', 'status': 404, 'error': 'Not Found', 'message': None}
+2021-03-30 16:52:41,307 - root - INFO - ------用户登录接口-----
+2021-03-30 16:52:41,344 - root - INFO - 获取请求结果：{'timestamp': '2021-03-30 16:52:18', 'path': '//auth/oauth/token', 'status': 404, 'error': 'Not Found', 'message': None}
+2021-03-30 16:52:41,352 - root - INFO - ------用户登录接口-----
+2021-03-30 16:52:41,388 - root - INFO - 获取请求结果：{'timestamp': '2021-03-30 16:52:18', 'path': '//auth/oauth/token', 'status': 404, 'error': 'Not Found', 'message': None}
+2021-03-30 16:52:41,396 - root - INFO - ------用户登录接口-----
+2021-03-30 16:52:41,448 - root - INFO - 获取请求结果：{'timestamp': '2021-03-30 16:52:18', 'path': '//auth/oauth/token', 'status': 404, 'error': 'Not Found', 'message': None}
+2021-03-30 16:52:41,456 - root - INFO - ------用户登录接口-----
+2021-03-30 16:52:41,493 - root - INFO - 获取请求结果：{'timestamp': '2021-03-30 16:52:19', 'path': '//auth/oauth/token', 'status': 404, 'error': 'Not Found', 'message': None}
+2021-03-30 16:52:41,722 - root - INFO - -----用户查询接口-----
+2021-03-30 16:52:41,762 - root - INFO - 获取请求结果：{'timestamp': '2021-03-30 16:52:19', 'path': '//srm/api/v1/sysUser/page', 'status': 404, 'error': 'Not Found', 'message': None}
+2021-03-30 16:52:41,770 - root - INFO - -----用户编辑接口-----
+2021-03-30 16:52:41,784 - root - INFO - 获取请求结果:{'timestamp': '2021-03-30 16:52:19', 'path': '//srm/api/v1/sysUser', 'status': 404, 'error': 'Not Found', 'message': None}
+2021-03-30 16:52:41,797 - root - INFO - 获取请求结果:{'timestamp': '2021-03-30 16:52:19', 'path': '//srm/api/v1/sysUser/page', 'status': 404, 'error': 'Not Found', 'message': None}
+2021-03-30 16:52:41,804 - root - INFO - -----用户编辑接口-----
+2021-03-30 16:52:41,821 - root - INFO - 获取请求结果:{'timestamp': '2021-03-30 16:52:19', 'path': '//srm/api/v1/sysUser', 'status': 404, 'error': 'Not Found', 'message': None}
+2021-03-30 16:52:41,836 - root - INFO - 获取请求结果:{'timestamp': '2021-03-30 16:52:19', 'path': '//srm/api/v1/sysUser/page', 'status': 404, 'error': 'Not Found', 'message': None}
+2021-03-30 16:52:41,844 - root - INFO - -----用户编辑接口-----
+2021-03-30 16:52:41,862 - root - INFO - 获取请求结果:{'timestamp': '2021-03-30 16:52:19', 'path': '//srm/api/v1/sysUser', 'status': 404, 'error': 'Not Found', 'message': None}
+2021-03-30 16:52:41,880 - root - INFO - 获取请求结果:{'timestamp': '2021-03-30 16:52:19', 'path': '//srm/api/v1/sysUser/page', 'status': 404, 'error': 'Not Found', 'message': None}
+2021-03-30 16:52:41,982 - root - INFO - ----采购申请查询接口口----
+2021-03-30 16:52:42,005 - root - INFO - 获取请求结果: {'timestamp': '2021-03-30 16:52:19', 'path': '//srm/api/v1/cpPurchaseRequest/page', 'status': 404, 'error': 'Not Found', 'message': None}
+2021-03-30 16:52:42,029 - root - INFO - ----采购申请查询接口口----
+2021-03-30 16:52:42,044 - root - INFO - 获取请求结果: {'timestamp': '2021-03-30 16:52:19', 'path': '//srm/api/v1/cpPurchaseRequest/page', 'status': 404, 'error': 'Not Found', 'message': None}
+2021-03-30 16:52:42,053 - root - INFO - -----采购申请保存接口-----
+2021-03-30 16:52:42,069 - root - INFO - 获取请求结果:{'timestamp': '2021-03-30 16:52:19', 'path': '//srm/api/v1/cpPurchaseRequestDtlTemp/savePurchaseRequest', 'status': 404, 'error': 'Not Found', 'message': None}
+2021-03-30 16:52:42,074 - root - INFO - -----采购申请保存接口-----
+2021-03-30 16:52:42,094 - root - INFO - 获取请求结果:{'timestamp': '2021-03-30 16:52:19', 'path': '//srm/api/v1/cpPurchaseRequestDtlTemp/savePurchaseRequest', 'status': 404, 'error': 'Not Found', 'message': None}
+2021-03-30 17:13:02,386 - root - INFO - ------用户登录接口-----
+2021-03-30 17:13:02,619 - root - INFO - 获取请求结果：{'access_token': 'dbdf846d-941e-4f9f-b55b-683f6d529332', 'token_type': 'bearer', 'refresh_token': 'e08699a5-7964-4adf-84f8-c3f8bf904991', 'expires_in': 42407, 'scope': 'server', 'license': 'made by qup'}
+2021-03-30 17:13:02,625 - root - INFO - ------用户登录接口-----
+2021-03-30 17:13:02,788 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-30 17:13:02,794 - root - INFO - ------用户登录接口-----
+2021-03-30 17:13:02,960 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-30 17:13:02,966 - root - INFO - ------用户登录接口-----
+2021-03-30 17:13:03,142 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-30 17:13:03,146 - root - INFO - ------用户登录接口-----
+2021-03-30 17:13:03,314 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-03-30 17:13:03,551 - root - INFO - -----用户查询接口-----
+2021-03-30 17:13:06,655 - root - INFO - 获取请求结果：{'timestamp': '2021-03-30 17:12:44', 'path': '/srm/api/v1/sysUser/page', 'status': 500, 'error': 'Internal Server Error', 'message': None}
+2021-03-30 17:13:06,750 - root - INFO - -----用户编辑接口-----
+2021-03-30 17:13:09,798 - root - INFO - 获取请求结果:{'timestamp': '2021-03-30 17:12:47', 'path': '/srm/api/v1/sysUser', 'status': 500, 'error': 'Internal Server Error', 'message': None}
+2021-03-30 17:13:09,855 - root - INFO - 获取请求结果:{'success': 0, 'code': '401', 'msg': 'error', 'data': '260dcd5b-fb5e-4928-a46c-5c01ea0f80c6'}
+2021-03-30 17:13:09,862 - root - INFO - -----用户编辑接口-----
+2021-03-30 17:13:12,989 - root - INFO - 获取请求结果:{'timestamp': '2021-03-30 17:12:50', 'path': '/srm/api/v1/sysUser', 'status': 500, 'error': 'Internal Server Error', 'message': None}
+2021-03-30 17:13:16,030 - root - INFO - 获取请求结果:{'timestamp': '2021-03-30 17:12:53', 'path': '/srm/api/v1/sysUser/page', 'status': 500, 'error': 'Internal Server Error', 'message': None}
+2021-03-30 17:13:16,038 - root - INFO - -----用户编辑接口-----
+2021-03-30 17:13:16,076 - root - INFO - 获取请求结果:{'success': 0, 'code': '401', 'msg': 'error', 'data': '260dcd5b-fb5e-4928-a46c-5c01ea0f80c6'}
+2021-03-30 17:13:19,198 - root - INFO - 获取请求结果:{'timestamp': '2021-03-30 17:12:56', 'path': '/srm/api/v1/sysUser/page', 'status': 500, 'error': 'Internal Server Error', 'message': None}
+2021-03-30 17:13:28,450 - root - INFO - ----采购申请查询接口口----
+2021-03-30 17:13:28,473 - root - INFO - 获取请求结果: {'success': 0, 'code': '401', 'msg': 'error', 'data': '260dcd5b-fb5e-4928-a46c-5c01ea0f80c6'}
+2021-03-30 17:13:28,479 - root - INFO - ----采购申请查询接口口----
+2021-03-30 17:13:31,552 - root - INFO - 获取请求结果: {'timestamp': '2021-03-30 17:13:09', 'path': '/srm/api/v1/cpPurchaseRequest/page', 'status': 500, 'error': 'Internal Server Error', 'message': None}
+2021-03-30 17:13:31,559 - root - INFO - -----采购申请保存接口-----
+2021-03-30 17:13:34,613 - root - INFO - 获取请求结果:{'timestamp': '2021-03-30 17:13:12', 'path': '/srm/api/v1/cpPurchaseRequestDtlTemp/savePurchaseRequest', 'status': 500, 'error': 'Internal Server Error', 'message': None}
+2021-03-30 17:13:34,619 - root - INFO - -----采购申请保存接口-----
+2021-03-30 17:13:34,645 - root - INFO - 获取请求结果:{'success': 0, 'code': '401', 'msg': 'error', 'data': '260dcd5b-fb5e-4928-a46c-5c01ea0f80c6'}
