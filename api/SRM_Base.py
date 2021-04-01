@@ -2,7 +2,7 @@ import os
 import requests
 from requests_toolbelt import MultipartEncoder
 import uuid
-remark = uuid.uuid4()
+
 class SRMBase(object):
     def __init__(self, s: requests.session):
         self.s = s
@@ -84,7 +84,7 @@ class SRMBase(object):
 
     '''采购申请保存'''
     def cpLackMaterialSub_save(self, caigouyuan):
-
+        remark = uuid.uuid4()
         url = os.environ["host"]+"/srm/api/v1/cpPurchaseRequestDtlTemp/savePurchaseRequest"
         data = {"buyerAccount":caigouyuan,
                 "buyerName":"钟子鉴",
@@ -107,4 +107,5 @@ class SRMBase(object):
                 "purchaseOrgText":"[1000]采购供应部",
                 "buyerText":"[zhongzijian]钟子鉴"
                 }
-        return self.s.post(url, json=data)
+        r = self.s.post(url, json=data)
+        return r,remark

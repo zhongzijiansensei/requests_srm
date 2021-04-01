@@ -8,13 +8,13 @@ import json
 import jsonpath
 from common.connect_oracle import Db_Oracle
 import os
-import uuid
-
+import re
 
 class TestSrmCp:
     log = Log()
     testdata = ReadYaml("case_data.yml").get_yaml_data()
 
+    @pytest.mark.prod
     @pytest.mark.parametrize("key,value,expect", testdata["cpLackMaterialSub_page_data"],
                              ids=["查询采购申请号",
                                   "查询备注"
@@ -33,19 +33,19 @@ class TestSrmCp:
         else:
             result = jsonpath.jsonpath(msg.json(), '$..remark')[0]
             assert expect in result
-    @pytest.mark.parametrize("caigouyuan,expect",testdata["cpLackMaterialSub_save_data"])
+
+    @pytest.mark.parametrize("caigouyuan,expect", testdata["cpLackMaterialSub_save_data"])
     def test_cpLackMaterialSub_save(self, gettokenfixture, caigouyuan, expect):
         s = gettokenfixture
         self.log.info("-----采购申请保存接口-----")
         r = SRMBase(s)
         msg = r.cpLackMaterialSub_save(caigouyuan)
-        self.log.info("获取请求结果:%s" % msg.json())
+        jg = msg[0]
+        self.log.info("获取请求结果:%s" % jg.json())
         rem = r.cpLackMaterialSub_page("purchaseRequestNo", "PR2021032000011")
         rem.cgy = jsonpath.jsonpath(rem.json(), '$..buyerAccount')[0]
         rem.rem = jsonpath.jsonpath(rem.json(), '$..remark')[0]
-        # dp = remark
-        print(dp)
-        # print(rem.rem)
-        assert msg.json()["success"] == 1
+        assert jg.json()["success"] == 1
         assert rem.cgy == expect
-        # assert rem.rem == msg.rem
+        assert rem.rem == "{}".format(msg[1])
+        # assert rem.rem == re.findall(r'UUID("(.+?)")',msg[1])
