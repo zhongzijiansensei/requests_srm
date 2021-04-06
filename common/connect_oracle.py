@@ -17,6 +17,7 @@ class Db_Oracle(object):
         sid = ReadConfig().get_cx('sid')
         self.connect = cx_Oracle.connect(user + "/" + pwd + "@" + ip + ":" + host + "/" + sid)
         self.cursor = self.connect.cursor()
+        print(user)
 
     def select(self, sql):
         li = []

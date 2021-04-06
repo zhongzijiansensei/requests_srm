@@ -23,5 +23,14 @@
         </value>
       </option>
     </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredBaseClasses">
+        <list>
+          <option value="unittest.TestCase" />
+          <option value="unittest.case.TestCase" />
+          <option value="test_case.SRM_TestCase.test_cp.TestSrmCp" />
+        </list>
+      </option>
+    </inspection_tool>
   </profile>
 </component>

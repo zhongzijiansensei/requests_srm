@@ -33,7 +33,6 @@ class TestSrmCp:
         else:
             result = jsonpath.jsonpath(msg.json(), '$..remark')[0]
             assert expect in result
-
     @pytest.mark.parametrize("caigouyuan,expect", testdata["cpLackMaterialSub_save_data"])
     def test_cpLackMaterialSub_save(self, gettokenfixture, caigouyuan, expect):
         s = gettokenfixture
@@ -48,4 +47,3 @@ class TestSrmCp:
         assert jg.json()["success"] == 1
         assert rem.cgy == expect
         assert rem.rem == "{}".format(msg[1])
-        # assert rem.rem == re.findall(r'UUID("(.+?)")',msg[1])

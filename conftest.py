@@ -11,8 +11,8 @@ def gettokenfixture():
     s = requests.session()
     shili = Get_Token(s)
     shili.get_token()
-    if not s.headers.get("Authorization", ""):  # 没有get到token，跳出用例
-        pytest.skip("跳过用例")
+    # if not s.headers.get("Authorization", ""):  # 没有get到token，跳出用例
+    #     pytest.skip("跳过用例")
     yield s
     s.close()
 

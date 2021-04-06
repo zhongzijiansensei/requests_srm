@@ -55,6 +55,6 @@ def execute_sql(sql):
 
 
 if __name__ == '__main__':
-    sql = 'delete from SYS_USER WHERE PHONE = 15555555551'
-    delete = execute_sql(sql)
+    sql = 'select * from SYSTEM_USER  where  PHONE = 15555555551'
+    delete = select_sql(sql)
     print(delete)
