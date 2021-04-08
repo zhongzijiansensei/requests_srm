@@ -6,7 +6,6 @@ from common.read_yaml import ReadYaml
 from api.SRM_Base import SRMBase
 import jsonpath
 from common.connect_oracle import Db_Oracle
-import os
 import re
 
 class TestSrmCp:
