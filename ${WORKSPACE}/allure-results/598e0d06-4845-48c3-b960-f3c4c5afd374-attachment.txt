@@ -1,5 +1,0 @@
-INFO     root:logger.py:34 -----用户编辑接口-----
-DEBUG    urllib3.connectionpool:connectionpool.py:433 https://qupuat.quanyou.com.cn:443 "PUT /srm/api/v1/sysUser HTTP/1.1" 200 60
-INFO     root:logger.py:34 获取请求结果:{'code': '', 'data': None, 'msg': '手机号重复!', 'success': 0}
-DEBUG    urllib3.connectionpool:connectionpool.py:433 https://qupuat.quanyou.com.cn:443 "POST /srm/api/v1/sysUser/page HTTP/1.1" 200 647
-INFO     root:logger.py:34 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-04-07 05:00:08', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '测试供应商101', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}

@@ -1,4 +1,0 @@
-INFO     root:logger.py:34 ------用户登录接口-----
-DEBUG    urllib3.connectionpool:connectionpool.py:939 Starting new HTTPS connection (1): qupuat.quanyou.com.cn:443
-DEBUG    urllib3.connectionpool:connectionpool.py:433 https://qupuat.quanyou.com.cn:443 "POST /auth/oauth/token?username=zhongzijian&password=z08uNL3e%2FE8FtxpNDH%2BRwQ%3D%3D&grant_type=password&scope=server HTTP/1.1" 200 None
-INFO     root:logger.py:34 获取请求结果：{'access_token': '4d2f0e07-ccb0-4b7e-a340-8398aa04979b', 'token_type': 'bearer', 'refresh_token': '5f091c32-ce50-438c-bceb-73c985f14cb2', 'expires_in': 13556, 'scope': 'server', 'license': 'made by qup'}
