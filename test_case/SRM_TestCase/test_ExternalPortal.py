@@ -29,7 +29,6 @@ class TestSRM:
                                   "账号错误登录",
                                   "密码错误登录",
                                   "账号存在空格登录",
-                                  "密码存在空格登录",
                                   "账号存在特殊符号登录",
                                   "密码存在特殊符号登录",
                                   ])  # 参数化测试用例
@@ -101,20 +100,20 @@ class TestSRM:
         assert result1 == expect1
         assert  result2 == expect2
 
-    '''用户启停接口'''
-    @pytest.mark.parametrize("state,expect", testdata["sysuser_state_data"],
-                             ids=["停用用户",
-                                  "启用用户"
-                                  ])
-    @allure.feature('用户启停接口')  # 测试报告显示测试功能
-    def test_SysUser_state(self, gettokenfixture, state, expect):
-        s = gettokenfixture
-        url = os.environ["host"] + "/srm/api/v1/sysUser/state"
-        data = {"account":70061501,
-                "state":state}
-        msg = s.put(url, data=data)
-        sta = SRMBase(s).sysUser_page("vendorAccount", "70061501")
-        sta.msg =jsonpath.jsonpath(sta.json(),'$..state')[0]
-        assert sta.msg == expect
+    # '''用户启停接口'''
+    # @pytest.mark.parametrize("state,expect", testdata["sysuser_state_data"],
+    #                          ids=["停用用户",
+    #                               "启用用户"
+    #                               ])
+    # @allure.feature('用户启停接口')  # 测试报告显示测试功能
+    # def test_SysUser_state(self, gettokenfixture, state, expect):
+    #     s = gettokenfixture
+    #     url = os.environ["host"] + "/srm/api/v1/sysUser/state"
+    #     data = {"account":70061501,
+    #             "state":state}
+    #     msg = s.put(url, data=data)
+    #     sta = SRMBase(s).sysUser_page("vendorAccount", "70061501")
+    #     sta.msg =jsonpath.jsonpath(sta.json(),'$..state')[0]
+    #     assert sta.msg == expect
 
 
