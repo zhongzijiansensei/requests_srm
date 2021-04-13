@@ -1,0 +1,59 @@
+2021-04-09 10:45:12,679 - root - INFO - ----采购申请提交接口----
+2021-04-09 10:46:36,211 - root - INFO - ----采购申请提交接口----
+2021-04-09 10:46:36,239 - root - INFO - UUID为e5a594f5-a830-49df-a594-f5a83049dff9
+2021-04-09 10:46:36,320 - root - INFO - 获取请求结果{'timestamp': '2021-04-09 10:46:36', 'status': 415, 'error': 'Unsupported Media Type', 'message': 'Unsupported Media Type', 'path': '/api/v1/cpPurchaseRequestDtlTemp/savePurchaseRequest'}
+2021-04-09 10:48:45,603 - root - INFO - ----采购申请提交接口----
+2021-04-09 10:48:45,630 - root - INFO - UUID为16cb2dcb-7799-4f40-8b2d-cb77995f40d4
+2021-04-09 10:48:45,685 - root - INFO - 获取请求结果{'timestamp': '2021-04-09 10:48:45', 'status': 415, 'error': 'Unsupported Media Type', 'message': 'Unsupported Media Type', 'path': '/api/v1/cpPurchaseRequestDtlTemp/savePurchaseRequest'}
+2021-04-09 10:49:04,197 - root - INFO - ----采购申请提交接口----
+2021-04-09 10:49:04,224 - root - INFO - UUID为21db9675-2548-4c2f-9b96-752548ac2f62
+2021-04-09 10:49:04,265 - root - INFO - 获取请求结果{'timestamp': '2021-04-09 10:49:04', 'status': 415, 'error': 'Unsupported Media Type', 'message': 'Unsupported Media Type', 'path': '/api/v1/cpPurchaseRequestDtlTemp/savePurchaseRequest'}
+2021-04-09 10:49:38,664 - root - INFO - ----采购申请提交接口----
+2021-04-09 10:49:38,691 - root - INFO - UUID为10a301a1-0e0e-4c3b-a301-a10e0eec3bb5
+2021-04-09 10:49:38,743 - root - INFO - 获取请求结果{'timestamp': '2021-04-09 10:49:38', 'status': 415, 'error': 'Unsupported Media Type', 'message': 'Unsupported Media Type', 'path': '/api/v1/cpPurchaseRequestDtlTemp/savePurchaseRequest'}
+2021-04-09 10:50:06,650 - root - INFO - ----采购申请提交接口----
+2021-04-09 10:50:06,673 - root - INFO - UUID为482cc409-b387-4f2a-acc4-09b3875f2aec
+2021-04-09 10:50:06,731 - root - INFO - 获取请求结果{'timestamp': '2021-04-09 10:50:06', 'status': 415, 'error': 'Unsupported Media Type', 'message': 'Unsupported Media Type', 'path': '/api/v1/cpPurchaseRequestDtlTemp/savePurchaseRequest'}
+2021-04-09 10:51:09,278 - root - INFO - ----采购申请提交接口----
+2021-04-09 10:51:09,304 - root - INFO - UUID为a0ef15aa-fc0a-40ae-af15-aafc0a10aec9
+2021-04-09 10:51:09,347 - root - INFO - 获取请求结果{'timestamp': '2021-04-09 10:51:09', 'status': 415, 'error': 'Unsupported Media Type', 'message': 'Unsupported Media Type', 'path': '/api/v1/cpPurchaseRequestDtlTemp/savePurchaseRequest'}
+2021-04-09 10:52:29,669 - root - INFO - ----采购申请提交接口----
+2021-04-09 10:52:29,693 - root - INFO - UUID为56591518-8223-4923-9915-18822359232b
+2021-04-09 10:52:29,734 - root - INFO - 获取请求结果{'timestamp': '2021-04-09 10:52:29', 'status': 415, 'error': 'Unsupported Media Type', 'message': 'Unsupported Media Type', 'path': '/api/v1/cpPurchaseRequestDtlTemp/savePurchaseRequest'}
+2021-04-09 10:52:57,460 - root - INFO - ----采购申请提交接口----
+2021-04-09 10:52:57,488 - root - INFO - UUID为7c92df9a-3a66-442b-92df-9a3a66742ba7
+2021-04-09 10:52:57,546 - root - INFO - 获取请求结果{'timestamp': '2021-04-09 10:52:57', 'status': 415, 'error': 'Unsupported Media Type', 'message': 'Unsupported Media Type', 'path': '/api/v1/cpPurchaseRequestDtlTemp/savePurchaseRequest'}
+2021-04-09 10:53:52,027 - root - INFO - ----采购申请提交接口----
+2021-04-09 10:53:52,055 - root - INFO - UUID为30607e8f-1a81-4c1b-a07e-8f1a81dc1bd9
+2021-04-09 10:53:52,104 - root - INFO - 获取请求结果{'timestamp': '2021-04-09 10:53:52', 'status': 415, 'error': 'Unsupported Media Type', 'message': 'Unsupported Media Type', 'path': '/api/v1/cpPurchaseRequestDtlTemp/savePurchaseRequest'}
+2021-04-09 10:59:38,028 - root - INFO - ----采购申请提交接口----
+2021-04-09 10:59:38,054 - root - INFO - UUID为835324d1-6e7c-42f8-9324-d16e7cf2f832
+2021-04-09 11:01:01,266 - root - INFO - ----采购申请提交接口----
+2021-04-09 11:01:01,291 - root - INFO - UUID为2077f985-b834-4886-b7f9-85b834e886b7
+2021-04-09 11:02:38,170 - root - INFO - ----采购申请提交接口----
+2021-04-09 11:02:38,197 - root - INFO - UUID为c3ea08a3-24a9-402f-aa08-a324a9b02fcd
+2021-04-09 11:02:38,242 - root - INFO - 获取请求结果{'timestamp': '2021-04-09 11:02:38', 'status': 415, 'error': 'Unsupported Media Type', 'message': 'Unsupported Media Type', 'path': '/api/v1/cpPurchaseRequestDtlTemp/savePurchaseRequest'}
+2021-04-09 11:03:28,886 - root - INFO - ----采购申请提交接口----
+2021-04-09 11:03:28,910 - root - INFO - UUID为b5a3b36b-0acf-4e34-a3b3-6b0acf4e34a9
+2021-04-09 11:03:28,950 - root - INFO - 获取请求结果{'timestamp': '2021-04-09 11:03:28', 'status': 415, 'error': 'Unsupported Media Type', 'message': 'Unsupported Media Type', 'path': '/api/v1/cpPurchaseRequestDtlTemp/savePurchaseRequest'}
+2021-04-09 11:03:53,634 - root - INFO - ----采购申请提交接口----
+2021-04-09 11:03:53,660 - root - INFO - UUID为0a7c6f1e-3e44-4058-bc6f-1e3e44b058a2
+2021-04-09 11:03:53,712 - root - INFO - 获取请求结果{'timestamp': '2021-04-09 11:03:53', 'status': 415, 'error': 'Unsupported Media Type', 'message': 'Unsupported Media Type', 'path': '/api/v1/cpPurchaseRequestDtlTemp/savePurchaseRequest'}
+2021-04-09 11:08:01,108 - root - INFO - ----采购申请提交接口----
+2021-04-09 11:08:01,137 - root - INFO - UUID为6c241031-0697-47dd-a410-31069787ddd6
+2021-04-09 11:08:01,565 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-09 11:09:26,861 - root - INFO - ----采购申请提交接口----
+2021-04-09 11:09:26,894 - root - INFO - UUID为8c76f2e1-10ba-4006-b6f2-e110bad00613
+2021-04-09 11:09:26,984 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-09 11:11:46,870 - root - INFO - ----采购申请提交接口----
+2021-04-09 11:11:46,896 - root - INFO - UUID为ab05eecd-43de-4278-85ee-cd43de2278b2
+2021-04-09 11:11:47,001 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-09 17:53:14,968 - root - INFO - ----采购申请提交接口----
+2021-04-09 17:53:14,995 - root - INFO - UUID为cd6f8e38-d997-402c-af8e-38d997102c85
+2021-04-09 17:53:15,354 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-09 17:53:15,358 - root - INFO - ----采购申请提交接口----
+2021-04-09 17:53:15,485 - root - INFO - UUID为a4c137c6-9266-4d91-8137-c69266fd9199
+2021-04-09 17:53:15,615 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-09 17:53:15,619 - root - INFO - ----采购申请提交接口----
+2021-04-09 17:53:15,655 - root - INFO - UUID为07fafcfa-b512-4fac-bafc-fab5129fac7a
+2021-04-09 17:53:15,790 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}

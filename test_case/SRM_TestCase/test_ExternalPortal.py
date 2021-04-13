@@ -24,16 +24,16 @@ class TestSRM:
 
     @pytest.mark.parametrize("username,pwd,expect", testdata["test_login_data"],
                              ids=["正常登录",
-                                  # "密码为空登录",
+                                  "密码为空登录",
                                   "账号为空登录",
                                   "账号错误登录",
-                                  # "密码错误登录",
+                                  "密码错误登录",
                                   "账号存在空格登录",
-                                  # "密码存在空格登录",
+                                  "密码存在空格登录",
                                   "账号存在特殊符号登录",
-                                  # "密码存在特殊符号登录",
+                                  "密码存在特殊符号登录",
                                   ])  # 参数化测试用例
-    @allure.feature('登录测试用例接口')  # 测试报告显示测试功能
+    @allure.feature('登录接口')  # 测试报告显示测试功能
     @allure.step('账号，密码登录')  # 测试报告显示步骤
     @allure.link('https://qupuat.quanyou.com.cn/', name='QUP登录接口')  # 测试报告显示链接
     def test_login(self, username, pwd, expect):  # 登录接口测试
@@ -49,27 +49,25 @@ class TestSRM:
             assert msg.json()["msg"] == expect['msg']
 
     '''用户新增接口'''
-    # # @pytest.mark.skip(reason="环境无法连接数据库")allure generate report/ -o allure-reports/
-    # @pytest.mark.parametrize("username,phone,expect", testdata["sysuser_data"],
-    #                          ids=["正常新增用户",
-    #                               "正常新增用户二"
-    #                               ])
-    # @allure.feature('登录测试用例接口')  # 测试报告显示测试功能
-    # @allure.step('账号，密码登录')
-    # def test_sysuser(self, sysUser_sql,gettokenfixture, username, phone, expect):  # 用户新增接口测试
-    #     s = gettokenfixture
-    #     self.log.info('-----用户新增接口-----')
-    #     shili = SRMBase(s)
-    #     msg = shili.sysuser(username, phone)
-    #     self.log.info('获取请求结果：%s' %msg.json())
-    #     assert  msg.json()["success"] == expect["success"]
+    @pytest.mark.skip(reason="环境无法连接数据库")
+    @pytest.mark.parametrize("username,phone,expect", testdata["sysuser_data"],
+                             ids=["正常新增用户",
+                                  "正常新增用户二"
+                                  ])
+    @allure.feature('用户新增接口')  # 测试报告显示测试功能
+    def test_sysuser(self, sysUser_sql,gettokenfixture, username, phone, expect):  # 用户新增接口测试
+        s = gettokenfixture
+        self.log.info('-----用户新增接口-----')
+        shili = SRMBase(s)
+        msg = shili.sysuser(username, phone)
+        self.log.info('获取请求结果：%s' %msg.json())
+        assert  msg.json()["success"] == expect["success"]
 
     '''用户查询接口'''
     @pytest.mark.parametrize("key,value,expect", testdata["sysUser_page_data"],
                              ids=["查询手机号"
                                   ])
-    @allure.feature('登录测试用例接口')  # 测试报告显示测试功能
-    @allure.step('账号，密码登录')
+    @allure.feature('用户查询')  # 测试报告显示测试功能
     def test_sysUser_page(self, gettokenfixture, key, value, expect):  #用户管理查询接口测试
         s = gettokenfixture
         self.log.info('-----用户查询接口-----')
@@ -80,13 +78,13 @@ class TestSRM:
         assert result == expect
 
     '''用户编辑接口'''
+    @pytest.mark.ttt
     @pytest.mark.parametrize("username,phone,role,expect,expect1,expect2", testdata["sysuser_put_data"],
                              ids=["正常编辑用户",
                                   "编辑输入重复手机号",
                                   "编辑角色和名称"
                                   ])
-    @allure.feature('登录测试用例接口')  # 测试报告显示测试功能
-    @allure.step('账号，密码登录')
+    @allure.feature('用户编辑接口')  # 测试报告显示测试功能
     def test_SysUser_put(self, gettokenfixture, username, phone, role, expect, expect1, expect2):
         s = gettokenfixture
         self.log.info('-----用户编辑接口-----')
@@ -108,8 +106,7 @@ class TestSRM:
                              ids=["停用用户",
                                   "启用用户"
                                   ])
-    @allure.feature('登录测试用例接口')  # 测试报告显示测试功能
-    @allure.step('账号，密码登录')
+    @allure.feature('用户启停接口')  # 测试报告显示测试功能
     def test_SysUser_state(self, gettokenfixture, state, expect):
         s = gettokenfixture
         url = os.environ["host"] + "/srm/api/v1/sysUser/state"

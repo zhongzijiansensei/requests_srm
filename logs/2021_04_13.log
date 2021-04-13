@@ -1,0 +1,177 @@
+2021-04-13 10:47:59,065 - root - INFO - -----采购申请保存接口-----
+2021-04-13 10:47:59,190 - root - INFO - -----采购申请保存接口-----
+2021-04-13 10:49:38,220 - root - INFO - -----采购申请保存接口-----
+2021-04-13 10:49:38,558 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 10:49:38,754 - root - INFO - -----采购申请保存接口-----
+2021-04-13 10:49:38,892 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:02:12,054 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:02:12,080 - root - INFO - UUID为204e0141-40fc-4cc9-8e01-4140fcacc9f0
+2021-04-13 11:02:13,031 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:02:13,131 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:02:13,171 - root - INFO - UUID为8285f779-68e2-4f2b-85f7-7968e21f2b30
+2021-04-13 11:02:13,609 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:02:13,618 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:02:13,657 - root - INFO - UUID为ed6306e2-2a9a-4caf-a306-e22a9afcaf6b
+2021-04-13 11:02:13,803 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:03:48,991 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:03:49,019 - root - INFO - UUID为802e3a3c-a298-48d8-ae3a-3ca298e8d865
+2021-04-13 11:03:49,189 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:03:49,659 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:03:49,683 - root - INFO - UUID为b4bfee7a-8aaa-4aa5-bfee-7a8aaabaa581
+2021-04-13 11:03:49,836 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:03:49,976 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:03:50,001 - root - INFO - UUID为c83bda18-45c1-4534-bbda-1845c1253406
+2021-04-13 11:03:50,303 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:05:36,674 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:05:36,705 - root - INFO - UUID为e865c397-96c2-4413-a5c3-9796c2641376
+2021-04-13 11:05:36,872 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:05:39,001 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:05:39,042 - root - INFO - UUID为34125210-3361-4314-9252-103361231466
+2021-04-13 11:05:39,645 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:05:39,787 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:05:39,811 - root - INFO - UUID为bd3dbe29-75ef-48c4-bdbe-2975ef08c47c
+2021-04-13 11:05:40,022 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:06:54,611 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:07:24,740 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:07:27,861 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:08:00,911 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:08:01,063 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:08:01,086 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:12:26,466 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:12:26,494 - root - INFO - UUID为35859dc0-4dd4-412b-859d-c04dd4512bf4
+2021-04-13 11:12:26,980 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:12:27,441 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:12:27,470 - root - INFO - UUID为0b60f26b-91d7-48a2-a0f2-6b91d7a8a20c
+2021-04-13 11:12:27,624 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:12:27,772 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:12:27,802 - root - INFO - UUID为b5fed788-a46e-42a7-bed7-88a46e32a7ed
+2021-04-13 11:12:27,934 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:17:46,516 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:17:46,543 - root - INFO - UUID为fc2fed80-147e-4601-afed-80147e3601cc
+2021-04-13 11:17:46,714 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:17:46,746 - root - INFO - UUID为e1823c56-b57a-4485-823c-56b57a248563
+2021-04-13 11:17:46,774 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:17:46,802 - root - INFO - UUID为a6053a33-1cfe-48a7-853a-331cfe38a7eb
+2021-04-13 11:35:37,583 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:35:37,621 - root - INFO - UUID为b3db17f7-b271-40ce-9b17-f7b271a0cec6
+2021-04-13 11:35:37,903 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:35:37,932 - root - INFO - UUID为d810d3ad-b169-41c3-90d3-adb16961c30e
+2021-04-13 11:35:38,159 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:35:38,181 - root - INFO - UUID为b6424cb5-8793-414c-824c-b58793414cb4
+2021-04-13 11:39:17,580 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:39:17,807 - root - INFO - UUID为4d74152c-d09e-48fa-b415-2cd09ea8fa11
+2021-04-13 11:39:17,972 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:39:18,074 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:39:18,097 - root - INFO - UUID为78658660-f581-4585-a586-60f581f58506
+2021-04-13 11:39:18,213 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:39:18,224 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:39:18,256 - root - INFO - UUID为d155cdd0-c3b8-4788-95cd-d0c3b8e7882f
+2021-04-13 11:39:18,369 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:39:35,684 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:39:35,714 - root - INFO - UUID为8b48177c-4086-468d-8817-7c4086068d25
+2021-04-13 11:39:36,804 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:39:36,808 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:39:36,838 - root - INFO - UUID为b5de1213-33b1-408e-9e12-1333b1508e87
+2021-04-13 11:39:37,184 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:39:37,188 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:39:37,215 - root - INFO - UUID为e819127f-fff1-4fe2-9912-7ffff19fe279
+2021-04-13 11:39:37,338 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:42:39,568 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:42:39,594 - root - INFO - UUID为69187f0c-1e11-4796-987f-0c1e11779681
+2021-04-13 11:42:39,879 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:42:40,036 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:42:40,059 - root - INFO - UUID为385fc5db-94c6-4882-9fc5-db94c6b882d7
+2021-04-13 11:42:40,207 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:42:40,358 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:42:40,407 - root - INFO - UUID为197bc36f-e987-4f37-bbc3-6fe9875f373c
+2021-04-13 11:42:40,582 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:52:00,496 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:52:00,525 - root - INFO - UUID为0d6f22c8-5820-473e-af22-c85820c73ef7
+2021-04-13 11:52:00,887 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:52:01,176 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:52:01,226 - root - INFO - UUID为6575290c-f2c7-48d0-b529-0cf2c718d038
+2021-04-13 11:52:01,389 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:52:01,572 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:52:01,598 - root - INFO - UUID为bdff52e2-2518-46b5-bf52-e22518c6b513
+2021-04-13 11:52:01,737 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:53:16,600 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:53:16,627 - root - INFO - UUID为ccc794ff-c604-4b56-8794-ffc6043b562a
+2021-04-13 11:53:16,767 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:53:17,020 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:53:17,048 - root - INFO - UUID为001b2ec3-af8f-4f2a-9b2e-c3af8f2f2a2e
+2021-04-13 11:53:17,200 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:53:17,351 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:53:17,390 - root - INFO - UUID为1b25fb96-efe2-4125-a5fb-96efe2812563
+2021-04-13 11:53:17,538 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:54:30,959 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:54:30,985 - root - INFO - UUID为33c53245-150d-4805-8532-45150d88057e
+2021-04-13 11:54:31,132 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:54:31,387 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:54:31,412 - root - INFO - UUID为5cae36fc-120e-4935-ae36-fc120e693521
+2021-04-13 11:54:31,609 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:54:31,790 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:54:31,822 - root - INFO - UUID为ffb689db-92ee-4a61-b689-db92ee9a6160
+2021-04-13 11:54:31,974 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:56:09,159 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:56:09,188 - root - INFO - UUID为806976c7-fd4d-49ea-a976-c7fd4d59ea76
+2021-04-13 11:56:09,347 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:56:09,601 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:56:09,628 - root - INFO - UUID为3de55d6e-e036-4367-a55d-6ee036c3670d
+2021-04-13 11:56:09,770 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:56:09,934 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:56:09,959 - root - INFO - UUID为76b39a2f-04d3-4f05-b39a-2f04d33f0572
+2021-04-13 11:56:10,109 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:56:38,699 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:56:38,724 - root - INFO - UUID为45e1905f-e65e-4448-a190-5fe65ee448be
+2021-04-13 11:56:38,878 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:56:39,120 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:56:39,157 - root - INFO - UUID为61fe9fc8-7f46-4c35-be9f-c87f462c357f
+2021-04-13 11:56:39,344 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:56:39,513 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:56:39,546 - root - INFO - UUID为19e82ec5-6c8b-4d4b-a82e-c56c8bdd4bbc
+2021-04-13 11:56:39,654 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:57:05,750 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:57:05,783 - root - INFO - UUID为462a8888-a8e5-41cd-aa88-88a8e5c1cd9a
+2021-04-13 11:57:06,009 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:57:06,174 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:57:06,201 - root - INFO - UUID为7b9ffa1e-93a0-4106-9ffa-1e93a0510666
+2021-04-13 11:57:06,352 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 11:57:06,480 - root - INFO - ----采购申请提交接口----
+2021-04-13 11:57:06,503 - root - INFO - UUID为ceec0ea1-3194-4edc-ac0e-a131944edc27
+2021-04-13 11:57:06,631 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 15:36:28,411 - root - INFO - -----用户编辑接口-----
+2021-04-13 15:36:28,536 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 15:36:28,592 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-04-13 15:36:28', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '测试供应商101', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-04-13 15:36:28,598 - root - INFO - -----用户编辑接口-----
+2021-04-13 15:36:28,634 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '手机号重复!', 'success': 0}
+2021-04-13 15:36:28,674 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-04-13 15:36:28', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '测试供应商101', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-04-13 15:36:28,678 - root - INFO - -----用户编辑接口-----
+2021-04-13 15:36:28,751 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 15:36:28,786 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-04-13 15:36:28', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '供应商默认角色', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试2', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '测试供应商101', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-04-13 15:38:31,438 - root - INFO - -----用户编辑接口-----
+2021-04-13 15:38:31,530 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 15:38:31,578 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-04-13 15:38:31', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '测试供应商101', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-04-13 15:38:31,585 - root - INFO - -----用户编辑接口-----
+2021-04-13 15:38:31,617 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '手机号重复!', 'success': 0}
+2021-04-13 15:38:31,659 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-04-13 15:38:31', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '测试供应商101', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-04-13 15:38:31,664 - root - INFO - -----用户编辑接口-----
+2021-04-13 15:38:31,729 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 15:38:31,770 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-04-13 15:38:31', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '供应商默认角色', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试2', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '测试供应商101', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-04-13 15:38:37,947 - root - INFO - -----用户编辑接口-----
+2021-04-13 15:38:38,020 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 15:38:38,085 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-04-13 15:38:37', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '测试供应商101', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-04-13 15:38:38,100 - root - INFO - -----用户编辑接口-----
+2021-04-13 15:38:38,132 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '手机号重复!', 'success': 0}
+2021-04-13 15:38:38,172 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-04-13 15:38:37', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '测试供应商101', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-04-13 15:38:38,183 - root - INFO - -----用户编辑接口-----
+2021-04-13 15:38:38,249 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 15:38:38,294 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-04-13 15:38:38', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '供应商默认角色', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试2', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '测试供应商101', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-04-13 15:41:22,626 - root - INFO - -----用户编辑接口-----
+2021-04-13 15:41:22,686 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 15:41:22,738 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-04-13 15:41:22', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '测试供应商101', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-04-13 15:41:22,753 - root - INFO - -----用户编辑接口-----
+2021-04-13 15:41:22,786 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '手机号重复!', 'success': 0}
+2021-04-13 15:41:22,822 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-04-13 15:41:22', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '测试供应商101', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-04-13 15:41:22,834 - root - INFO - -----用户编辑接口-----
+2021-04-13 15:41:23,012 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 15:41:23,057 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-04-13 15:41:22', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '供应商默认角色', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试2', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '测试供应商101', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}

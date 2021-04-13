@@ -1,0 +1,6 @@
+INFO     root:logger.py:34 ----采购申请提交接口----
+DEBUG    urllib3.connectionpool:connectionpool.py:433 https://qupuat.quanyou.com.cn:443 "GET /srm/api/v1/baseCommon/uuid HTTP/1.1" 200 90
+INFO     root:logger.py:34 UUID为677a8de4-e47b-44d3-ba8d-e4e47b14d3e4
+DEBUG    urllib3.connectionpool:connectionpool.py:433 https://qupuat.quanyou.com.cn:443 "POST /srm/api/v1/cpPurchaseRequestDtlTemp HTTP/1.1" 200 44
+DEBUG    urllib3.connectionpool:connectionpool.py:433 https://qupuat.quanyou.com.cn:443 "POST /srm/api/v1/cpPurchaseRequestDtlTemp/savePurchaseRequest HTTP/1.1" 200 44
+INFO     root:logger.py:34 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}

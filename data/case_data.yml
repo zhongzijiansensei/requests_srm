@@ -1,13 +1,13 @@
 test_login_data:    #登录接口测试数据
   -  ["zhongzijian","z08uNL3e/E8FtxpNDH+RwQ==", {'license': "made by qup"}]
-#  -  ["zhongzijian"," ", {'msg': "用户名或密码错误"}]
+  -  ["zhongzijian"," ", {'msg': "用户名或密码错误"}]
   -  [" ","z08uNL3e/E8FtxpNDH+RwQ==", {"msg": '用户不存在'}]
   -  ["zhongzi","z08uNL3e/E8FtxpNDH+RwQ==", {"msg": '用户不存在'}]
-#  -  ["zhongzijian","slKVPMb0YqBOazJ3qRu44A==", {"msg": '用户名或密码错误'}]
+  -  ["zhongzijian","slKVPMb0YqBOazJ3qRu44A==", {"msg": '用户名或密码错误'}]
   -  ["zhong zijian","z08uNL3e/E8FtxpNDH+RwQ==", {"msg": '用户不存在'}]
-#  -  ["zhongzijian","mbpqVNgbPyjYfG4vQ0/bBQ==", {"msg": '用户名或密码错误'}]
+  -  ["zhongzijian","mbpqVNgbPyjYfG4vQ0/bBQ==", {"msg": '用户名或密码错误'}]
   -  ["zhongzi!@#$%^&*(){}","z08uNL3e/E8FtxpNDH+RwQ==", {"msg": '用户不存在'}]
-#  -  ["admin","z08uNL3e/E8FtxpNDH+RwQ==", {"msg": '用户名或密码错误'}]
+  -  ["admin","z08uNL3e/E8FtxpNDH+RwQ==", {"msg": '用户名或密码错误'}]
 
 
 sysuser_data:    #用户新增接口
@@ -34,3 +34,8 @@ cpLackMaterialSub_page_data:  #采购申请查询
 cpLackMaterialSub_save_data: #采购申请保存
   - ["yangbo","yangbo"]
   - ["zhongzijian","zhongzijian"]
+
+cpLackMaterialSub_push_data: #采购申请提交
+  - ["101000001","zhongzijian",1]
+  - ["101000002","yangbo6",1]
+  - ["101000003","zhongzijian",1]

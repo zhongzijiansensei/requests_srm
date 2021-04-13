@@ -2,6 +2,7 @@ import os
 
 import pytest
 import requests
+
 from api.get_token import Get_Token
 
 
@@ -15,6 +16,9 @@ def gettokenfixture():
     #     pytest.skip("跳过用例")
     yield s
     s.close()
+
+
+'''定义--cmdhost默认的值'''
 
 
 def pytest_addoption(parser):

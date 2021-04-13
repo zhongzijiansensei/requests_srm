@@ -107,5 +107,127 @@ class SRMBase(object):
                 "purchaseOrgText":"[1000]采购供应部",
                 "buyerText":"[zhongzijian]钟子鉴"
                 }
+        print(remark)
         r = self.s.post(url, json=data)
         return r,remark
+
+    '''明细ID获取'''
+    def srm_uuid(self):
+        url = os.environ["host"]+"/srm/api/v1/baseCommon/uuid"
+        r = self.s.get(url)
+        u = r.json()["data"]
+        return u
+
+    '''采购申请明细提交'''
+    def cpLackMaterialSub_Temp(self, uu, code):
+        url = os.environ["host"]+"/srm/api/v1/cpPurchaseRequestDtlTemp"
+        payload = {
+                    "detailTempId": "",
+                    "tempId": uu,
+                    "requestDetailId": "",
+                    "purchaseRequestId": "",
+                    "rowids": "",
+                    "materialCode": code,
+                    "allExtraAttributes": "无",
+                    "materialName": "3mm中纤板2440*1220mm",
+                    "materialGroupCode": "RA010101",
+                    "materialGroupName": "原材料/板材/中纤板/3mm中纤板",
+                    "cpPurchaseRequestExtraTempDtos":[{"categoryCode": "default",
+                    "categoryId": "aaf18978-8dbd-e860-e053-44031eac1ca4",
+                    "categoryName": "默认扩展类别",
+                    "extraAttributesBaseId": "aaf19f26-cdd6-e9e4-e053-44031eac0fae",
+                    "extraAttributesCode": "default",
+                    "extraAttributesId": "aaf19f26-cdd6-e9e4-e053-44031eac0fae",
+                    "extraAttributesName": "无扩展属性",
+                    "extraAttributesValue": 0,
+                    "extraId": "",
+                    "materialCode": "",
+                    "materialGroupCode": "",
+                    "materialGroupExtraId": "",
+                    "materialGroupId": "",
+                    "materialGroupName": "",
+                    "materialId": "",
+                    "materialName": "",
+                    "pricingUnitCode": "",
+                    "pricingUnitName": "",
+                    "type": "子"}],
+                    "materialGroupText": "[RA010101]原材料/板材/中纤板/3mm中纤板",
+                    "baseUnitCode": "ZHA",
+                    "baseUnitName": "张",
+                    "baseUnitText": "[ZHA]张",
+                    "demandDate": "2021-04-09",
+                    "plantCode": "6199",
+                    "plantName": "板式家具供应工厂",
+                    "storageLocationCode": "",
+                    "storageLocationName": "",
+                    "storageLocationText": "",
+                    "purchaseGroupCode": "A01",
+                    "purchaseGroupName": "板材采购组",
+                    "purchaseGroupText": "[A01]板材采购组",
+                    "planDeliveryDate": "",
+                    "demandQty": "1",
+                    "alreadyTransferOrderQty": "",
+                    "alreadyOrderQty": "",
+                    "requisitioner": "",
+                    "requisitionPlantCode": "",
+                    "requisitionPlantName": "",
+                    "requisitionPlantText": "",
+                    "vendorCode": "",
+                    "vendorName": "",
+                    "vendorText": "",
+                    "buyerAccount": "zhongzijian",
+                    "buyerName": "钟子鉴",
+                    "buyerText": "[zhongzijian]钟子鉴",
+                    "deliveryAddress": "",
+                    "demandTrackingNo": "",
+                    "salesOrderNo": "",
+                    "salesOrderLine": "",
+                    "salesOrderDeliveryLine": "",
+                    "storeAddress": "",
+                    "demandName": "",
+                    "guestListNo": "",
+                    "fixedAssetsCode": "",
+                    "fixedAssetsName": "",
+                    "accsumCode": "",
+                    "costControlDomain": "",
+                    "profitCenter": "",
+                    "productionOrder": "",
+                    "projectText": "",
+                    "client": "",
+                    "conditionalTypeCode": "",
+                    "remark": "{}",
+                    "status": "",
+                    "state": "",
+                    "reason": "",
+                    "createTime": "",
+                    "purchaseGroupId": "843a0c2a-7ef1-42fb-ba0c-2a7ef1900034"
+                     }
+        return self.s.post(url, json=payload)
+    '''采购申请提交'''
+    def cpLackMaterialSub_push(self, uu, caigouyuan):
+        remark = uuid.uuid4()
+        url = os.environ["host"]+"/srm/api/v1/cpPurchaseRequestDtlTemp/savePurchaseRequest"
+        payload = {"purchaseRequestId":"",
+                   "purchaseRequestNo":"",
+                   "tempId":uu,
+                   "companyId":"34f63026-8f2d-4f49-b630-268f2d6f4001",
+                   "companyCode":"6100",
+                   "companyName":"板式家具公司",
+                   "purchaseOrgCode":"1000",
+                   "purchaseOrgName":"采购供应部",
+                   "purchaseOrgText":"[1000]采购供应部",
+                   "buyerAccount":caigouyuan,
+                   "buyerName":"钟子鉴",
+                   "buyerText":"",
+                   "remark":"{}".format(remark),
+                   "createTime":"",
+                   "submitFlag":"true"
+                   }
+        response = self.s.post(url, json=payload)
+        return  response,remark
+
+
+
+
+
+
