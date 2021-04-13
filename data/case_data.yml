@@ -3,9 +3,8 @@ test_login_data:    #登录接口测试数据
   -  ["zhongzijian"," ", {'msg': "用户名或密码错误"}]
   -  [" ","z08uNL3e/E8FtxpNDH+RwQ==", {"msg": '用户不存在'}]
   -  ["zhongzi","z08uNL3e/E8FtxpNDH+RwQ==", {"msg": '用户不存在'}]
-  -  ["zhongzijian","slKVPMb0YqBOazJ3qRu44A==", {"msg": '用户名或密码错误'}]
+  -  ["zhongzijian2","slKVPMb0YqBOazJ3qRu44A==", {"msg": '用户名或密码错误'}]
   -  ["zhong zijian","z08uNL3e/E8FtxpNDH+RwQ==", {"msg": '用户不存在'}]
-  -  ["zhongzijian","mbpqVNgbPyjYfG4vQ0/bBQ==", {"msg": '用户名或密码错误'}]
   -  ["zhongzi!@#$%^&*(){}","z08uNL3e/E8FtxpNDH+RwQ==", {"msg": '用户不存在'}]
   -  ["admin","z08uNL3e/E8FtxpNDH+RwQ==", {"msg": '用户名或密码错误'}]
 
