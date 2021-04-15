@@ -1,0 +1,4 @@
+INFO     root:logger.py:34 ------用户登录接口-----
+DEBUG    urllib3.connectionpool:connectionpool.py:939 Starting new HTTPS connection (1): qupuat.quanyou.com.cn:443
+DEBUG    urllib3.connectionpool:connectionpool.py:433 https://qupuat.quanyou.com.cn:443 "POST /auth/oauth/token?username=zhong+zijian&password=z08uNL3e%2FE8FtxpNDH%2BRwQ%3D%3D&grant_type=password&scope=server HTTP/1.1" 401 None
+INFO     root:logger.py:34 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
