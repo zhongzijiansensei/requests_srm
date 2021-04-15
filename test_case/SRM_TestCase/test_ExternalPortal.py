@@ -48,7 +48,7 @@ class TestSRM:
             assert msg.json()["msg"] == expect['msg']
 
     '''用户新增接口'''
-    @pytest.mark.skip(reason="环境无法连接数据库")
+    # @pytest.mark.skip(reason="环境无法连接数据库")
     @pytest.mark.parametrize("username,phone,expect", testdata["sysuser_data"],
                              ids=["正常新增用户",
                                   "正常新增用户二"
@@ -77,7 +77,6 @@ class TestSRM:
         assert result == expect
 
     '''用户编辑接口'''
-    @pytest.mark.ttt
     @pytest.mark.parametrize("username,phone,role,expect,expect1,expect2", testdata["sysuser_put_data"],
                              ids=["正常编辑用户",
                                   "编辑输入重复手机号",
@@ -100,20 +99,20 @@ class TestSRM:
         assert result1 == expect1
         assert  result2 == expect2
 
-    # '''用户启停接口'''
-    # @pytest.mark.parametrize("state,expect", testdata["sysuser_state_data"],
-    #                          ids=["停用用户",
-    #                               "启用用户"
-    #                               ])
-    # @allure.feature('用户启停接口')  # 测试报告显示测试功能
-    # def test_SysUser_state(self, gettokenfixture, state, expect):
-    #     s = gettokenfixture
-    #     url = os.environ["host"] + "/srm/api/v1/sysUser/state"
-    #     data = {"account":70061501,
-    #             "state":state}
-    #     msg = s.put(url, data=data)
-    #     sta = SRMBase(s).sysUser_page("vendorAccount", "70061501")
-    #     sta.msg =jsonpath.jsonpath(sta.json(),'$..state')[0]
-    #     assert sta.msg == expect
+    '''用户启停接口'''
+    @pytest.mark.parametrize("state,expect", testdata["sysuser_state_data"],
+                             ids=["停用用户",
+                                  "启用用户"
+                                  ])
+    @allure.feature('用户启停接口')  # 测试报告显示测试功能
+    def test_SysUser_state(self, gettokenfixture, state, expect):
+        s = gettokenfixture
+        url = os.environ["host"] + "/srm/api/v1/sysUser/state"
+        data = {"account":70061501,
+                "state":state}
+        msg = s.put(url, data=data)
+        sta = SRMBase(s).sysUser_page("vendorAccount", "70061501")
+        sta.msg =jsonpath.jsonpath(sta.json(),'$..state')[0]
+        assert sta.msg == expect
 
 

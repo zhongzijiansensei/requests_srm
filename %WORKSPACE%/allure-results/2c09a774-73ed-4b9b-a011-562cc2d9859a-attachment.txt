@@ -1,0 +1,4 @@
+[32mINFO    [0m root:logger.py:34 ------用户登录接口-----
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:939 Starting new HTTPS connection (1): qupuat.quanyou.com.cn:443
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:433 https://qupuat.quanyou.com.cn:443 "POST /auth/oauth/token?username=zhongzijian2&password=slKVPMb0YqBOazJ3qRu44A%3D%3D&grant_type=password&scope=server HTTP/1.1" 426 None
+[32mINFO    [0m root:logger.py:34 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}

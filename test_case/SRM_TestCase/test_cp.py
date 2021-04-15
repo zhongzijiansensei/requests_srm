@@ -47,21 +47,21 @@ class TestSrmCp:
         assert rem.cgy == expect
         assert rem.rem == "{}".format(msg[1])
 
-    # @pytest.mark.parametrize("code, caigouyuan, expect", testdata["cpLackMaterialSub_push_data"],
-    #                          ids=["zzj提交物料1", "yb提交物料2", "zzj提交物料3"])
-    # @allure.feature('采购申请提交')
-    # def test_cpLackMaterialSub_push(self, gettokenfixture, code, caigouyuan, expect):
-    #     s = gettokenfixture
-    #     self.log.info("----采购申请提交接口----")
-    #     r = SRMBase(s)
-    #     uid = r.srm_uuid()
-    #     r.cpLackMaterialSub_Temp(uid, code)
-    #     msg = r.cpLackMaterialSub_push(uid, caigouyuan)
-    #     result = msg[0]
-    #     self.log.info("获取请求结果{}".format(result.json()))
-    #     uu = msg[1]
-    #     ass_uu = r.cpLackMaterialSub_page("remark", uu)
-    #     ass_remark = jsonpath.jsonpath(ass_uu.json(), '$..remark')[0]
-    #     assert result.json()["success"] == 1
-    #     assert result.status_code == 200
-    #     assert ass_remark == "{}".format(uu)
+    @pytest.mark.parametrize("code, caigouyuan, expect", testdata["cpLackMaterialSub_push_data"],
+                             ids=["zzj提交物料1", "yb提交物料2", "zzj提交物料3"])
+    @allure.feature('采购申请提交')
+    def test_cpLackMaterialSub_push(self, gettokenfixture, code, caigouyuan, expect):
+        s = gettokenfixture
+        self.log.info("----采购申请提交接口----")
+        r = SRMBase(s)
+        uid = r.srm_uuid()
+        r.cpLackMaterialSub_Temp(uid, code)
+        msg = r.cpLackMaterialSub_push(uid, caigouyuan)
+        result = msg[0]
+        self.log.info("获取请求结果{}".format(result.json()))
+        uu = msg[1]
+        ass_uu = r.cpLackMaterialSub_page("remark", uu)
+        ass_remark = jsonpath.jsonpath(ass_uu.json(), '$..remark')[0]
+        assert result.json()["success"] == 1
+        assert result.status_code == 200
+        assert ass_remark == "{}".format(uu)
