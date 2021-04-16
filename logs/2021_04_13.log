@@ -175,3 +175,202 @@
 2021-04-13 15:41:22,834 - root - INFO - -----用户编辑接口-----
 2021-04-13 15:41:23,012 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
 2021-04-13 15:41:23,057 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-04-13 15:41:22', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '供应商默认角色', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试2', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '测试供应商101', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-04-13 16:12:16,102 - root - INFO - ------用户登录接口-----
+2021-04-13 16:12:16,167 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户帐号已被锁定', 'data': '无效的例外'}
+2021-04-13 16:12:16,271 - root - INFO - ------用户登录接口-----
+2021-04-13 16:12:16,316 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户帐号已被锁定', 'data': '无效的例外'}
+2021-04-13 16:12:16,328 - root - INFO - ------用户登录接口-----
+2021-04-13 16:12:16,495 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-04-13 16:12:16,504 - root - INFO - ------用户登录接口-----
+2021-04-13 16:12:16,689 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-04-13 16:12:16,697 - root - INFO - ------用户登录接口-----
+2021-04-13 16:12:16,742 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户帐号已被锁定', 'data': '无效的例外'}
+2021-04-13 16:12:16,757 - root - INFO - ------用户登录接口-----
+2021-04-13 16:12:16,920 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-04-13 16:12:16,928 - root - INFO - ------用户登录接口-----
+2021-04-13 16:12:16,973 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户帐号已被锁定', 'data': '无效的例外'}
+2021-04-13 16:12:16,987 - root - INFO - ------用户登录接口-----
+2021-04-13 16:12:17,171 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-04-13 16:12:17,178 - root - INFO - ------用户登录接口-----
+2021-04-13 16:12:17,333 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2021-04-13 16:18:14,346 - root - INFO - ------用户登录接口-----
+2021-04-13 16:18:14,536 - root - INFO - 获取请求结果：{'access_token': '1c7d3ab2-4358-41c3-9ea1-6b865e2d1ec9', 'token_type': 'bearer', 'refresh_token': '30031464-4736-4e49-a761-ef8d71ac8e81', 'expires_in': 43199, 'scope': 'server', 'license': 'made by qup'}
+2021-04-13 16:18:14,546 - root - INFO - ------用户登录接口-----
+2021-04-13 16:18:14,664 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2021-04-13 16:18:14,671 - root - INFO - ------用户登录接口-----
+2021-04-13 16:18:14,839 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-04-13 16:18:14,852 - root - INFO - ------用户登录接口-----
+2021-04-13 16:18:15,025 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-04-13 16:18:15,033 - root - INFO - ------用户登录接口-----
+2021-04-13 16:18:15,166 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2021-04-13 16:18:15,175 - root - INFO - ------用户登录接口-----
+2021-04-13 16:18:15,362 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-04-13 16:18:15,371 - root - INFO - ------用户登录接口-----
+2021-04-13 16:18:15,495 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2021-04-13 16:18:15,505 - root - INFO - ------用户登录接口-----
+2021-04-13 16:18:15,677 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-04-13 16:18:15,686 - root - INFO - ------用户登录接口-----
+2021-04-13 16:18:15,836 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2021-04-13 16:18:16,028 - root - INFO - -----用户查询接口-----
+2021-04-13 16:18:34,306 - root - INFO - 获取请求结果：{'timestamp': '2021-04-13 16:18:34', 'path': '/srm/api/v1/sysUser/page', 'status': 500, 'error': 'Internal Server Error', 'message': None}
+2021-04-13 16:18:34,395 - root - INFO - -----用户编辑接口-----
+2021-04-13 16:18:36,212 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 16:18:39,296 - root - INFO - 获取请求结果:{'timestamp': '2021-04-13 16:18:39', 'path': '/srm/api/v1/sysUser/page', 'status': 500, 'error': 'Internal Server Error', 'message': None}
+2021-04-13 16:18:39,311 - root - INFO - -----用户编辑接口-----
+2021-04-13 16:18:39,382 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '手机号重复!', 'success': 0}
+2021-04-13 16:18:42,369 - root - INFO - 获取请求结果:{'timestamp': '2021-04-13 16:18:42', 'path': '/srm/api/v1/sysUser/page', 'status': 500, 'error': 'Internal Server Error', 'message': None}
+2021-04-13 16:18:42,383 - root - INFO - -----用户编辑接口-----
+2021-04-13 16:18:42,504 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 16:18:45,441 - root - INFO - 获取请求结果:{'timestamp': '2021-04-13 16:18:45', 'path': '/srm/api/v1/sysUser/page', 'status': 500, 'error': 'Internal Server Error', 'message': None}
+2021-04-13 16:18:51,595 - root - INFO - ----采购申请查询接口口----
+2021-04-13 16:18:51,920 - root - INFO - 获取请求结果: {'code': '', 'data': {'page': 1, 'records': [{'buyerAccount': 'zhou', 'buyerName': '钟子鉴', 'companyCode': '6100', 'companyName': '板式家具公司', 'createBy': 'zhongzijian', 'createTime': '2021-03-19 16:08:00', 'dataSource': 1, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'purchaseOrgCode': '1000', 'purchaseOrgName': '采购供应部', 'purchaseRequestDtlList': [], 'purchaseRequestId': '2d4ec627-9f04-45d1-8ec6-279f04a5d1db', 'purchaseRequestNo': 'PR2021031900001', 'reason': '', 'remark': '', 'state': 1, 'status': 200, 'syncMessage': '', 'syncStatus': 500}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-04-13 16:18:51,928 - root - INFO - ----采购申请查询接口口----
+2021-04-13 16:18:54,657 - root - INFO - 获取请求结果: {'timestamp': '2021-04-13 16:18:54', 'path': '/srm/api/v1/cpPurchaseRequest/page', 'status': 500, 'error': 'Internal Server Error', 'message': None}
+2021-04-13 16:18:54,667 - root - INFO - -----采购申请保存接口-----
+2021-04-13 16:18:55,040 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 16:18:57,737 - root - INFO - -----采购申请保存接口-----
+2021-04-13 16:18:57,863 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 16:19:00,813 - root - INFO - ----采购申请提交接口----
+2021-04-13 16:19:01,429 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 16:19:01,621 - root - INFO - ----采购申请提交接口----
+2021-04-13 16:19:01,829 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 16:19:01,990 - root - INFO - ----采购申请提交接口----
+2021-04-13 16:19:02,209 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 16:19:52,467 - root - INFO - ------用户登录接口-----
+2021-04-13 16:19:52,646 - root - INFO - 获取请求结果：{'access_token': '1c7d3ab2-4358-41c3-9ea1-6b865e2d1ec9', 'token_type': 'bearer', 'refresh_token': '30031464-4736-4e49-a761-ef8d71ac8e81', 'expires_in': 43101, 'scope': 'server', 'license': 'made by qup'}
+2021-04-13 16:19:52,657 - root - INFO - ------用户登录接口-----
+2021-04-13 16:19:52,792 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2021-04-13 16:19:52,806 - root - INFO - ------用户登录接口-----
+2021-04-13 16:19:52,985 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-04-13 16:19:52,996 - root - INFO - ------用户登录接口-----
+2021-04-13 16:19:53,169 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-04-13 16:19:53,179 - root - INFO - ------用户登录接口-----
+2021-04-13 16:19:53,324 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2021-04-13 16:19:53,332 - root - INFO - ------用户登录接口-----
+2021-04-13 16:19:53,510 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-04-13 16:19:53,518 - root - INFO - ------用户登录接口-----
+2021-04-13 16:19:53,583 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户帐号已被锁定', 'data': '无效的例外'}
+2021-04-13 16:19:53,684 - root - INFO - ------用户登录接口-----
+2021-04-13 16:19:53,862 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-04-13 16:19:53,873 - root - INFO - ------用户登录接口-----
+2021-04-13 16:19:54,032 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2021-04-13 16:20:53,814 - root - INFO - ------用户登录接口-----
+2021-04-13 16:20:53,892 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户帐号已被锁定', 'data': '无效的例外'}
+2021-04-13 16:20:53,994 - root - INFO - ------用户登录接口-----
+2021-04-13 16:20:54,038 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户帐号已被锁定', 'data': '无效的例外'}
+2021-04-13 16:20:54,051 - root - INFO - ------用户登录接口-----
+2021-04-13 16:20:54,224 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-04-13 16:20:54,233 - root - INFO - ------用户登录接口-----
+2021-04-13 16:20:54,390 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-04-13 16:20:54,397 - root - INFO - ------用户登录接口-----
+2021-04-13 16:20:54,436 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户帐号已被锁定', 'data': '无效的例外'}
+2021-04-13 16:20:54,448 - root - INFO - ------用户登录接口-----
+2021-04-13 16:20:54,607 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-04-13 16:20:54,616 - root - INFO - ------用户登录接口-----
+2021-04-13 16:20:54,660 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户帐号已被锁定', 'data': '无效的例外'}
+2021-04-13 16:20:54,680 - root - INFO - ------用户登录接口-----
+2021-04-13 16:20:54,846 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-04-13 16:20:54,855 - root - INFO - ------用户登录接口-----
+2021-04-13 16:20:55,005 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2021-04-13 17:32:24,118 - root - INFO - ------用户登录接口-----
+2021-04-13 17:32:24,177 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户帐号已被锁定', 'data': '无效的例外'}
+2021-04-13 17:32:24,272 - root - INFO - ------用户登录接口-----
+2021-04-13 17:32:24,312 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户帐号已被锁定', 'data': '无效的例外'}
+2021-04-13 17:32:24,320 - root - INFO - ------用户登录接口-----
+2021-04-13 17:32:24,488 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-04-13 17:32:24,495 - root - INFO - ------用户登录接口-----
+2021-04-13 17:32:24,653 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-04-13 17:32:24,659 - root - INFO - ------用户登录接口-----
+2021-04-13 17:32:24,701 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户帐号已被锁定', 'data': '无效的例外'}
+2021-04-13 17:32:24,709 - root - INFO - ------用户登录接口-----
+2021-04-13 17:32:24,877 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-04-13 17:32:24,882 - root - INFO - ------用户登录接口-----
+2021-04-13 17:32:24,925 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户帐号已被锁定', 'data': '无效的例外'}
+2021-04-13 17:32:24,939 - root - INFO - ------用户登录接口-----
+2021-04-13 17:32:25,100 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-04-13 17:32:25,105 - root - INFO - ------用户登录接口-----
+2021-04-13 17:32:25,261 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2021-04-13 17:35:13,680 - root - INFO - ------用户登录接口-----
+2021-04-13 17:35:13,864 - root - INFO - 获取请求结果：{'access_token': '1c7d3ab2-4358-41c3-9ea1-6b865e2d1ec9', 'token_type': 'bearer', 'refresh_token': '30031464-4736-4e49-a761-ef8d71ac8e81', 'expires_in': 38580, 'scope': 'server', 'license': 'made by qup'}
+2021-04-13 17:35:13,871 - root - INFO - ------用户登录接口-----
+2021-04-13 17:35:13,993 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2021-04-13 17:35:14,000 - root - INFO - ------用户登录接口-----
+2021-04-13 17:35:14,173 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-04-13 17:35:14,180 - root - INFO - ------用户登录接口-----
+2021-04-13 17:35:14,353 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-04-13 17:35:14,359 - root - INFO - ------用户登录接口-----
+2021-04-13 17:35:14,509 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2021-04-13 17:35:14,517 - root - INFO - ------用户登录接口-----
+2021-04-13 17:35:14,682 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-04-13 17:35:14,690 - root - INFO - ------用户登录接口-----
+2021-04-13 17:35:14,837 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2021-04-13 17:35:14,844 - root - INFO - ------用户登录接口-----
+2021-04-13 17:35:15,007 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-04-13 17:35:15,014 - root - INFO - ------用户登录接口-----
+2021-04-13 17:35:15,190 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2021-04-13 17:35:15,374 - root - INFO - -----用户查询接口-----
+2021-04-13 17:35:15,700 - root - INFO - 获取请求结果：{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009925', 'createBy': 'zhongzijian', 'createTime': '2021-04-06 11:27:32', 'email': '', 'isPan': 0, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'password': '', 'phone': '15555555551', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '供应商默认角色', 'state': 1, 'token': '', 'userId': '8f249ff4-d337-4e76-a49f-f4d337ce764d', 'userName': 'sco', 'vendorAccount': 'null02', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '测试供应商101', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-04-13 17:35:15,707 - root - INFO - -----用户编辑接口-----
+2021-04-13 17:35:16,486 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 17:35:16,545 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-04-13 17:35:15', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '测试供应商101', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-04-13 17:35:16,550 - root - INFO - -----用户编辑接口-----
+2021-04-13 17:35:16,595 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '手机号重复!', 'success': 0}
+2021-04-13 17:35:16,662 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-04-13 17:35:15', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '测试供应商101', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-04-13 17:35:16,667 - root - INFO - -----用户编辑接口-----
+2021-04-13 17:35:16,761 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 17:35:16,826 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-04-13 17:35:16', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '供应商默认角色', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试2', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '测试供应商101', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-04-13 17:35:16,834 - root - INFO - ----采购申请查询接口口----
+2021-04-13 17:35:17,029 - root - INFO - 获取请求结果: {'code': '', 'data': {'page': 1, 'records': [{'buyerAccount': 'zhou', 'buyerName': '钟子鉴', 'companyCode': '6100', 'companyName': '板式家具公司', 'createBy': 'zhongzijian', 'createTime': '2021-03-19 16:08:00', 'dataSource': 1, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'purchaseOrgCode': '1000', 'purchaseOrgName': '采购供应部', 'purchaseRequestDtlList': [], 'purchaseRequestId': '2d4ec627-9f04-45d1-8ec6-279f04a5d1db', 'purchaseRequestNo': 'PR2021031900001', 'reason': '', 'remark': '', 'state': 1, 'status': 200, 'syncMessage': '', 'syncStatus': 500}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-04-13 17:35:17,033 - root - INFO - ----采购申请查询接口口----
+2021-04-13 17:35:17,177 - root - INFO - 获取请求结果: {'code': '', 'data': {'page': 1, 'records': [{'buyerAccount': 'zhongzijian', 'buyerName': '钟子鉴', 'companyCode': '6100', 'companyName': '板式家具公司', 'createBy': 'zhongzijian', 'createTime': '2021-04-13 16:19:01', 'dataSource': 1, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'purchaseOrgCode': '1000', 'purchaseOrgName': '采购供应部', 'purchaseRequestDtlList': [], 'purchaseRequestId': 'e1e2cbcb-f212-42d4-a2cb-cbf21292d4a4', 'purchaseRequestNo': 'PR2021041300047', 'reason': '', 'remark': 'bfc863e7-68d2-4bb1-bcdb-be20cfbd9bbf', 'state': 1, 'status': 200, 'syncMessage': '', 'syncStatus': 500}, {'buyerAccount': 'zhongzijian', 'buyerName': '钟子鉴', 'companyCode': '6100', 'companyName': '板式家具公司', 'createBy': 'zhongzijian', 'createTime': '2021-04-13 16:07:16', 'dataSource': 1, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'purchaseOrgCode': '1000', 'purchaseOrgName': '采购供应部', 'purchaseRequestDtlList': [], 'purchaseRequestId': '2e8040f3-9266-42b1-8040-f3926682b103', 'purchaseRequestNo': 'PR2021041300044', 'reason': '', 'remark': '5ef4f06c-49a8-466f-81fd-7e9c2ae9a4a0', 'state': 1, 'status': 200, 'syncMessage': '', 'syncStatus': 500}, {'buyerAccount': 'yangbo6', 'buyerName': '钟子鉴', 'companyCode': '6100', 'companyName': '板式家具公司', 'createBy': 'zhongzijian', 'createTime': '2021-04-13 16:07:16', 'dataSource': 1, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'purchaseOrgCode': '1000', 'purchaseOrgName': '采购供应部', 'purchaseRequestDtlList': [], 'purchaseRequestId': 'dc22cdda-de7a-4182-a2cd-dade7ac1827a', 'purchaseRequestNo': 'PR2021041300045', 'reason': '', 'remark': 'e991e32e-c19c-4d87-9932-120d4333102e', 'state': 1, 'status': 200, 'syncMessage': '', 'syncStatus': 500}, {'buyerAccount': 'zhongzijian', 'buyerName': '钟子鉴', 'companyCode': '6100', 'companyName': '板式家具公司', 'createBy': 'zhongzijian', 'createTime': '2021-04-13 16:07:16', 'dataSource': 1, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'purchaseOrgCode': '1000', 'purchaseOrgName': '采购供应部', 'purchaseRequestDtlList': [], 'purchaseRequestId': 'e5e2e40d-2722-4e73-a2e4-0d2722fe73f4', 'purchaseRequestNo': 'PR2021041300046', 'reason': '', 'remark': '16b9d721-94bf-4684-9e96-a9c17ecee1a0', 'state': 1, 'status': 200, 'syncMessage': '', 'syncStatus': 500}, {'buyerAccount': 'yangbo6', 'buyerName': '钟子鉴', 'companyCode': '6100', 'companyName': '板式家具公司', 'createBy': 'zhongzijian', 'createTime': '2021-04-13 11:57:06', 'dataSource': 1, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'purchaseOrgCode': '1000', 'purchaseOrgName': '采购供应部', 'purchaseRequestDtlList': [], 'purchaseRequestId': '7b9ffa1e-93a0-4106-9ffa-1e93a0510666', 'purchaseRequestNo': 'PR2021041300042', 'reason': '', 'remark': 'ea395d9e-0d1f-42b4-a557-0fecd410e3ed', 'state': 1, 'status': 200, 'syncMessage': '', 'syncStatus': 500}, {'buyerAccount': 'zhongzijian', 'buyerName': '钟子鉴', 'companyCode': '6100', 'companyName': '板式家具公司', 'createBy': 'zhongzijian', 'createTime': '2021-04-13 11:57:05', 'dataSource': 1, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'purchaseOrgCode': '1000', 'purchaseOrgName': '采购供应部', 'purchaseRequestDtlList': [], 'purchaseRequestId': '462a8888-a8e5-41cd-aa88-88a8e5c1cd9a', 'purchaseRequestNo': 'PR2021041300041', 'reason': '', 'remark': 'd2ac250e-1576-47f2-ac0c-a5279b17f779', 'state': 1, 'status': 200, 'syncMessage': '', 'syncStatus': 500}, {'buyerAccount': 'zhongzijian', 'buyerName': '钟子鉴', 'companyCode': '6100', 'companyName': '板式家具公司', 'createBy': 'zhongzijian', 'createTime': '2021-04-13 11:56:39', 'dataSource': 1, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'purchaseOrgCode': '1000', 'purchaseOrgName': '采购供应部', 'purchaseRequestDtlList': [], 'purchaseRequestId': '19e82ec5-6c8b-4d4b-a82e-c56c8bdd4bbc', 'purchaseRequestNo': 'PR2021041300040', 'reason': '', 'remark': '80bd3fd0-45a2-44d5-a0a5-55aaa92b1043', 'state': 1, 'status': 200, 'syncMessage': '', 'syncStatus': 500}, {'buyerAccount': 'zhongzijian', 'buyerName': '钟子鉴', 'companyCode': '6100', 'companyName': '板式家具公司', 'createBy': 'zhongzijian', 'createTime': '2021-04-13 11:56:38', 'dataSource': 1, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'purchaseOrgCode': '1000', 'purchaseOrgName': '采购供应部', 'purchaseRequestDtlList': [], 'purchaseRequestId': '45e1905f-e65e-4448-a190-5fe65ee448be', 'purchaseRequestNo': 'PR2021041300038', 'reason': '', 'remark': '6be35222-2b72-42bd-9dfe-2187d6421dbd', 'state': 1, 'status': 200, 'syncMessage': '', 'syncStatus': 500}, {'buyerAccount': 'zhongzijian', 'buyerName': '钟子鉴', 'companyCode': '6100', 'companyName': '板式家具公司', 'createBy': 'zhongzijian', 'createTime': '2021-04-13 11:56:10', 'dataSource': 1, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'purchaseOrgCode': '1000', 'purchaseOrgName': '采购供应部', 'purchaseRequestDtlList': [], 'purchaseRequestId': '76b39a2f-04d3-4f05-b39a-2f04d33f0572', 'purchaseRequestNo': 'PR2021041300037', 'reason': '', 'remark': 'a94f5a28-7c79-4b2f-b8ec-a5e731d318a3', 'state': 1, 'status': 200, 'syncMessage': '', 'syncStatus': 500}, {'buyerAccount': 'zhongzijian', 'buyerName': '钟子鉴', 'companyCode': '6100', 'companyName': '板式家具公司', 'createBy': 'zhongzijian', 'createTime': '2021-04-13 11:56:09', 'dataSource': 1, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'purchaseOrgCode': '1000', 'purchaseOrgName': '采购供应部', 'purchaseRequestDtlList': [], 'purchaseRequestId': '806976c7-fd4d-49ea-a976-c7fd4d59ea76', 'purchaseRequestNo': 'PR2021041300035', 'reason': '', 'remark': '4e45320a-5886-41e6-abf0-f6c8bacd1900', 'state': 1, 'status': 200, 'syncMessage': '', 'syncStatus': 500}], 'rows': 10, 'total': 11}, 'msg': '', 'success': 1}
+2021-04-13 17:35:17,183 - root - INFO - -----采购申请保存接口-----
+2021-04-13 17:35:17,348 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 17:35:17,476 - root - INFO - -----采购申请保存接口-----
+2021-04-13 17:35:17,593 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 17:35:17,738 - root - INFO - ----采购申请提交接口----
+2021-04-13 17:35:18,113 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 17:35:18,275 - root - INFO - ----采购申请提交接口----
+2021-04-13 17:35:18,484 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 17:35:18,660 - root - INFO - ----采购申请提交接口----
+2021-04-13 17:35:18,830 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 17:48:27,688 - root - INFO - ------用户登录接口-----
+2021-04-13 17:48:27,876 - root - INFO - 获取请求结果：{'access_token': 'ba973b70-d293-4b29-b884-660cd25df12b', 'token_type': 'bearer', 'refresh_token': '153fae32-d560-4476-adee-796893115102', 'expires_in': 42566, 'scope': 'server', 'license': 'made by qup'}
+2021-04-13 17:48:27,884 - root - INFO - ------用户登录接口-----
+2021-04-13 17:48:28,002 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2021-04-13 17:48:28,009 - root - INFO - ------用户登录接口-----
+2021-04-13 17:48:28,182 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-04-13 17:48:28,189 - root - INFO - ------用户登录接口-----
+2021-04-13 17:48:28,353 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-04-13 17:48:28,360 - root - INFO - ------用户登录接口-----
+2021-04-13 17:48:43,445 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2021-04-13 17:48:43,451 - root - INFO - ------用户登录接口-----
+2021-04-13 17:48:43,634 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-04-13 17:48:43,640 - root - INFO - ------用户登录接口-----
+2021-04-13 17:48:43,806 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户不存在', 'data': '用户不存在'}
+2021-04-13 17:48:43,813 - root - INFO - ------用户登录接口-----
+2021-04-13 17:48:43,969 - root - INFO - 获取请求结果：{'success': 0, 'code': 0, 'msg': '用户名或密码错误', 'data': '无效的例外'}
+2021-04-13 17:48:44,146 - root - INFO - -----用户查询接口-----
+2021-04-13 17:48:44,193 - root - INFO - 获取请求结果：{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009925', 'createBy': 'zhongzijian', 'createTime': '2021-04-06 11:27:32', 'email': '', 'isPan': 0, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'password': '', 'phone': '15555555551', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '供应商默认角色', 'state': 1, 'token': '', 'userId': '8f249ff4-d337-4e76-a49f-f4d337ce764d', 'userName': 'sco', 'vendorAccount': 'null02', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '测试供应商101', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-04-13 17:48:44,198 - root - INFO - -----用户编辑接口-----
+2021-04-13 17:48:44,283 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 17:48:44,324 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-04-13 17:48:44', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '测试供应商101', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-04-13 17:48:44,331 - root - INFO - -----用户编辑接口-----
+2021-04-13 17:48:44,368 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '手机号重复!', 'success': 0}
+2021-04-13 17:48:44,413 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-04-13 17:48:44', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '客户', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '测试供应商101', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-04-13 17:48:44,418 - root - INFO - -----用户编辑接口-----
+2021-04-13 17:48:44,490 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 17:48:44,552 - root - INFO - 获取请求结果:{'code': '', 'data': {'page': 1, 'records': [{'account': 'SRM00009731', 'createBy': 'zhongzijian', 'createTime': '2021-03-12 09:34:12', 'email': '', 'isPan': 0, 'lastUpdateBy': 'zhongzijian', 'lastUpdateTime': '2021-04-13 17:48:44', 'objectVersionNumber': None, 'password': '', 'phone': '15555555552', 'pinyin': '', 'pinyinShort': '', 'qq': '', 'roleNames': '供应商默认角色', 'state': 1, 'token': '', 'userId': 'f7e5ba4f-4e62-480f-a5ba-4f4e62280fed', 'userName': '编辑测试2', 'vendorAccount': '70061501', 'vendorCode': '700615', 'vendorId': 'c2598e4a-9184-4c8c-998e-4a9184bc8c91', 'vendorName': '测试供应商101', 'vendorType': 1, 'weChat': '', 'wxOpenId': ''}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-04-13 17:48:44,557 - root - INFO - ----采购申请查询接口口----
+2021-04-13 17:48:44,669 - root - INFO - 获取请求结果: {'code': '', 'data': {'page': 1, 'records': [{'buyerAccount': 'zhou', 'buyerName': '钟子鉴', 'companyCode': '6100', 'companyName': '板式家具公司', 'createBy': 'zhongzijian', 'createTime': '2021-03-19 16:08:00', 'dataSource': 1, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'purchaseOrgCode': '1000', 'purchaseOrgName': '采购供应部', 'purchaseRequestDtlList': [], 'purchaseRequestId': '2d4ec627-9f04-45d1-8ec6-279f04a5d1db', 'purchaseRequestNo': 'PR2021031900001', 'reason': '', 'remark': '', 'state': 1, 'status': 200, 'syncMessage': '', 'syncStatus': 500}], 'rows': 10, 'total': 1}, 'msg': '', 'success': 1}
+2021-04-13 17:48:44,672 - root - INFO - ----采购申请查询接口口----
+2021-04-13 17:48:44,779 - root - INFO - 获取请求结果: {'code': '', 'data': {'page': 1, 'records': [{'buyerAccount': 'zhongzijian', 'buyerName': '钟子鉴', 'companyCode': '6100', 'companyName': '板式家具公司', 'createBy': 'zhongzijian', 'createTime': '2021-04-13 17:35:18', 'dataSource': 1, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'purchaseOrgCode': '1000', 'purchaseOrgName': '采购供应部', 'purchaseRequestDtlList': [], 'purchaseRequestId': '779ec8b6-bed8-4ff7-9ec8-b6bed85ff7b5', 'purchaseRequestNo': 'PR2021041300050', 'reason': '', 'remark': 'ce7e0b91-26e8-4d93-980a-928e033417c8', 'state': 1, 'status': 200, 'syncMessage': '', 'syncStatus': 500}, {'buyerAccount': 'yangbo6', 'buyerName': '钟子鉴', 'companyCode': '6100', 'companyName': '板式家具公司', 'createBy': 'zhongzijian', 'createTime': '2021-04-13 17:35:18', 'dataSource': 1, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'purchaseOrgCode': '1000', 'purchaseOrgName': '采购供应部', 'purchaseRequestDtlList': [], 'purchaseRequestId': 'f9f97767-2bc7-407e-b977-672bc7007ef9', 'purchaseRequestNo': 'PR2021041300051', 'reason': '', 'remark': '59bc8261-c2eb-4fb8-8108-007d34aad0d5', 'state': 1, 'status': 200, 'syncMessage': '', 'syncStatus': 500}, {'buyerAccount': 'zhongzijian', 'buyerName': '钟子鉴', 'companyCode': '6100', 'companyName': '板式家具公司', 'createBy': 'zhongzijian', 'createTime': '2021-04-13 17:35:18', 'dataSource': 1, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'purchaseOrgCode': '1000', 'purchaseOrgName': '采购供应部', 'purchaseRequestDtlList': [], 'purchaseRequestId': '677a632c-d4df-4d78-ba63-2cd4dffd7826', 'purchaseRequestNo': 'PR2021041300052', 'reason': '', 'remark': '33a8fdd4-1e84-4561-a0f3-bb3f2d8f5b82', 'state': 1, 'status': 200, 'syncMessage': '', 'syncStatus': 500}, {'buyerAccount': 'zhongzijian', 'buyerName': '钟子鉴', 'companyCode': '6100', 'companyName': '板式家具公司', 'createBy': 'zhongzijian', 'createTime': '2021-04-13 16:19:01', 'dataSource': 1, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'purchaseOrgCode': '1000', 'purchaseOrgName': '采购供应部', 'purchaseRequestDtlList': [], 'purchaseRequestId': 'e1e2cbcb-f212-42d4-a2cb-cbf21292d4a4', 'purchaseRequestNo': 'PR2021041300047', 'reason': '', 'remark': 'bfc863e7-68d2-4bb1-bcdb-be20cfbd9bbf', 'state': 1, 'status': 200, 'syncMessage': '', 'syncStatus': 500}, {'buyerAccount': 'zhongzijian', 'buyerName': '钟子鉴', 'companyCode': '6100', 'companyName': '板式家具公司', 'createBy': 'zhongzijian', 'createTime': '2021-04-13 16:07:16', 'dataSource': 1, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'purchaseOrgCode': '1000', 'purchaseOrgName': '采购供应部', 'purchaseRequestDtlList': [], 'purchaseRequestId': '2e8040f3-9266-42b1-8040-f3926682b103', 'purchaseRequestNo': 'PR2021041300044', 'reason': '', 'remark': '5ef4f06c-49a8-466f-81fd-7e9c2ae9a4a0', 'state': 1, 'status': 200, 'syncMessage': '', 'syncStatus': 500}, {'buyerAccount': 'yangbo6', 'buyerName': '钟子鉴', 'companyCode': '6100', 'companyName': '板式家具公司', 'createBy': 'zhongzijian', 'createTime': '2021-04-13 16:07:16', 'dataSource': 1, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'purchaseOrgCode': '1000', 'purchaseOrgName': '采购供应部', 'purchaseRequestDtlList': [], 'purchaseRequestId': 'dc22cdda-de7a-4182-a2cd-dade7ac1827a', 'purchaseRequestNo': 'PR2021041300045', 'reason': '', 'remark': 'e991e32e-c19c-4d87-9932-120d4333102e', 'state': 1, 'status': 200, 'syncMessage': '', 'syncStatus': 500}, {'buyerAccount': 'zhongzijian', 'buyerName': '钟子鉴', 'companyCode': '6100', 'companyName': '板式家具公司', 'createBy': 'zhongzijian', 'createTime': '2021-04-13 16:07:16', 'dataSource': 1, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'purchaseOrgCode': '1000', 'purchaseOrgName': '采购供应部', 'purchaseRequestDtlList': [], 'purchaseRequestId': 'e5e2e40d-2722-4e73-a2e4-0d2722fe73f4', 'purchaseRequestNo': 'PR2021041300046', 'reason': '', 'remark': '16b9d721-94bf-4684-9e96-a9c17ecee1a0', 'state': 1, 'status': 200, 'syncMessage': '', 'syncStatus': 500}, {'buyerAccount': 'yangbo6', 'buyerName': '钟子鉴', 'companyCode': '6100', 'companyName': '板式家具公司', 'createBy': 'zhongzijian', 'createTime': '2021-04-13 11:57:06', 'dataSource': 1, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'purchaseOrgCode': '1000', 'purchaseOrgName': '采购供应部', 'purchaseRequestDtlList': [], 'purchaseRequestId': '7b9ffa1e-93a0-4106-9ffa-1e93a0510666', 'purchaseRequestNo': 'PR2021041300042', 'reason': '', 'remark': 'ea395d9e-0d1f-42b4-a557-0fecd410e3ed', 'state': 1, 'status': 200, 'syncMessage': '', 'syncStatus': 500}, {'buyerAccount': 'zhongzijian', 'buyerName': '钟子鉴', 'companyCode': '6100', 'companyName': '板式家具公司', 'createBy': 'zhongzijian', 'createTime': '2021-04-13 11:57:05', 'dataSource': 1, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'purchaseOrgCode': '1000', 'purchaseOrgName': '采购供应部', 'purchaseRequestDtlList': [], 'purchaseRequestId': '462a8888-a8e5-41cd-aa88-88a8e5c1cd9a', 'purchaseRequestNo': 'PR2021041300041', 'reason': '', 'remark': 'd2ac250e-1576-47f2-ac0c-a5279b17f779', 'state': 1, 'status': 200, 'syncMessage': '', 'syncStatus': 500}, {'buyerAccount': 'zhongzijian', 'buyerName': '钟子鉴', 'companyCode': '6100', 'companyName': '板式家具公司', 'createBy': 'zhongzijian', 'createTime': '2021-04-13 11:56:39', 'dataSource': 1, 'lastUpdateBy': '', 'lastUpdateTime': None, 'objectVersionNumber': None, 'purchaseOrgCode': '1000', 'purchaseOrgName': '采购供应部', 'purchaseRequestDtlList': [], 'purchaseRequestId': '19e82ec5-6c8b-4d4b-a82e-c56c8bdd4bbc', 'purchaseRequestNo': 'PR2021041300040', 'reason': '', 'remark': '80bd3fd0-45a2-44d5-a0a5-55aaa92b1043', 'state': 1, 'status': 200, 'syncMessage': '', 'syncStatus': 500}], 'rows': 10, 'total': 11}, 'msg': '', 'success': 1}
+2021-04-13 17:48:44,786 - root - INFO - -----采购申请保存接口-----
+2021-04-13 17:48:44,914 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 17:48:45,048 - root - INFO - -----采购申请保存接口-----
+2021-04-13 17:48:45,132 - root - INFO - 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 17:48:45,264 - root - INFO - ----采购申请提交接口----
+2021-04-13 17:48:45,408 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 17:48:45,553 - root - INFO - ----采购申请提交接口----
+2021-04-13 17:48:45,708 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}
+2021-04-13 17:48:45,851 - root - INFO - ----采购申请提交接口----
+2021-04-13 17:48:46,001 - root - INFO - 获取请求结果{'code': '', 'data': None, 'msg': '', 'success': 1}

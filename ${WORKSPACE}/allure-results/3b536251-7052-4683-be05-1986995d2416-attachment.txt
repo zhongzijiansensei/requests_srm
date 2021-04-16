@@ -1,2 +1,0 @@
-DEBUG    urllib3.connectionpool:connectionpool.py:433 https://qupuat.quanyou.com.cn:443 "PUT /srm/api/v1/sysUser/state HTTP/1.1" 200 44
-DEBUG    urllib3.connectionpool:connectionpool.py:433 https://qupuat.quanyou.com.cn:443 "POST /srm/api/v1/sysUser/page HTTP/1.1" 200 663

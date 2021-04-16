@@ -1,4 +1,0 @@
-[32mINFO    [0m root:logger.py:34 -----采购申请保存接口-----
-[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:433 https://qupuat.quanyou.com.cn:443 "POST /srm/api/v1/cpPurchaseRequestDtlTemp/savePurchaseRequest HTTP/1.1" 200 44
-[32mINFO    [0m root:logger.py:34 获取请求结果:{'code': '', 'data': None, 'msg': '', 'success': 1}
-[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:433 https://qupuat.quanyou.com.cn:443 "POST /srm/api/v1/cpPurchaseRequest/page HTTP/1.1" 200 666
