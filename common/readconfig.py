@@ -13,7 +13,7 @@ class ReadConfig:
             root_dir = getpathinfo.get_path()
             configpath = os.path.join(root_dir, "config.ini")
             # configpath =r"C:\requests_srm\config.ini"
-            print(root_dir)
+            # print(root_dir)
 
         self.cf = configparser.ConfigParser()
         self.cf.read(configpath)

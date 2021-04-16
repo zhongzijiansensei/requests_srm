@@ -38,3 +38,9 @@ cpLackMaterialSub_push_data: #采购申请提交
   - ["101000001","zhongzijian",1]
   - ["101000002","yangbo6",1]
   - ["101000003","zhongzijian",1]
+
+cpLackMaterialSub_delete_data: #采购申请删除
+  - ["e0e35c96-f309-42c7-a35c-96f30902c7fd",""]
+  - ["a50ceae1-1b54-4aa2-8cea-e11b542aa21b","错误: 存在非待提交数据不可删除"]
+  - ["790c7503-1660-4de8-8c75-0316606de885","错误: 存在非待提交数据不可删除"]
+  - ["8bcbdb03-416e-4ca6-8bdb-03416e8ca6d5","错误: 存在非待提交数据不可删除"]

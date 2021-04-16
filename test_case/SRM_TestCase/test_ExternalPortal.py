@@ -16,7 +16,6 @@ import os
 def sysUser_sql():
     sql = "DELETE FROM SYS_USER WHERE PHONE = '15555555551'"
     Db_Oracle().delete(sql)
-    yield
 class TestSRM:
     """测试登录接口"""
     log = Log()
@@ -59,8 +58,12 @@ class TestSRM:
         self.log.info('-----用户新增接口-----')
         shili = SRMBase(s)
         msg = shili.sysuser(username, phone)
+        ass = shili.sysUser_page("userName", username)
+        print("查询结果是{}".format(ass.text))
+        ass_phone = jsonpath.jsonpath(ass.json(),'$..phone')[0]
         self.log.info('获取请求结果：%s' %msg.json())
         assert  msg.json()["success"] == expect["success"]
+        assert  ass_phone == phone
 
     '''用户查询接口'''
     @pytest.mark.parametrize("key,value,expect", testdata["sysUser_page_data"],

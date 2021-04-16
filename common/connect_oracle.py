@@ -17,7 +17,6 @@ class Db_Oracle(object):
         sid = ReadConfig().get_cx('sid')
         self.connect = cx_Oracle.connect(user + "/" + pwd + "@" + ip + ":" + host + "/" + sid)
         self.cursor = self.connect.cursor()
-        print(user)
 
     def select(self, sql):
         li = []
@@ -62,7 +61,6 @@ class Db_Oracle(object):
         try:
             self.cursor.execute(sql)
             self.connect.commit()
-            print("delete ok")
         except Exception as e:
             print(e)
         finally:

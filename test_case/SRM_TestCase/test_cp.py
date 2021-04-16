@@ -9,6 +9,12 @@ from common.connect_oracle import Db_Oracle
 import re
 
 
+@pytest.fixture(scope="function")
+def cgsqdelete_sql():
+    sql = "UPDATE CP_PURCHASE_REQUEST SET STATE = 1 WHERE PURCHASE_REQUEST_ID ='e0e35c96-f309-42c7-a35c-96f30902c7fd'"
+    Db_Oracle().update(sql)
+
+
 class TestSrmCp:
     log = Log()
     testdata = ReadYaml("case_data.yml").get_yaml_data()
@@ -65,3 +71,23 @@ class TestSrmCp:
         assert result.json()["success"] == 1
         assert result.status_code == 200
         assert ass_remark == "{}".format(uu)
+
+    @pytest.mark.parametrize("id, expect", testdata["cpLackMaterialSub_delete_data"],
+                             ids=["正常删除", "删除已发布的数据", "删除已关闭的数据", "删除已完成的数据"])
+    @allure.feature('采购申请删除')
+    def test_cpLackMaterialSub_delete(self, cgsqdelete_sql, gettokenfixture, id, expect):
+        s = gettokenfixture
+        self.log.info("---采购申请删除接口---")
+        r = SRMBase(s)
+        msg = r.cpLackMaterialSub_delete(id)
+        print(msg.json())
+        STATUS_sql = "SELECT STATUS FROM CP_PURCHASE_REQUEST WHERE PURCHASE_REQUEST_ID = '{}'".format(id)
+        STATE_sql = "SELECT STATE FROM CP_PURCHASE_REQUEST WHERE PURCHASE_REQUEST_ID = '{}'".format(id)
+        jg = Db_Oracle().select(STATUS_sql)
+        jh = Db_Oracle().select(STATE_sql)
+        ass_jg = eval(jg)[0]
+        ass_jh = eval(jh)[0]
+        if ass_jg['STATUS'] == 100:
+            assert ass_jh['STATE'] == 0
+        else:
+            assert msg.json()["msg"] == expect

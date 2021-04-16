@@ -225,8 +225,34 @@ class SRMBase(object):
                    }
         response = self.s.post(url, json=payload)
         return  response,remark
-
-
+    '''采购申请删除'''
+    def cpLackMaterialSub_delete(self, id):
+        url = os.environ["host"]+"/srm/api/v1/cpPurchaseRequest/updateDeleteStatus"
+        data = [{
+                "buyerAccount": "yangbo",
+                "buyerName": "杨波",
+                "companyCode": "6300",
+                "companyName": "全友餐桌椅公司",
+                "createBy": "yangbo",
+                "createTime": "2021-03-15 16:06:44",
+                "dataSource": 1,
+                "lastUpdateBy": "yangbo",
+                "lastUpdateTime": "2021-03-15 16:06:48",
+                "objectVersionNumber": "",
+                "purchaseOrgCode": "1000",
+                "purchaseOrgName": "采购供应部",
+                "purchaseRequestDtlList":"",
+                "purchaseRequestId": id,
+                "purchaseRequestNo": "PR2021031500006",
+                "reason": "",
+                "remark": "",
+                "state": 1,
+                "status": 100,
+                "syncMessage": "",
+                "syncStatus": 500,
+                "keyIndex": 0
+                }]
+        return self.s.post(url, json=data)
 
 
 
