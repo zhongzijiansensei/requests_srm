@@ -24,6 +24,11 @@
       </option>
     </inspection_tool>
     <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N806" />
+        </list>
+      </option>
       <option name="ignoredBaseClasses">
         <list>
           <option value="unittest.TestCase" />
@@ -32,5 +37,6 @@
         </list>
       </option>
     </inspection_tool>
+    <inspection_tool class="SqlNoDataSourceInspection" enabled="false" level="WARNING" enabled_by_default="false" />
   </profile>
 </component>

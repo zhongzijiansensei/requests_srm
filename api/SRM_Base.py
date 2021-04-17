@@ -70,7 +70,7 @@ class SRMBase(object):
             ("rows", '10',),
             ("order", 'desc',),
             ("pageFlag", 'true',),
-            ("onlyCountFlag", 'false',),
+            ("onlyCountFlag", 'true',),
             ("filtersRaw", '[{"id":"","value":"%s","property":"%s","operator":"like"},'
                            '{"id":"syncStatus100","property":"syncStatus","operator":"in",'
                            '"value":"[100,200,300,400,500]"},{"id":"status100","property":"status",'
@@ -253,7 +253,37 @@ class SRMBase(object):
                 "keyIndex": 0
                 }]
         return self.s.post(url, json=data)
-
-
+    '''采购申请导入页面查询'''
+    def cpLackMaterialSub_leadin_page(self, key, value):
+        url = os.environ["host"] +"/srm/api/v1/excelImportTemp/page?type=CP_PURCHASE_REQUEST"
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '10',),
+            ("order", 'desc',),
+            ("pageFlag", 'true',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw", '[{"id":"","value":"%s","property":"%s","operator":"="}]' %(value, key)),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms )
+    '''采购申请导入'''
+    def cpLackMaterialSub_leadin(self, file):
+        url = os.environ["host"]+"/srm/api/v1/excelImportTemp/importExcel/CP_PURCHASE_REQUEST"
+        leading_in = {
+            'tempFile': ('cpLackMaterialSub_leadin.xlsx', open('%s'%file, 'rb'),
+                         'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
+        }
+        m = MultipartEncoder(leading_in)
+        headers = {
+            "Content-Type": m.content_type,
+        }
+        return self.s.post(url, headers=headers, data=m)
+    '''采购申请导入确定'''
+    def cpLackMaterialSub_leadin_commit(self):
+        url = os.environ["host"]+"/srm/api/v1/excelImportTemp/sureToWriteData?type=CP_PURCHASE_REQUEST&tempId="
+        return self.s.post(url)
 
 

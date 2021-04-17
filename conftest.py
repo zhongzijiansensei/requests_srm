@@ -15,6 +15,7 @@ def gettokenfixture():
     # if not s.headers.get("Authorization", ""):  # 没有get到token，跳出用例
     #     pytest.skip("跳过用例")
     yield s
+    print("生成器关闭")
     s.close()
 
 

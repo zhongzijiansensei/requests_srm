@@ -1,12 +1,10 @@
 import allure
-import requests
 import pytest
 from common.logger import Log
 from common.read_yaml import ReadYaml
 from api.SRM_Base import SRMBase
 import jsonpath
 from common.connect_oracle import Db_Oracle
-import re
 
 
 @pytest.fixture(scope="function")
@@ -91,3 +89,19 @@ class TestSrmCp:
             assert ass_jh['STATE'] == 0
         else:
             assert msg.json()["msg"] == expect
+
+    @pytest.mark.parametrize("file", testdata["cpLackMaterialSub_leadin_data"],
+                             ids=["导入正确数据", "导入错误数据"])
+    @allure.feature('采购申请导入')
+    def test_cpLackMaterialSub_leadin(self, gettokenfixture, file):
+        s = gettokenfixture
+        self.log.info("---采购申请导入---")
+        r = SRMBase(s)
+        count = r.cpLackMaterialSub_page("remark", "自动化导入")
+        ass = count.json()["data"]["total"]
+        msg = r.cpLackMaterialSub_leadin(file)
+        print(msg.json())
+        r.cpLackMaterialSub_leadin_commit()
+        count2 = r.cpLackMaterialSub_page("remark", "自动化导入")
+        ass2 = count2.json()["data"]["total"]
+        assert ass2 > ass

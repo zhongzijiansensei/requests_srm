@@ -19,6 +19,10 @@ class Db_Oracle(object):
         self.cursor = self.connect.cursor()
 
     def select(self, sql):
+        """
+
+        :rtype: object
+        """
         li = []
         self.cursor.execute(sql)
         result = self.cursor.fetchall()  # 返回元组

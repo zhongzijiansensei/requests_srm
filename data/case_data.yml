@@ -44,3 +44,7 @@ cpLackMaterialSub_delete_data: #采购申请删除
   - ["a50ceae1-1b54-4aa2-8cea-e11b542aa21b","错误: 存在非待提交数据不可删除"]
   - ["790c7503-1660-4de8-8c75-0316606de885","错误: 存在非待提交数据不可删除"]
   - ["8bcbdb03-416e-4ca6-8bdb-03416e8ca6d5","错误: 存在非待提交数据不可删除"]
+
+cpLackMaterialSub_leadin_data: #采购申请导入附件数据
+  - "c:/cpLackMaterialSub_leadin.xlsx"
+  - "c:/cpLackMaterialSub_leadin2.xlsx"
