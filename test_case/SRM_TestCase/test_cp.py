@@ -45,6 +45,7 @@ class TestSrmCp:
         jg = msg[0]
         self.log.info("获取请求结果:%s" % jg.json())
         rem = r.cpLackMaterialSub_page("purchaseRequestNo", "PR2021032000011")
+        print(rem.json())
         rem.cgy = jsonpath.jsonpath(rem.json(), '$..buyerAccount')[0]
         rem.rem = jsonpath.jsonpath(rem.json(), '$..remark')[0]
         assert jg.json()["success"] == 1
@@ -102,6 +103,6 @@ class TestSrmCp:
         msg = r.cpLackMaterialSub_leadin(file)
         print(msg.json())
         r.cpLackMaterialSub_leadin_commit()
-        count2 = r.cpLackMaterialSub_page("remark", "自动化导入")
+        count2 = r.cpLackMaterialSub_count("remark", "自动化导入")
         ass2 = count2.json()["data"]["total"]
         assert ass2 > ass

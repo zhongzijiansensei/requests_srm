@@ -70,7 +70,7 @@ class SRMBase(object):
             ("rows", '10',),
             ("order", 'desc',),
             ("pageFlag", 'true',),
-            ("onlyCountFlag", 'true',),
+            ("onlyCountFlag", 'false',),
             ("filtersRaw", '[{"id":"","value":"%s","property":"%s","operator":"like"},'
                            '{"id":"syncStatus100","property":"syncStatus","operator":"in",'
                            '"value":"[100,200,300,400,500]"},{"id":"status100","property":"status",'
@@ -285,5 +285,22 @@ class SRMBase(object):
     def cpLackMaterialSub_leadin_commit(self):
         url = os.environ["host"]+"/srm/api/v1/excelImportTemp/sureToWriteData?type=CP_PURCHASE_REQUEST&tempId="
         return self.s.post(url)
-
-
+    '''采购申请查询计数'''
+    def cpLackMaterialSub_count(self, key, value):
+        url = os.environ["host"] +"/srm/api/v1/cpPurchaseRequest/page"
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '10',),
+            ("order", 'desc',),
+            ("pageFlag", 'true',),
+            ("onlyCountFlag", 'true',),
+            ("filtersRaw", '[{"id":"","value":"%s","property":"%s","operator":"like"},'
+                           '{"id":"syncStatus100","property":"syncStatus","operator":"in",'
+                           '"value":"[100,200,300,400,500]"},{"id":"status100","property":"status",'
+                           '"operator":"in","value":"[100,200,300,400]"}]' %(value, key)),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms )
