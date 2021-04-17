@@ -98,11 +98,11 @@ class TestSrmCp:
         s = gettokenfixture
         self.log.info("---采购申请导入---")
         r = SRMBase(s)
-        count = r.cpLackMaterialSub_page("remark", "自动化导入")
+        count = r.cpLackMaterialSub_page("createBy", "zhongzijian")
         ass = count.json()["data"]["total"]
         msg = r.cpLackMaterialSub_leadin(file)
         print(msg.json())
         r.cpLackMaterialSub_leadin_commit()
-        count2 = r.cpLackMaterialSub_count("remark", "自动化导入")
+        count2 = r.cpLackMaterialSub_count("createBy", "zhongzijian")
         ass2 = count2.json()["data"]["total"]
         assert ass2 > ass
