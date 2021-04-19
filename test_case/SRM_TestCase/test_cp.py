@@ -133,11 +133,12 @@ class TestSrmCp:
         self.log.info("导入结果是%s" % leadin.json())
         data = r.cpLackMaterialSub_leadin_page("column12", "自动化导入")
         self.log.info("查询结果是{}".format(data.json()))
-        lid = jsonpath.jsonpath(data.json(), '$..id')[0]
+        lid = jsonpath.jsonpath(data.json(), '$..id')
         self.log.info("抓取到lid是%s" % lid)
-        msg = r.cpLackMaterialSub_leadin_edit(lid, c1)
-        ass = jsonpath.jsonpath(msg.json(), '$..column1')
-        assert ass == expect
+        r.cpLackMaterialSub_leadin_edit(lid, c1)
+        msg = r.cpLackMaterialSub_leadin_page("column12", "自动化导入")
+        msg_id = jsonpath.jsonpath(msg.json(), '$..column1')
+        assert msg_id == expect
 
 
 
