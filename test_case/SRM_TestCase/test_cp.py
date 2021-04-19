@@ -113,7 +113,7 @@ class TestSrmCp:
         count = r.cpLackMaterialSub_count("createBy", "zhongzijian")
         ass = count.json()["data"]["total"]
         msg = r.cpLackMaterialSub_leadin(file)
-        print(msg.json())
+        self.log.info("导入结果是%s" % msg)
         r.cpLackMaterialSub_leadin_commit()
         count2 = r.cpLackMaterialSub_count("createBy", "zhongzijian")
         ass2 = count2.json()["data"]["total"]
@@ -126,7 +126,8 @@ class TestSrmCp:
         s = cgsqclear
         self.log.info("采购申请编辑与清空")
         r = SRMBase(s)
-        r.cpLackMaterialSub_leadin("c:/cpLackMaterialSub_leadin.xlsx")
+        leadin = r.cpLackMaterialSub_leadin("c:/cpLackMaterialSub_leadin.xlsx")
+        self.log.info("导入结果是%s" % leadin)
         data = r.cpLackMaterialSub_leadin_page("column12", "自动化导入")
         self.log.info("查询结果是{}".format(data.json()))
         lid = jsonpath.jsonpath(data.json(), '$..id')
