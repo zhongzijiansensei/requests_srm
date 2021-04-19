@@ -2,7 +2,7 @@ import requests
 
 
 class Get_Token(object):
-    def __init__(self, s: requests.session):
+    def __init__(self, s: requests.session):  # s即requests.session会话
         self.s = s
     '''请求登录接口，获取token,拼接成请求头所需的格式，更新到请求头中并将token return出来'''
     def get_token(self):

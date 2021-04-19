@@ -5,12 +5,24 @@ from common.read_yaml import ReadYaml
 from api.SRM_Base import SRMBase
 import jsonpath
 from common.connect_oracle import Db_Oracle
+import requests
 
 
 @pytest.fixture(scope="function")
 def cgsqdelete_sql():
     sql = "UPDATE CP_PURCHASE_REQUEST SET STATE = 1 WHERE PURCHASE_REQUEST_ID ='e0e35c96-f309-42c7-a35c-96f30902c7fd'"
     Db_Oracle().update(sql)
+
+
+@pytest.fixture(scope="function")
+def cgsqclear(gettokenfixture):
+    s = gettokenfixture
+    r = SRMBase(s)
+    r.cpLackMaterialSub_leadin_clear()
+    print("清空")
+    yield s
+    r.cpLackMaterialSub_leadin_clear()
+    print("后置清空")
 
 
 class TestSrmCp:
@@ -98,11 +110,31 @@ class TestSrmCp:
         s = gettokenfixture
         self.log.info("---采购申请导入---")
         r = SRMBase(s)
-        count = r.cpLackMaterialSub_page("createBy", "zhongzijian")
+        count = r.cpLackMaterialSub_count("createBy", "zhongzijian")
         ass = count.json()["data"]["total"]
         msg = r.cpLackMaterialSub_leadin(file)
         print(msg.json())
         r.cpLackMaterialSub_leadin_commit()
         count2 = r.cpLackMaterialSub_count("createBy", "zhongzijian")
         ass2 = count2.json()["data"]["total"]
-        assert ass2 > ass
+        assert ass2 - 1 == ass
+
+    @pytest.mark.parametrize("c1, expect", testdata["cpLackMaterialSub_leadin_edit_data"],
+                             ids=["导入正确数据", "导入错误数据"])
+    @allure.feature('采购申请编辑与清空')
+    def test_cpLackMaterialSub_leadin_edit(self, cgsqclear, c1, expect):
+        s = cgsqclear
+        self.log.info("采购申请编辑与清空")
+        r = SRMBase(s)
+        r.cpLackMaterialSub_leadin("c:/cpLackMaterialSub_leadin.xlsx")
+        data = r.cpLackMaterialSub_leadin_page("column12", "自动化导入")
+        self.log.info("查询结果是{}".format(data.json()))
+        lid = jsonpath.jsonpath(data.json(), '$..id')
+        msg = r.cpLackMaterialSub_leadin_edit(lid, c1)
+        ass = jsonpath.jsonpath(msg.json(), '$..column1')
+        assert ass == expect
+
+
+
+
+

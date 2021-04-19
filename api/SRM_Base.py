@@ -304,3 +304,52 @@ class SRMBase(object):
             'Content-Type': webforms.content_type,
         }
         return self.s.post(url, headers=headers, data=webforms )
+    '''采购申请导入清空'''
+    def cpLackMaterialSub_leadin_clear(self):
+        url = os.environ["host"]+"/srm/api/v1/excelImportTemp/clearAll/CP_PURCHASE_REQUEST"
+        return self.s.post(url)
+    '''采购申请导入行内编辑'''
+    def cpLackMaterialSub_leadin_edit(self, lid, c1):
+        url = os.environ["host"]+"/srm/api/v1/excelImportTemp"
+        data = {
+                "column1": c1,
+                "column10": "6199",
+                "column11": "R19Z",
+                "column12": "自动化导入",
+                "column15": "板式家具公司",
+                "column16": "板式家具供应工厂",
+                "column17": "六分厂油漆借料库位",
+                "column18": "张",
+                "column19": "钟子鉴",
+                "column2": "12mm中纤板2440*1220mm",
+                "column20": "板式家具二分厂",
+                "column21": "测试供应商101",
+                "column23": "100",
+                "column24": "RA010105",
+                "column25": "原材料/板材/中纤板/12mm中纤板",
+                "column26": "2021-04-19 10:43:37",
+                "column27": "A01",
+                "column28": "板材采购组",
+                "column29": "1000",
+                "column3": "1",
+                "column30": "采购供应部",
+                "column31": "ZHA",
+                "column4": "2030-12-30",
+                "column5": "瓦塔西",
+                "column6": "zhongzijian",
+                "column7": "6110",
+                "column8": "700615",
+                "column9": "6100",
+                "createBy": "zhongzijian",
+                "createTime": "2021-04-19 10:43:36",
+                "errorReason": "",
+                "id": lid,
+                "lastUpdateBy": "",
+                "lastUpdateTime": "",
+                "societyFunction": "CP_PURCHASE_REQUEST",
+                "standBy1":"",
+                "state": 1,
+                "keyIndex": 0,
+                "standby1": ""
+            }
+        return self.s.put(url, json=data)

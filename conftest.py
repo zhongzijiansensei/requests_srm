@@ -9,7 +9,7 @@ from api.get_token import Get_Token
 @pytest.fixture(scope="session")
 def gettokenfixture():
     '''先登录'''
-    s = requests.session()
+    s = requests.session()    # s等于session的实例化Session,开启会话
     shili = Get_Token(s)
     shili.get_token()
     # if not s.headers.get("Authorization", ""):  # 没有get到token，跳出用例
