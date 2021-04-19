@@ -5,7 +5,6 @@ from common.read_yaml import ReadYaml
 from api.SRM_Base import SRMBase
 import jsonpath
 from common.connect_oracle import Db_Oracle
-import requests
 
 
 @pytest.fixture(scope="function")
@@ -135,9 +134,10 @@ class TestSrmCp:
         self.log.info("查询结果是{}".format(data.json()))
         lid = jsonpath.jsonpath(data.json(), '$..id')
         self.log.info("抓取到lid是%s" % lid)
-        r.cpLackMaterialSub_leadin_edit(lid, c1)
+        kk = r.cpLackMaterialSub_leadin_edit(lid, c1)
+        self.log.info("最后查询到的结果是%s" % kk)
         msg = r.cpLackMaterialSub_leadin_page("column12", "自动化导入")
-        msg_id = jsonpath.jsonpath(msg.json(), '$..column1')
+        msg_id = jsonpath.jsonpath(msg.json(), '$..column1')[0]
         assert msg_id == expect
 
 

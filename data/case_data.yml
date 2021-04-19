@@ -50,5 +50,5 @@ cpLackMaterialSub_leadin_data: #采购申请导入附件数据
   - "c:/cpLackMaterialSub_leadin2.xlsx"
 
 cpLackMaterialSub_leadin_edit_data: #采购申请导入编辑数据
-  - ["101000007","101000007"]
+  - ["101000001","101000001"]
   - ["1010000007","1010000007"]
