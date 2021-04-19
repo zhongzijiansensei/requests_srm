@@ -117,7 +117,10 @@ class TestSrmCp:
         r.cpLackMaterialSub_leadin_commit()
         count2 = r.cpLackMaterialSub_count("createBy", "zhongzijian")
         ass2 = count2.json()["data"]["total"]
-        assert ass2 - 1 == ass
+        if file == "c:/cpLackMaterialSub_leadin.xlsx":
+            assert ass2 - 1 == ass
+        else:
+            assert ass2 == ass
 
     @pytest.mark.parametrize("c1, expect", testdata["cpLackMaterialSub_leadin_edit_data"],
                              ids=["导入正确数据", "导入错误数据"])
@@ -130,7 +133,8 @@ class TestSrmCp:
         self.log.info("导入结果是%s" % leadin.json())
         data = r.cpLackMaterialSub_leadin_page("column12", "自动化导入")
         self.log.info("查询结果是{}".format(data.json()))
-        lid = jsonpath.jsonpath(data.json(), '$..id')
+        lid = jsonpath.jsonpath(data.json(), '$..id')[0]
+        self.log.info("抓取到lid是%s" % lid)
         msg = r.cpLackMaterialSub_leadin_edit(lid, c1)
         ass = jsonpath.jsonpath(msg.json(), '$..column1')
         assert ass == expect

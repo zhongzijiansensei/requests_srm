@@ -16,3 +16,9 @@
 2021-04-19 13:46:57,055 - root - INFO - ---采购申请导入---
 2021-04-19 13:48:08,186 - root - INFO - ---采购申请导入---
 2021-04-19 13:48:08,662 - root - INFO - ---采购申请导入---
+2021-04-19 14:38:26,004 - root - INFO - 采购申请编辑与清空
+2021-04-19 14:38:26,042 - root - INFO - 导入结果是{'code': '', 'data': None, 'msg': "导入错误:Convert excel format exception.You can try specifying the 'excelType' yourself", 'success': 0}
+2021-04-19 14:38:26,085 - root - INFO - 查询结果是{'code': '', 'data': {'page': 1, 'records': [], 'rows': 10, 'total': 0}, 'msg': '', 'success': 1}
+2021-04-19 14:38:26,457 - root - INFO - 采购申请编辑与清空
+2021-04-19 14:38:26,494 - root - INFO - 导入结果是{'code': '', 'data': None, 'msg': "导入错误:Convert excel format exception.You can try specifying the 'excelType' yourself", 'success': 0}
+2021-04-19 14:38:26,529 - root - INFO - 查询结果是{'code': '', 'data': {'page': 1, 'records': [], 'rows': 10, 'total': 0}, 'msg': '', 'success': 1}
