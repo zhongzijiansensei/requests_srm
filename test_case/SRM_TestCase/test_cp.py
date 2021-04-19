@@ -122,7 +122,7 @@ class TestSrmCp:
             assert ass2 == ass
 
     @pytest.mark.parametrize("c1, expect", testdata["cpLackMaterialSub_leadin_edit_data"],
-                             ids=["导入正确数据", "导入错误数据"])
+                             ids=["改成正确数据", "改成错误数据"])
     @allure.feature('采购申请编辑与清空')
     def test_cpLackMaterialSub_leadin_edit(self, cgsqclear, c1, expect):
         s = cgsqclear
@@ -134,11 +134,23 @@ class TestSrmCp:
         self.log.info("查询结果是{}".format(data.json()))
         lid = jsonpath.jsonpath(data.json(), '$..id')[0]
         self.log.info("抓取到lid是%s" % lid)
-        kk = r.cpLackMaterialSub_leadin_edit(lid, c1)
-        self.log.info("最后查询到的结果是%s" % kk.text)
+        r.cpLackMaterialSub_leadin_edit(lid, c1)
         msg = r.cpLackMaterialSub_leadin_page("column12", "自动化导入")
         msg_id = jsonpath.jsonpath(msg.json(), '$..column1')[0]
         assert msg_id == expect
+
+    @pytest.mark.parametrize("detailstatus, status, ds_expect, s_expect", testdata["cpdetail_page_data"],
+                             ids=["查询已发布"])
+    @allure.feature('采购申请明细状态查询')
+    def test_cpdetail_page_data(self, gettokenfixture, detailstatus, status):
+        s = gettokenfixture
+        self.log.info("---采购申请明细状态查询---")
+        r = SRMBase(s)
+        msg = r.cpdetail_page(detailstatus, status)
+        print(msg.text)
+
+
+
 
 
 
