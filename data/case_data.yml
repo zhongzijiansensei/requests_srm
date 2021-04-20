@@ -52,3 +52,15 @@ cpLackMaterialSub_leadin_data: #采购申请导入附件数据
 cpLackMaterialSub_leadin_edit_data: #采购申请导入编辑数据
   - ["101000001","101000001"]
   - ["1010000007","1010000007"]
+
+vendorMasterData_page_data: #供应商查询
+  - [ "vendorCode","700485","700485"]
+  - [ "state","1","1"]
+
+vendorQualityQuestion_save_data: #新建质量问题保存
+  - ["wuxi","wuxi"]
+  - ["wuxi","wuxi"]
+
+vendorQualityQuestion_page_data: #新建质量问题查询
+  - [ "qualityTroubleNo","test0419001","test0419001"]
+  - [ "plantCode","6199","6199"]
