@@ -1,10 +1,11 @@
 import allure
+import jsonpath
 import pytest
+
+from api.SRM_Base import SRMBase
+from common.connect_oracle import Db_Oracle
 from common.logger import Log
 from common.read_yaml import ReadYaml
-from api.SRM_Base import SRMBase
-import jsonpath
-from common.connect_oracle import Db_Oracle
 
 
 @pytest.fixture(scope="function")
@@ -95,10 +96,12 @@ class TestSrmCp:
         STATE_sql = "SELECT STATE FROM CP_PURCHASE_REQUEST WHERE PURCHASE_REQUEST_ID = '{}'".format(id)
         jg = Db_Oracle().select(STATUS_sql)
         jh = Db_Oracle().select(STATE_sql)
-        ass_jg = eval(jg)[0]
-        ass_jh = eval(jh)[0]
-        if ass_jg['STATUS'] == 100:
-            assert ass_jh['STATE'] == 0
+        print(jg)
+        ass_jg = jg['STATUS']
+        ass_jh = jh['STATE']
+        print(ass_jg)
+        if ass_jg == 100:
+            assert ass_jh == 0
         else:
             assert msg.json()["msg"] == expect
 
@@ -139,20 +142,66 @@ class TestSrmCp:
         msg_id = jsonpath.jsonpath(msg.json(), '$..column1')[0]
         assert msg_id == expect
 
-    @pytest.mark.parametrize("detailstatus, status, ds_expect, s_expect", testdata["cpdetail_page_data"],
-                             ids=["查询已发布"])
+    @pytest.mark.parametrize("detailstatus, status, ds_expect, s_expect", testdata["cpdetail_statuspage_data"],
+                             ids=["查询待提交", "查询已发布", "查询已关闭", "查询已完成",
+                                  "查询未分配", "查询部分分配", "查询部分转单", "查询部分下单",
+                                  "查询已分配", "查询已转单", "查询明细完成", "查询明细已关闭"])
     @allure.feature('采购申请明细状态查询')
-    def test_cpdetail_page_data(self, gettokenfixture, detailstatus, status):
+    def test_cpdetail_statuspage_data(self, gettokenfixture, detailstatus, status, ds_expect, s_expect):
         s = gettokenfixture
         self.log.info("---采购申请明细状态查询---")
         r = SRMBase(s)
-        msg = r.cpdetail_page(detailstatus, status)
+        msg = r.cpdetail_statuspage(detailstatus, status)
         print(msg.text)
+        ass_ds = jsonpath.jsonpath(msg.json(), '$..requestDetailStatus')[0]
+        ass_s = jsonpath.jsonpath(msg.json(), '$..status')[0]
+        ass1 = repr(ass_ds)
+        ass2 = repr(ass_s)
+        assert ass1 in ds_expect
+        assert ass2 in s_expect
 
+    @pytest.mark.parametrize("key,value,expect", testdata["cpdetail_page_data"],
+                             ids=["查询采购申请号", "查询物料", "查询采购员"])
+    @allure.feature('采购申请查询接口')
+    def test_cpdetail_page(self, gettokenfixture, key, value, expect):
+        s = gettokenfixture
+        self.log.info("----采购申请明细查询接口口----")
+        r = SRMBase(s)
+        msg = r.cpdetail_page(key, value)
+        self.log.info("获取请求结果: %s" % msg.json())
+        if key == "purchaseRequestNo":
+            result = jsonpath.jsonpath(msg.json(), '$..purchaseRequestNo')[0]
+            assert result == expect
+        elif key == "materialCode":
+            result = jsonpath.jsonpath(msg.json(), '$..materialCode')[0]
+            assert result == expect
+        else:
+            result = jsonpath.jsonpath(msg.json(), '$..buyerAccount')[0]
+            assert result == expect
 
+    @pytest.mark.parametrize("value,expect", testdata["cpdetail_userpage_data"],
+                             ids=["查询采购员wx","查询采购员zzj"])
+    @allure.feature('转交采购员查询接口')
+    def test_cpdetail_userpage(self, gettokenfixture, value, expect):
+        s = gettokenfixture
+        self.log.info("---转交采购员查询接口---")
+        r = SRMBase(s)
+        msg = r.cpdetail_userpage(value)
+        self.log.info("获取请求结果:%s" % msg.json())
+        assert msg.json()["msg"] == expect["msg"]
 
-
-
+    @pytest.mark.parametrize("account", testdata["cpdetail_transfer_data"],
+                             ids=["转交采购员wx", "转交采购员zzj"])
+    @allure.feature('采购申请明细转交接口')
+    def test_cpdetail_transfer(self, gettokenfixture, account):
+        s = gettokenfixture
+        self.log.info("---采购申请明细转交接口---")
+        r = SRMBase(s)
+        r.cpdetail_transfer(account)
+        msg = r.cpdetail_page("purchaseRequestNo", "PR2021042000011")
+        self.log.info("转交后查询结果:%s" % msg.json())
+        ass = jsonpath.jsonpath(msg.json(), '$..buyerAccount')[0]
+        assert ass == account
 
 
 

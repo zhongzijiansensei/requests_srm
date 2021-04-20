@@ -355,7 +355,7 @@ class SRMBase(object):
         return self.s.put(url, json=data)
 
     '''采购申请明细状态查询'''
-    def cpdetail_page(self, detailstatus, status):
+    def cpdetail_statuspage(self, detailstatus, status):
         url = os.environ["host"] + "/srm/api/v1/cpPurchaseRequestDtl/customPage"
         webforms = MultipartEncoder(fields=[
             ("page", '1',),
@@ -363,17 +363,147 @@ class SRMBase(object):
             ("order", 'desc',),
             ("pageFlag", 'true',),
             ("onlyCountFlag", 'false',),
-            ("filtersRaw", [{"id":"requestDetailStatus100",
-                             "property":"requestDetailStatus",
-                             "operator":"in",
-                             "value":"%s"},
-                            {"id":"status100",
-                             "property":"status",
-                             "operator":"in",
-                             "value":"%s"}]%(detailstatus, status)),
+            ("filtersRaw", '[{"id":"requestDetailStatus100",'
+                             '"property":"requestDetailStatus",'
+                            '"operator":"in",'
+                             '"value":"[%s]"},'
+                            '{"id":"status100",'
+                             '"property":"status",'
+                             '"operator":"in",'
+                             '"value":"[%s]"}]' %(detailstatus, status)),
         ]
         )
         headers = {
             'Content-Type': webforms.content_type,
         }
         return self.s.post(url, headers=headers, data=webforms)
+
+    '''采购申请明细查询'''
+    def cpdetail_page(self, key, value):
+        url = os.environ["host"] + "/srm/api/v1/cpPurchaseRequestDtl/customPage"
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '10',),
+            ("order", 'desc',),
+            ("pageFlag", 'true',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw", '[{{"id":"","value":"{}","property":"{}","operator":"like"}},'
+                           '{{"id":"requestDetailStatus100",'
+                           '"property":"requestDetailStatus",'
+                           '"operator":"in",'
+                           '"value":"[100,200,300,400,500,600,700,900]"}},'
+                           '{{"id":"status100",'
+                           '"property":"status",'
+                           '"operator":"in",'
+                           '"value":"[100,200,300,400]"}}]'.format(value, key)),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)
+    '''转交采购员查询'''
+    def cpdetail_userpage(self, value):
+        url = os.environ["host"] + "/srm/api/v1/sysUser/purchase/page"
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '10',),
+            ("order", 'desc',),
+            ("pageFlag", 'true',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw", '[{"id":"","value":"%s","property":"account","operator":"like"},'
+                            '{"id":"state1","property":"state","operator":"=","value":1}]' %value),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)
+    '''采购员转交'''
+    def cpdetail_transfer(self, account):
+        url = os.environ["host"] + "/srm/api/v1/cpPurchaseRequestDtl/transfer"
+        data = [
+                {
+                "accsumCode": "",
+                "aggregateDemandQty": None,
+                "alreadyAllotQty": 0,
+                "alreadyOrderQty": 0,
+                "alreadyTransferOrderQty": 0,
+                "baseUnitCode": "ZHA",
+                "baseUnitName": "张",
+                "buyerAccount": account,
+                "buyerName": "吴茜",
+                "canBuyQty": 1,
+                "client": "",
+                "companyCode": "6100",
+                "companyName": "板式家具公司",
+                "conditionalTypeCode": "",
+                "costControlDomain": "",
+                "cpPurchaseRequestCreateBy": "",
+                "createBy": "zhongzijian",
+                "createTime": "2021-04-20 10:54:10",
+                "currentStatus": None,
+                "deliveryAddress": "",
+                "demandDate": "2021-04-20 10:54:10",
+                "demandName": "",
+                "demandQty": 1,
+                "demandTrackingNo": "",
+                "fixedAssetsCode": "",
+                "fixedAssetsName": "",
+                "guestListNo": "",
+                "isPrice": "1",
+                "isQuota": "",
+                "lastUpdateBy": "",
+                "lastUpdateTime": None,
+                "materialCode": "101000007",
+                "materialGroupCode": "RA010105",
+                "materialGroupName": "原材料/板材/中纤板/12mm中纤板",
+                "materialName": "12mm中纤板2440*1220mm",
+                "minOrderQty": None,
+                "minPackagingQty": None,
+                "netDemandQty": None,
+                "objectVersionNumber": None,
+                "onOrderQty": None,
+                "orderPlaceOrderQty": None,
+                "planDeliveryDate": "2030-12-30 00:00:00",
+                "plantCode": "6199",
+                "plantName": "板式家具供应工厂",
+                "productionOrder": "",
+                "profitCenter": "",
+                "projectText": "",
+                "purchaseGroupCode": "A01",
+                "purchaseGroupName": "板材采购组",
+                "purchaseOrgCode": "1000",
+                "purchaseOrgName": "",
+                "purchaseRequestId": "09b10f42-bdfe-4e5f-b10f-42bdfe8e5f19",
+                "purchaseRequestNo": "PR2021042000011",
+                "reason": "",
+                "remark": "",
+                "requestDetailId": "c05f8f7d-4cc0-600a-e053-e8031eac2201",
+                "requestDetailRemark": "自动化导入",
+                "requestDetailState": 1,
+                "requestDetailStatus": 100,
+                "requisitionPlantCode": "6110",
+                "requisitionPlantName": "板式家具二分厂",
+                "requisitioner": "",
+                "rowId": "1",
+                "rowids": 10,
+                "rownum": "",
+                "safeStockQty": None,
+                "salesOrderDeliveryLine": "",
+                "salesOrderLine": "",
+                "salesOrderNo": "",
+                "state": 1,
+                "status": 200,
+                "stockQty": None,
+                "storageLocationCode": "R19Z",
+                "storageLocationName": "六分厂油漆借料库位",
+                "storeAddress": "",
+                "threeMonthOutStockQty": None,
+                "transferQty": None,
+                "vendorCode": "700615",
+                "vendorName": "测试供应商101",
+                "keyIndex": 0
+                }
+                ]
+        return self.s.post(url, json=data)

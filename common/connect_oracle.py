@@ -19,23 +19,20 @@ class Db_Oracle(object):
         self.cursor = self.connect.cursor()
 
     def select(self, sql):
-        """
-
-        :rtype: object
-        """
-        li = []
+        # li = []
         self.cursor.execute(sql)
-        result = self.cursor.fetchall()  # 返回元组
-        col_name = self.cursor.description
+        result = self.cursor.fetchall()  # 返回所有列的值
+        col_name = self.cursor.description   # 获取列名
         for row in result:
             di = {}
             for col in range(len(col_name)):
                 key = col_name[col][0]
                 value = row[col]
                 di[key] = value
-            li.append(di)
-        data = json.dumps(li, cls=DateEncoder, ensure_ascii=False, indent=2, separators=(',', ':'))
-        return data
+            # li.append(di)
+        # print(di)
+        # data = json.dumps(li, cls=DateEncoder, ensure_ascii=False, indent=2, separators=(',', ':'))
+        return di
 
     def disconnect(self):
         self.cursor.close()
@@ -80,3 +77,4 @@ if __name__ == "__main__":
     js = Db_Oracle().select(sql)
     # js = TestOracle().select("select * from SYS_USER WHERE PHONE like '155%'")
     print(js)
+    print(type(js))
