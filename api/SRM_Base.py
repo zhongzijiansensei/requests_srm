@@ -380,8 +380,7 @@ class SRMBase(object):
             ("pageFlag", 'true',),
             ("onlyCountFlag", 'false',),
             ("filtersRaw", '[{"id":"","value":"%s","property":"%s","operator":"like"},'
-                           '{"id":"status100","property":"status","operator":"in","value":"[100,201]"}]' % (
-             value, key)),
+                           '{"id":"status100","property":"status","operator":"in","value":"[100,201]"}]' % (value, key)),
         ]
         )
         headers = {
@@ -390,18 +389,18 @@ class SRMBase(object):
         return self.s.post(url, headers=headers, data=webforms)
     '''新建质量问题保存'''
     def vendorQualityQuestion_save(self, purchasePerson):
-        # remark = test123
+        #remark = test123
         url = os.environ["host"] + "/srm/api/v1/vendorQualityQuestion?nextStatus=QUALITY_WAIT_SUBMIT"
         data = {"companyCode": "6100",
-                "companyName": "板式家具公司",
-                "createBy": "wuxi",
-                "createTime": "2021-04-19 14:16:29",
-                "invoiceNo": "DMA202104190001",
-                "plantCode": "6199",
-                "plantName": "板式家具供应工厂",
-                "presentDate": "2021-04-19",
-                "purchaseOrgCode": "1000",
-                "purchaseOrgName": "采购供应部",
+                "companyName":"板式家具公司",
+                "createBy":"wuxi",
+                "createTime":"2021-04-19 14:16:29",
+                "invoiceNo":"DMA202104190001",
+                "plantCode":"6199",
+                "plantName":"板式家具供应工厂",
+                "presentDate":"2021-04-19",
+                "purchaseOrgCode":"1000",
+                "purchaseOrgName":"采购供应部",
                 "purchasePerson": purchasePerson,
                 "qualityQuestionId": "09a6eec2-8149-4cfa-a6ee-c281497cfada",
                 "qualityTroubleNo": "test0419001",

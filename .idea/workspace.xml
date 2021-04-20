@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ca16193-d1f6-4e90-b09f-eaf2af98cbf0" name="Default Changelist" comment="新增供应商模块接口" />
+    <list default="true" id="2ca16193-d1f6-4e90-b09f-eaf2af98cbf0" name="Default Changelist" comment="0420修改">
+      <change afterPath="$PROJECT_DIR$/logs/2021_04_20.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/SRM_Base.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/SRM_Base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/case_data.yml" beforeDir="false" afterPath="$PROJECT_DIR$/data/case_data.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/SRM_TestCase/test_vendor.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/SRM_TestCase/test_vendor.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,8 +61,8 @@
   <component name="Git.Settings">
     <option name="PUSH_TAGS">
       <GitPushTagMode>
-        <option name="argument" value="--tags" />
-        <option name="title" value="All" />
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
       </GitPushTagMode>
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -127,6 +133,38 @@
     </key>
   </component>
   <component name="RunManager" selected="Python tests.pytest in test_vendor.py">
+    <configuration name="pytest for test_vendor.TestSrmVendor.test_vendorMasterData_page" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="pytest_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/SRM_TestCase" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_vendor.TestSrmVendor.test_vendorMasterData_page&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_vendor.TestSrmVendor.test_vendorQualityQuestion_page" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="pytest_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/SRM_TestCase" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_vendor.TestSrmVendor.test_vendorQualityQuestion_page&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest in test_vendor.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="pytest_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -141,40 +179,6 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/test_case/SRM_TestCase/test_vendor.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_cp.TestSrmCp.test_cpLackMaterialSub_leadin 的 pytest" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="pytest_project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/SRM_TestCase" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_cp.TestSrmCp.test_cpLackMaterialSub_leadin&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_cp.TestSrmCp.test_cpLackMaterialSub_leadin_edit 的 pytest" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="pytest_project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/SRM_TestCase" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_cp.TestSrmCp.test_cpLackMaterialSub_leadin_edit&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="test_cp.TestSrmCp.test_cpLackMaterialSub_page 的 pytest" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
@@ -212,15 +216,17 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.test_cp.TestSrmCp.test_cpLackMaterialSub_leadin 的 pytest" />
-      <item itemvalue="Python tests.test_cp.TestSrmCp.test_cpLackMaterialSub_leadin_edit 的 pytest" />
       <item itemvalue="Python tests.test_cp.TestSrmCp.test_cpLackMaterialSub_page 的 pytest" />
       <item itemvalue="Python tests.test_cp.TestSrmCp.test_cpLackMaterialSub_save 的 pytest" />
       <item itemvalue="Python tests.pytest in test_vendor.py" />
+      <item itemvalue="Python tests.pytest for test_vendor.TestSrmVendor.test_vendorQualityQuestion_page" />
+      <item itemvalue="Python tests.pytest for test_vendor.TestSrmVendor.test_vendorMasterData_page" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.pytest in test_vendor.py" />
+        <item itemvalue="Python tests.pytest for test_vendor.TestSrmVendor.test_vendorQualityQuestion_page" />
+        <item itemvalue="Python tests.pytest for test_vendor.TestSrmVendor.test_vendorMasterData_page" />
       </list>
     </recent_temporary>
   </component>
@@ -293,13 +299,6 @@
       <workItem from="1618563871343" duration="3077000" />
       <workItem from="1618623630095" duration="16963000" />
       <workItem from="1618797201692" duration="8510000" />
-    </task>
-    <task id="LOCAL-00014" summary="代码维护">
-      <created>1589449101747</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1589449101748</updated>
     </task>
     <task id="LOCAL-00015" summary="代码维护">
       <created>1590394947617</created>
@@ -637,7 +636,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618883709106</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="0420修改">
+      <created>1618883825755</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1618883825759</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -709,7 +715,8 @@
     <MESSAGE value="代码维护" />
     <MESSAGE value="Default Changelist" />
     <MESSAGE value="新增供应商模块接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增供应商模块接口" />
+    <MESSAGE value="0420修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="0420修改" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
