@@ -32,7 +32,7 @@ class TestSrmVendor:
             assert result == 1
 
     @pytest.mark.parametrize("key,value,expect", testdata["vendorQualityQuestion_page_data"],
-                             ids=["事故单号", "创建人"])
+                             ids=["事故单号", "查询工厂编码"])
     @allure.feature('新建质量问题查询')  # 测试报告显示测试功能
     def test_vendorQualityQuestion_page(self, gettokenfixture, key, value, expect):
         s = gettokenfixture
