@@ -85,8 +85,8 @@ vendorMasterData_page_data: #供应商查询
   - [ "state","1","1"]
 
 vendorQualityQuestion_save_data: #新建质量问题保存
-  - ["wuxi","wuxi"]
-  - ["wuxi","wuxi"]
+  - ["[wuxi]吴茜","[wuxi]吴茜"]
+  - ["[zhongzijian]钟子鉴","[zhongzijian]钟子鉴"]
 
 vendorQualityQuestion_page_data: #新建质量问题查询
   - [ "qualityTroubleNo","test0419001","test0419001"]
@@ -102,3 +102,11 @@ cp_statuspage_data: #采购申请状态查询
   - ["[300]","[100,200,300,400]","[300]","[100,200,300,400]"]
   - ["[400]","[100,200,300,400]","[400]","[100,200,300,400]"]
   - ["[500]","[100,200,300,400]","[500]","[100,200,300,400]"]
+
+vendorBankInfoManage_page_data: #银行信息管理查询
+  - [ "vendorCode","106037","106037"]
+  - [ "bankStatus","300","300"]
+
+vendorQualityQuestion_add_data: #新建质量问题提交
+  - ["[wuxi]吴茜"]
+  - ["[zhongzijian]钟子鉴"]
