@@ -86,7 +86,7 @@ class TestSrmCp:
     @pytest.mark.parametrize("id, expect", testdata["cpLackMaterialSub_delete_data"],
                              ids=["正常删除", "删除已发布的数据", "删除已关闭的数据", "删除已完成的数据"])
     @allure.feature('采购申请删除')
-    def test_cpLackMaterialSub_delete(self, cgsqdelete_sql, gettokenfixture, id, expect):
+    def test_cpLackMaterialSub_delete(self,gettokenfixture, cgsqdelete_sql,  id, expect):
         s = gettokenfixture
         self.log.info("---采购申请删除接口---")
         r = SRMBase(s)
@@ -96,10 +96,8 @@ class TestSrmCp:
         STATE_sql = "SELECT STATE FROM CP_PURCHASE_REQUEST WHERE PURCHASE_REQUEST_ID = '{}'".format(id)
         jg = Db_Oracle().select(STATUS_sql)
         jh = Db_Oracle().select(STATE_sql)
-        print(jg)
         ass_jg = jg['STATUS']
         ass_jh = jh['STATE']
-        print(ass_jg)
         if ass_jg == 100:
             assert ass_jh == 0
         else:

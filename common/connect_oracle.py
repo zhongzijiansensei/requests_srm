@@ -30,9 +30,10 @@ class Db_Oracle(object):
                 value = row[col]
                 di[key] = value
             # li.append(di)
-        # print(di)
-        # data = json.dumps(li, cls=DateEncoder, ensure_ascii=False, indent=2, separators=(',', ':'))
-        return di
+        str_data = json.dumps(di, cls=DateEncoder, ensure_ascii=False, indent=2, separators=(',', ':'))
+        data = json.loads(str_data)
+
+        return data
 
     def disconnect(self):
         self.cursor.close()
