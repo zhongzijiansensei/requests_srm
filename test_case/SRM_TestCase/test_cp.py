@@ -150,7 +150,6 @@ class TestSrmCp:
         self.log.info("---采购申请明细状态查询---")
         r = SRMBase(s)
         msg = r.cpdetail_statuspage(detailstatus, status)
-        print(msg.text)
         ass_ds = jsonpath.jsonpath(msg.json(), '$..requestDetailStatus')[0]
         ass_s = jsonpath.jsonpath(msg.json(), '$..status')[0]
         ass1 = repr(ass_ds)
@@ -201,5 +200,74 @@ class TestSrmCp:
         ass = jsonpath.jsonpath(msg.json(), '$..buyerAccount')[0]
         assert ass == account
 
+    @allure.feature('采购申请明细导出接口')
+    def test_cpdetail_report(self, gettokenfixture):
+        s = gettokenfixture
+        r = SRMBase(s)
+        self.log.info("---采购申请明细导出---")
+        msg = r.cpdetail_report()
+        assert msg.status_code == 200
+    @allure.feature('采购申请查看-获取供应商接口')
+    def test_cpselect_vendor(self, gettokenfixture):
+        s = gettokenfixture
+        self.log.info('---采购申请查看-获取供应商接口---')
+        r = SRMBase(s)
+        msg = r.cpselect_vendor()
+        assert msg.status_code == 200
+    @allure.feature('采购申请查看-获取公司接口')
+    def test_cpselect_baseCompany(self,gettokenfixture):
+        s = gettokenfixture
+        self.log.info('---采购申请查看-获取公司接口---')
+        r = SRMBase(s)
+        msg = r.cpselect_baseCompany()
+        assert  msg.status_code == 200
+    @allure.feature("采购申请查看-获取采购员接口")
+    def test_cpselect_sysUser(self, gettokenfixture):
+        s = gettokenfixture
+        self.log.info('---采购申请查看-获取采购员接口---')
+        r = SRMBase(s)
+        msg = r.cpselect_sysUser()
+        assert msg.json()["msg"] == "获取用户成功"
+    @allure.feature("采购申请查看-获取主单接口")
+    def test_cpselect_main(self, gettokenfixture):
+        s = gettokenfixture
+        self.log.info('---采购申请查看-获取主单接口---')
+        r = SRMBase(s)
+        msg = r.cpselect_main()
+        self.log.info('获取结果是:%s'% msg.json())
+        assert msg.json()["data"]["tempId"] == "8e926428-c823-418d-9264-28c823a18d03"
+    @allure.feature("采购申请查看-获取明细接口")
+    def test_cpselect_temp(self, gettokenfixture):
+        s= gettokenfixture
+        self.log.info("---采购申请查看-获取明细接口---")
+        r = SRMBase(s)
+        msg = r.cpselect_temp()
+        self.log.info('获取结果是:%s'% msg.json())
+        a_msg = jsonpath.jsonpath(msg.json(), '$..tempId')[0]
+        assert a_msg == "8e926428-c823-418d-9264-28c823a18d03"
+    @allure.feature("采购申请查看-获取日志接口")
+    def test_cpselect_log(self, gettokenfixture):
+        s = gettokenfixture
+        self.log.info("---采购申请查看-获取日志接口---")
+        r = SRMBase(s)
+        msg = r.cpselect_log()
+        self.log.info("获取结果是:%s"%msg.json())
+        a_msg = jsonpath.jsonpath(msg.json(), '$..busId')[0]
+        assert a_msg == "8e926428-c823-418d-9264-28c823a18d03"
 
-
+    @pytest.mark.parametrize("syncstatus, status, ss_expect, s_expect", testdata["cp_statuspage_data"],
+                             ids=["查询待提交", "查询已发布", "查询已关闭", "查询已完成",
+                                  "查询未同步", "查询同步中", "查询同步失败", "查询同步成功", "查询不同步"])
+    @allure.feature("采购申请状态查询接口")
+    def test_cp_statuspage(self, gettokenfixture, syncstatus, status, ss_expect, s_expect):
+        s = gettokenfixture
+        self.log.info("采购申请状态查询接口")
+        r = SRMBase(s)
+        msg = r.cp_statuspage(syncstatus, status)
+        self.log.info("获取结果是:%s"%msg.json())
+        ass_ss = jsonpath.jsonpath(msg.json(), '$..syncStatus')[0]
+        ass_s = jsonpath.jsonpath(msg.json(), '$..status')[0]
+        ass1 = repr(ass_ss)
+        ass2 = repr(ass_s)
+        assert ass1 in ss_expect
+        assert ass2 in s_expect

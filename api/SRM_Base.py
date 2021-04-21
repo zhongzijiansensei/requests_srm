@@ -568,3 +568,75 @@ class SRMBase(object):
         print(purchasePerson)
         p = self.s.post(url, json=data)
         return p, purchasePerson
+    '''采购申请明细导出'''
+    def cpdetail_report(self):
+        url = os.environ["host"] + "/srm-export/api/v1/cpPurchaseRequestDtl/reportExcel"
+        webforms = MultipartEncoder(fields=[
+            ("filtersRaw", '[{"id":"","value":"PR2021041900040","property":"purchaseRequestNo","operator":"like"},'
+                           '{"id":"status100","property":"status","operator":"in","value":"[100,200,400],'
+                           '{"id":"requestDetailStatus100","property":"requestDetailStatus","operator":"in","value":"[100]"}]' ),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)
+    '''采购申请查看-获取供应商接口'''
+    def cpselect_vendor(self):
+        url = os.environ["host"] + "/srm/api/v1/vendorMasterData/master/select"
+        return self.s.get(url)
+    '''采购申请查看-获取公司接口'''
+    def cpselect_baseCompany(self):
+        url = os.environ["host"] + "/srm/api/v1/baseCompany/spinner"
+        return self.s.post(url)
+    '''采购申请查看-获取采购员接口'''
+    def cpselect_sysUser(self):
+        url = os.environ["host"] + "/srm/api/v1/sysUser/purchase/spinner"
+        return self.s.post(url)
+    '''采购申请查看-获取主单接口'''
+    def cpselect_main(self):
+        url = os.environ["host"] + "/srm/api/v1/cpPurchaseRequest/editDispose/8e926428-c823-418d-9264-28c823a18d03"
+        return self.s.get(url)
+    '''采购申请查看-获取明细接口'''
+    def cpselect_temp(self):
+        url = os.environ["host"] + "/srm/api/v1/cpPurchaseRequestDtlTemp/page"
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '20',),
+            ("order", 'desc',),
+            ("pageFlag", 'true',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw",'[{"id":"tempId","property":"temp_id","operator":"=","value":"8e926428-c823-418d-9264-28c823a18d03"}]'),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)
+    '''采购申请查看-获取日志接口'''
+    def cpselect_log(self):
+        url = os.environ['host'] + "/srm/api/v1/sysBusLog/queryByBusId?busId=8e926428-c823-418d-9264-28c823a18d03&busCreateTime=2021-04-21+11:05:22"
+        return self.s.get(url)
+    '''采购申请状态查询'''
+    def cp_statuspage(self, syncstatus, status):
+        url = os.environ["host"] + "/srm/api/v1/cpPurchaseRequest/page"
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '10',),
+            ("order", 'desc',),
+            ("pageFlag", 'true',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw", '[{"id":"syncStatus100",'
+                             '"property":"syncStatus",'
+                            '"operator":"in",'
+                             '"value":"%s"},'
+                            '{"id":"status200",'
+                             '"property":"status",'
+                             '"operator":"in",'
+                             '"value":"%s"}]' %(syncstatus, status)),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)
