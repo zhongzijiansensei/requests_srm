@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ca16193-d1f6-4e90-b09f-eaf2af98cbf0" name="Default Changelist" comment="Default Changelist">
+    <list default="true" id="2ca16193-d1f6-4e90-b09f-eaf2af98cbf0" name="Default Changelist" comment="0420修改">
       <change afterPath="$PROJECT_DIR$/logs/2021_04_20.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/SRM_Base.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/SRM_Base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/connect_oracle.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/connect_oracle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/json_rewrite.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/json_rewrite.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/read_yaml.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/read_yaml.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/case_data.yml" beforeDir="false" afterPath="$PROJECT_DIR$/data/case_data.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getpathinfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/getpathinfo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/SRM_TestCase/test_cp.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/SRM_TestCase/test_cp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/SRM_TestCase/test_vendor.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/SRM_TestCase/test_vendor.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,13 +61,13 @@
   <component name="Git.Settings">
     <option name="PUSH_TAGS">
       <GitPushTagMode>
-        <option name="argument" value="--tags" />
-        <option name="title" value="All" />
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
       </GitPushTagMode>
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="giteezhongzijian" />
+        <entry key="$PROJECT_DIR$" value="test-wuxi" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -88,8 +84,8 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/test_case/SRM_TestCase/test_ExternalPortal.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/api/SRM_Base.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/test_case/SRM_TestCase/test_ExternalPortal.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1hB75k9LBTC8uaHV5zyX5JVuDaN" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -105,7 +101,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="Z:/pytest_allure_demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../pytest_allure_demo" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -114,7 +110,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -136,52 +132,8 @@
       <recent name="F:\python_test\pytest_project" />
     </key>
   </component>
-  <component name="RunManager" selected="Python 测试.test_cp.TestSrmCp.test_cpLackMaterialSub_delete 的 pytest">
-    <configuration name="connect_oracle" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="pytest_project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/connect_oracle.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="read_yaml" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="pytest_project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/read_yaml.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_cp.TestSrmCp 的 pytest" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest in test_vendor.py">
+    <configuration name="pytest for test_vendor.TestSrmVendor.test_vendorMasterData_page" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="pytest_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -190,15 +142,14 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_cp.TestSrmCp&quot;" />
+      <option name="_new_target" value="&quot;test_vendor.TestSrmVendor.test_vendorMasterData_page&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="test_cp.TestSrmCp.test_cpLackMaterialSub_delete 的 pytest" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_vendor.TestSrmVendor.test_vendorQualityQuestion_page" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="pytest_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -207,15 +158,30 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_cp.TestSrmCp.test_cpLackMaterialSub_delete&quot;" />
+      <option name="_new_target" value="&quot;test_vendor.TestSrmVendor.test_vendorQualityQuestion_page&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="test_cp.TestSrmCp.test_cpdetail_transfer 的 pytest" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest in test_vendor.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="pytest_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\wuxi\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/SRM_TestCase" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_case/SRM_TestCase/test_vendor.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_cp.TestSrmCp.test_cpLackMaterialSub_page 的 pytest" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="pytest_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -228,24 +194,39 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_cp.TestSrmCp.test_cpdetail_transfer&quot;" />
+      <option name="_new_target" value="&quot;test_cp.TestSrmCp.test_cpLackMaterialSub_page&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_cp.TestSrmCp.test_cpLackMaterialSub_save 的 pytest" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="pytest_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/SRM_TestCase" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_cp.TestSrmCp.test_cpLackMaterialSub_save&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.read_yaml" />
-      <item itemvalue="Python 测试.test_cp.TestSrmCp 的 pytest" />
-      <item itemvalue="Python 测试.test_cp.TestSrmCp.test_cpdetail_transfer 的 pytest" />
-      <item itemvalue="Python 测试.test_cp.TestSrmCp.test_cpLackMaterialSub_delete 的 pytest" />
-      <item itemvalue="Python.connect_oracle" />
+      <item itemvalue="Python tests.test_cp.TestSrmCp.test_cpLackMaterialSub_page 的 pytest" />
+      <item itemvalue="Python tests.test_cp.TestSrmCp.test_cpLackMaterialSub_save 的 pytest" />
+      <item itemvalue="Python tests.pytest in test_vendor.py" />
+      <item itemvalue="Python tests.pytest for test_vendor.TestSrmVendor.test_vendorQualityQuestion_page" />
+      <item itemvalue="Python tests.pytest for test_vendor.TestSrmVendor.test_vendorMasterData_page" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python 测试.test_cp.TestSrmCp.test_cpLackMaterialSub_delete 的 pytest" />
-        <item itemvalue="Python.connect_oracle" />
-        <item itemvalue="Python 测试.test_cp.TestSrmCp.test_cpdetail_transfer 的 pytest" />
-        <item itemvalue="Python.read_yaml" />
-        <item itemvalue="Python 测试.test_cp.TestSrmCp 的 pytest" />
+        <item itemvalue="Python tests.pytest in test_vendor.py" />
+        <item itemvalue="Python tests.pytest for test_vendor.TestSrmVendor.test_vendorQualityQuestion_page" />
+        <item itemvalue="Python tests.pytest for test_vendor.TestSrmVendor.test_vendorMasterData_page" />
       </list>
     </recent_temporary>
   </component>
@@ -317,8 +298,49 @@
       <workItem from="1618540750884" duration="15003000" />
       <workItem from="1618563871343" duration="3077000" />
       <workItem from="1618623630095" duration="16963000" />
-      <workItem from="1618797201692" duration="37505000" />
-      <workItem from="1618907114508" duration="4953000" />
+      <workItem from="1618797201692" duration="8510000" />
+    </task>
+    <task id="LOCAL-00015" summary="代码维护">
+      <created>1590394947617</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1590394947617</updated>
+    </task>
+    <task id="LOCAL-00016" summary="代码维护">
+      <created>1590395702381</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1590395702381</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Default Changelist">
+      <created>1614760676541</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1614760676541</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Default Changelist">
+      <created>1614762442709</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1614762442709</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Default Changelist">
+      <created>1614762770389</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1614762770389</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Default Changelist">
+      <created>1614786806420</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1614786806420</updated>
     </task>
     <task id="LOCAL-00021" summary="Default Changelist">
       <created>1615173724730</created>
@@ -607,63 +629,21 @@
       <option name="project" value="LOCAL" />
       <updated>1618804831179</updated>
     </task>
-    <task id="LOCAL-00062" summary="Default Changelist">
-      <created>1618811474528</created>
+    <task id="LOCAL-00062" summary="新增供应商模块接口">
+      <created>1618883709106</created>
       <option name="number" value="00062" />
       <option name="presentableId" value="LOCAL-00062" />
       <option name="project" value="LOCAL" />
-      <updated>1618811474528</updated>
+      <updated>1618883709106</updated>
     </task>
-    <task id="LOCAL-00063" summary="Default Changelist">
-      <created>1618811624356</created>
+    <task id="LOCAL-00063" summary="0420修改">
+      <created>1618883825755</created>
       <option name="number" value="00063" />
       <option name="presentableId" value="LOCAL-00063" />
       <option name="project" value="LOCAL" />
-      <updated>1618811624356</updated>
+      <updated>1618883825759</updated>
     </task>
-    <task id="LOCAL-00064" summary="Default Changelist">
-      <created>1618814523726</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1618814523726</updated>
-    </task>
-    <task id="LOCAL-00065" summary="Default Changelist">
-      <created>1618814780204</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1618814780204</updated>
-    </task>
-    <task id="LOCAL-00066" summary="Default Changelist">
-      <created>1618819811346</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1618819811346</updated>
-    </task>
-    <task id="LOCAL-00067" summary="Default Changelist">
-      <created>1618820023093</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1618820023093</updated>
-    </task>
-    <task id="LOCAL-00068" summary="Default Changelist">
-      <created>1618826510087</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1618826510087</updated>
-    </task>
-    <task id="LOCAL-00069" summary="Default Changelist">
-      <created>1618880649345</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1618880649345</updated>
-    </task>
-    <option name="localTasksCounter" value="70" />
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -734,7 +714,9 @@
     <MESSAGE value="代码补充维护" />
     <MESSAGE value="代码维护" />
     <MESSAGE value="Default Changelist" />
-    <option name="LAST_COMMIT_MESSAGE" value="Default Changelist" />
+    <MESSAGE value="新增供应商模块接口" />
+    <MESSAGE value="0420修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="0420修改" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -746,33 +728,5 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/requests_srm$test_cp_TestSrmCp_test_cpLackMaterialSub_leadin_edit__pytest.coverage" NAME="test_cp.TestSrmCp.test_cpLackMaterialSub_leadin_edit 的 pytest 覆盖结果" MODIFIED="1618819306779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/SRM_TestCase" />
-    <SUITE FILE_PATH="coverage/requests_srm$readconfig__1_.coverage" NAME="readconfig (1) 覆盖结果" MODIFIED="1615881530731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/requests_srm$test_ExternalPortal_TestSRM_test_SysUser_put__pytest.coverage" NAME="test_ExternalPortal.TestSRM.test_SysUser_put 的 pytest 覆盖结果" MODIFIED="1618477381331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/SRM_TestCase" />
-    <SUITE FILE_PATH="coverage/requests_srm$read_yaml.coverage" NAME="read_yaml 覆盖结果" MODIFIED="1618907632406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
-    <SUITE FILE_PATH="coverage/requests_srm$test_ExternalPortal_TestSRM_test_SysUser_state__pytest.coverage" NAME="test_ExternalPortal.TestSRM.test_SysUser_state 的 pytest 覆盖结果" MODIFIED="1616226016005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/SRM_TestCase" />
-    <SUITE FILE_PATH="coverage/requests_srm$test_cp_TestSrmCp__pytest.coverage" NAME="test_cp.TestSrmCp 的 pytest 覆盖结果" MODIFIED="1618905097542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/SRM_TestCase" />
-    <SUITE FILE_PATH="coverage/requests_srm$test_ExternalPortal_TestSRM_test_cpLackMaterialSub_page__pytest.coverage" NAME="test_ExternalPortal.TestSRM.test_cpLackMaterialSub_page 的 pytest 覆盖结果" MODIFIED="1616225824180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/SRM_TestCase" />
-    <SUITE FILE_PATH="coverage/requests_srm$connect_mysql.coverage" NAME="connect_mysql 覆盖结果" MODIFIED="1617677910954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
-    <SUITE FILE_PATH="coverage/requests_srm$test_cp_TestSrmCp_test_cpdetail_page_data__pytest.coverage" NAME="test_cp.TestSrmCp.test_cpdetail_page_data 的 pytest 覆盖结果" MODIFIED="1618886680868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/SRM_TestCase" />
-    <SUITE FILE_PATH="coverage/requests_srm$test_cp_TestSrmCp_test_cpdetail_transfer__pytest.coverage" NAME="test_cp.TestSrmCp.test_cpdetail_transfer 的 pytest 覆盖结果" MODIFIED="1618908056654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/SRM_TestCase" />
-    <SUITE FILE_PATH="coverage/requests_srm$test_ExternalPortal_TestSRM_test_login__pytest.coverage" NAME="test_ExternalPortal.TestSRM.test_login 的 pytest 覆盖结果" MODIFIED="1616573956184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/SRM_TestCase" />
-    <SUITE FILE_PATH="coverage/requests_srm$test_ExternalPortal_TestSRM_test_sysUser_page__pytest.coverage" NAME="test_ExternalPortal.TestSRM.test_sysUser_page 的 pytest 覆盖结果" MODIFIED="1617678572321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/SRM_TestCase" />
-    <SUITE FILE_PATH="coverage/requests_srm$test_cp_TestSrmCp_test_cpLackMaterialSub_save__pytest.coverage" NAME="test_cp.TestSrmCp.test_cpLackMaterialSub_save 的 pytest 覆盖结果" MODIFIED="1618651676169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/SRM_TestCase" />
-    <SUITE FILE_PATH="coverage/requests_srm$readconfig.coverage" NAME="readconfig 覆盖结果" MODIFIED="1617678613344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
-    <SUITE FILE_PATH="coverage/requests_srm$readconfig__2_.coverage" NAME="readconfig (2) 覆盖结果" MODIFIED="1615885501589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
-    <SUITE FILE_PATH="coverage/requests_srm$test_cp_TestSrmCp_test_cpdetail_userpage__pytest.coverage" NAME="test_cp.TestSrmCp.test_cpdetail_userpage 的 pytest 覆盖结果" MODIFIED="1618904099311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/SRM_TestCase" />
-    <SUITE FILE_PATH="coverage/requests_srm$SRM_Base.coverage" NAME="SRM_Base 覆盖结果" MODIFIED="1617874444288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api" />
-    <SUITE FILE_PATH="coverage/requests_srm$test_cp_TestSrmCp_test_cpLackMaterialSub_delete__pytest.coverage" NAME="test_cp.TestSrmCp.test_cpLackMaterialSub_delete 的 pytest 覆盖结果" MODIFIED="1618912085311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/SRM_TestCase" />
-    <SUITE FILE_PATH="coverage/requests_srm$test_cp_TestSrmCp_test_cpLackMaterialSub_leadin__pytest.coverage" NAME="test_cp.TestSrmCp.test_cpLackMaterialSub_leadin 的 pytest 覆盖结果" MODIFIED="1618811286062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/SRM_TestCase" />
-    <SUITE FILE_PATH="coverage/requests_srm$test_cp_TestSrmCp_test_cpdetail_page__pytest.coverage" NAME="test_cp.TestSrmCp.test_cpdetail_page 的 pytest 覆盖结果" MODIFIED="1618902639071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/SRM_TestCase" />
-    <SUITE FILE_PATH="coverage/requests_srm$test_ExternalPortal_TestSRM__pytest.coverage" NAME="test_ExternalPortal.TestSRM 的 pytest 覆盖结果" MODIFIED="1616225842118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/SRM_TestCase" />
-    <SUITE FILE_PATH="coverage/requests_srm$rerere.coverage" NAME="rerere 覆盖结果" MODIFIED="1618644488448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/requests_srm$test_ExternalPortal_TestSRM_test_sysuser__pytest.coverage" NAME="test_ExternalPortal.TestSRM.test_sysuser 的 pytest 覆盖结果" MODIFIED="1618558073769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/SRM_TestCase" />
-    <SUITE FILE_PATH="coverage/requests_srm$test_cp_TestSrmCp_test_cpLackMaterialSub_page__pytest.coverage" NAME="test_cp.TestSrmCp.test_cpLackMaterialSub_page 的 pytest 覆盖结果" MODIFIED="1618651783022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/SRM_TestCase" />
-    <SUITE FILE_PATH="coverage/requests_srm$connect_oracle.coverage" NAME="connect_oracle 覆盖结果" MODIFIED="1618911701601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
-    <SUITE FILE_PATH="coverage/requests_srm$test_cp_TestSrmCp_test_cpLackMaterialSub_push__pytest.coverage" NAME="test_cp.TestSrmCp.test_cpLackMaterialSub_push 的 pytest 覆盖结果" MODIFIED="1618286224615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/SRM_TestCase" />
   </component>
 </project>

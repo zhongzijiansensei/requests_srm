@@ -507,3 +507,64 @@ class SRMBase(object):
                 }
                 ]
         return self.s.post(url, json=data)
+    '''供应商查询'''
+    def vendorMasterData_page(self, key, value):
+        url = os.environ["host"] + "/srm/api/v1/vendorMasterData/master/page"
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '20',),
+            ("order", 'desc',),
+            ("pageFlag", 'true',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw", '[{"id":"","value":"%s","property":"%s","operator":"like"},'
+                           '{"id":"state1","property":"state","operator":"in","value":"[1]"}]' % (value, key)),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)
+    '''新建质量问题查询'''
+    def vendorQualityQuestion_page(self, key, value):
+        url = os.environ["host"] + "/srm/api/v1/vendorQualityQuestion/page"
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '20',),
+            ("order", 'desc',),
+            ("pageFlag", 'true',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw", '[{"id":"","value":"%s","property":"%s","operator":"like"},'
+                           '{"id":"status100","property":"status","operator":"in","value":"[100,201]"}]' % (value, key)),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)
+    '''新建质量问题保存'''
+    def vendorQualityQuestion_save(self, purchasePerson):
+        #remark = test123
+        url = os.environ["host"] + "/srm/api/v1/vendorQualityQuestion?nextStatus=QUALITY_WAIT_SUBMIT"
+        data = {"companyCode": "6100",
+                "companyName":"板式家具公司",
+                "createBy":"wuxi",
+                "createTime":"2021-04-19 14:16:29",
+                "invoiceNo":"DMA202104190001",
+                "plantCode":"6199",
+                "plantName":"板式家具供应工厂",
+                "presentDate":"2021-04-19",
+                "purchaseOrgCode":"1000",
+                "purchaseOrgName":"采购供应部",
+                "purchasePerson": purchasePerson,
+                "qualityQuestionId": "09a6eec2-8149-4cfa-a6ee-c281497cfada",
+                "qualityTroubleNo": "test0419001",
+                "remark": "test123",
+                "state": "1",
+                "status": "100",
+                "troubleType": "1",
+                "vendorCode": "103419",
+                "vendorName": "中山市广行机械配件有限公司"
+                }
+        print(purchasePerson)
+        p = self.s.post(url, json=data)
+        return p, purchasePerson
