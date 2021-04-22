@@ -48,19 +48,43 @@ class TestSrmVendor:
             assert result == "6199"
 
     @pytest.mark.parametrize("purchasePerson,expect", testdata["vendorQualityQuestion_save_data"],
-                             ids=["修改采购员为吴茜保存", "修改采购员为吴茜保存"])
+                             ids=["保存数据采购员为吴茜", "保存数据采购员为钟子鉴"])
     @allure.feature('新增质量问题保存')
     def test_vendorQualityQuestion_save(self, gettokenfixture, purchasePerson, expect):
         s = gettokenfixture
         self.log.info("-----新增质量问题保存-----")
         r = SRMBase(s)
         msg = r.vendorQualityQuestion_save(purchasePerson)
-        rel = msg[0]
-        self.log.info("获取请求结果:%s" % rel.json())
-        rem = r.vendorQualityQuestion_page("qualityTroubleNo", "test0419001")
-        print(rem.json())
-        rem.purp = jsonpath.jsonpath(rem.json(), '$..createBy')[0]
-        rem.rem = jsonpath.jsonpath(rem.json(), '$..createBy')[0]
-        assert rel.json()["success"] == 1
-        assert rem.purp == expect
-        assert rem.rem == "{}".format(msg[1])
+        result = msg[0]
+        self.log.info("获取请求结果{}".format(result.json()))
+        assert result.json()["success"] == 1
+        assert result.status_code == 200
+
+    @pytest.mark.parametrize("key,value,expect", testdata["vendorBankInfoManage_page_data"],
+                             ids=["供应商编码对应银行信息", "查询银行状态已完善"])
+    @allure.feature('银行信息管理数据查询')  # 测试报告显示测试功能
+    def test_vendorBankInfoManage_page(self, gettokenfixture, key, value, expect):
+        s = gettokenfixture
+        self.log.info("----银行信息管理数据查询接口----")
+        r = SRMBase(s)
+        msg = r.vendorBankInfoManage_page(key, value)
+        self.log.info("获取请求结果: %s" % msg.json())
+        if key == "vendorCode":
+            result = jsonpath.jsonpath(msg.json(), '$..vendorCode')[0]
+            assert result == expect
+        else:
+            result = jsonpath.jsonpath(msg.json(), '$..bankStatus')[0]
+            assert result == 300
+
+    @pytest.mark.parametrize("purchasePerson", testdata["vendorQualityQuestion_add_data"],
+                             ids=["新建质量问题提交采购员1", "新建质量问题提交采购员2"])
+    @allure.feature('新建质量问题提交')
+    def test_vendorQualityQuestion_add(self, gettokenfixture,  purchasePerson):
+        s = gettokenfixture
+        self.log.info("----新建质量问题提交接口----")
+        r = SRMBase(s)
+        msg = r.vendorQualityQuestion_add(purchasePerson)
+        result = msg[0]
+        self.log.info("获取请求结果{}".format(result.json()))
+        assert result.json()["success"] == 1
+        assert result.status_code == 200
