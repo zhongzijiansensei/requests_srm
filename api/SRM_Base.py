@@ -684,10 +684,43 @@ class SRMBase(object):
             ("order", 'desc',),
             ("pageFlag", 'true',),
             ("onlyCountFlag", 'false',),
-            ("filtersRaw", '{"id":"status100",'
-                           '"property":"status",'
-                           '"operator":"in",'
-                           '"value":"%s"}]' %status),
+            ("filtersRaw", '[{"id":"status100","property":"status","operator":"in","value":"[%s]"}]' %status),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)
+    '''配额超标审核记录查询'''
+    def cp_examineRecordsPg(self, key, value):
+        url = os.environ["host"] + "/srm/api/v1/cpPurchaseRequestOverproof/customRecordPage"
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '10',),
+            ("order", 'desc',),
+            ("pageFlag", 'true',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw",'[{"id":"","value":"%s","property":"%s","operator":"like"},'
+                          '{"id":"status100","property":"status","operator":"in","value":"[100,200,300]"}]'%(value, key)),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)
+
+    '''配额审核占位'''
+
+    '''采购申请转单状态查询'''
+    def cp_zdstatusPage(self, key, status):
+        url = os.environ["host"] + "/srm/api/v1/cpPurchaseRequestDtlAllot/customPage"
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '1',),
+            ("order", 'desc',),
+            ("pageFlag", 'true',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw", '[{"id":"%s","property":"requestDetailStatus","operator":"in","value":"[%s]"}]' % (key,status)),
         ]
         )
         headers = {

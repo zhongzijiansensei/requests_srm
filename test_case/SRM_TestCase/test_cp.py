@@ -271,3 +271,44 @@ class TestSrmCp:
         ass2 = repr(ass_s)
         assert ass1 in ss_expect
         assert ass2 in s_expect
+
+    @pytest.mark.parametrize("status, expect", testdata["cp_examineRecordsPage_data"],
+                             ids=["查询待审核", "查询审核未通过", "查询已通过"])
+    @allure.feature("配合超标审核记录状态查询")
+    def test_cp_examineRecordsPage(self,gettokenfixture, status, expect):
+        s = gettokenfixture
+        self.log.info("配合超标审核记录状态查询")
+        r = SRMBase(s)
+        msg = r.cp_examineRecordsPage(status)
+        self.log.info("获取的结果是:%s"%msg.json())
+        a_msg = jsonpath.jsonpath(msg.json(), '$..status')[0]
+        assert a_msg == expect
+
+    @pytest.mark.parametrize("key, value", testdata["cp_examineRecordsPg_data"],
+                             ids=["查询采购申请单号", "查询物料编码"])
+    @allure.feature("配额超标审核记录查询")
+    def test_cp_examineRecordsPg(self, gettokenfixture, key, value):
+        s = gettokenfixture
+        self.log.info("配额超标审核记录查询")
+        r = SRMBase(s)
+        msg = r.cp_examineRecordsPg(key, value)
+        self.log.info("获取的结果是:%s"%msg.json())
+        a_msg = jsonpath.jsonpath(msg.json(), '$..purchaseRequestNo')[0]
+        b_msg = jsonpath.jsonpath(msg.json(), '$..materialCode')[0]
+        if key == "purchaseRequestNo":
+            assert a_msg == value
+        else:
+            assert b_msg == value
+
+    @pytest.mark.parametrize("key, status, expect", testdata["cp_zdstatusPage_data"],
+                             ids=["查询未分配", "查询部分分配", "查询部分转单", "查询部分下单", "查询已分配",
+                                  "查询已转单", "查询已完成", "查询已关闭"])
+    @allure.feature("采购申请转单状态查询")
+    def test_cp_zdstatusPage(self, gettokenfixture, key, status, expect):
+        s = gettokenfixture
+        self.log.info("采购申请转单状态查询")
+        r = SRMBase(s)
+        msg = r.cp_zdstatusPage(key, status)
+        self.log.info("获取的结果是:%s" % msg.json())
+        a_msg = jsonpath.jsonpath(msg.json(), '$..requestDetailStatus')[0]
+        assert a_msg == expect

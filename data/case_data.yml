@@ -104,7 +104,9 @@ cp_statuspage_data: #采购申请状态查询
   - ["[500]","[100,200,300,400]","[500]","[100,200,300,400]"]
 
 cp_examineRecordsPage_data: #配合超标审核记录状态查询
-
+  - ["100", 100]
+  - ["200", 200]
+  - ["300", 300]
 vendorBankInfoManage_page_data: #银行信息管理查询
   - [ "vendorCode","106037","106037"]
   - [ "bankStatus","300","300"]
@@ -112,3 +114,16 @@ vendorBankInfoManage_page_data: #银行信息管理查询
 vendorQualityQuestion_add_data: #新建质量问题提交
   - ["[wuxi]吴茜"]
   - ["[zhongzijian]钟子鉴"]
+
+cp_examineRecordsPg_data: #配合超标审核记录查询
+  - ["purchaseRequestNo","PR2020112200001"]
+  - ["materialCode","101000001"]
+cp_zdstatusPage_data: #采购申请转单状态查询
+  - ["requestDetailStatus100","100",100]
+  - ["requestDetailStatus200","200",200]
+  - ["requestDetailStatus300","300",300]
+  - ["requestDetailStatus400","400",400]
+  - ["requestDetailStatus500","500",500]
+  - ["requestDetailStatus600","600",600]
+  - ["requestDetailStatus700","700",700]
+  - ["requestDetailStatus900","900",900]
