@@ -640,3 +640,22 @@ class SRMBase(object):
             'Content-Type': webforms.content_type,
         }
         return self.s.post(url, headers=headers, data=webforms)
+    '''配合超标审核记录状态查询'''
+    def cp_examineRecordsPage(self, status):
+        url = os.environ["host"] + "/srm/api/v1/cpPurchaseRequestOverproof/customRecordPage"
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '10',),
+            ("order", 'desc',),
+            ("pageFlag", 'true',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw", '{"id":"status100",'
+                           '"property":"status",'
+                           '"operator":"in",'
+                           '"value":"%s"}]' %status),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)

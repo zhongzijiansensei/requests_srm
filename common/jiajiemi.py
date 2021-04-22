@@ -65,7 +65,7 @@ class PrpCrypt(object):
 
 if __name__ == '__main__':
     pc = PrpCrypt('1234567890123456')
-    a = "aragakkiyui3"
+    a = "aragakki"
     print("加密前%s" % a)
     b = pc.encrypt(a)
     print("加密后%s" % b.lower())
