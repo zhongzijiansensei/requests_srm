@@ -124,9 +124,9 @@ class TestSrmVendor:
         assert a_msg == expect
 
     @pytest.mark.parametrize("status, expect", testdata["vendorChangeInfo_page"],
-                             ids=["应商信息变更管理查询待提交", "应商信息变更管理查询已退回",
-                                  "应商信息变更管理查询待审核", "应商信息变更管理查询开发员待确认",
-                                  "应商信息变更管理查询完成"])
+                             ids=["供应商信息变更管理查询待提交", "供应商信息变更管理查询已退回",
+                                  "供应商信息变更管理查询待审核", "供应商信息变更管理查询开发员待确认",
+                                  "供应商信息变更管理查询完成"])
     @allure.feature("供应商信息变更管理状态")
     def test_vendorChangeInfo_page(self, gettokenfixture, status, expect):
         s = gettokenfixture
