@@ -727,3 +727,53 @@ class SRMBase(object):
             'Content-Type': webforms.content_type,
         }
         return self.s.post(url, headers=headers, data=webforms)
+    '''供应商引入状态查询'''
+    def vendorImport(self, source, status):
+        url = os.environ["host"] + "/srm/api/v1/vendorImport/page"
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '1',),
+            ("order", 'desc',),
+            ("pageFlag", 'true',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw", '[{"id":"source1","property":"source","operator":"in","value":"%s1"},'
+                           '{"id":"status100","property":"status","operator":"in",'
+                           '"value":"%s2"}]' % (source, status)),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)
+    '''供应商主数据数据状态查询'''
+    def vendorMasterData_master_page(self, state):
+        url = os.environ["host"] + "/srm/api/v1/vendorMasterData/master/page"
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '1',),
+            ("order", 'desc',),
+            ("pageFlag", 'true',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw", '[{"id":"state1","property":"state","operator":"in","value":"%s"}]' % state),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)
+    '''供应商信息变更管理状态'''
+    def vendorChangeInfo_page(self, status):
+        url = os.environ["host"] + "/srm/api/v1/vendorChangeInfo/page"
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '1',),
+            ("order", 'desc',),
+            ("pageFlag", 'true',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw", '[{"id":"status100","property":"status","operator":"in","value":"%s"}]' % status),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)
