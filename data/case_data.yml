@@ -127,3 +127,7 @@ cp_zdstatusPage_data: #采购申请转单状态查询
   - ["requestDetailStatus600","600",600]
   - ["requestDetailStatus700","700",700]
   - ["requestDetailStatus900","900",900]
+
+cp_zdpage_data: #采购申请转单查询
+  - ["requestDetailRemark", "自动化导入", "自动化导入"]
+  - ["createBy", "zhongzijian", "zhongzijian"]

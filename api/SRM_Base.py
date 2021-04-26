@@ -33,7 +33,7 @@ class SRMBase(object):
             ("page",'1',),
             ("rows",'10',),
             ("order", 'desc',),
-            ("pageFlag",'true',),
+            ("pageFlag",'True',),
             ("onlyCountFlag",'false',),
             ("filtersRaw", '[{"id":"","value": "%s", "property": "%s", "operator": "like"}]'%(value,key)),
         ]
@@ -69,7 +69,7 @@ class SRMBase(object):
             ("page", '1',),
             ("rows", '10',),
             ("order", 'desc',),
-            ("pageFlag", 'true',),
+            ("pageFlag", 'True',),
             ("onlyCountFlag", 'false',),
             ("filtersRaw", '[{"id":"","value":"%s","property":"%s","operator":"like"},'
                            '{"id":"syncStatus100","property":"syncStatus","operator":"in",'
@@ -221,7 +221,7 @@ class SRMBase(object):
                    "buyerText":"",
                    "remark":"{}".format(remark),
                    "createTime":"",
-                   "submitFlag":"true"
+                   "submitFlag":"True"
                    }
         response = self.s.post(url, json=payload)
         return  response,remark
@@ -260,7 +260,7 @@ class SRMBase(object):
             ("page", '1',),
             ("rows", '10',),
             ("order", 'desc',),
-            ("pageFlag", 'true',),
+            ("pageFlag", 'True',),
             ("onlyCountFlag", 'false',),
             ("filtersRaw", '[{"id":"","value":"%s","property":"%s","operator":"="}]' %(value, key)),
         ]
@@ -292,8 +292,8 @@ class SRMBase(object):
             ("page", '1',),
             ("rows", '10',),
             ("order", 'desc',),
-            ("pageFlag", 'true',),
-            ("onlyCountFlag", 'true',),
+            ("pageFlag", 'True',),
+            ("onlyCountFlag", 'True',),
             ("filtersRaw", '[{"id":"","value":"%s","property":"%s","operator":"like"},'
                            '{"id":"syncStatus100","property":"syncStatus","operator":"in",'
                            '"value":"[100,200,300,400,500]"},{"id":"status100","property":"status",'
@@ -361,7 +361,7 @@ class SRMBase(object):
             ("page", '1',),
             ("rows", '10',),
             ("order", 'desc',),
-            ("pageFlag", 'true',),
+            ("pageFlag", 'True',),
             ("onlyCountFlag", 'false',),
             ("filtersRaw", '[{"id":"requestDetailStatus100",'
                              '"property":"requestDetailStatus",'
@@ -385,7 +385,7 @@ class SRMBase(object):
             ("page", '1',),
             ("rows", '10',),
             ("order", 'desc',),
-            ("pageFlag", 'true',),
+            ("pageFlag", 'True',),
             ("onlyCountFlag", 'false',),
             ("filtersRaw", '[{{"id":"","value":"{}","property":"{}","operator":"like"}},'
                            '{{"id":"requestDetailStatus100",'
@@ -409,7 +409,7 @@ class SRMBase(object):
             ("page", '1',),
             ("rows", '10',),
             ("order", 'desc',),
-            ("pageFlag", 'true',),
+            ("pageFlag", 'True',),
             ("onlyCountFlag", 'false',),
             ("filtersRaw", '[{"id":"","value":"%s","property":"account","operator":"like"},'
                             '{"id":"state1","property":"state","operator":"=","value":1}]' %value),
@@ -514,7 +514,7 @@ class SRMBase(object):
             ("page", '1',),
             ("rows", '20',),
             ("order", 'desc',),
-            ("pageFlag", 'true',),
+            ("pageFlag", 'True',),
             ("onlyCountFlag", 'false',),
             ("filtersRaw", '[{"id":"","value":"%s","property":"%s","operator":"like"},'
                            '{"id":"state1","property":"state","operator":"in","value":"[1]"}]' % (value, key)),
@@ -531,7 +531,7 @@ class SRMBase(object):
             ("page", '1',),
             ("rows", '20',),
             ("order", 'desc',),
-            ("pageFlag", 'true',),
+            ("pageFlag", 'True',),
             ("onlyCountFlag", 'false',),
             ("filtersRaw", '[{"id":"","value":"%s","property":"%s","operator":"like"},'
                            '{"id":"status100","property":"status","operator":"in","value":"[100,201]"}]' % (value, key)),
@@ -599,7 +599,7 @@ class SRMBase(object):
             ("page", '1',),
             ("rows", '20',),
             ("order", 'desc',),
-            ("pageFlag", 'true',),
+            ("pageFlag", 'True',),
             ("onlyCountFlag", 'false',),
             ("filtersRaw",'[{"id":"tempId","property":"temp_id","operator":"=","value":"8e926428-c823-418d-9264-28c823a18d03"}]'),
         ]
@@ -619,7 +619,7 @@ class SRMBase(object):
             ("page", '1',),
             ("rows", '10',),
             ("order", 'desc',),
-            ("pageFlag", 'true',),
+            ("pageFlag", 'True',),
             ("onlyCountFlag", 'false',),
             ("filtersRaw", '[{"id":"syncStatus100",'
                              '"property":"syncStatus",'
@@ -664,7 +664,7 @@ class SRMBase(object):
             ("page", '1',),
             ("rows", '20',),
             ("order", 'desc',),
-            ("pageFlag", 'true',),
+            ("pageFlag", 'True',),
             ("onlyCountFlag", 'false',),
             ("filtersRaw", '[{"id":"","value":"%s","property":"%s","operator":"like"},'
                            '{"id":"bankStatus300","property":"bankStatus","operator":"in","value":"[300]"}]' % (
@@ -682,7 +682,7 @@ class SRMBase(object):
             ("page", '1',),
             ("rows", '10',),
             ("order", 'desc',),
-            ("pageFlag", 'true',),
+            ("pageFlag", 'True',),
             ("onlyCountFlag", 'false',),
             ("filtersRaw", '[{"id":"status100","property":"status","operator":"in","value":"[%s]"}]' %status),
         ]
@@ -698,7 +698,7 @@ class SRMBase(object):
             ("page", '1',),
             ("rows", '10',),
             ("order", 'desc',),
-            ("pageFlag", 'true',),
+            ("pageFlag", 'True',),
             ("onlyCountFlag", 'false',),
             ("filtersRaw",'[{"id":"","value":"%s","property":"%s","operator":"like"},'
                           '{"id":"status100","property":"status","operator":"in","value":"[100,200,300]"}]'%(value, key)),
@@ -718,7 +718,7 @@ class SRMBase(object):
             ("page", '1',),
             ("rows", '1',),
             ("order", 'desc',),
-            ("pageFlag", 'true',),
+            ("pageFlag", 'True',),
             ("onlyCountFlag", 'false',),
             ("filtersRaw", '[{"id":"%s","property":"requestDetailStatus","operator":"in","value":"[%s]"}]' % (key,status)),
         ]
@@ -727,3 +727,568 @@ class SRMBase(object):
             'Content-Type': webforms.content_type,
         }
         return self.s.post(url, headers=headers, data=webforms)
+    '''采购申请转单查询'''
+    def cp_zdpage(self, key, value):
+        url = os.environ["host"] + "/srm/api/v1/cpPurchaseRequestDtlAllot/customPage"
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '5',),
+            ("order", 'desc',),
+            ("pageFlag", 'True',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw",'[{"id":"","value":"%s","property":"%s","operator":"like"},'
+                          '{"id":"requestDetailStatus100","property":"requestDetailStatus","operator":"in",'
+                          '"value":"[100]"}]' % (value, key)),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)
+    '''采购申请明细分配查询'''
+    def cp_zdqueryAllpage(self):
+        url = os.environ['host'] + "/srm/api/v1/cpPurchaseRequestDtlAllot/queryAll"
+        return self.s.post(url)
+    '''采购申请转单分配数量'''
+    def cp_zdallotDty(self, Requestid, Detailid):
+        url = os.environ['host'] + "/srm/api/v1/cpPurchaseRequestDtlAllot/allotDty"
+        data = [
+                {
+                "accsumCode": "",
+                "aggregateDemandQty": None,
+                "alreadyAllotQty": 0,
+                "alreadyOrderQty": 0,
+                "alreadyTransferOrderQty": 0,
+                "baseUnitCode": "ZHA",
+                "baseUnitName": "张",
+                "buyerAccount": "zhongzijian",
+                "buyerName": "钟子鉴",
+                "canBuyQty": 1,
+                "client": "",
+                "companyCode": "6100",
+                "companyName": "板式家具公司",
+                "conditionalTypeCode": "",
+                "costControlDomain": "",
+                "cpPurchaseRequestCreateBy": "zhongzijian",
+                "createBy": "zhongzijian",
+                "createTime": "2021-04-21 17:36:58",
+                "currentStatus": None,
+                "deliveryAddress": "",
+                "demandDate": "2021-04-21 17:36:58",
+                "demandName": "",
+                "demandQty": 1,
+                "demandTrackingNo": "",
+                "fixedAssetsCode": "",
+                "fixedAssetsName": "",
+                "guestListNo": "",
+                "isPrice": "1",
+                "isQuota": "1",
+                "lastUpdateBy": "",
+                "lastUpdateTime": None,
+                "materialCode": "101000007",
+                "materialGroupCode": "RA010105",
+                "materialGroupName": "原材料/板材/中纤板/12mm中纤板",
+                "materialName": "12mm中纤板2440*1220mm",
+                "minOrderQty": None,
+                "minPackagingQty": None,
+                "netDemandQty": None,
+                "objectVersionNumber": None,
+                "onOrderQty": None,
+                "orderPlaceOrderQty": 0,
+                "planDeliveryDate": "2030-12-30 00:00:00",
+                "plantCode": "6199",
+                "plantName": "板式家具供应工厂",
+                "productionOrder": "",
+                "profitCenter": "",
+                "projectText": "",
+                "purchaseGroupCode": "A01",
+                "purchaseGroupName": "板材采购组",
+                "purchaseOrgCode": "1000",
+                "purchaseOrgName": "",
+                "purchaseRequestId":Requestid,
+                "purchaseRequestNo": "PR2021042100017",
+                "reason": "",
+                "remark": "",
+                "requestDetailId": Detailid,
+                "requestDetailRemark": "自动化导入",
+                "requestDetailState": 1,
+                "requestDetailStatus": 100,
+                "requisitionPlantCode": "6110",
+                "requisitionPlantName": "板式家具二分厂",
+                "requisitioner": "",
+                "rowId": "1",
+                "rowids": 10,
+                "rownum": "",
+                "safeStockQty": None,
+                "salesOrderDeliveryLine": "",
+                "salesOrderLine": "",
+                "salesOrderNo": "",
+                "state": 1,
+                "status": 200,
+                "stockQty": None,
+                "storageLocationCode": "R19Z",
+                "storageLocationName": "六分厂油漆借料库位",
+                "storeAddress": "",
+                "threeMonthOutStockQty": None,
+                "transferQty": 1,
+                "vendorCode": "700615",
+                "vendorName": "测试供应商101",
+                "keyIndex": 0
+                }
+                ]
+        return self.s.post(url, json=data)
+    '''采购申请转单提交'''
+    def cp_zdcommit(self, Requestid, Detailid, Allotid):
+        url = os.environ["host"] + "/srm/api/v1/cpPurchaseRequestDtlAllot/commit"
+        data = [
+                {
+                    "allExtraAttributesBaseId": "aaf19f26-cdd6-e9e4-e053-44031eac0fae",
+                    "allotQty": 1,
+                    "alreadyCancelQty": 0,
+                    "billingRatio": None,
+                    "conversionPrice": None,
+                    "createBy": "zhongzijian",
+                    "createTime": "2021-04-23 17:49:56",
+                    "fileGroupCode": "",
+                    "isOverproof": None,
+                    "lastUpdateBy": "",
+                    "lastUpdateTime": None,
+                    "materialCode": "101000007",
+                    "materialGroupCode": "RA010105",
+                    "materialName": "12mm中纤板2440*1220mm",
+                    "overproofRemark": "",
+                    "plantCode": "6199",
+                    "price": None,
+                    "priceMasterDetailId": "",
+                    "priceUnit": None,
+                    "purchaseOrgCode": "1000",
+                    "purchaseOrgName": "采购供应部",
+                    "purchaseRequestAllotId": Allotid,
+                    "purchaseRequestDetailId": Detailid,
+                    "purchaseRequestId": Requestid,
+                    "purchaseRequestNo": "PR2021042200007",
+                    "quotaDetailId": "3b8a7901-0e41-422e-8a79-010e41020839",
+                    "quotaNumber": 1,
+                    "quotaRatio": 100,
+                    "state": 1,
+                    "status": 100,
+                    "transferQty": 1,
+                    "vendorCode": "500973",
+                    "vendorName": "TCL华瑞照明科技（惠州）有限公司"
+                }
+                ]
+        return self.s.post(url, json=data)
+    '''采购申请转单建立提交'''
+    def cp_zdjlcommit(self, Tranceid, Detailid, Allotid):
+        url = os.environ['host'] + "/srm/api/v1/cpPurchaseRequestTransfer/commit"
+        data = {
+             "dtos": [
+                    {
+                        "accsumCode": "",
+                        "aggregateDemandQty": None,
+                        "allExtraAttributes": "无",
+                        "allExtraAttributesBaseId": "aaf19f26-cdd6-e9e4-e053-44031eac0fae",
+                        "baseUnitCode": "ZHA",
+                        "baseUnitName": "张",
+                        "batchFlag": "5e6d14a1-aed3-40ad-ad14-a1aed340adee",
+                        "billingRatio": None,
+                        "client": "",
+                        "companyCode": "6100",
+                        "companyName": "板式家具公司",
+                        "conversionPrice": None,
+                        "costControlDomain": "",
+                        "cpPurchaseRequestDtlExtras": "",
+                        "deliveryAddress": "",
+                        "deliveryAddressCode": "",
+                        "demandName": "",
+                        "demandQty": 1,
+                        "demandTrackingNo": "",
+                        "excessDeliveryLimit": None,
+                        "fileGroupCode": "",
+                        "fixedAssetsCode": "",
+                        "fixedAssetsName": "",
+                        "floatingRatio": None,
+                        "guestListNo": "",
+                        "inquiryBillNo": "",
+                        "ladderId": "",
+                        "materialCode": "101000007",
+                        "materialGroupCode": "RA010105",
+                        "materialGroupName": "原材料/板材/中纤板/12mm中纤板",
+                        "materialName": "12mm中纤板2440*1220mm",
+                        "minOrderQty": None,
+                        "minPackagingQty": None,
+                        "netDemandQty": None,
+                        "onOrderQty": None,
+                        "overproofRemark": "",
+                        "planDeliveryDate": "2030-12-30 00:00:00",
+                        "plantCode": "6199",
+                        "plantName": "板式家具供应工厂",
+                        "price": None,
+                        "priceUnit": None,
+                        "pricingBillDetailId": "",
+                        "pricingBillNo": "",
+                        "pricingUnitCode": "",
+                        "pricingUnitName": "",
+                        "productionOrder": "",
+                        "profitCenter": "",
+                        "projectText": "",
+                        "purchaseGroupCode": "A01",
+                        "purchaseGroupName": "板材采购组",
+                        "purchaseOrgCode": "1000",
+                        "purchaseOrgName": "采购供应部",
+                        "purchaseRequestDtlRemark": "自动化导入",
+                        "purchaseRequestNo": "PR2021042100004",
+                        "quotaQty": 1,
+                        "quotaRatio": 100,
+                        "remark": "自动化导入",
+                        "requestAllotId": Allotid,
+                        "requestDetailId": Detailid,
+                        "requestTransferId": Tranceid,
+                        "requisitionPlantCode": "6110",
+                        "requisitionPlantName": "板式家具二分厂",
+                        "requisitioner": "",
+                        "rowids": 10,
+                        "safeStockQty": None,
+                        "salesOrderDeliveryLine": "",
+                        "salesOrderLine": "",
+                        "salesOrderNo": "",
+                        "sapDemandQty": None,
+                        "shortageOfDelivery": None,
+                        "state": 1,
+                        "status": 200,
+                        "stockQty": None,
+                        "storageLocationCode": "R19Z",
+                        "storageLocationName": "六分厂油漆借料库位",
+                        "storeAddress": "",
+                        "threeMonthOutStockQty": None,
+                        "transferOrderQty": 1,
+                        "vendorCode": "500973",
+                        "vendorName": "TCL华瑞照明科技（惠州）有限公司"
+                    }
+                ]
+            }
+        return self.s.post(url, json=data)
+    '''采购申请转单建成后提交'''
+    def cp_cgsqjccommit(self, tempId):
+        url = os.environ['host'] + '/srm/api/v1/cpPurchaseOrder'
+        data = {
+                "absolutePath": "",
+                "buyerAccount": "zhongzijian",
+                "buyerName": "钟子鉴",
+                "companyCode": "6100",
+                "companyName": "板式家具公司",
+                "createBy": "",
+                "createTime": None,
+                "currencyCode": "RMB",
+                "currencyName": "",
+                "dataSource": 1,
+                "deliveryDate": "2021-04-26",
+                "dtlDTOS": [],
+                "exchangeRate": 1,
+                "fileGroupCode": "",
+                "fileName": "",
+                "fileType": "",
+                "isAllowedModifyPrice": 1,
+                "isFirstSync": None,
+                "isTentativeEstimation": 1,
+                "isTurnNormal": None,
+                "lastAuditTime": None,
+                "lastUpdateBy": "",
+                "lastUpdateTime": None,
+                "objectVersionNumber": None,
+                "orderAmount": 6,
+                "orderDate": "2021-04-26",
+                "orderDtlInputTempDTOList": [],
+                "orderReleaseTime": None,
+                "purchaseGroupCode": "A01",
+                "purchaseGroupName": "板材采购组",
+                "purchaseOrderId": "",
+                "purchaseOrderNo": "",
+                "purchaseOrderTypeCode": "CG07",
+                "purchaseOrderTypeName": "采购供应部材料采购订单(价格暂估)",
+                "purchaseOrgCode": "1000",
+                "purchaseOrgName": "采购供应部",
+                "reason": "",
+                "remark": "自动化采购转单流程",
+                "state": None,
+                "status": None,
+                "submitFlag": True,
+                "syncMessage": "",
+                "syncStatus": None,
+                "tempId": tempId,
+                "vendorAcceptTime": None,
+                "vendorCode": "500973",
+                "vendorName": "TCL华瑞照明科技（惠州）有限公司"
+            }
+        return self.s.post(url, json=data)
+    '''采购订单管理查询'''
+    def cp_orderpage(self, key, value):
+        url = os.environ['host'] + '/srm/api/v1/cpPurchaseOrder/page'
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '1',),
+            ("order", 'desc',),
+            ("pageFlag", 'True',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw",'[{"id":"","value":"%s","property":"%s","operator":"like"},'
+                          '{"id":"status100","property":"status","operator":"in","value":"[100,101,102,200,300,400,500,600]"},'
+                          '{"id":"syncStatus100","property":"syncStatus","operator":"in","value":"[100,200,300,400,500]"}]' % (value, key)),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)
+    '''根据公司查可提交明细'''
+    def cp_queryByCompanyVendor(self,vendorCode ,companyCode, purchaseGroupCode):
+        url = os.environ['host'] + "/srm/api/v1/cpPurchaseRequestTransfer/queryByCompanyVendor"
+        data = {"vendorCode":vendorCode,"companyCode":companyCode,"purchaseGroupCode":purchaseGroupCode,"salesOrderNo":"","batchFlag":""}
+        return self.s.post(url, json=data)
+
+    '''获取采购订单明细'''
+    def cp_ordertempPage(self, tempid):
+        url = os.environ['host'] + '/srm/api/v1/cpPurchaseOrderDtl/tempPage/%s' % tempid
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '5',),
+            ("order", 'desc',),
+            ("pageFlag", 'True',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw", '[]'),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)
+    '''采购订单明细编辑'''
+    def cp_orderDetailEdit(self, tempid, detailtempid):
+        url = os.environ["host"] + "/srm/api/v1/cpPurchaseOrderDtl"
+        data = {
+                "accsumCode": "",
+                "aggregateDemandQty": None,
+                "allExtraAttributes": "无",
+                "allExtraAttributesBaseId": "aaf19f26-cdd6-e9e4-e053-44031eac0fae",
+                "alreadyDeliveryQty": 0,
+                "alreadyReceivingQty": 0,
+                "area": None,
+                "baseUnitCode": "ZHA",
+                "baseUnitName": "张",
+                "billingRatio": 0,
+                "calculateFormula": "",
+                "client": "",
+                "conditionalTypeCode": "总价格",
+                "contractNo": "",
+                "conventDenominator": None,
+                "conventDenominator1": 1,
+                "conventDenominator2": 1,
+                "conventNumerator": None,
+                "conventNumerator1": 1,
+                "conventNumerator2": 1,
+                "costCenter": "",
+                "costControlDomain": "",
+                "cpPurchaseOrderDTO": {
+                    "absolutePath": "",
+                    "buyerAccount": "zhongzijian",
+                    "buyerName": "钟子鉴",
+                    "companyCode": "6100",
+                    "companyName": "板式家具公司",
+                    "createBy": "",
+                    "createTime": None,
+                    "currencyCode": "RMB",
+                    "currencyName": "",
+                    "dataSource": 1,
+                    "deliveryDate": "2021-04-26",
+                    "dtlDTOS": [],
+                    "exchangeRate": 1,
+                    "fileGroupCode": "",
+                    "fileName": "",
+                    "fileType": "",
+                    "isAllowedModifyPrice": 1,
+                    "isFirstSync": None,
+                    "isTentativeEstimation": 1,
+                    "isTurnNormal": None,
+                    "lastAuditTime": None,
+                    "lastUpdateBy": "",
+                    "lastUpdateTime": None,
+                    "objectVersionNumber": None,
+                    "orderAmount": 10,
+                    "orderDate": "2021-04-26",
+                    "orderDtlInputTempDTOList": [],
+                    "orderReleaseTime": None,
+                    "purchaseGroupCode": "A01",
+                    "purchaseGroupName": "板材采购组",
+                    "purchaseOrderId": "",
+                    "purchaseOrderNo": "",
+                    "purchaseOrderTypeCode": "CG07",
+                    "purchaseOrderTypeName": "采购供应部材料采购订单(价格暂估)",
+                    "purchaseOrgCode": "1000",
+                    "purchaseOrgName": "采购供应部",
+                    "reason": "",
+                    "remark": "",
+                    "state": None,
+                    "status": None,
+                    "submitFlag": True,
+                    "syncMessage": "",
+                    "syncStatus": None,
+                    "tempId": tempid,
+                    "vendorAcceptTime": None,
+                    "vendorCode": "500973",
+                    "vendorName": "TCL华瑞照明科技（惠州）有限公司"
+                },
+                "createBy": "zhongzijian",
+                "createTime": "2021-04-26 16:23:47",
+                "dataSource": 1,
+                "deliveryAddress": "",
+                "deliveryDate": "2021-04-26",
+                "demandName": "",
+                "demandTrackingNo": "",
+                "detailTempId": detailtempid,
+                "excessDeliveryLimit": None,
+                "fixedAssetsCode": "",
+                "fixedAssetsName": "",
+                "floatingRatio": None,
+                "guestListNo": "",
+                "hasData": None,
+                "height": None,
+                "inquiryBillNo": "",
+                "isFree": 0,
+                "isFreeCode": None,
+                "isNeedSyncSap": 1,
+                "isOrderReceiving": 0,
+                "isOrderReceivingCode": None,
+                "isQualityTesting": 1,
+                "isQualityTestingCode": None,
+                "isReturn": 0,
+                "isReturnCode": None,
+                "isSchedule": 1,
+                "isScheduleCode": None,
+                "ladderId": "",
+                "lastUpdateBy": "zhongzijian",
+                "lastUpdateTime": "2021-04-26 16:33:50",
+                "lengths": None,
+                "lineAmount": 1,
+                "lineItemTypeCode": "-1",
+                "lineItemTypeName": "标准",
+                "materialCode": "101000007",
+                "materialGroupCode": "RA010105",
+                "materialGroupName": "原材料/板材/中纤板/12mm中纤板",
+                "materialIds": [],
+                "materialName": "12mm中纤板2440*1220mm",
+                "minOrderQty": None,
+                "minPackagingQty": None,
+                "netDemandQty": None,
+                "objectVersionNumber": None,
+                "oldOrderQty": None,
+                "onOrderQty": None,
+                "orderDetailId": "c8d73477-f061-41df-9734-77f061c1df27",
+                "orderModifyReason": "",
+                "orderQty": 1,
+                "orderUnitCode": "ZHA",
+                "orderUnitName": "张",
+                "originalPrice": 10,
+                "planDeliveryDays": 0,
+                "plantCode": "6199",
+                "plantName": "板式家具供应工厂",
+                "price": "1",
+                "priceMasterDetailIds": [],
+                "priceUnit": 1,
+                "pricingBillDetailId": "",
+                "pricingBillNo": "",
+                "pricingUnitCode": "ZHA",
+                "pricingUnitName": "张",
+                "productionOrder": "",
+                "profitCenter": "",
+                "projectText": "",
+                "purchaseOrderExtraTempList": [
+                    {
+                        "categoryCode": "default",
+                        "categoryId": "aaf18978-8dbd-e860-e053-44031eac1ca4",
+                        "categoryName": "默认扩展类别",
+                        "createBy": "zhongzijian",
+                        "createTime": "2021-04-26 16:23:47",
+                        "detailTempId": "ca585d83-d409-4fed-985d-83d4096fedaf",
+                        "extraAttributesBaseId": "aaf19f26-cdd6-e9e4-e053-44031eac0fae",
+                        "extraAttributesCode": "default",
+                        "extraAttributesName": "无扩展属性",
+                        "extraId": "1b931290-1d34-44f3-9312-901d34b4f310",
+                        "extraTempId": "cab711c2-f502-4a3e-b711-c2f502ca3eb2",
+                        "lastUpdateBy": "",
+                        "lastUpdateTime": None,
+                        "objectVersionNumber": None,
+                        "orderDetailId": "c8d73477-f061-41df-9734-77f061c1df27",
+                        "remark": "",
+                        "state": 3,
+                        "tempId": tempid,
+                        "type": "子"
+                    }
+                ],
+                "purchaseOrderId": tempid,
+                "purchaseRequestNo": "PR2021041700001",
+                "purchaseUnitCode": "ZHA",
+                "purchaseUnitId": "ba30d8f0-6e7b-1579-e053-980d1fac919f",
+                "purchaseUnitName": "张",
+                "realCalculateFormula": "",
+                "remark": "自动化导入",
+                "requestCanOrderQty": None,
+                "requestDemandQty": 1,
+                "requestDetailId": "c0278de3-15a7-031c-e053-e8031eaccba7",
+                "requestDetailIds": [],
+                "requestNumber": "",
+                "requestRowids": None,
+                "requestTransferId": "f6c55789-eeaa-4a11-8557-89eeaa2a110b",
+                "requisitionPlantCode": "6110",
+                "requisitionPlantName": "板式家具二分厂",
+                "requisitioner": "",
+                "rowids": 10,
+                "safeStockQty": None,
+                "salesOrderDeliveryLine": "",
+                "salesOrderLine": "",
+                "salesOrderNo": "",
+                "sapDemandQty": None,
+                "shortageOfDelivery": None,
+                "state": 3,
+                "status": 100,
+                "stockQty": None,
+                "storageLocationCode": "R19Z",
+                "storageLocationName": "六分厂油漆借料库位",
+                "storeAddress": "",
+                "subjectAssignTypeCode": " ",
+                "subjectAssignTypeName": "",
+                "tempId": tempid,
+                "threeMonthOutStockQty": None,
+                "vendorAddress": "广东省惠州市仲恺高新区惠风四路72号",
+                "vendorPostalCode": "516006",
+                "width": None,
+                "keyIndex": 0,
+                "orderUnitList": [
+                    {
+                        "orderUnitCode": "ZHA",
+                        "orderUnitName": "张"
+                    }
+                ],
+                "plantList": [
+                    {
+                        "companyCode": "6100",
+                        "companyId": "34f63026-8f2d-4f49-b630-268f2d6f4001",
+                        "companyName": "板式家具公司",
+                        "createBy": "wuxi",
+                        "createTime": "2020-07-03 09:36:00",
+                        "lastUpdateBy": "SAP",
+                        "lastUpdateTime": "2020-11-27 17:56:11",
+                        "objectVersionNumber": None,
+                        "plantCode": "6199",
+                        "plantId": "af758aca-a847-41c5-b58a-caa847d1c568",
+                        "plantName": "板式家具供应工厂",
+                        "purchaseGroupCode": "A01",
+                        "purchaseGroupId": "843a0c2a-7ef1-42fb-ba0c-2a7ef1900034",
+                        "purchaseGroupName": "板材采购组",
+                        "purchaseOrgCode": "",
+                        "purchaseOrgId": "4eb74245-e975-4cd1-b742-45e975ccd1a1",
+                        "purchaseOrgName": "",
+                        "reason": "",
+                        "state": 1
+                    }
+                ]
+            }
+        return self.s.put(url, json=data)

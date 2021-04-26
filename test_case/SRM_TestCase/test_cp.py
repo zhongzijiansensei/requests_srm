@@ -83,17 +83,17 @@ class TestSrmCp:
         assert result.status_code == 200
         assert ass_remark == "{}".format(uu)
 
-    @pytest.mark.parametrize("id, expect", testdata["cpLackMaterialSub_delete_data"],
+    @pytest.mark.parametrize("p_id, expect", testdata["cpLackMaterialSub_delete_data"],
                              ids=["正常删除", "删除已发布的数据", "删除已关闭的数据", "删除已完成的数据"])
     @allure.feature('采购申请删除')
-    def test_cpLackMaterialSub_delete(self,gettokenfixture, cgsqdelete_sql,  id, expect):
+    def test_cpLackMaterialSub_delete(self, gettokenfixture, cgsqdelete_sql, p_id, expect):
         s = gettokenfixture
         self.log.info("---采购申请删除接口---")
         r = SRMBase(s)
         msg = r.cpLackMaterialSub_delete(id)
         print(msg.json())
-        STATUS_sql = "SELECT STATUS FROM CP_PURCHASE_REQUEST WHERE PURCHASE_REQUEST_ID = '{}'".format(id)
-        STATE_sql = "SELECT STATE FROM CP_PURCHASE_REQUEST WHERE PURCHASE_REQUEST_ID = '{}'".format(id)
+        STATUS_sql = "SELECT STATUS FROM CP_PURCHASE_REQUEST WHERE PURCHASE_REQUEST_ID = '{}'".format(p_id)
+        STATE_sql = "SELECT STATE FROM CP_PURCHASE_REQUEST WHERE PURCHASE_REQUEST_ID = '{}'".format(p_id)
         jg = Db_Oracle().select(STATUS_sql)
         jh = Db_Oracle().select(STATE_sql)
         ass_jg = jg['STATUS']
@@ -177,7 +177,7 @@ class TestSrmCp:
             assert result == expect
 
     @pytest.mark.parametrize("value,expect", testdata["cpdetail_userpage_data"],
-                             ids=["查询采购员wx","查询采购员zzj"])
+                             ids=["查询采购员wx", "查询采购员zzj"])
     @allure.feature('转交采购员查询接口')
     def test_cpdetail_userpage(self, gettokenfixture, value, expect):
         s = gettokenfixture
@@ -207,6 +207,7 @@ class TestSrmCp:
         self.log.info("---采购申请明细导出---")
         msg = r.cpdetail_report()
         assert msg.status_code == 200
+
     @allure.feature('采购申请查看-获取供应商接口')
     def test_cpselect_vendor(self, gettokenfixture):
         s = gettokenfixture
@@ -214,13 +215,15 @@ class TestSrmCp:
         r = SRMBase(s)
         msg = r.cpselect_vendor()
         assert msg.status_code == 200
+
     @allure.feature('采购申请查看-获取公司接口')
-    def test_cpselect_baseCompany(self,gettokenfixture):
+    def test_cpselect_baseCompany(self, gettokenfixture):
         s = gettokenfixture
         self.log.info('---采购申请查看-获取公司接口---')
         r = SRMBase(s)
         msg = r.cpselect_baseCompany()
-        assert  msg.status_code == 200
+        assert msg.status_code == 200
+
     @allure.feature("采购申请查看-获取采购员接口")
     def test_cpselect_sysUser(self, gettokenfixture):
         s = gettokenfixture
@@ -228,30 +231,33 @@ class TestSrmCp:
         r = SRMBase(s)
         msg = r.cpselect_sysUser()
         assert msg.json()["msg"] == "获取用户成功"
+
     @allure.feature("采购申请查看-获取主单接口")
     def test_cpselect_main(self, gettokenfixture):
         s = gettokenfixture
         self.log.info('---采购申请查看-获取主单接口---')
         r = SRMBase(s)
         msg = r.cpselect_main()
-        self.log.info('获取结果是:%s'% msg.json())
+        self.log.info('获取结果是:%s' % msg.json())
         assert msg.json()["data"]["tempId"] == "8e926428-c823-418d-9264-28c823a18d03"
+
     @allure.feature("采购申请查看-获取明细接口")
     def test_cpselect_temp(self, gettokenfixture):
-        s= gettokenfixture
+        s = gettokenfixture
         self.log.info("---采购申请查看-获取明细接口---")
         r = SRMBase(s)
         msg = r.cpselect_temp()
-        self.log.info('获取结果是:%s'% msg.json())
+        self.log.info('获取结果是:%s' % msg.json())
         a_msg = jsonpath.jsonpath(msg.json(), '$..tempId')[0]
         assert a_msg == "8e926428-c823-418d-9264-28c823a18d03"
+
     @allure.feature("采购申请查看-获取日志接口")
     def test_cpselect_log(self, gettokenfixture):
         s = gettokenfixture
         self.log.info("---采购申请查看-获取日志接口---")
         r = SRMBase(s)
         msg = r.cpselect_log()
-        self.log.info("获取结果是:%s"%msg.json())
+        self.log.info("获取结果是:%s" % msg.json())
         a_msg = jsonpath.jsonpath(msg.json(), '$..busId')[0]
         assert a_msg == "8e926428-c823-418d-9264-28c823a18d03"
 
@@ -264,7 +270,7 @@ class TestSrmCp:
         self.log.info("采购申请状态查询接口")
         r = SRMBase(s)
         msg = r.cp_statuspage(syncstatus, status)
-        self.log.info("获取结果是:%s"%msg.json())
+        self.log.info("获取结果是:%s" % msg.json())
         ass_ss = jsonpath.jsonpath(msg.json(), '$..syncStatus')[0]
         ass_s = jsonpath.jsonpath(msg.json(), '$..status')[0]
         ass1 = repr(ass_ss)
@@ -275,12 +281,12 @@ class TestSrmCp:
     @pytest.mark.parametrize("status, expect", testdata["cp_examineRecordsPage_data"],
                              ids=["查询待审核", "查询审核未通过", "查询已通过"])
     @allure.feature("配合超标审核记录状态查询")
-    def test_cp_examineRecordsPage(self,gettokenfixture, status, expect):
+    def test_cp_examineRecordsPage(self, gettokenfixture, status, expect):
         s = gettokenfixture
         self.log.info("配合超标审核记录状态查询")
         r = SRMBase(s)
         msg = r.cp_examineRecordsPage(status)
-        self.log.info("获取的结果是:%s"%msg.json())
+        self.log.info("获取的结果是:%s" % msg.json())
         a_msg = jsonpath.jsonpath(msg.json(), '$..status')[0]
         assert a_msg == expect
 
@@ -292,7 +298,7 @@ class TestSrmCp:
         self.log.info("配额超标审核记录查询")
         r = SRMBase(s)
         msg = r.cp_examineRecordsPg(key, value)
-        self.log.info("获取的结果是:%s"%msg.json())
+        self.log.info("获取的结果是:%s" % msg.json())
         a_msg = jsonpath.jsonpath(msg.json(), '$..purchaseRequestNo')[0]
         b_msg = jsonpath.jsonpath(msg.json(), '$..materialCode')[0]
         if key == "purchaseRequestNo":
@@ -312,3 +318,66 @@ class TestSrmCp:
         self.log.info("获取的结果是:%s" % msg.json())
         a_msg = jsonpath.jsonpath(msg.json(), '$..requestDetailStatus')[0]
         assert a_msg == expect
+
+    @pytest.mark.parametrize("key, value, expect", testdata["cp_zdpage_data"],
+                             ids=["查询备注", "查询创建人"])
+    @allure.feature("采购申请转单查询")
+    def test_cp_zdpage(self, gettokenfixture, key, value, expect):
+        s = gettokenfixture
+        self.log.info("采购申请转单查询")
+        r = SRMBase(s)
+        msg = r.cp_zdpage(key, value)
+        self.log.info("获取请求结果:%s" % msg.json())
+        a_msg = jsonpath.jsonpath(msg.json(), '$..requestDetailRemark')[0]
+        b_msg = jsonpath.jsonpath(msg.json(), '$..createBy')[0]
+        if key == "requestDetailRemark":
+            assert a_msg == expect
+        else:
+            assert b_msg == expect
+
+    @allure.feature("采购申请明细分配查询")
+    def test_cp_zdqueryAllpage(self, gettokenfixture):
+        s = gettokenfixture
+        self.log.info("采购申请明细分配查询")
+        r = SRMBase(s)
+        msg = r.cp_zdqueryAllpage()
+        self.log.info("获取结果是:%s" % msg.json())
+        assert "allotQty" in msg.text
+
+    # @pytest.mark.parametrize("key, value, expect", testdata["cp_zdpage_data"],
+    #                          ids=["查询备注", "查询创建人"])
+    @allure.feature("采购申请转单提交")
+    def test_cpzdcommit(self, gettokenfixture):
+        s = gettokenfixture
+        self.log.info("---采购申请转单提交---")
+        r = SRMBase(s)
+        try:
+            msg_getRequestid = r.cp_zdpage("requestDetailRemark", "自动化导入")  # 查询目标采购申请
+            Requestid = jsonpath.jsonpath(msg_getRequestid.json(), '$..purchaseRequestId')[0]
+            Detailid = jsonpath.jsonpath(msg_getRequestid.json(), '$..requestDetailId')[0]
+            self.log.info("获取采购申请ID:%s" % Requestid)
+        except:
+            self.log.error("自动化导入数据已耗尽")
+        msg_allotDty = r.cp_zdallotDty(Requestid, Detailid)  # 分配采购申请
+        Alloid = msg_allotDty.json()["data"][0]
+        self.log.info("分配的ID是:%s" % msg_allotDty.json()["data"][0])
+        msg_commit = r.cp_zdcommit(Requestid, Detailid, Alloid)  # 分配页面的提交
+        self.log.info("提交的结果是:%s" % msg_commit.json())
+        msg_traceid = r.cp_queryByCompanyVendor("500973", "6100", "A01")
+        self.log.info("此供应商下可提交的明细有:%s" % msg_traceid.json())
+        for jg in msg_traceid.json()['data']:
+            if jg['requestAllotId'] == Alloid:
+                break
+        Tranceid = jg['requestTransferId']
+        msg_jlcommit = r.cp_zdjlcommit(Tranceid, Detailid, Alloid)  # 转单页面的提交
+        tempid = msg_jlcommit.json()["data"]["tempId"]
+        self.log.info("获取的tempID是:%s" % tempid)
+        msg_page = r.cp_ordertempPage(tempid)  # 获取detailtemp
+        detailtempid = jsonpath.jsonpath(msg_page.json(), '$..detailTempId')[0]
+        print("detemp：%s"%detailtempid)
+        msg_put = r.cp_orderDetailEdit(tempid, detailtempid)  #更新采购订单明细
+        print(msg_put.json())
+        msg_jccommit = r.cp_cgsqjccommit(tempid)
+        self.log.info("生成采购订单号是:%s" % msg_jccommit.json()["msg"])
+        msg = r.cp_orderpage("purchaseOrderNo", msg_jccommit.json()["msg"])
+        assert msg.json()["data"]["total"] == 1
