@@ -33,7 +33,7 @@ class SRMBase(object):
             ("page",'1',),
             ("rows",'10',),
             ("order", 'desc',),
-            ("pageFlag",'True',),
+            ("pageFlag",'true',),
             ("onlyCountFlag",'false',),
             ("filtersRaw", '[{"id":"","value": "%s", "property": "%s", "operator": "like"}]'%(value,key)),
         ]
@@ -69,7 +69,7 @@ class SRMBase(object):
             ("page", '1',),
             ("rows", '10',),
             ("order", 'desc',),
-            ("pageFlag", 'True',),
+            ("pageFlag", 'true',),
             ("onlyCountFlag", 'false',),
             ("filtersRaw", '[{"id":"","value":"%s","property":"%s","operator":"like"},'
                            '{"id":"syncStatus100","property":"syncStatus","operator":"in",'
@@ -221,7 +221,7 @@ class SRMBase(object):
                    "buyerText":"",
                    "remark":"{}".format(remark),
                    "createTime":"",
-                   "submitFlag":"True"
+                   "submitFlag":"true"
                    }
         response = self.s.post(url, json=payload)
         return  response,remark
@@ -260,7 +260,7 @@ class SRMBase(object):
             ("page", '1',),
             ("rows", '10',),
             ("order", 'desc',),
-            ("pageFlag", 'True',),
+            ("pageFlag", 'true',),
             ("onlyCountFlag", 'false',),
             ("filtersRaw", '[{"id":"","value":"%s","property":"%s","operator":"="}]' %(value, key)),
         ]
@@ -292,8 +292,8 @@ class SRMBase(object):
             ("page", '1',),
             ("rows", '10',),
             ("order", 'desc',),
-            ("pageFlag", 'True',),
-            ("onlyCountFlag", 'True',),
+            ("pageFlag", 'true',),
+            ("onlyCountFlag", 'true',),
             ("filtersRaw", '[{"id":"","value":"%s","property":"%s","operator":"like"},'
                            '{"id":"syncStatus100","property":"syncStatus","operator":"in",'
                            '"value":"[100,200,300,400,500]"},{"id":"status100","property":"status",'
@@ -361,7 +361,7 @@ class SRMBase(object):
             ("page", '1',),
             ("rows", '10',),
             ("order", 'desc',),
-            ("pageFlag", 'True',),
+            ("pageFlag", 'true',),
             ("onlyCountFlag", 'false',),
             ("filtersRaw", '[{"id":"requestDetailStatus100",'
                              '"property":"requestDetailStatus",'
@@ -385,7 +385,7 @@ class SRMBase(object):
             ("page", '1',),
             ("rows", '10',),
             ("order", 'desc',),
-            ("pageFlag", 'True',),
+            ("pageFlag", 'true',),
             ("onlyCountFlag", 'false',),
             ("filtersRaw", '[{{"id":"","value":"{}","property":"{}","operator":"like"}},'
                            '{{"id":"requestDetailStatus100",'
@@ -409,7 +409,7 @@ class SRMBase(object):
             ("page", '1',),
             ("rows", '10',),
             ("order", 'desc',),
-            ("pageFlag", 'True',),
+            ("pageFlag", 'true',),
             ("onlyCountFlag", 'false',),
             ("filtersRaw", '[{"id":"","value":"%s","property":"account","operator":"like"},'
                             '{"id":"state1","property":"state","operator":"=","value":1}]' %value),
@@ -514,7 +514,7 @@ class SRMBase(object):
             ("page", '1',),
             ("rows", '20',),
             ("order", 'desc',),
-            ("pageFlag", 'True',),
+            ("pageFlag", 'true',),
             ("onlyCountFlag", 'false',),
             ("filtersRaw", '[{"id":"","value":"%s","property":"%s","operator":"like"},'
                            '{"id":"state1","property":"state","operator":"in","value":"[1]"}]' % (value, key)),
@@ -531,7 +531,7 @@ class SRMBase(object):
             ("page", '1',),
             ("rows", '20',),
             ("order", 'desc',),
-            ("pageFlag", 'True',),
+            ("pageFlag", 'true',),
             ("onlyCountFlag", 'false',),
             ("filtersRaw", '[{"id":"","value":"%s","property":"%s","operator":"like"},'
                            '{"id":"status100","property":"status","operator":"in","value":"[100,201]"}]' % (value, key)),
@@ -599,7 +599,7 @@ class SRMBase(object):
             ("page", '1',),
             ("rows", '20',),
             ("order", 'desc',),
-            ("pageFlag", 'True',),
+            ("pageFlag", 'true',),
             ("onlyCountFlag", 'false',),
             ("filtersRaw",'[{"id":"tempId","property":"temp_id","operator":"=","value":"8e926428-c823-418d-9264-28c823a18d03"}]'),
         ]
@@ -619,7 +619,7 @@ class SRMBase(object):
             ("page", '1',),
             ("rows", '10',),
             ("order", 'desc',),
-            ("pageFlag", 'True',),
+            ("pageFlag", 'true',),
             ("onlyCountFlag", 'false',),
             ("filtersRaw", '[{"id":"syncStatus100",'
                              '"property":"syncStatus",'
@@ -664,7 +664,7 @@ class SRMBase(object):
             ("page", '1',),
             ("rows", '20',),
             ("order", 'desc',),
-            ("pageFlag", 'True',),
+            ("pageFlag", 'true',),
             ("onlyCountFlag", 'false',),
             ("filtersRaw", '[{"id":"","value":"%s","property":"%s","operator":"like"},'
                            '{"id":"bankStatus300","property":"bankStatus","operator":"in","value":"[300]"}]' % (
@@ -682,7 +682,7 @@ class SRMBase(object):
             ("page", '1',),
             ("rows", '10',),
             ("order", 'desc',),
-            ("pageFlag", 'True',),
+            ("pageFlag", 'true',),
             ("onlyCountFlag", 'false',),
             ("filtersRaw", '[{"id":"status100","property":"status","operator":"in","value":"[%s]"}]' %status),
         ]
@@ -698,7 +698,7 @@ class SRMBase(object):
             ("page", '1',),
             ("rows", '10',),
             ("order", 'desc',),
-            ("pageFlag", 'True',),
+            ("pageFlag", 'true',),
             ("onlyCountFlag", 'false',),
             ("filtersRaw",'[{"id":"","value":"%s","property":"%s","operator":"like"},'
                           '{"id":"status100","property":"status","operator":"in","value":"[100,200,300]"}]'%(value, key)),
@@ -718,7 +718,7 @@ class SRMBase(object):
             ("page", '1',),
             ("rows", '1',),
             ("order", 'desc',),
-            ("pageFlag", 'True',),
+            ("pageFlag", 'true',),
             ("onlyCountFlag", 'false',),
             ("filtersRaw", '[{"id":"%s","property":"requestDetailStatus","operator":"in","value":"[%s]"}]' % (key,status)),
         ]
@@ -1292,3 +1292,53 @@ class SRMBase(object):
                 ]
             }
         return self.s.put(url, json=data)
+    '''供应商引入状态查询'''
+    def vendorImport(self, source, status):
+        url = os.environ["host"] + "/srm/api/v1/vendorImport/page"
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '1',),
+            ("order", 'desc',),
+            ("pageFlag", 'true',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw", '[{"id":"source1","property":"source","operator":"in","value":"%s1"},'
+                           '{"id":"status100","property":"status","operator":"in",'
+                           '"value":"%s2"}]' % (source, status)),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)
+    '''供应商主数据数据状态查询'''
+    def vendorMasterData_master_page(self, state):
+        url = os.environ["host"] + "/srm/api/v1/vendorMasterData/master/page"
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '1',),
+            ("order", 'desc',),
+            ("pageFlag", 'true',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw", '[{"id":"state1","property":"state","operator":"in","value":"%s"}]' % state),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)
+    '''供应商信息变更管理状态'''
+    def vendorChangeInfo_page(self, status):
+        url = os.environ["host"] + "/srm/api/v1/vendorChangeInfo/page"
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '1',),
+            ("order", 'desc',),
+            ("pageFlag", 'true',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw", '[{"id":"status100","property":"status","operator":"in","value":"%s"}]' % status),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)

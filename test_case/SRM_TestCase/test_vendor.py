@@ -6,6 +6,8 @@ from common.logger import Log
 from common.read_yaml import ReadYaml
 from api.SRM_Base import SRMBase
 import jsonpath
+
+
 # from common.connect_oracle import Db_Oracle
 
 
@@ -79,7 +81,7 @@ class TestSrmVendor:
     @pytest.mark.parametrize("purchasePerson", testdata["vendorQualityQuestion_add_data"],
                              ids=["新建质量问题提交采购员1", "新建质量问题提交采购员2"])
     @allure.feature('新建质量问题提交')
-    def test_vendorQualityQuestion_add(self, gettokenfixture,  purchasePerson):
+    def test_vendorQualityQuestion_add(self, gettokenfixture, purchasePerson):
         s = gettokenfixture
         self.log.info("----新建质量问题提交接口----")
         r = SRMBase(s)
@@ -88,3 +90,49 @@ class TestSrmVendor:
         self.log.info("获取请求结果{}".format(result.json()))
         assert result.json()["success"] == 1
         assert result.status_code == 200
+
+    @pytest.mark.parametrize("source, status, s1_expect, s2_expect", testdata["vendorImport_data"],
+                             ids=["供应商引入查询自主注册", "供应商引入查询引入新增", "供应商引入查询潜在重新申请",
+                                  "供应商引入查询数据迁移", "供应商引入查询待提交", "供应商引入查询开发员已退回",
+                                  "供应商引入查询开发员待确认", "供应商引入查询采购领导退回",
+                                  "供应商引入查询开发人员待提交", "供应商引入查询采购领导待审核",
+                                  "供应商引入查询未通过", "供应商引入查询已建档"])
+    @allure.feature("供应商引入查询接口")
+    def test_vendorImport(self, gettokenfixture, source, status, s1_expect, s2_expect):
+        s = gettokenfixture
+        self.log.info("供应商引入状态查询接口")
+        r = SRMBase(s)
+        msg = r.vendorImport(source, status)
+        self.log.info("获取结果是:%s"%msg.json())
+        ass_s1 = jsonpath.jsonpath(msg.json(), '$..source')[0]
+        ass_s2 = jsonpath.jsonpath(msg.json(), '$..status')[0]
+        ass1 = repr(ass_s1)
+        ass2 = repr(ass_s2)
+        assert ass1 in s1_expect
+        assert ass2 in s2_expect
+
+    @pytest.mark.parametrize("state, expect", testdata["vendorMasterData_master_page"],
+                             ids=["查询供应商主数据数据状态正常", "查询供应商主数据数据状态冻结"])
+    @allure.feature("供应商主数据数据状态查询")
+    def test_vendorMasterData_master_page(self, gettokenfixture, state, expect):
+        s = gettokenfixture
+        self.log.info("供应商主数据数据状态查询")
+        r = SRMBase(s)
+        msg = r.vendorMasterData_master_page(state)
+        self.log.info("获取的结果是:%s" % msg.json())
+        a_msg = jsonpath.jsonpath(msg.json(), '$..state')[0]
+        assert a_msg == expect
+
+    @pytest.mark.parametrize("status, expect", testdata["vendorChangeInfo_page"],
+                             ids=["供应商信息变更管理查询待提交", "供应商信息变更管理查询已退回",
+                                  "供应商信息变更管理查询待审核", "供应商信息变更管理查询开发员待确认",
+                                  "供应商信息变更管理查询完成"])
+    @allure.feature("供应商信息变更管理状态")
+    def test_vendorChangeInfo_page(self, gettokenfixture, status, expect):
+        s = gettokenfixture
+        self.log.info("查询供应商信息变更管理状态")
+        r = SRMBase(s)
+        msg = r.vendorChangeInfo_page(status)
+        self.log.info("获取的结果是:%s" % msg.json())
+        a_msg = jsonpath.jsonpath(msg.json(), '$..status')[0]
+        assert a_msg == expect
