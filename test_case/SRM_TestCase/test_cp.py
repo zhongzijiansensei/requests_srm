@@ -344,10 +344,10 @@ class TestSrmCp:
         self.log.info("获取结果是:%s" % msg.json())
         assert "allotQty" in msg.text
 
-    # @pytest.mark.parametrize("key, value, expect", testdata["cp_zdpage_data"],
-    #                          ids=["查询备注", "查询创建人"])
-    @allure.feature("采购申请转单提交")
-    def test_cpzdcommit(self, gettokenfixture):
+    @pytest.mark.parametrize("bool, expect", testdata["cp_cpzdcommit_data"],
+                             ids=["采购申请转单提交","采购申请转单保存"])
+    @allure.feature("采购申请转单提交与保存")
+    def test_cpzdcommit(self, gettokenfixture, bool, expect):
         s = gettokenfixture
         self.log.info("---采购申请转单提交---")
         r = SRMBase(s)
@@ -363,8 +363,7 @@ class TestSrmCp:
         self.log.info("分配的ID是:%s" % msg_allotDty.json()["data"][0])
         msg_commit = r.cp_zdcommit(Requestid, Detailid, Alloid)  # 分配页面的提交
         self.log.info("提交的结果是:%s" % msg_commit.json())
-        msg_traceid = r.cp_queryByCompanyVendor("500973", "6100", "A01")
-        self.log.info("此供应商下可提交的明细有:%s" % msg_traceid.json())
+        msg_traceid = r.cp_queryByCompanyVendor("500973", "6100", "A01")  # 获取可提交明细
         for jg in msg_traceid.json()['data']:
             if jg['requestAllotId'] == Alloid:
                 break
@@ -372,12 +371,16 @@ class TestSrmCp:
         msg_jlcommit = r.cp_zdjlcommit(Tranceid, Detailid, Alloid)  # 转单页面的提交
         tempid = msg_jlcommit.json()["data"]["tempId"]
         self.log.info("获取的tempID是:%s" % tempid)
-        msg_page = r.cp_ordertempPage(tempid)  # 获取detailtemp
+        msg_page = r.cp_ordertempPage(tempid)  # 根据tempid查询获取传参
         detailtempid = jsonpath.jsonpath(msg_page.json(), '$..detailTempId')[0]
-        print("detemp：%s"%detailtempid)
-        msg_put = r.cp_orderDetailEdit(tempid, detailtempid)  #更新采购订单明细
-        print(msg_put.json())
-        msg_jccommit = r.cp_cgsqjccommit(tempid)
-        self.log.info("生成采购订单号是:%s" % msg_jccommit.json()["msg"])
+        orderdetailid = jsonpath.jsonpath(msg_page.json(), '$..orderDetailId')[0]
+        msg_put = r.cp_orderDetailEdit(tempid, detailtempid, Tranceid, orderdetailid)  #更新采购订单明细
+        try:
+            msg_jccommit = r.cp_cgsqjccommit(tempid, bool)  # 最后提交采购订单
+            self.log.info("生成采购订单号是:%s" % msg_jccommit.json()["msg"])
+        except:
+            self.log.error("采购订单提交失败")
         msg = r.cp_orderpage("purchaseOrderNo", msg_jccommit.json()["msg"])
+        status = jsonpath.jsonpath(msg.json(), '$..status')[0]
         assert msg.json()["data"]["total"] == 1
+        assert status == expect

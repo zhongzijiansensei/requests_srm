@@ -969,7 +969,7 @@ class SRMBase(object):
             }
         return self.s.post(url, json=data)
     '''采购申请转单建成后提交'''
-    def cp_cgsqjccommit(self, tempId):
+    def cp_cgsqjccommit(self, tempId, bool):
         url = os.environ['host'] + '/srm/api/v1/cpPurchaseOrder'
         data = {
                 "absolutePath": "",
@@ -1010,11 +1010,11 @@ class SRMBase(object):
                 "purchaseOrgName": "采购供应部",
                 "reason": "",
                 "remark": "自动化采购转单流程",
-                "state": None,
-                "status": None,
-                "submitFlag": True,
+                "state": "",
+                "status": "",
+                "submitFlag": bool,
                 "syncMessage": "",
-                "syncStatus": None,
+                "syncStatus": "",
                 "tempId": tempId,
                 "vendorAcceptTime": None,
                 "vendorCode": "500973",
@@ -1062,7 +1062,7 @@ class SRMBase(object):
         }
         return self.s.post(url, headers=headers, data=webforms)
     '''采购订单明细编辑'''
-    def cp_orderDetailEdit(self, tempid, detailtempid):
+    def cp_orderDetailEdit(self, tempid, detailtempid, Tranceid, orderdetailid):
         url = os.environ["host"] + "/srm/api/v1/cpPurchaseOrderDtl"
         data = {
                 "accsumCode": "",
@@ -1181,7 +1181,7 @@ class SRMBase(object):
                 "objectVersionNumber": None,
                 "oldOrderQty": None,
                 "onOrderQty": None,
-                "orderDetailId": "c8d73477-f061-41df-9734-77f061c1df27",
+                "orderDetailId": orderdetailid,
                 "orderModifyReason": "",
                 "orderQty": 1,
                 "orderUnitCode": "ZHA",
@@ -1207,7 +1207,7 @@ class SRMBase(object):
                         "categoryName": "默认扩展类别",
                         "createBy": "zhongzijian",
                         "createTime": "2021-04-26 16:23:47",
-                        "detailTempId": "ca585d83-d409-4fed-985d-83d4096fedaf",
+                        "detailTempId": detailtempid,
                         "extraAttributesBaseId": "aaf19f26-cdd6-e9e4-e053-44031eac0fae",
                         "extraAttributesCode": "default",
                         "extraAttributesName": "无扩展属性",
@@ -1236,7 +1236,7 @@ class SRMBase(object):
                 "requestDetailIds": [],
                 "requestNumber": "",
                 "requestRowids": None,
-                "requestTransferId": "f6c55789-eeaa-4a11-8557-89eeaa2a110b",
+                "requestTransferId": Tranceid,
                 "requisitionPlantCode": "6110",
                 "requisitionPlantName": "板式家具二分厂",
                 "requisitioner": "",

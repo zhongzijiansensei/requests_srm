@@ -131,3 +131,7 @@ cp_zdstatusPage_data: #采购申请转单状态查询
 cp_zdpage_data: #采购申请转单查询
   - ["requestDetailRemark", "自动化导入", "自动化导入"]
   - ["createBy", "zhongzijian", "zhongzijian"]
+
+cp_cpzdcommit_data: #采购申请转单提交
+  - [true, 200]
+  - [false, 100]
