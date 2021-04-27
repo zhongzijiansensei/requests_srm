@@ -90,7 +90,7 @@ class TestSrmCp:
         s = gettokenfixture
         self.log.info("---采购申请删除接口---")
         r = SRMBase(s)
-        msg = r.cpLackMaterialSub_delete(id)
+        msg = r.cpLackMaterialSub_delete(p_id)
         print(msg.json())
         STATUS_sql = "SELECT STATUS FROM CP_PURCHASE_REQUEST WHERE PURCHASE_REQUEST_ID = '{}'".format(p_id)
         STATE_sql = "SELECT STATE FROM CP_PURCHASE_REQUEST WHERE PURCHASE_REQUEST_ID = '{}'".format(p_id)
@@ -384,3 +384,45 @@ class TestSrmCp:
         status = jsonpath.jsonpath(msg.json(), '$..status')[0]
         assert msg.json()["data"]["total"] == 1
         assert status == expect
+
+    @allure.feature("采购申请转单取消分配")
+    def test_cpzdcancel(self, gettokenfixture):
+        s = gettokenfixture
+        self.log.info("采购申请转单取消分配")
+        r = SRMBase(s)
+        RequestsNo = r.cp_zdstatusPage("requestDetailStatus100", "100")
+        print("请求结果是%s"%RequestsNo.text)
+        No = jsonpath.jsonpath(RequestsNo.json(), '$..purchaseRequestNo')[0]
+        Requestid = jsonpath.jsonpath(RequestsNo.json(), '$..purchaseRequestId')[0]
+        Detailid = jsonpath.jsonpath(RequestsNo.json(), '$..requestDetailId')[0]
+        Dty = r.cp_zdallotDty(Requestid, Detailid)
+        Alloid = Dty.json()["data"][0]
+        msg = r.cp_zdcacle(Alloid, Requestid, Detailid, No)
+        self.log.info("取消结果是:%s" % msg.text)
+        ass_No = r.cp_zdpage("purchaseRequestNo", No)
+        assert ass_No.json()["data"]["total"] == 1
+
+    @allure.feature("采购申请转单取消")
+    def test_cpPurchase_cancel(self, gettokenfixture):
+        s = gettokenfixture
+        self.log.info("采购申请转单取消")
+        r = SRMBase(s)
+        data = r.cp_queryByCompanyVendor("500973", "6100", "A01")
+        print(data.json())
+        for i in data.json()['data']:
+            if i['purchaseRequestNo'] == "purchaseRequestNo":
+                break
+        TransferId = i["requestTransferId"]
+        batchFlag = i["batchFlag"]
+        cancel = r.cpPurchase_cancel(batchFlag, TransferId)
+        self.log.info("取消返回结果:%s" % cancel.text)
+        msg = r.cp_zdqueryAllpage()
+        reset = r.cp_zdcommit("8e926428-c823-418d-9264-28c823a18d03", "448ad576-bcc5-4689-8ad5-76bcc5d68971",
+                              "8ce3691f-136f-49c6-a369-1f136ff9c6a0")
+        for j in msg.json()['data']:
+            if j['purchaseRequestNo'] == "PR2021042100008":
+                break
+        assert j["purchaseRequestNo"] == "PR2021042100008"
+
+
+
