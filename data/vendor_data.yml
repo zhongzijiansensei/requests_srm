@@ -14,7 +14,7 @@ vendorBankInfoManage_page_data: #银行信息管理查询
   - [ "vendorCode","106037","106037"]
   - [ "bankStatus","300","300"]
 
-vendorQualityQuestion_add_data: #新建质量问题提交
+vendorQualityQuestion_add_data: #新建质量问题提交接口
   - ["[wuxi]吴茜"]
   - ["[zhongzijian]钟子鉴"]
 
