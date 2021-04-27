@@ -638,7 +638,7 @@ class SRMBase(object):
             ("page", '1',),
             ("rows", '5',),
             ("order", 'desc',),
-            ("pageFlag", 'True',),
+            ("pageFlag", 'true',),
             ("onlyCountFlag", 'false',),
             ("filtersRaw",'[{"id":"","value":"%s","property":"%s","operator":"like"},'
                           '{"id":"requestDetailStatus100","property":"requestDetailStatus","operator":"in",'
@@ -932,7 +932,7 @@ class SRMBase(object):
             ("page", '1',),
             ("rows", '1',),
             ("order", 'desc',),
-            ("pageFlag", 'True',),
+            ("pageFlag", 'true',),
             ("onlyCountFlag", 'false',),
             ("filtersRaw",'[{"id":"","value":"%s","property":"%s","operator":"like"},'
                           '{"id":"status100","property":"status","operator":"in","value":"[100,101,102,200,300,400,500,600]"},'
@@ -956,7 +956,7 @@ class SRMBase(object):
             ("page", '1',),
             ("rows", '5',),
             ("order", 'desc',),
-            ("pageFlag", 'True',),
+            ("pageFlag", 'true',),
             ("onlyCountFlag", 'false',),
             ("filtersRaw", '[]'),
         ]
