@@ -4,7 +4,7 @@ import allure
 import pytest
 from common.logger import Log
 from common.read_yaml import ReadYaml
-from api.SRM_Base import SRMBase
+from api.srm_vendor import Srmvendor
 import jsonpath
 
 
@@ -14,7 +14,7 @@ import jsonpath
 @allure.feature("供应商模块测试")
 class TestSrmVendor:
     log = Log()
-    testdata = ReadYaml("case_data.yml").get_yaml_data()
+    testdata = ReadYaml("vendor_data.yml").get_yaml_data()
 
     @pytest.mark.prod
     @pytest.mark.parametrize("key,value,expect", testdata["vendorMasterData_page_data"],
@@ -23,7 +23,7 @@ class TestSrmVendor:
     def test_vendorMasterData_page(self, gettokenfixture, key, value, expect):
         s = gettokenfixture
         self.log.info("----供应商主数据查询接口----")
-        r = SRMBase(s)
+        r = Srmvendor(s)
         msg = r.vendorMasterData_page(key, value)
         self.log.info("获取请求结果: %s" % msg.json())
         if key == "vendorCode":
@@ -39,7 +39,7 @@ class TestSrmVendor:
     def test_vendorQualityQuestion_page(self, gettokenfixture, key, value, expect):
         s = gettokenfixture
         self.log.info("----新建质量问题查询接口----")
-        r = SRMBase(s)
+        r = Srmvendor(s)
         msg = r.vendorQualityQuestion_page(key, value)
         self.log.info("获取请求结果: %s" % msg.json())
         if key == "qualityTroubleNo":
@@ -55,7 +55,7 @@ class TestSrmVendor:
     def test_vendorQualityQuestion_save(self, gettokenfixture, purchasePerson, expect):
         s = gettokenfixture
         self.log.info("-----新增质量问题保存-----")
-        r = SRMBase(s)
+        r = Srmvendor(s)
         msg = r.vendorQualityQuestion_save(purchasePerson)
         result = msg[0]
         self.log.info("获取请求结果{}".format(result.json()))
@@ -68,7 +68,7 @@ class TestSrmVendor:
     def test_vendorBankInfoManage_page(self, gettokenfixture, key, value, expect):
         s = gettokenfixture
         self.log.info("----银行信息管理数据查询接口----")
-        r = SRMBase(s)
+        r = Srmvendor(s)
         msg = r.vendorBankInfoManage_page(key, value)
         self.log.info("获取请求结果: %s" % msg.json())
         if key == "vendorCode":
@@ -84,7 +84,7 @@ class TestSrmVendor:
     def test_vendorQualityQuestion_add(self, gettokenfixture, purchasePerson):
         s = gettokenfixture
         self.log.info("----新建质量问题提交接口----")
-        r = SRMBase(s)
+        r = Srmvendor(s)
         msg = r.vendorQualityQuestion_add(purchasePerson)
         result = msg[0]
         self.log.info("获取请求结果{}".format(result.json()))
@@ -101,7 +101,7 @@ class TestSrmVendor:
     def test_vendorImport(self, gettokenfixture, source, status, s1_expect, s2_expect):
         s = gettokenfixture
         self.log.info("供应商引入状态查询接口")
-        r = SRMBase(s)
+        r = Srmvendor(s)
         msg = r.vendorImport(source, status)
         self.log.info("获取结果是:%s"%msg.json())
         ass_s1 = jsonpath.jsonpath(msg.json(), '$..source')[0]
@@ -117,7 +117,7 @@ class TestSrmVendor:
     def test_vendorMasterData_master_page(self, gettokenfixture, state, expect):
         s = gettokenfixture
         self.log.info("供应商主数据数据状态查询")
-        r = SRMBase(s)
+        r = Srmvendor(s)
         msg = r.vendorMasterData_master_page(state)
         self.log.info("获取的结果是:%s" % msg.json())
         a_msg = jsonpath.jsonpath(msg.json(), '$..state')[0]
@@ -131,8 +131,16 @@ class TestSrmVendor:
     def test_vendorChangeInfo_page(self, gettokenfixture, status, expect):
         s = gettokenfixture
         self.log.info("查询供应商信息变更管理状态")
-        r = SRMBase(s)
+        r = Srmvendor(s)
         msg = r.vendorChangeInfo_page(status)
         self.log.info("获取的结果是:%s" % msg.json())
         a_msg = jsonpath.jsonpath(msg.json(), '$..status')[0]
         assert a_msg == expect
+
+    @allure.feature('供应商主数据导出接口')
+    def vendorMasterData_reportExcel(self, gettokenfixture):
+        s = gettokenfixture
+        r = Srmvendor(s)
+        self.log.info("---供应商主数据导出---")
+        msg = r.vendorMasterData_reportExcel()
+        assert msg.status_code == 200

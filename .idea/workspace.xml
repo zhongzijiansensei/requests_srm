@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ca16193-d1f6-4e90-b09f-eaf2af98cbf0" name="Default Changelist" comment="210425新增供应商模块状态查询">
+    <list default="true" id="2ca16193-d1f6-4e90-b09f-eaf2af98cbf0" name="Default Changelist" comment="210425修改">
+      <change afterPath="$PROJECT_DIR$/api/srm_vendor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/vendor_data.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/SRM_Base.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/SRM_Base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/case_data.yml" beforeDir="false" afterPath="$PROJECT_DIR$/data/case_data.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2021_04_27.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/2021_04_27.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/SRM_TestCase/test_vendor.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/SRM_TestCase/test_vendor.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +135,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Python tests.pytest in test_vendor.py">
-    <configuration name="test_vendor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="srm_vendor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pytest_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -137,11 +143,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="//vdigyyfs1/wuxi/Python/srm_api_test/test_case/SRM_TestCase" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/api" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="//vdigyyfs1/wuxi/Python/srm_api_test/test_case/SRM_TestCase/test_vendor.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/api/srm_vendor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -215,19 +221,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.test_vendor" />
       <item itemvalue="Python tests.pytest in test_vendor.py" />
       <item itemvalue="Python tests.pytest for test_vendor.TestSrmVendor.test_vendorQualityQuestion_add" />
       <item itemvalue="Python tests.pytest for test_vendor.TestSrmVendor" />
       <item itemvalue="Python tests.pytest for test_vendor.TestSrmVendor.test_vendorImport" />
+      <item itemvalue="Python.srm_vendor" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.pytest in test_vendor.py" />
+        <item itemvalue="Python.srm_vendor" />
         <item itemvalue="Python tests.pytest for test_vendor.TestSrmVendor.test_vendorImport" />
         <item itemvalue="Python tests.pytest for test_vendor.TestSrmVendor" />
         <item itemvalue="Python tests.pytest for test_vendor.TestSrmVendor.test_vendorQualityQuestion_add" />
-        <item itemvalue="Python.test_vendor" />
       </list>
     </recent_temporary>
   </component>
@@ -300,13 +306,6 @@
       <workItem from="1618563871343" duration="3077000" />
       <workItem from="1618623630095" duration="16963000" />
       <workItem from="1618797201692" duration="8510000" />
-    </task>
-    <task id="LOCAL-00016" summary="代码维护">
-      <created>1590395702381</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1590395702381</updated>
     </task>
     <task id="LOCAL-00017" summary="Default Changelist">
       <created>1614760676541</created>
@@ -644,7 +643,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619334091375</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="210425修改">
+      <created>1619336340961</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1619336340961</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -718,7 +724,8 @@
     <MESSAGE value="新增供应商模块接口" />
     <MESSAGE value="0420修改" />
     <MESSAGE value="210425新增供应商模块状态查询" />
-    <option name="LAST_COMMIT_MESSAGE" value="210425新增供应商模块状态查询" />
+    <MESSAGE value="210425修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="210425修改" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
