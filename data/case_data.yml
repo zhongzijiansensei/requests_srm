@@ -145,3 +145,7 @@ vendorChangeInfo_page: #供应商信息变更管理状态
 cp_audit_data:  #配额超标审核数据
   - [1, 300]
   - [0, 200]
+
+cp_customPage_data: #配额超标审核查询
+  - ["purchaseRequestNo", "PR2021042800005"]
+  - ["materialCode", "105000007"]

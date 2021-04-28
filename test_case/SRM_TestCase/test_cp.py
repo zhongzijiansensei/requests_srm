@@ -427,7 +427,7 @@ class TestSrmCp:
 
     @pytest.mark.parametrize("auditFlag, expect", testdata["cp_audit_data"],
                              ids=["审核通过", "审核驳回"])
-    @allure.feature("采购申请配额超标审核")
+    @allure.feature("配额超标审核")
     def test_cpPurchaseRequestOverproof(self, gettokenfixture, auditFlag, expect):
         s = gettokenfixture
         self.log.info("----采购申请配额超标审核----")
@@ -457,5 +457,21 @@ class TestSrmCp:
         ass = r.cp_examineRecordsPg("purchaseRequestNo", purchaseRequestNo)
         status = jsonpath.jsonpath(ass.json(), '$..status')[0]
         assert status == expect
+
+    @pytest.mark.parametrize("key, value", testdata["cp_customPage_data"],
+                             ids=["查询单号", "查询物料"])
+    @allure.feature("配额超标审核查询")
+    def test_customPage(self, gettokenfixture, key, value):
+        s = gettokenfixture
+        self.log.info("配额超标审核查询")
+        r = SRMBase(s)
+        msg = r.cp_customPage(key, value)
+        self.log.info("查询结果为:%s" % msg.json())
+        purchaseRequestNo = jsonpath.jsonpath(msg.json(), '$..purchaseRequestNo')[0]
+        materialCode = jsonpath.jsonpath(msg.json(), '$..materialCode')[0]
+        if key == "materialCode":
+            assert materialCode == value
+        else:
+            assert purchaseRequestNo == value
 
 
