@@ -119,7 +119,7 @@ class SRMBase(object):
         return u
 
     '''采购申请明细提交'''
-    def cpLackMaterialSub_Temp(self, uu, code):
+    def cpLackMaterialSub_Temp(self, uu, code, demand):
         url = os.environ["host"]+"/srm/api/v1/cpPurchaseRequestDtlTemp"
         payload = {
                     "detailTempId": "",
@@ -165,7 +165,7 @@ class SRMBase(object):
                     "purchaseGroupName": "板材采购组",
                     "purchaseGroupText": "[A01]板材采购组",
                     "planDeliveryDate": "",
-                    "demandQty": "1",
+                    "demandQty": demand,
                     "alreadyTransferOrderQty": "",
                     "alreadyOrderQty": "",
                     "requisitioner": "",
@@ -203,6 +203,7 @@ class SRMBase(object):
                     "purchaseGroupId": "843a0c2a-7ef1-42fb-ba0c-2a7ef1900034"
                      }
         return self.s.post(url, json=payload)
+
     '''采购申请提交'''
     def cpLackMaterialSub_push(self, uu, caigouyuan):
         remark = uuid.uuid4()
@@ -613,8 +614,6 @@ class SRMBase(object):
         }
         return self.s.post(url, headers=headers, data=webforms)
 
-    '''配额审核占位'''
-
     '''采购申请转单状态查询'''
     def cp_zdstatusPage(self, key, status):
         url = os.environ["host"] + "/srm/api/v1/cpPurchaseRequestDtlAllot/customPage"
@@ -742,7 +741,7 @@ class SRMBase(object):
                 ]
         return self.s.post(url, json=data)
     '''采购申请转单提交'''
-    def cp_zdcommit(self, Requestid, Detailid, Allotid):
+    def cp_zdcommit(self, Requestid, Detailid, Alloid):
         url = os.environ["host"] + "/srm/api/v1/cpPurchaseRequestDtlAllot/commit"
         data = [
                 {
@@ -767,7 +766,7 @@ class SRMBase(object):
                     "priceUnit": None,
                     "purchaseOrgCode": "1000",
                     "purchaseOrgName": "采购供应部",
-                    "purchaseRequestAllotId": Allotid,
+                    "purchaseRequestAllotId": Alloid,
                     "purchaseRequestDetailId": Detailid,
                     "purchaseRequestId": Requestid,
                     "purchaseRequestNo": "PR2021042200007",
@@ -782,6 +781,84 @@ class SRMBase(object):
                 }
                 ]
         return self.s.post(url, json=data)
+
+    '''采购申请转单多条提交(超标审核前置)'''
+    def cp_zdcomits(self, Requestid, Detailid, Alloid):
+        url = os.environ["host"] + "/srm/api/v1/cpPurchaseRequestDtlAllot/commit"
+        data = [
+    {
+        "allExtraAttributesBaseId": "aaf19f26-cdd6-e9e4-e053-44031eac0fae",
+        "allotQty": 401,
+        "alreadyCancelQty": 0,
+        "billingRatio": 100,
+        "conversionPrice": 12,
+        "createBy": "zhongzijian",
+        "createTime": "2021-04-28 14:02:42",
+        "fileGroupCode": "",
+        "isOverproof": None,
+        "lastUpdateBy": "",
+        "lastUpdateTime": None,
+        "materialCode": "105000007",
+        "materialGroupCode": "RA050101",
+        "materialName": "直径16黑色圆扣",
+        "overproofRemark": "",
+        "plantCode": "6199",
+        "price": 12,
+        "priceMasterDetailId": "1f204afe-db49-453f-a04a-fedb49f53f7e",
+        "priceUnit": 1,
+        "purchaseOrgCode": "1000",
+        "purchaseOrgName": "采购供应部",
+        "purchaseRequestAllotId": Alloid,
+        "purchaseRequestDetailId": Detailid,
+        "purchaseRequestId": Requestid,
+        "purchaseRequestNo": "PR2021042800006",
+        "quotaDetailId": "efb32b94-fb74-4df8-b32b-94fb74edf8f1",
+        "quotaNumber": 241,
+        "quotaRatio": 60,
+        "state": 1,
+        "status": 100,
+        "transferQty": 0,
+        "vendorCode": "103455",
+        "vendorName": "四川万潮科技有限公司"
+    },
+    {
+        "allExtraAttributesBaseId": "aaf19f26-cdd6-e9e4-e053-44031eac0fae",
+        "allotQty": 401,
+        "alreadyCancelQty": 0,
+        "billingRatio": 100,
+        "conversionPrice": 10,
+        "createBy": "zhongzijian",
+        "createTime": "2021-04-28 14:02:42",
+        "fileGroupCode": "",
+        "isOverproof": None,
+        "lastUpdateBy": "",
+        "lastUpdateTime": None,
+        "materialCode": "105000007",
+        "materialGroupCode": "RA050101",
+        "materialName": "直径16黑色圆扣",
+        "overproofRemark": "",
+        "plantCode": "6199",
+        "price": 10,
+        "priceMasterDetailId": "14faf359-caa8-4f31-baf3-59caa8df31fe",
+        "priceUnit": 1,
+        "purchaseOrgCode": "1000",
+        "purchaseOrgName": "采购供应部",
+        "purchaseRequestAllotId": Alloid,
+        "purchaseRequestDetailId": Detailid,
+        "purchaseRequestId": Requestid,
+        "purchaseRequestNo": "PR2021042800006",
+        "quotaDetailId": "d65991da-884c-42e5-9991-da884cc2e568",
+        "quotaNumber": 160,
+        "quotaRatio": 40,
+        "state": 1,
+        "status": 100,
+        "transferQty": "401",
+        "vendorCode": "500973",
+        "vendorName": "TCL华瑞照明科技（惠州）有限公司"
+    }
+]
+        return self.s.post(url, json=data)
+
     '''采购申请转单建立提交'''
     def cp_zdjlcommit(self, Tranceid, Detailid, Allotid):
         url = os.environ['host'] + "/srm/api/v1/cpPurchaseRequestTransfer/commit"
@@ -1375,3 +1452,26 @@ class SRMBase(object):
     }
 ]
         return self.s.post(url, json=data)
+
+    '''配额超标审核'''
+    def cp_audit(self, auditid, auditFlag):
+        url = os.environ['host'] + "/srm/api/v1/cpPurchaseRequestOverproof/audit"
+        data = {"ids":[auditid],"auditFlag": auditFlag,"reason":""}
+        return self.s.post(url, json=data)
+
+    '''配额超标审核查询'''
+    def cp_customPage(self, key, value):
+        url = os.environ["host"] + "/srm/api/v1/cpPurchaseRequestOverproof/customPage"
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '5',),
+            ("order", 'desc',),
+            ("pageFlag", 'true',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw",'[{"id":"","value":"%s","property":"%s","operator":"like"}]' % (value, key)),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)

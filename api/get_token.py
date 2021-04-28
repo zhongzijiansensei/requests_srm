@@ -1,4 +1,5 @@
 import requests
+import os
 
 
 class Get_Token(object):
@@ -6,7 +7,7 @@ class Get_Token(object):
         self.s = s
     '''请求登录接口，获取token,拼接成请求头所需的格式，更新到请求头中并将token return出来'''
     def get_token(self):
-        url = "https://qupuat.quanyou.com.cn/auth/oauth/token"
+        url = os.environ["host"] + "/auth/oauth/token"
         boby = {
             "username": "zhongzijian",
             "password": "z08uNL3e/E8FtxpNDH+RwQ==",

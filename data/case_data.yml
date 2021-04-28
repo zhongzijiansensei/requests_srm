@@ -114,8 +114,8 @@ cp_zdpage_data: #采购申请转单查询
   - ["createBy", "zhongzijian", "zhongzijian"]
 
 cp_cpzdcommit_data: #采购申请转单提交
-  - [true, 200]
-  - [false, 100]
+  - [True, 200]
+  - [False, 100]
 
 vendorImport_data: #供应商引入状态查询
   - ["[1,2,3,4]","[100]","[1,2,3,4]","[100]"]
@@ -142,3 +142,6 @@ vendorChangeInfo_page: #供应商信息变更管理状态
   - ["[202]", 202]
   - ["[300]", 300]
 
+cp_audit_data:  #配额超标审核数据
+  - [1, 300]
+  - [0, 200]
