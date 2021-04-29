@@ -280,10 +280,10 @@ class TestSrmCp:
 
     @pytest.mark.parametrize("status, expect", testdata["cp_examineRecordsPage_data"],
                              ids=["查询待审核", "查询审核未通过", "查询已通过"])
-    @allure.feature("配合超标审核记录状态查询")
+    @allure.feature("配额超标审核记录状态查询")
     def test_cp_examineRecordsPage(self, gettokenfixture, status, expect):
         s = gettokenfixture
-        self.log.info("配合超标审核记录状态查询")
+        self.log.info("配额超标审核记录状态查询")
         r = SRMBase(s)
         msg = r.cp_examineRecordsPage(status)
         self.log.info("获取的结果是:%s" % msg.json())

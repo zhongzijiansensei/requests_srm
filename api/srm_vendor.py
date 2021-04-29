@@ -152,12 +152,104 @@ class Srmvendor(object):
         }
         return self.s.post(url, headers=headers, data=webforms)
     '''供应商主数据导出'''
-    def cpdetail_report(self):
-        url = os.environ["host"] + "/srm-export/api/v1/cpPurchaseRequestDtl/reportExcel"
+    def vendorMasterData_reportExcel(self):
+        url = os.environ["host"] + "/srm-export/api/v1/vendorMasterData/reportExcel"
         webforms = MultipartEncoder(fields=[
-            ("filtersRaw", '[{"id":"","value":"PR2021041900040","property":"purchaseRequestNo","operator":"like"},'
-                           '{"id":"status100","property":"status","operator":"in","value":"[100,200,400],'
-                           '{"id":"requestDetailStatus100","property":"requestDetailStatus","operator":"in","value":"[100]"}]'),
+            ("filtersRaw", '[{"id":"state1","property":"state","operator":"in","value":"[1]"}]'),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)
+    '''银行信息管理导出'''
+    def vendorBankInfoManage_exportExcle(self):
+        url = os.environ["host"] + "/srm-export/api/v1/vendorBankInfoManage/exportExcle"
+        webforms = MultipartEncoder(fields=[
+            ("filtersRaw", '[{"id":"bankStatus300","property":"bankStatus","operator":"in","value":"[300]"}]'),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)
+    '''质量问题管理导出数据接口'''
+    def vendorQualityQuestion_export(self):
+        url = os.environ["host"] + "/srm-export/api/v1/vendorQualityQuestion/export"
+        webforms = MultipartEncoder(fields=[
+            ("filtersRaw", '[{"id":"troubleType1","property":"troubleType","operator":"in","value":"[1]"},'
+                           '{"id":"status500","property":"status","operator":"in","value":"[500]"}]'),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)
+
+    '''查询银行信息管理状态'''
+    def vendorBankInfoManage_page1(self, bankStatus):
+        url = os.environ["host"] + "/srm/api/v1/vendorBankInfoManage/page"
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '1',),
+            ("order", 'desc',),
+            ("pageFlag", 'true',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw", '[{"id":"bankStatus100","property":"bankStatus","operator":"in","value":"%s"}]' % bankStatus),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)
+
+    '''供应商银行明细信息状态查询'''
+    def vendorBankInfoManage_detail_page(self, state, status):
+        url = os.environ["host"] + "/srm/api/v1/vendorBankInfoManage/detail/page"
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '1',),
+            ("order", 'desc',),
+            ("pageFlag", 'true',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw", '[{"id":"state1","property":"state","operator":"in","value":"%s1"},'
+                           '{"id":"status100","property":"status","operator":"in","value":"%s2"}]' % (state, status)),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)
+
+    '''新建质量问题事故类型和状态查询'''
+    def vendorQualityQuestion_page1(self, troubleType, status):
+        url = os.environ["host"] + "/srm/api/v1/vendorQualityQuestion/page"
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '1',),
+            ("order", 'desc',),
+            ("pageFlag", 'true',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw", '[{"id":"troubleType1","property":"troubleType","operator":"in","value":"%s"},'
+                           '{"id":"status100","property":"status","operator":"in","value":"%s"}]' % (troubleType, status)),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)
+
+    '''质量问题管理事故类型和状态查询'''
+    def vendorQualityQuestion_page2(self, troubleType, status):
+        url = os.environ["host"] + "/srm/api/v1/vendorQualityQuestion/page"
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '1',),
+            ("order", 'desc',),
+            ("pageFlag", 'true',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw", '[{"id":"troubleType1","property":"troubleType","operator":"in","value":"%s"},'
+                           '{"id":"status100","property":"status","operator":"in","value":"%s"}]' % (troubleType, status)),
         ]
         )
         headers = {
