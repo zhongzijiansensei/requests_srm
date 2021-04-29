@@ -149,3 +149,34 @@ cp_audit_data:  #配额超标审核数据
 cp_customPage_data: #配额超标审核查询
   - ["purchaseRequestNo", "PR2021042800005"]
   - ["materialCode", "105000007"]
+
+cpLackMaterialSub_statusPage_Data:  #缺料提报状态查询
+  - ["status100", 100]
+  - ["status200", 200]
+  - ["status300", 300]
+  - ["status301", 301]
+  - ["status400", 400]
+
+cpLackMaterialSub_page_Data: #缺料提报查询
+  - ["lackMaterialSubNo", "TBD2020070700001"]
+  - ["materialCode", "105000688"]
+  - ["createBy", "zhongzijian"]
+
+cpLackMaterialSub_add_data: #缺料提报新增
+  - "1"
+  - "2"
+  - "3"
+
+cpLackMaterialSub_Save_Data: #缺料提报保存
+  - "1"
+  - "2"
+  - "3"
+
+cpLackMaterialSub_EditSave_Data: #缺料提报编辑保存
+  - "1"
+  - "2"
+  - "3"
+
+lackMaterial_data: #缺料提报删除
+  - ["status100", 100]
+  - ["status200", 200]

@@ -474,4 +474,141 @@ class TestSrmCp:
         else:
             assert purchaseRequestNo == value
 
+    @pytest.mark.parametrize("key, value", testdata["cpLackMaterialSub_statusPage_Data"],
+                             ids=["查询待提交", "查询采购员待确认", "查询库房待收货",
+                                  "查询库房收货中", "查询完成"])
+    @pytest.mark.prod
+    @allure.feature("缺料提报状态查询")
+    def test_cpLackMaterialSub_statusPage(self, gettokenfixture, key, value):
+        s = gettokenfixture
+        self.log.info("缺料提报状态查询接口")
+        r = SRMBase(s)
+        msg = r.cpLackMaterialSub_statusPage(key, value)
+        status = jsonpath.jsonpath(msg.json(), '$..status')[0]
+        self.log.info("查询结果是:%s" %msg.json())
+        assert status == value
+
+    @pytest.mark.parametrize("key, value", testdata["cpLackMaterialSub_page_Data"],
+                             ids=["查询缺料提报编码", "查询物料", "查询提报人"])
+    @pytest.mark.prod
+    @allure.feature("缺料提报查询")
+    def test_cpLackMaterialSub_statusPage(self, gettokenfixture, key, value):
+        s = gettokenfixture
+        self.log.info("缺料提报查询接口")
+        r = SRMBase(s)
+        msg = r.cpLackMaterialSub_page(key, value)
+        lackMaterialSubNo = jsonpath.jsonpath(msg.json(), '$..lackMaterialSubNo')[0]
+        materialCode = jsonpath.jsonpath(msg.json(), '$..materialCode')[0]
+        createBy = jsonpath.jsonpath(msg.json(), '$..createBy')[0]
+        self.log.info("查询结果是:%s" % msg.json())
+        if key == "lackMaterialSubNo":
+            assert lackMaterialSubNo == value
+        elif key == "materialCode":
+            assert materialCode == value
+        else:
+            assert createBy == value
+
+    @allure.feature("根据公司查询工厂")
+    def test_basePlant(self, gettokenfixture):
+        s = gettokenfixture
+        self.log.info("根据公司查询工厂")
+        r = SRMBase(s)
+        msg = r.basePlant()
+        self.log.info("查询第一条结果是:%s"%msg.json()["data"][0])
+        assert msg.json()["msg"] == "查询成功"
+
+    @allure.feature("根据工厂查询库位")
+    def test_baseStorageLocation(self, gettokenfixture):
+        s = gettokenfixture
+        self.log.info("根据工厂查询库位")
+        r = SRMBase(s)
+        msg = r.baseStorageLocation()
+        self.log.info("查询第一条结果是:%s"%msg.json()["data"][0])
+        assert msg.json()["msg"] == "查询成功"
+
+    @allure.feature("根据工厂获取物料")
+    def test_customByPlantPage(self, gettokenfixture):
+        s = gettokenfixture
+        self.log.info("根据工厂获取物料")
+        r = SRMBase(s)
+        msg = r.customByPlantPage()
+        self.log.info("查询到第一页条数是:%s" %msg.json()["data"]["total"])
+        assert msg.json()["success"] == 1
+        assert msg.json()["data"]["total"] == 6
+
+    @pytest.mark.parametrize("processamento", testdata["cpLackMaterialSub_add_data"],
+                             ids=["新增质量不合格缺料提报",
+                                  "新增有货不可用缺料提报",
+                                  "新增采购缺料提报"])
+    @allure.feature("缺料提报新增")
+    def test_cpLackMaterialSub_add(self, gettokenfixture, processamento):
+        s = gettokenfixture
+        self.log.info("缺料提报新增")
+        r = SRMBase(s)
+        msg = r.cpLackMaterialSub_add(processamento)
+        ass = r.cpLackMaterialSub_page("productName", msg[1])
+        ass_processamento = jsonpath.jsonpath(ass.json(), '$..processamento')[0]
+        assert ass_processamento == processamento
+
+    @pytest.mark.parametrize("processamento", testdata["cpLackMaterialSub_Save_Data"],
+                             ids=["新增质量不合格缺料提报保存",
+                                  "新增有货不可用缺料提报保存",
+                                  "新增采购缺料提报保存"])
+    @allure.feature("缺料提报保存")
+    def test_cpLackMaterialSub_Save(self, gettokenfixture, processamento):
+        s = gettokenfixture
+        self.log.info("缺料提报保存")
+        r = SRMBase(s)
+        msg = r.cpLackMaterialSub_Save(processamento)
+        ass = r.cpLackMaterialSub_page("productName", msg[1])
+        ass_processamento = jsonpath.jsonpath(ass.json(), '$..processamento')[0]
+        ass_status = jsonpath.jsonpath(ass.json(), '$..status')[0]
+        assert ass_processamento == processamento
+        assert ass_status == 100
+
+    @pytest.mark.parametrize("processamento", testdata["cpLackMaterialSub_EditSave_Data"],
+                             ids=["编辑质量不合格缺料提报保存",
+                                  "编辑有货不可用缺料提报保存",
+                                  "编辑采购缺料提报保存"])
+    @allure.feature("缺料提报编辑保存")
+    def test_cpLackMaterialSub_EditSave(self, gettokenfixture, processamento):
+        s = gettokenfixture
+        self.log.info("缺料提报编辑保存")
+        r = SRMBase(s)
+        msg = r.cpLackMaterialSub_EditSave(processamento)
+        page = r.cpLackMaterialSub_page("productName","3e316193-33d7-4dbe-b161" )
+        ass_processamento = jsonpath.jsonpath(page.json(), '$..processamento')[0]
+        assert msg.json()["success"] == 1
+        assert ass_processamento == processamento
+
+    @pytest.mark.parametrize("processamento", testdata["cpLackMaterialSub_EditSave_Data"],
+                             ids=["编辑质量不合格缺料提报提交",
+                                  "编辑有货不可用缺料提报提交",
+                                  "编辑采购缺料提报提交"])
+    @allure.feature("缺料提报编辑保存")
+    def test_cpLackMaterialSub_EditSave(self, gettokenfixture, processamento):
+        s = gettokenfixture
+        self.log.info("缺料提报编辑保存")
+        r = SRMBase(s)
+        msg = r.cpLackMaterialSub_EditSave(processamento)
+        page = r.cpLackMaterialSub_page("productName", "3e316193-33d7-4dbe-b161")
+        ass_processamento = jsonpath.jsonpath(page.json(), '$..processamento')[0]
+        assert msg.json()["success"] == 1
+        assert ass_processamento == processamento
+
+    @pytest.mark.parametrize("key, value", testdata["lackMaterial_data"],
+                             ids=["删除待提交数据","删除待确认数据"])
+    @allure.feature("缺料提报删除")
+    def test_lackMaterial(self, gettokenfixture, key, value):
+        s = gettokenfixture
+        self.log.info("缺料提报删除")
+        r = SRMBase(s)
+        page = r.cpLackMaterialSub_statusPage(key, value)
+        self.log.info("查询第一条是:%s" % page.json()["data"]["records"][0])
+        lackMaterialSubId = jsonpath.jsonpath(page.json(), '$..lackMaterialSubId')[0]
+        msg = r.lackMaterial(lackMaterialSubId)
+        sql = "SELECT STATE FROM CP_LACK_MATERIAL_SUB " \
+              "WHERE LACK_MATERIAL_SUB_ID = '%s'" % lackMaterialSubId
+        state = Db_Oracle().select(sql)
+        assert state["STATE"] == 0
 

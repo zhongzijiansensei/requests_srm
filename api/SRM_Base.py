@@ -107,7 +107,6 @@ class SRMBase(object):
                 "purchaseOrgText":"[1000]采购供应部",
                 "buyerText":"[zhongzijian]钟子鉴"
                 }
-        print(remark)
         r = self.s.post(url, json=data)
         return r,remark
 
@@ -1475,3 +1474,301 @@ class SRMBase(object):
             'Content-Type': webforms.content_type,
         }
         return self.s.post(url, headers=headers, data=webforms)
+
+    '''缺料提报状态查询'''
+    def cpLackMaterialSub_statusPage(self, key, value):
+        url = os.environ["host"] + "/srm/api/v1/cpLackMaterialSub/page"
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '5',),
+            ("order", 'desc',),
+            ("pageFlag", 'true',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw", '[{"id":"%s","property":"status","operator":"in","value":"[%s]"}]' % (key, value)),
+            ("sortersRaw", '[{"id":"createTime","property":"createTime","direction":"DESC"}]')
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)
+
+    '''缺料提报查询'''
+    def cpLackMaterialSub_page(self, key, value):
+        url = os.environ["host"] + "/srm/api/v1/cpLackMaterialSub/page"
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '5',),
+            ("order", 'desc',),
+            ("pageFlag", 'true',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw", '[{"id":"","value":"%s","property":"%s","operator":"like"},'
+                           '{"id":"status100","property":"status","operator":"in","value":"[100,200,300,301,400]"}]'%(value, key)),
+            ("sortersRaw", '[{"id":"createTime","property":"createTime","direction":"DESC"}]')
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)
+
+    '''根据公司查询工厂'''
+    def basePlant(self):
+        url = os.environ['host'] + '/srm/api/v1/basePlant/spinner/6100'
+        return self.s.get(url)
+
+    '''根据工厂查询库位'''
+    def baseStorageLocation(self):
+        url = os.environ['host'] + '/srm/api/v1/baseStorageLocation/storage/af758aca-a847-41c5-b58a-caa847d1c568'
+        return self.s.get(url)
+
+    '''根据工厂获取物料'''
+    def customByPlantPage(self):
+        url = os.environ["host"] + "/srm/api/v1/materialMasterData/customByPlantPage/6199"
+        webforms = MultipartEncoder(fields=[
+            ("page", '1'),
+            ("rows", '5',),
+            ("order", 'desc',),
+            ("pageFlag", 'true',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw", '[{"id":"state1","property":"state","operator":"=","value":1}]')
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)
+
+    '''缺料提报新增'''
+    def cpLackMaterialSub_add(self, processamento):
+        remark = uuid.uuid4()
+        url = os.environ["host"] + "/srm/api/v1/cpLackMaterialSub"
+        data = {
+                "lackMaterialSubId": "",
+                "lackMaterialSubNo": "",
+                "purchaseRequestNo": "",
+                "companyCode": "6100",
+                "companyName": "板式家具公司",
+                "plantCode": "6199",
+                "plantName": "板式家具供应工厂",
+                "storageLocationCode": "D004",
+                "storageLocationName": "三分厂呆滞材料库",
+                "materialGroupCode": "RA050700",
+                "materialGroupName": "原材料/五金/铝门框",
+                "materialCode": "196335450",
+                "materialName": "双面黑色铝框QP-20左开玻璃门窄边框575*332*21(定制)",
+                "baseUnitCode": "ZHA",
+                "baseUnitName": "张",
+                "buyerAccount": "zhongzijian",
+                "buyerName": "钟子鉴",
+                "processamento": processamento,
+                "scheduleDate": "2021-04-01 00:00:00",
+                "productionOrderNo": "ci001",
+                "productName": "%s"%remark,
+                "businessType": "Z01",
+                "pickingListNo": "001",
+                "demandQty": "1",
+                "lackMaterialQty": "1",
+                "uncollectedQty": "",
+                "subRemark": "自动化新增缺料提报",
+                "processingMode": "",
+                "expectedArrivalTime": "",
+                "confirmRemark": "",
+                "arrivalQty": "",
+                "warehouseArrivalTime": "",
+                "receivingRemark": "",
+                "submitFlag": True
+            }
+        r = self.s.post(url, json=data)
+        return r,remark
+    '''缺料提报保存'''
+    def cpLackMaterialSub_Save(self, processamento):
+        remark = uuid.uuid4()
+        url = os.environ["host"] + "/srm/api/v1/cpLackMaterialSub"
+        data = {
+                "lackMaterialSubId": "",
+                "lackMaterialSubNo": "",
+                "purchaseRequestNo": "",
+                "companyCode": "6100",
+                "companyName": "板式家具公司",
+                "plantCode": "6199",
+                "plantName": "板式家具供应工厂",
+                "storageLocationCode": "D004",
+                "storageLocationName": "三分厂呆滞材料库",
+                "materialGroupCode": "RA100100",
+                "materialGroupName": "原材料/样品材料/套房类样品材料",
+                "materialCode": "110039895",
+                "materialName": "样品200206电视柜台面岩板2101*365*6",
+                "baseUnitCode": "ZHA",
+                "baseUnitName": "张",
+                "buyerAccount": "zhongzijian",
+                "buyerName": "钟子鉴",
+                "processamento": processamento,
+                "scheduleDate": "2021-04-01 00:00:00",
+                "productionOrderNo": "saveci001",
+                "productName": "%s"%remark,
+                "businessType": "Z01",
+                "pickingListNo": "1",
+                "demandQty": "1",
+                "lackMaterialQty": "1",
+                "uncollectedQty": "",
+                "subRemark": "自动化保存测试",
+                "processingMode": "",
+                "expectedArrivalTime": "",
+                "confirmRemark": "",
+                "arrivalQty": "",
+                "warehouseArrivalTime": "",
+                "receivingRemark": "",
+                "submitFlag": False
+            }
+        r = self.s.post(url, json=data)
+        return r, remark
+
+    '''缺料提报编辑保存'''
+    def cpLackMaterialSub_EditSave(self,processamento):
+        url = os.environ["host"] + "/srm/api/v1/cpLackMaterialSub"
+        data= {
+                "arrivalQty": None,
+                "baseUnitCode": "ZHA",
+                "baseUnitName": "张",
+                "businessType": "Z01",
+                "buyerAccount": "zhongzijian",
+                "buyerName": "钟子鉴",
+                "companyCode": "6100",
+                "companyName": "板式家具公司",
+                "confirmRemark": "",
+                "createBy": "zhongzijian",
+                "createTime": "2021-04-29 14:38:12",
+                "demandQty": 1,
+                "expectedArrivalTime": None,
+                "lackMaterialQty": 1,
+                "lackMaterialSubId": "3e316193-33d7-4dbe-b161-9333d7bdbe2d",
+                "lackMaterialSubNo": "",
+                "lastUpdateBy": "zhongzijian",
+                "lastUpdateTime": "2021-04-29 15:09:36",
+                "materialCode": "110039895",
+                "materialGroupCode": "RA100100",
+                "materialGroupName": "原材料/样品材料/套房类样品材料",
+                "materialName": "样品200206电视柜台面岩板2101*365*6",
+                "objectVersionNumber": None,
+                "pickingListNo": "1",
+                "plantCode": "6199",
+                "plantName": "板式家具供应工厂",
+                "processamento": processamento,
+                "processingMode": "",
+                "productName": "3e316193-33d7-4dbe-b161",
+                "productionOrderNo": "saveci001",
+                "purchaseRequestNo": "",
+                "receivingRemark": "",
+                "scheduleDate": "2021-04-01 00:00:00",
+                "state": 1,
+                "status": 100,
+                "storageLocationCode": "D004",
+                "storageLocationName": "三分厂呆滞材料库",
+                "subRemark": "自动化保存测试",
+                "submitFlag": False,
+                "uncollectedQty": 1,
+                "warehouseArrivalTime": None,
+                "keyIndex": 17
+            }
+        return self.s.post(url, json=data)
+
+    '''缺料提报编辑提交'''
+    def cpLackMaterialSub_EditCommit(self,processamento):
+        url = os.environ['host'] + "/srm/api/v1/cpLackMaterialSub"
+        data = {
+                "arrivalQty": None,
+                "baseUnitCode": "ZHA",
+                "baseUnitName": "张",
+                "businessType": "Z01",
+                "buyerAccount": "zhongzijian",
+                "buyerName": "钟子鉴",
+                "companyCode": "6100",
+                "companyName": "板式家具公司",
+                "confirmRemark": "",
+                "createBy": "zhongzijian",
+                "createTime": "2021-04-29 15:02:37",
+                "demandQty": 1,
+                "expectedArrivalTime": None,
+                "lackMaterialQty": 1,
+                "lackMaterialSubId": "79bd2b81-4aca-48ac-bd2b-814acaf8acff",
+                "lackMaterialSubNo": "",
+                "lastUpdateBy": "",
+                "lastUpdateTime": None,
+                "materialCode": "110039895",
+                "materialGroupCode": "RA100100",
+                "materialGroupName": "原材料/样品材料/套房类样品材料",
+                "materialName": "样品200206电视柜台面岩板2101*365*6",
+                "objectVersionNumber": None,
+                "pickingListNo": "1",
+                "plantCode": "6199",
+                "plantName": "板式家具供应工厂",
+                "processamento": processamento,
+                "processingMode": "",
+                "productName": "2d232a1d-82f6-4ba6-9867-4f96b572c7a1",
+                "productionOrderNo": "saveci001",
+                "purchaseRequestNo": "",
+                "receivingRemark": "",
+                "scheduleDate": "2021-04-01 00:00:00",
+                "state": 1,
+                "status": 100,
+                "storageLocationCode": "D004",
+                "storageLocationName": "三分厂呆滞材料库",
+                "subRemark": "自动化编辑提交测试",
+                "submitFlag": True,
+                "uncollectedQty": 1,
+                "warehouseArrivalTime": None,
+                "keyIndex": 0
+            }
+        return self.s.post(url, json=data)
+
+    '''缺料提报删除'''
+    def lackMaterial(self, lackMaterialSubId):
+        url = os.environ["host"] +"/srm/api/v1/cpLackMaterialSub/lackMaterial"
+        data = [
+            {
+                "arrivalQty": None,
+                "baseUnitCode": "ZHA",
+                "baseUnitName": "张",
+                "businessType": "Z01",
+                "buyerAccount": "zhongzijian",
+                "buyerName": "钟子鉴",
+                "companyCode": "6100",
+                "companyName": "板式家具公司",
+                "confirmRemark": "",
+                "createBy": "zhongzijian",
+                "createTime": "2021-04-29 15:02:37",
+                "demandQty": 1,
+                "expectedArrivalTime": None,
+                "lackMaterialQty": 1,
+                "lackMaterialSubId": lackMaterialSubId,
+                "lackMaterialSubNo": "",
+                "lastUpdateBy": "",
+                "lastUpdateTime": None,
+                "materialCode": "110039895",
+                "materialGroupCode": "RA100100",
+                "materialGroupName": "原材料/样品材料/套房类样品材料",
+                "materialName": "样品200206电视柜台面岩板2101*365*6",
+                "objectVersionNumber": None,
+                "pickingListNo": "1",
+                "plantCode": "6199",
+                "plantName": "板式家具供应工厂",
+                "processamento": "3",
+                "processingMode": "",
+                "productName": "e701bccd-16d9-4d4f-ac62-c98b6c279473",
+                "productionOrderNo": "saveci001",
+                "purchaseRequestNo": "",
+                "receivingRemark": "",
+                "scheduleDate": "2021-04-01 00:00:00",
+                "state": 1,
+                "status": 100,
+                "storageLocationCode": "D004",
+                "storageLocationName": "三分厂呆滞材料库",
+                "subRemark": "自动化保存测试",
+                "submitFlag": None,
+                "uncollectedQty": 1,
+                "warehouseArrivalTime": None,
+                "keyIndex": 0
+            }
+        ]
+        return self.s.delete(url, json=data)
