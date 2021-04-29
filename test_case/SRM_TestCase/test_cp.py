@@ -29,7 +29,7 @@ class TestSrmCp:
     log = Log()
     testdata = ReadYaml("case_data.yml").get_yaml_data()
 
-    @pytest.mark.prod
+
     @pytest.mark.parametrize("key,value,expect", testdata["cpLackMaterialSub_page_data"],
                              ids=["查询采购申请号", "查询备注"])
     @allure.feature('采购申请查询接口')  # 测试报告显示测试功能
@@ -72,7 +72,7 @@ class TestSrmCp:
         self.log.info("----采购申请提交接口----")
         r = SRMBase(s)
         uid = r.srm_uuid()
-        r.cpLackMaterialSub_Temp(uid, code)
+        r.cpLackMaterialSub_Temp(uid, code, demand=1)
         msg = r.cpLackMaterialSub_push(uid, caigouyuan)
         result = msg[0]
         self.log.info("获取请求结果{}".format(result.json()))
@@ -90,7 +90,7 @@ class TestSrmCp:
         s = gettokenfixture
         self.log.info("---采购申请删除接口---")
         r = SRMBase(s)
-        msg = r.cpLackMaterialSub_delete(id)
+        msg = r.cpLackMaterialSub_delete(p_id)
         print(msg.json())
         STATUS_sql = "SELECT STATUS FROM CP_PURCHASE_REQUEST WHERE PURCHASE_REQUEST_ID = '{}'".format(p_id)
         STATE_sql = "SELECT STATE FROM CP_PURCHASE_REQUEST WHERE PURCHASE_REQUEST_ID = '{}'".format(p_id)
@@ -140,6 +140,7 @@ class TestSrmCp:
         msg_id = jsonpath.jsonpath(msg.json(), '$..column1')[0]
         assert msg_id == expect
 
+    @pytest.mark.prod
     @pytest.mark.parametrize("detailstatus, status, ds_expect, s_expect", testdata["cpdetail_statuspage_data"],
                              ids=["查询待提交", "查询已发布", "查询已关闭", "查询已完成",
                                   "查询未分配", "查询部分分配", "查询部分转单", "查询部分下单",
@@ -384,3 +385,93 @@ class TestSrmCp:
         status = jsonpath.jsonpath(msg.json(), '$..status')[0]
         assert msg.json()["data"]["total"] == 1
         assert status == expect
+
+    @allure.feature("采购申请转单取消分配")
+    def test_cpzdcancel(self, gettokenfixture):
+        s = gettokenfixture
+        self.log.info("采购申请转单取消分配")
+        r = SRMBase(s)
+        RequestsNo = r.cp_zdstatusPage("requestDetailStatus100", "100")
+        print("请求结果是%s"%RequestsNo.text)
+        No = jsonpath.jsonpath(RequestsNo.json(), '$..purchaseRequestNo')[0]
+        Requestid = jsonpath.jsonpath(RequestsNo.json(), '$..purchaseRequestId')[0]
+        Detailid = jsonpath.jsonpath(RequestsNo.json(), '$..requestDetailId')[0]
+        Dty = r.cp_zdallotDty(Requestid, Detailid)
+        Alloid = Dty.json()["data"][0]
+        msg = r.cp_zdcacle(Alloid, Requestid, Detailid, No)
+        self.log.info("取消结果是:%s" % msg.text)
+        ass_No = r.cp_zdpage("purchaseRequestNo", No)
+        assert ass_No.json()["data"]["total"] == 1
+
+    @allure.feature("采购申请转单取消")
+    def test_cpPurchase_cancel(self, gettokenfixture):
+        s = gettokenfixture
+        self.log.info("采购申请转单取消")
+        r = SRMBase(s)
+        data = r.cp_queryByCompanyVendor("500973", "6100", "A01")
+        print(data.json())
+        for i in data.json()['data']:
+            if i['purchaseRequestNo'] == "purchaseRequestNo":
+                break
+        TransferId = i["requestTransferId"]
+        batchFlag = i["batchFlag"]
+        cancel = r.cpPurchase_cancel(batchFlag, TransferId)
+        self.log.info("取消返回结果:%s" % cancel.text)
+        msg = r.cp_zdqueryAllpage()
+        reset = r.cp_zdcommit("8e926428-c823-418d-9264-28c823a18d03", "448ad576-bcc5-4689-8ad5-76bcc5d68971",
+                              "8ce3691f-136f-49c6-a369-1f136ff9c6a0")
+        for j in msg.json()['data']:
+            if j['purchaseRequestNo'] == "PR2021042100008":
+                break
+        assert j["purchaseRequestNo"] == "PR2021042100008"
+
+    @pytest.mark.parametrize("auditFlag, expect", testdata["cp_audit_data"],
+                             ids=["审核通过", "审核驳回"])
+    @allure.feature("配额超标审核")
+    def test_cpPurchaseRequestOverproof(self, gettokenfixture, auditFlag, expect):
+        s = gettokenfixture
+        self.log.info("----采购申请配额超标审核----")
+        r = SRMBase(s)
+        uid = r.srm_uuid()
+        r.cpLackMaterialSub_Temp(uid, code="105000007", demand=401)  # 超标采购申请新增
+        msg = r.cpLackMaterialSub_push(uid, caigouyuan="zhongzijian")
+        result = msg[0]
+        self.log.info("获取新增结果{}".format(result.json()))
+        try:
+            msg_getRequestid = r.cp_zdpage(key="materialCode", value="105000007")  # 查询目标采购申请
+            Requestid = jsonpath.jsonpath(msg_getRequestid.json(), '$..purchaseRequestId')[0]
+            Detailid = jsonpath.jsonpath(msg_getRequestid.json(), '$..requestDetailId')[0]
+            self.log.info("获取采购申请ID:%s" % Requestid)
+        except:
+            self.log.error("获取采购申请数据错误")
+        msg_allotDty = r.cp_zdallotDty(Requestid, Detailid)  # 分配采购申请
+        Alloid = msg_allotDty.json()["data"][0]
+        commit = r.cp_zdcomits(Requestid, Detailid, Alloid)  #分配页面提交
+        sql = "UPDATE BUSINESS_WAIT_APPROVE_RECORD SET APPROVE_BY = 'zhongzijian' WHERE PROCESS_NAME = '采购申请超标审批流'"
+        Db_Oracle().update(sql)
+        page = r.cp_customPage("materialCode", "105000007")
+        auditid = jsonpath.jsonpath(page.json(), '$..requestOverproofId')[0]
+        purchaseRequestNo = jsonpath.jsonpath(page.json(), '$..purchaseRequestNo')[0]
+        msg = r.cp_audit(auditid, auditFlag)
+        self.log.info("审核结果是:%s"%msg.json())
+        ass = r.cp_examineRecordsPg("purchaseRequestNo", purchaseRequestNo)
+        status = jsonpath.jsonpath(ass.json(), '$..status')[0]
+        assert status == expect
+
+    @pytest.mark.parametrize("key, value", testdata["cp_customPage_data"],
+                             ids=["查询单号", "查询物料"])
+    @allure.feature("配额超标审核查询")
+    def test_customPage(self, gettokenfixture, key, value):
+        s = gettokenfixture
+        self.log.info("配额超标审核查询")
+        r = SRMBase(s)
+        msg = r.cp_customPage(key, value)
+        self.log.info("查询结果为:%s" % msg.json())
+        purchaseRequestNo = jsonpath.jsonpath(msg.json(), '$..purchaseRequestNo')[0]
+        materialCode = jsonpath.jsonpath(msg.json(), '$..materialCode')[0]
+        if key == "materialCode":
+            assert materialCode == value
+        else:
+            assert purchaseRequestNo == value
+
+

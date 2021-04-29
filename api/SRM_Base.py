@@ -119,7 +119,7 @@ class SRMBase(object):
         return u
 
     '''采购申请明细提交'''
-    def cpLackMaterialSub_Temp(self, uu, code):
+    def cpLackMaterialSub_Temp(self, uu, code, demand):
         url = os.environ["host"]+"/srm/api/v1/cpPurchaseRequestDtlTemp"
         payload = {
                     "detailTempId": "",
@@ -165,7 +165,7 @@ class SRMBase(object):
                     "purchaseGroupName": "板材采购组",
                     "purchaseGroupText": "[A01]板材采购组",
                     "planDeliveryDate": "",
-                    "demandQty": "1",
+                    "demandQty": demand,
                     "alreadyTransferOrderQty": "",
                     "alreadyOrderQty": "",
                     "requisitioner": "",
@@ -203,6 +203,7 @@ class SRMBase(object):
                     "purchaseGroupId": "843a0c2a-7ef1-42fb-ba0c-2a7ef1900034"
                      }
         return self.s.post(url, json=payload)
+
     '''采购申请提交'''
     def cpLackMaterialSub_push(self, uu, caigouyuan):
         remark = uuid.uuid4()
@@ -613,8 +614,6 @@ class SRMBase(object):
         }
         return self.s.post(url, headers=headers, data=webforms)
 
-    '''配额审核占位'''
-
     '''采购申请转单状态查询'''
     def cp_zdstatusPage(self, key, status):
         url = os.environ["host"] + "/srm/api/v1/cpPurchaseRequestDtlAllot/customPage"
@@ -742,7 +741,7 @@ class SRMBase(object):
                 ]
         return self.s.post(url, json=data)
     '''采购申请转单提交'''
-    def cp_zdcommit(self, Requestid, Detailid, Allotid):
+    def cp_zdcommit(self, Requestid, Detailid, Alloid):
         url = os.environ["host"] + "/srm/api/v1/cpPurchaseRequestDtlAllot/commit"
         data = [
                 {
@@ -767,7 +766,7 @@ class SRMBase(object):
                     "priceUnit": None,
                     "purchaseOrgCode": "1000",
                     "purchaseOrgName": "采购供应部",
-                    "purchaseRequestAllotId": Allotid,
+                    "purchaseRequestAllotId": Alloid,
                     "purchaseRequestDetailId": Detailid,
                     "purchaseRequestId": Requestid,
                     "purchaseRequestNo": "PR2021042200007",
@@ -782,6 +781,84 @@ class SRMBase(object):
                 }
                 ]
         return self.s.post(url, json=data)
+
+    '''采购申请转单多条提交(超标审核前置)'''
+    def cp_zdcomits(self, Requestid, Detailid, Alloid):
+        url = os.environ["host"] + "/srm/api/v1/cpPurchaseRequestDtlAllot/commit"
+        data = [
+    {
+        "allExtraAttributesBaseId": "aaf19f26-cdd6-e9e4-e053-44031eac0fae",
+        "allotQty": 401,
+        "alreadyCancelQty": 0,
+        "billingRatio": 100,
+        "conversionPrice": 12,
+        "createBy": "zhongzijian",
+        "createTime": "2021-04-28 14:02:42",
+        "fileGroupCode": "",
+        "isOverproof": None,
+        "lastUpdateBy": "",
+        "lastUpdateTime": None,
+        "materialCode": "105000007",
+        "materialGroupCode": "RA050101",
+        "materialName": "直径16黑色圆扣",
+        "overproofRemark": "",
+        "plantCode": "6199",
+        "price": 12,
+        "priceMasterDetailId": "1f204afe-db49-453f-a04a-fedb49f53f7e",
+        "priceUnit": 1,
+        "purchaseOrgCode": "1000",
+        "purchaseOrgName": "采购供应部",
+        "purchaseRequestAllotId": Alloid,
+        "purchaseRequestDetailId": Detailid,
+        "purchaseRequestId": Requestid,
+        "purchaseRequestNo": "PR2021042800006",
+        "quotaDetailId": "efb32b94-fb74-4df8-b32b-94fb74edf8f1",
+        "quotaNumber": 241,
+        "quotaRatio": 60,
+        "state": 1,
+        "status": 100,
+        "transferQty": 0,
+        "vendorCode": "103455",
+        "vendorName": "四川万潮科技有限公司"
+    },
+    {
+        "allExtraAttributesBaseId": "aaf19f26-cdd6-e9e4-e053-44031eac0fae",
+        "allotQty": 401,
+        "alreadyCancelQty": 0,
+        "billingRatio": 100,
+        "conversionPrice": 10,
+        "createBy": "zhongzijian",
+        "createTime": "2021-04-28 14:02:42",
+        "fileGroupCode": "",
+        "isOverproof": None,
+        "lastUpdateBy": "",
+        "lastUpdateTime": None,
+        "materialCode": "105000007",
+        "materialGroupCode": "RA050101",
+        "materialName": "直径16黑色圆扣",
+        "overproofRemark": "",
+        "plantCode": "6199",
+        "price": 10,
+        "priceMasterDetailId": "14faf359-caa8-4f31-baf3-59caa8df31fe",
+        "priceUnit": 1,
+        "purchaseOrgCode": "1000",
+        "purchaseOrgName": "采购供应部",
+        "purchaseRequestAllotId": Alloid,
+        "purchaseRequestDetailId": Detailid,
+        "purchaseRequestId": Requestid,
+        "purchaseRequestNo": "PR2021042800006",
+        "quotaDetailId": "d65991da-884c-42e5-9991-da884cc2e568",
+        "quotaNumber": 160,
+        "quotaRatio": 40,
+        "state": 1,
+        "status": 100,
+        "transferQty": "401",
+        "vendorCode": "500973",
+        "vendorName": "TCL华瑞照明科技（惠州）有限公司"
+    }
+]
+        return self.s.post(url, json=data)
+
     '''采购申请转单建立提交'''
     def cp_zdjlcommit(self, Tranceid, Detailid, Allotid):
         url = os.environ['host'] + "/srm/api/v1/cpPurchaseRequestTransfer/commit"
@@ -1196,3 +1273,205 @@ class SRMBase(object):
                 ]
             }
         return self.s.put(url, json=data)
+    '''供应商引入状态查询'''
+    def vendorImport(self, source, status):
+        url = os.environ["host"] + "/srm/api/v1/vendorImport/page"
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '1',),
+            ("order", 'desc',),
+            ("pageFlag", 'true',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw", '[{"id":"source1","property":"source","operator":"in","value":"%s1"},'
+                           '{"id":"status100","property":"status","operator":"in",'
+                           '"value":"%s2"}]' % (source, status)),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)
+    '''供应商主数据数据状态查询'''
+    def vendorMasterData_master_page(self, state):
+        url = os.environ["host"] + "/srm/api/v1/vendorMasterData/master/page"
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '1',),
+            ("order", 'desc',),
+            ("pageFlag", 'true',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw", '[{"id":"state1","property":"state","operator":"in","value":"%s"}]' % state),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)
+    '''供应商信息变更管理状态'''
+    def vendorChangeInfo_page(self, status):
+        url = os.environ["host"] + "/srm/api/v1/vendorChangeInfo/page"
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '1',),
+            ("order", 'desc',),
+            ("pageFlag", 'true',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw", '[{"id":"status100","property":"status","operator":"in","value":"%s"}]' % status),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)
+    '''采购申请明细取消分配'''
+    def cp_zdcacle(self, Alloid, Requestid, Detailid, No):
+        url = os.environ['host'] + '/srm/api/v1/cpPurchaseRequestDtlAllot/cancel'
+        data = [
+            {
+                "allExtraAttributesBaseId": "aaf19f26-cdd6-e9e4-e053-44031eac0fae",
+                "allotQty": 1,
+                "alreadyCancelQty": 0,
+                "billingRatio": None,
+                "conversionPrice": None,
+                "createBy": "zhongzijian",
+                "createTime": "2021-04-27 14:14:22",
+                "fileGroupCode": "",
+                "isOverproof": None,
+                "lastUpdateBy": "",
+                "lastUpdateTime": None,
+                "materialCode": "101000001",
+                "materialGroupCode": "RA010101",
+                "materialName": "3mm中纤板2440*1220mm",
+                "overproofRemark": "",
+                "plantCode": "6199",
+                "price": None,
+                "priceMasterDetailId": "",
+                "priceUnit": None,
+                "purchaseOrgCode": "1000",
+                "purchaseOrgName": "采购供应部",
+                "purchaseRequestAllotId": Alloid,
+                "purchaseRequestDetailId": Detailid,
+                "purchaseRequestId": Requestid,
+                "purchaseRequestNo": No,
+                "quotaDetailId": "c0b5a456-638e-43a5-b5a4-56638ec3a55c",
+                "quotaNumber": 1,
+                "quotaRatio": 100,
+                "state": 1,
+                "status": 100,
+                "transferQty": 1,
+                "vendorCode": "700615",
+                "vendorName": "测试供应商101"
+            }
+        ]
+        return self.s.post(url, json=data)
+    '''采购申请转单取消'''
+    def cpPurchase_cancel(self, batchFlag, TransferId):
+        url = os.environ['host'] + "/srm/api/v1/cpPurchaseRequestTransfer/cancel"
+        data = [
+    {
+        "accsumCode": "",
+        "aggregateDemandQty": None,
+        "allExtraAttributes": "无",
+        "allExtraAttributesBaseId": "aaf19f26-cdd6-e9e4-e053-44031eac0fae",
+        "baseUnitCode": "ZHA",
+        "baseUnitName": "张",
+        "batchFlag": batchFlag,
+        "billingRatio": None,
+        "client": "",
+        "companyCode": "6100",
+        "companyName": "板式家具公司",
+        "conversionPrice": None,
+        "costControlDomain": "",
+        "cpPurchaseRequestDtlExtras": [],
+        "deliveryAddress": "",
+        "deliveryAddressCode": "",
+        "demandName": "",
+        "demandQty": 1000,
+        "demandTrackingNo": "11111",
+        "excessDeliveryLimit": None,
+        "fileGroupCode": "",
+        "fixedAssetsCode": "",
+        "fixedAssetsName": "",
+        "floatingRatio": None,
+        "guestListNo": "",
+        "inquiryBillNo": "",
+        "ladderId": "",
+        "materialCode": "101000021",
+        "materialGroupCode": "RA010108",
+        "materialGroupName": "原材料/板材/中纤板/25mm中纤板",
+        "materialName": "25mm中纤板2440*1220mm",
+        "minOrderQty": None,
+        "minPackagingQty": None,
+        "netDemandQty": None,
+        "onOrderQty": None,
+        "overproofRemark": "自动化取消",
+        "planDeliveryDate": "2024-04-01 00:00:00",
+        "plantCode": "6199",
+        "plantName": "板式家具供应工厂",
+        "price": None,
+        "priceUnit": None,
+        "pricingBillDetailId": "",
+        "pricingBillNo": "",
+        "pricingUnitCode": "",
+        "pricingUnitName": "",
+        "productionOrder": "",
+        "profitCenter": "",
+        "projectText": "",
+        "purchaseGroupCode": "A01",
+        "purchaseGroupName": "板材采购组",
+        "purchaseOrgCode": "1000",
+        "purchaseOrgName": "采购供应部",
+        "purchaseRequestDtlRemark": "查看接口测试数据",
+        "purchaseRequestNo": "PR2021042100008",
+        "quotaQty": 1000,
+        "quotaRatio": 100,
+        "remark": "查看接口测试数据",
+        "requestAllotId": "8ce3691f-136f-49c6-a369-1f136ff9c6a0",
+        "requestDetailId": "448ad576-bcc5-4689-8ad5-76bcc5d68971",
+        "requestTransferId": TransferId,
+        "requisitionPlantCode": "6199",
+        "requisitionPlantName": "板式家具供应工厂",
+        "requisitioner": "贝克",
+        "rowids": 10,
+        "safeStockQty": None,
+        "salesOrderDeliveryLine": "",
+        "salesOrderLine": "",
+        "salesOrderNo": "",
+        "sapDemandQty": None,
+        "shortageOfDelivery": None,
+        "state": 1,
+        "status": 200,
+        "stockQty": None,
+        "storageLocationCode": "D004",
+        "storageLocationName": "三分厂呆滞材料库",
+        "storeAddress": "西航港",
+        "threeMonthOutStockQty": None,
+        "transferOrderQty": 1000,
+        "vendorCode": "500973",
+        "vendorName": "TCL华瑞照明科技（惠州）有限公司"
+    }
+]
+        return self.s.post(url, json=data)
+
+    '''配额超标审核'''
+    def cp_audit(self, auditid, auditFlag):
+        url = os.environ['host'] + "/srm/api/v1/cpPurchaseRequestOverproof/audit"
+        data = {"ids":[auditid],"auditFlag": auditFlag,"reason":""}
+        return self.s.post(url, json=data)
+
+    '''配额超标审核查询'''
+    def cp_customPage(self, key, value):
+        url = os.environ["host"] + "/srm/api/v1/cpPurchaseRequestOverproof/customPage"
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '5',),
+            ("order", 'desc',),
+            ("pageFlag", 'true',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw",'[{"id":"","value":"%s","property":"%s","operator":"like"}]' % (value, key)),
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)
