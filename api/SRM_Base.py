@@ -1772,3 +1772,72 @@ class SRMBase(object):
             }
         ]
         return self.s.delete(url, json=data)
+
+    '''采购员确认查询'''
+    def buyerConfirm_page(self, key, value):
+        url = os.environ['host'] +'/srm/api/v1/cpLackMaterialSub/buyerConfirm/page'
+        webforms = MultipartEncoder(fields=[
+            ("page", '1',),
+            ("rows", '5',),
+            ("order", 'desc',),
+            ("pageFlag", 'true',),
+            ("onlyCountFlag", 'false',),
+            ("filtersRaw", '[{"id":"","value":"%s","property":"%s","operator":"like"}]'%(value, key)),
+            ("sortersRaw", '[{"id":"createTime","property":"createTime","direction":"DESC"}]')
+        ]
+        )
+        headers = {
+            'Content-Type': webforms.content_type,
+        }
+        return self.s.post(url, headers=headers, data=webforms)
+
+    '''采购员确认页面转交'''
+    def buyerCareOf(self, sysUser, buyerAccount):
+        url = os.environ["host"] + "/srm/api/v1/cpLackMaterialSub/buyerCareOf/%s" % sysUser
+        data = [
+    {
+        "arrivalQty": None,
+        "baseUnitCode": "ZHA",
+        "baseUnitName": "张",
+        "businessType": "Z01",
+        "buyerAccount": buyerAccount,
+        "buyerName": "钟子鉴",
+        "companyCode": "6100",
+        "companyName": "板式家具公司",
+        "confirmRemark": "",
+        "createBy": "zhongzijian",
+        "createTime": "2021-04-29 11:34:22",
+        "demandQty": 1,
+        "expectedArrivalTime": None,
+        "lackMaterialQty": 1,
+        "lackMaterialSubId": "ad828361-eae9-4d53-8283-61eae98d5371",
+        "lackMaterialSubNo": "TBD2021042900002",
+        "lastUpdateBy": "",
+        "lastUpdateTime": None,
+        "materialCode": "196335450",
+        "materialGroupCode": "RA050700",
+        "materialGroupName": "原材料/五金/铝门框",
+        "materialName": "双面黑色铝框QP-20左开玻璃门窄边框575*332*21(定制)",
+        "objectVersionNumber": None,
+        "pickingListNo": "1",
+        "plantCode": "6199",
+        "plantName": "板式家具供应工厂",
+        "processamento": "3",
+        "processingMode": "",
+        "productName": "1",
+        "productionOrderNo": "1",
+        "purchaseRequestNo": "",
+        "receivingRemark": "",
+        "scheduleDate": "2021-04-01 00:00:00",
+        "state": 1,
+        "status": 200,
+        "storageLocationCode": "D004",
+        "storageLocationName": "三分厂呆滞材料库",
+        "subRemark": "",
+        "submitFlag": None,
+        "uncollectedQty": 1,
+        "warehouseArrivalTime": None,
+        "keyIndex": 0
+    }
+]
+        return self.s.post(url, json=data)

@@ -180,3 +180,11 @@ cpLackMaterialSub_EditSave_Data: #缺料提报编辑保存
 lackMaterial_data: #缺料提报删除
   - ["status100", 100]
   - ["status200", 200]
+
+buyerConfirm_page_Data: #采购员确认查询
+  - ["lackMaterialSubNo","TBD2020092400002"]
+  - ["materialCode","105000008"]
+
+buyerCareOf_Data:  #采购员确认页面转交
+  - ["537554f9-fcc7-4953-b554-f9fcc71953b8","zhongzijian" ,"TBD2021042900002"]
+  - ["d6520c5f-bd50-4bf2-920c-5fbd505bf263","admin","TBD2021042900002"]

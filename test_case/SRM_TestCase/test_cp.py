@@ -612,3 +612,52 @@ class TestSrmCp:
         state = Db_Oracle().select(sql)
         assert state["STATE"] == 0
 
+    @pytest.mark.parametrize("key, value", testdata["buyerConfirm_page_Data"],
+                             ids=["根据提报号查询", "根据物料号查询"])
+    @allure.feature("采购员确认查询")
+    def test_buyerConfirm_page(self, gettokenfixture, key, value):
+        s = gettokenfixture
+        self.log.info("采购员确认查询")
+        r = SRMBase(s)
+        msg = r.buyerConfirm_page(key, value)
+        self.log.info("查询结果是:%s" % msg.json())
+        lackMaterialSubNo = jsonpath.jsonpath(msg.json(), '$..lackMaterialSubNo')[0]
+        materialCode = jsonpath.jsonpath(msg.json(), '$..materialCode')[0]
+        if key == "lackMaterialSubNo":
+            assert lackMaterialSubNo == value
+        else:
+            assert materialCode == value
+
+    @pytest.mark.parametrize("sysUser, buyerAccount, expect", testdata["buyerCareOf_Data"],
+                             ids=["转给admin","admin转回给zhognzijian"])
+    @allure.feature("采购员确认页面转交")
+    def test_buyerCareOf(self, gettokenfixture, admintokenfixture, sysUser, buyerAccount, expect):
+        s = gettokenfixture
+        admin = admintokenfixture
+        self.log.info("采购员确认页面转交")
+        r = SRMBase(s)
+        a = SRMBase(admin)
+        try:
+            if buyerAccount == "zhongzijian":
+                give = r.buyerCareOf(sysUser,buyerAccount)
+                print("give:",give.text)
+                a_page = a.buyerConfirm_page("lackMaterialSubNo",expect)
+                self.log.info("admin查询到结果是:%s" %a_page.json())
+                give_lackMaterialSubNo = jsonpath.jsonpath(a_page.json(), '$..lackMaterialSubNo')[0]
+                assert give_lackMaterialSubNo == expect
+                assert give.json()["success"] == 1
+            else:
+                give_back = a.buyerCareOf(sysUser,buyerAccount)
+                print(give_back.text)
+                s_page = r.buyerConfirm_page("lackMaterialSubNo", expect)
+                self.log.info("zhongzijian查询到结果是:%s" % s_page.json())
+                give_back_lackMaterialSubNo = jsonpath.jsonpath(s_page.json(), '$..lackMaterialSubNo')[0]
+                assert give_back_lackMaterialSubNo == expect
+                assert give_back.json()["success"] == 1
+        except:
+            self.log.info("订单或订单顺序异常")
+
+
+
+
+

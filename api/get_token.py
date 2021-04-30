@@ -26,7 +26,27 @@ class Get_Token(object):
         return token
 
 
+    def admin_token(self):   #获取admin的token
+        url = os.environ["host"] + "/auth/oauth/token"
+        boby = {
+            "username": "admin",
+            "password": "yJaZZ1eH1w/wMU3dcjUQrQ==",
+            "grant_type": "password",
+            "scope": "server"
+        }
+        r = self.s.post(url, params=boby, headers={"Authorization": "Basic cXVwOnF1cA=="})
+        # print(r.json())
+        # 获取token
+        token = r.json()["access_token"]
+        print("获取到admin_token是%s" % token)
+        header = {
+            "Authorization": "Bearer %s" % token
+        }
+        self.s.headers.update(header)  # 更新token到session
+        return token
+
+
 if __name__ == '__main__':
     s = requests.session()
     a = Get_Token(s)
-    a.get_token()
+    a.admin_token()
