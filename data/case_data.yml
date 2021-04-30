@@ -157,7 +157,7 @@ cpLackMaterialSub_statusPage_Data:  #缺料提报状态查询
   - ["status301", 301]
   - ["status400", 400]
 
-cpLackMaterialSub_page_Data: #缺料提报查询
+cpLackMaterialSub_qlpage_Data: #缺料提报查询
   - ["lackMaterialSubNo", "TBD2020070700001"]
   - ["materialCode", "105000688"]
   - ["createBy", "zhongzijian"]

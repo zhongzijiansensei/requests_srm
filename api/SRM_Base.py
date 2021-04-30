@@ -1494,7 +1494,7 @@ class SRMBase(object):
         return self.s.post(url, headers=headers, data=webforms)
 
     '''缺料提报查询'''
-    def cpLackMaterialSub_page(self, key, value):
+    def cpLackMaterialSub_qlpage(self, key, value):
         url = os.environ["host"] + "/srm/api/v1/cpLackMaterialSub/page"
         webforms = MultipartEncoder(fields=[
             ("page", '1',),

@@ -160,7 +160,7 @@ class TestSrmCp:
 
     @pytest.mark.parametrize("key,value,expect", testdata["cpdetail_page_data"],
                              ids=["查询采购申请号", "查询物料", "查询采购员"])
-    @allure.feature('采购申请查询接口')
+    @allure.feature('采购申请明细查询接口口')
     def test_cpdetail_page(self, gettokenfixture, key, value, expect):
         s = gettokenfixture
         self.log.info("----采购申请明细查询接口口----")
@@ -488,7 +488,7 @@ class TestSrmCp:
         self.log.info("查询结果是:%s" %msg.json())
         assert status == value
 
-    @pytest.mark.parametrize("key, value", testdata["cpLackMaterialSub_page_Data"],
+    @pytest.mark.parametrize("key, value", testdata["cpLackMaterialSub_qlpage_Data"],
                              ids=["查询缺料提报编码", "查询物料", "查询提报人"])
     @pytest.mark.prod
     @allure.feature("缺料提报查询")
@@ -496,7 +496,7 @@ class TestSrmCp:
         s = gettokenfixture
         self.log.info("缺料提报查询接口")
         r = SRMBase(s)
-        msg = r.cpLackMaterialSub_page(key, value)
+        msg = r.cpLackMaterialSub_qlpage(key, value)
         lackMaterialSubNo = jsonpath.jsonpath(msg.json(), '$..lackMaterialSubNo')[0]
         materialCode = jsonpath.jsonpath(msg.json(), '$..materialCode')[0]
         createBy = jsonpath.jsonpath(msg.json(), '$..createBy')[0]
@@ -546,7 +546,7 @@ class TestSrmCp:
         self.log.info("缺料提报新增")
         r = SRMBase(s)
         msg = r.cpLackMaterialSub_add(processamento)
-        ass = r.cpLackMaterialSub_page("productName", msg[1])
+        ass = r.cpLackMaterialSub_qlpage("productName", msg[1])
         ass_processamento = jsonpath.jsonpath(ass.json(), '$..processamento')[0]
         assert ass_processamento == processamento
 
@@ -560,7 +560,7 @@ class TestSrmCp:
         self.log.info("缺料提报保存")
         r = SRMBase(s)
         msg = r.cpLackMaterialSub_Save(processamento)
-        ass = r.cpLackMaterialSub_page("productName", msg[1])
+        ass = r.cpLackMaterialSub_qlpage("productName", msg[1])
         ass_processamento = jsonpath.jsonpath(ass.json(), '$..processamento')[0]
         ass_status = jsonpath.jsonpath(ass.json(), '$..status')[0]
         assert ass_processamento == processamento
@@ -576,7 +576,7 @@ class TestSrmCp:
         self.log.info("缺料提报编辑保存")
         r = SRMBase(s)
         msg = r.cpLackMaterialSub_EditSave(processamento)
-        page = r.cpLackMaterialSub_page("productName","3e316193-33d7-4dbe-b161" )
+        page = r.cpLackMaterialSub_qlpage("productName","3e316193-33d7-4dbe-b161" )
         ass_processamento = jsonpath.jsonpath(page.json(), '$..processamento')[0]
         assert msg.json()["success"] == 1
         assert ass_processamento == processamento
@@ -591,7 +591,7 @@ class TestSrmCp:
         self.log.info("缺料提报编辑保存")
         r = SRMBase(s)
         msg = r.cpLackMaterialSub_EditSave(processamento)
-        page = r.cpLackMaterialSub_page("productName", "3e316193-33d7-4dbe-b161")
+        page = r.cpLackMaterialSub_qlpage("productName", "3e316193-33d7-4dbe-b161")
         ass_processamento = jsonpath.jsonpath(page.json(), '$..processamento')[0]
         assert msg.json()["success"] == 1
         assert ass_processamento == processamento
